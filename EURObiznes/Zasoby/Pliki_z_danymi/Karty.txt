@@ -1,0 +1,134 @@
+<karty_dane>
+	<karta>
+		<rodz>CKartaKwoty</rodz>
+		<atr>
+			<nr_>1</nr_>
+			<tresc_>Sponsorujesz przedstawienie "Don Giovanni" w Operze w Sydney. /nPłacisz 150 PLN</tresc_>
+			<kwota_>-150</kwota_>
+		</atr>
+	</karta>
+	<karta>
+		<rodz>CKartaKwoty</rodz>
+		<atr>
+			<nr_>2</nr_>
+			<tresc_>Pobierz 200 PLN za wynajem prywatnego samolotu.</tresc_>
+			<kwota_>200</kwota_>
+		</atr>
+	</karta>
+	<karta>
+		<rodz>CKartaRuchu</rodz>
+		<atr>
+			<nr_>3<nr_>
+			<tresc_>Przyjaciel zaproponował Ci lot prywatnym odrzutowcem. Idź 8 pól naprzód.</tresc_>
+			<nowaPoz_>8</nowaPoz_>
+		</atr>
+	</karta>
+	<karta>
+		<rodz>CKartaRuchu</rodz>
+		<atr>
+			<nr_>4</nr_>
+			<tresc_>Otrzymałeś pilną wiadomość. Musisz wrócić do biura. Cofnij się o 5 pól.</tresc_>
+			<nowaPoz_>-5</nowaPoz_>
+		</atr>
+	</karta>
+	<karta>
+		<rodz>CKartaWolnosc</rodz>
+		<atr>
+			<nr_>5</nr_>
+			<tresc_>WYJDŹ BEZPŁATNIE Z WIĘZIENIA /nTę kartę możesz zatrzymać do późniejszego wykorzystania lub sprzedaży</tresc_>
+		</atr>
+	</karta>
+	<karta>
+		<rodz>CKartaKwoty</rodz>
+		<atr>
+			<nr_>6</nr_>
+			<tresc_>Otrzymujesz w spadku 100 PLN.</tresc_>
+			<kwota_>100</kwota_>
+		</atr>
+	</karta>
+	<karta>
+		<rodz>CKartaKwoty</rodz>
+		<atr>
+			<nr_>7</nr_>
+			<tresc_>Sprzedajesz swoją firmę komputerową. /nPobierz 180 PLN.</tresc_>
+			<kwota_>180</kwota_>
+		</atr>
+	</karta>
+	<karta>
+		<rodz>CKartaWiezienia</rodz>
+		<atr>
+			<nr_>8</nr_>
+			<tresc_>Zostajesz aresztowany za ''kreatywną księgowość''. /nIdziesz do WIĘZIENIA. /nIdziesz prosto do WIĘZIENIA, nie przechodzisz przez START, nie pobierasz pensji.</tresc_>
+		</atr>
+	</karta>
+	<karta>
+		<rodz>CKartaRuchu</rodz>
+		<atr>
+			<nr_>9</nr_>
+			<tresc_>Spieszysz się na spotkanie z kontrahentem. Przesun się o 4 pola do przodu.</tresc_>
+			<nowaPoz_>4</nowaPoz_>
+		</atr>
+	</karta>
+	<karta>
+		<rodz>CKartaKwoty</rodz>
+		<atr>
+			<nr_>10</nr_>
+			<tresc_>Zapłać czesne w prywatnej szkole - 210 PLN.</tresc_>
+			<kwota_>-210</kwota_>
+		</atr>
+	</karta>
+	<karta>
+		<rodz>CKartaWiezienia</rodz>
+		<atr>
+			<nr_>11</nr_>
+			<tresc_>Niezapłacone podatki - ściga cię Urząd Skarbowy. /nIdziesz do WIĘZIENIA. Idziesz PROSTO do WIĘZIENIA, nie przechodzisz przez START, /nNie pobierasz pensji.</tresc_>
+		</atr>
+	</karta>
+	<karta>
+		<rodz>CKartaRuchu</rodz>
+		<atr>
+			<nr_>12</nr_>
+			<tresc_>Godziny szczytu - stoisz w korku! Cofnij się o 3 pola.</tresc_>
+			<nowaPoz_>-3</nowaPoz_>
+		</atr>
+	</karta>
+	<karta>
+		<rodz>CKartaWolnosc</rodz>
+		<atr>
+			<nr_>13</nr_>
+			<tresc_>WYJDŹ BEZPŁATNIE Z WIĘZIENIA /nTę kartę możesz zatrzymać do późniejszego wykorzystania lub sprzedaży</tresc_>
+		</atr>
+	</karta>
+	<karta>
+		<rodz>CKartaKwoty</rodz>
+		<atr>
+			<nr_>14</nr_>
+			<tresc_>Budujesz basen na dachu swojego apartamentu. /nZapłać 150 PLN.</tresc_>
+			<kwota_>-150</kwota_>
+		</atr>
+	</karta>
+	<karta>
+		<rodz>CKartaKwoty</rodz>
+		<atr>
+			<nr_>15</nr_>
+			<tresc_>Mandat za korzystanie z telefonu komórkowego podczas jazdy samochodem. /nPłacisz 125 PLN.</tresc_>
+			<kwota_>-125</kwota_>
+		</atr>
+	</karta>
+	<karta>
+		<rodz>CKartaRuchu</rodz>
+		<atr>
+			<nr_>16</nr_>
+			<tresc_>Zwiedzanie miasta! Przesuwasz się o 6 pól do przodu</tresc_>
+			<nowaPoz_>6</nowaPoz_>
+		</atr>
+	</karta>
+	<karta>
+		<rodz>CKartaKwoty</rodz>
+		<atr>
+			<nr_>17</nr_>
+			<tresc_>Na aukcji internetowej sprzedajesz swój bilet na zawody na Karnawał w Rio De Janeiro. /nPobierz 250 PLN.</tresc_>
+			<kwota_>250</kwota_>
+		</atr>
+	</karta>
+</karty_dane>
