@@ -1,0 +1,116 @@
+\hypertarget{class_c_karta}{}\doxysection{Dokumentacja klasy CKarta}
+\label{class_c_karta}\index{CKarta@{CKarta}}
+
+
+Klasa logiki.  
+
+
+
+
+{\ttfamily \#include $<$ckarta.\+h$>$}
+
+
+
+Diagram dziedziczenia dla CKarta
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_karta__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Diagram współpracy dla CKarta\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=135pt]{class_c_karta__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_karta_ab89e24c227dfb0c863ef41a3373d862d}{CKarta}} ()
+\item 
+virtual \mbox{\hyperlink{class_c_karta_ab789f83e6770904964b228d21c1692c8}{$\sim$\+CKarta}} ()
+\item 
+virtual \mbox{\hyperlink{struct_s_dn_karty}{SDn\+Karty}} \mbox{\hyperlink{class_c_karta_a942d31d601d22b38c3e397f80d44c92f}{akcja}} ()=0
+\begin{DoxyCompactList}\small\item\em Metoda identyfikująca klasę karty. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Atrybuty chronione}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_c_karta_ae442d7644abda1d324196cc5c17731fb}{nr\+\_\+}}
+\begin{DoxyCompactList}\small\item\em numer porządkowy karty \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_c_karta_ae636c3ce6b1e4dcc5f86f6b8ca8bf706}{tresc\+\_\+}}
+\begin{DoxyCompactList}\small\item\em treść karty \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Opis szczegółowy}
+Klasa logiki. 
+
+\doxysubsection{Dokumentacja konstruktora i destruktora}
+\mbox{\Hypertarget{class_c_karta_ab89e24c227dfb0c863ef41a3373d862d}\label{class_c_karta_ab89e24c227dfb0c863ef41a3373d862d}} 
+\index{CKarta@{CKarta}!CKarta@{CKarta}}
+\index{CKarta@{CKarta}!CKarta@{CKarta}}
+\doxysubsubsection{\texorpdfstring{CKarta()}{CKarta()}}
+{\footnotesize\ttfamily CKarta\+::\+CKarta (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_karta_ab789f83e6770904964b228d21c1692c8}\label{class_c_karta_ab789f83e6770904964b228d21c1692c8}} 
+\index{CKarta@{CKarta}!````~CKarta@{$\sim$CKarta}}
+\index{````~CKarta@{$\sim$CKarta}!CKarta@{CKarta}}
+\doxysubsubsection{\texorpdfstring{$\sim$CKarta()}{~CKarta()}}
+{\footnotesize\ttfamily CKarta\+::$\sim$\+CKarta (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Dokumentacja funkcji składowych}
+\mbox{\Hypertarget{class_c_karta_a942d31d601d22b38c3e397f80d44c92f}\label{class_c_karta_a942d31d601d22b38c3e397f80d44c92f}} 
+\index{CKarta@{CKarta}!akcja@{akcja}}
+\index{akcja@{akcja}!CKarta@{CKarta}}
+\doxysubsubsection{\texorpdfstring{akcja()}{akcja()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{struct_s_dn_karty}{SDn\+Karty}} CKarta\+::akcja (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Metoda identyfikująca klasę karty. 
+
+W zależności od klasy są zwracane inne dane. \begin{DoxyReturn}{Zwraca}
+Klasę karty definiuje pole \mbox{\hyperlink{struct_s_dn_karty_a51fbdef1085a00fd3609e9a6a56f698d}{SDn\+Karty.\+rodzaj}}\+: \begin{DoxyItemize}
+\item 0 -\/ \mbox{\hyperlink{class_c_karta_kwoty}{CKarta\+Kwoty}} \item 1 -\/ \mbox{\hyperlink{class_c_karta_ruchu}{CKarta\+Ruchu}} \item 2 -\/ \mbox{\hyperlink{class_c_karta_wiezienia}{CKarta\+Wiezienia}} \item 3 -\/ \mbox{\hyperlink{class_c_karta_wolnosc}{CKarta\+Wolnosc}} \end{DoxyItemize}
+
+\end{DoxyReturn}
+
+
+Implementowany w \mbox{\hyperlink{class_c_karta_kwoty_a935ec0388b1696112a28e72eba6e8fbf}{CKarta\+Kwoty}}, \mbox{\hyperlink{class_c_karta_ruchu_acd175b182eb1bf0c7067502b279b2916}{CKarta\+Ruchu}}, \mbox{\hyperlink{class_c_karta_wiezienia_ac470fee1ad3f67035714767c39dae4f9}{CKarta\+Wiezienia}} i \mbox{\hyperlink{class_c_karta_wolnosc_aa3869bf2a4ea57795ead8dc36bdc6376}{CKarta\+Wolnosc}}.
+
+
+
+\doxysubsection{Dokumentacja atrybutów składowych}
+\mbox{\Hypertarget{class_c_karta_ae442d7644abda1d324196cc5c17731fb}\label{class_c_karta_ae442d7644abda1d324196cc5c17731fb}} 
+\index{CKarta@{CKarta}!nr\_@{nr\_}}
+\index{nr\_@{nr\_}!CKarta@{CKarta}}
+\doxysubsubsection{\texorpdfstring{nr\_}{nr\_}}
+{\footnotesize\ttfamily int CKarta\+::nr\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+numer porządkowy karty 
+
+\mbox{\Hypertarget{class_c_karta_ae636c3ce6b1e4dcc5f86f6b8ca8bf706}\label{class_c_karta_ae636c3ce6b1e4dcc5f86f6b8ca8bf706}} 
+\index{CKarta@{CKarta}!tresc\_@{tresc\_}}
+\index{tresc\_@{tresc\_}!CKarta@{CKarta}}
+\doxysubsubsection{\texorpdfstring{tresc\_}{tresc\_}}
+{\footnotesize\ttfamily string CKarta\+::tresc\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+treść karty 
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+G\+:/\+Folder\+\_\+\+Dawida/\+Prace\+\_\+me/\+Git/\+Daw\+Rad-\/projekty/\+EURObiznes/\+EURObiznes/\+Logika\+\_\+h/\mbox{\hyperlink{ckarta_8h}{ckarta.\+h}}\item 
+G\+:/\+Folder\+\_\+\+Dawida/\+Prace\+\_\+me/\+Git/\+Daw\+Rad-\/projekty/\+EURObiznes/\+EURObiznes/\+Logika\+\_\+src/\mbox{\hyperlink{ckarta_8cpp}{ckarta.\+cpp}}\end{DoxyCompactItemize}

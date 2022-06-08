@@ -1,0 +1,136 @@
+\hypertarget{class_c_rys_rog}{}\doxysection{Dokumentacja klasy CRys\+Rog}
+\label{class_c_rys_rog}\index{CRysRog@{CRysRog}}
+
+
+Klasa graficzna.  
+
+
+
+
+{\ttfamily \#include $<$crysrog.\+h$>$}
+
+
+
+Diagram dziedziczenia dla CRys\+Rog
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=162pt]{class_c_rys_rog__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Diagram współpracy dla CRys\+Rog\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=162pt]{class_c_rys_rog__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_rys_rog_adf6e25512f6a0c242ca0a8afc7fa25f0}{CRys\+Rog}} (QPoint top\+Left, QSizeF size, int poz, QString napis, QPolygon polygon, QString napis\+\_\+1, qreal rot=0)
+\item 
+\mbox{\hyperlink{class_c_rys_rog_a6fbecc563c032d8282a52c6dc39f81db}{CRys\+Rog}} (QPoint top\+Left, QSizeF size, int poz, QString napis, QString napis\+\_\+1, qreal rot=0)
+\item 
+\mbox{\hyperlink{class_c_rys_rog_a0b8dbc3c8bd80bc92b5967b80dd5b267}{$\sim$\+CRys\+Rog}} ()
+\item 
+virtual void \mbox{\hyperlink{class_c_rys_rog_a1b6603d4c3bb536411666c0450109900}{paint}} (QPainter $\ast$painter, const QStyle\+Option\+Graphics\+Item $\ast$option, QWidget $\ast$widget) override
+\item 
+virtual QPainter\+Path \mbox{\hyperlink{class_c_rys_rog_a43ed28a51326f267c625650cc33309ee}{shape}} () const override
+\item 
+virtual void \mbox{\hyperlink{class_c_rys_rog_a0aa1eb1ae3532f3b5c4baf37ab69f0e7}{set\+Size\+With\+Other\+Dim\+Update}} (QSizeF size) override
+\begin{DoxyCompactList}\small\item\em Funkcja wirtualna na wypadek, gdyby od pola size\+\_\+ zależały inne parametry. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Atrybuty chronione}
+\begin{DoxyCompactItemize}
+\item 
+QPolygon \mbox{\hyperlink{class_c_rys_rog_aa2bf77f2973cd9aa17fb72b098648c7e}{polygon\+\_\+}}
+\item 
+QString \mbox{\hyperlink{class_c_rys_rog_a9a7a12c1b6625998fb8b5f894a48c769}{napis\+\_\+1\+\_\+}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Dodatkowe Dziedziczone Składowe}
+
+
+\doxysubsection{Opis szczegółowy}
+Klasa graficzna. 
+
+\doxysubsection{Dokumentacja konstruktora i destruktora}
+\mbox{\Hypertarget{class_c_rys_rog_adf6e25512f6a0c242ca0a8afc7fa25f0}\label{class_c_rys_rog_adf6e25512f6a0c242ca0a8afc7fa25f0}} 
+\index{CRysRog@{CRysRog}!CRysRog@{CRysRog}}
+\index{CRysRog@{CRysRog}!CRysRog@{CRysRog}}
+\doxysubsubsection{\texorpdfstring{CRysRog()}{CRysRog()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily CRys\+Rog\+::\+CRys\+Rog (\begin{DoxyParamCaption}\item[{QPoint}]{top\+Left,  }\item[{QSizeF}]{size,  }\item[{int}]{poz,  }\item[{QString}]{napis,  }\item[{QPolygon}]{polygon,  }\item[{QString}]{napis\+\_\+1,  }\item[{qreal}]{rot = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Polygon jest wprowadzany ręcznie. \mbox{\Hypertarget{class_c_rys_rog_a6fbecc563c032d8282a52c6dc39f81db}\label{class_c_rys_rog_a6fbecc563c032d8282a52c6dc39f81db}} 
+\index{CRysRog@{CRysRog}!CRysRog@{CRysRog}}
+\index{CRysRog@{CRysRog}!CRysRog@{CRysRog}}
+\doxysubsubsection{\texorpdfstring{CRysRog()}{CRysRog()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily CRys\+Rog\+::\+CRys\+Rog (\begin{DoxyParamCaption}\item[{QPoint}]{top\+Left,  }\item[{QSizeF}]{size,  }\item[{int}]{poz,  }\item[{QString}]{napis,  }\item[{QString}]{napis\+\_\+1,  }\item[{qreal}]{rot = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Polygon określony automatycznie wg parametrów w konstruktorze \mbox{\Hypertarget{class_c_rys_rog_a0b8dbc3c8bd80bc92b5967b80dd5b267}\label{class_c_rys_rog_a0b8dbc3c8bd80bc92b5967b80dd5b267}} 
+\index{CRysRog@{CRysRog}!````~CRysRog@{$\sim$CRysRog}}
+\index{````~CRysRog@{$\sim$CRysRog}!CRysRog@{CRysRog}}
+\doxysubsubsection{\texorpdfstring{$\sim$CRysRog()}{~CRysRog()}}
+{\footnotesize\ttfamily CRys\+Rog\+::$\sim$\+CRys\+Rog (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Dokumentacja funkcji składowych}
+\mbox{\Hypertarget{class_c_rys_rog_a1b6603d4c3bb536411666c0450109900}\label{class_c_rys_rog_a1b6603d4c3bb536411666c0450109900}} 
+\index{CRysRog@{CRysRog}!paint@{paint}}
+\index{paint@{paint}!CRysRog@{CRysRog}}
+\doxysubsubsection{\texorpdfstring{paint()}{paint()}}
+{\footnotesize\ttfamily void CRys\+Rog\+::paint (\begin{DoxyParamCaption}\item[{QPainter $\ast$}]{painter,  }\item[{const QStyle\+Option\+Graphics\+Item $\ast$}]{option,  }\item[{QWidget $\ast$}]{widget }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplementowana z \mbox{\hyperlink{class_c_rys_pole_abcf5cc7d943ed964b57aa2ee75412873}{CRys\+Pole}}.
+
+\mbox{\Hypertarget{class_c_rys_rog_a0aa1eb1ae3532f3b5c4baf37ab69f0e7}\label{class_c_rys_rog_a0aa1eb1ae3532f3b5c4baf37ab69f0e7}} 
+\index{CRysRog@{CRysRog}!setSizeWithOtherDimUpdate@{setSizeWithOtherDimUpdate}}
+\index{setSizeWithOtherDimUpdate@{setSizeWithOtherDimUpdate}!CRysRog@{CRysRog}}
+\doxysubsubsection{\texorpdfstring{setSizeWithOtherDimUpdate()}{setSizeWithOtherDimUpdate()}}
+{\footnotesize\ttfamily void CRys\+Rog\+::set\+Size\+With\+Other\+Dim\+Update (\begin{DoxyParamCaption}\item[{QSizeF}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Funkcja wirtualna na wypadek, gdyby od pola size\+\_\+ zależały inne parametry. 
+
+
+
+Reimplementowana z \mbox{\hyperlink{class_c_rys_ab63faf49241c19f64eb3919e000c4eff}{CRys}}.
+
+\mbox{\Hypertarget{class_c_rys_rog_a43ed28a51326f267c625650cc33309ee}\label{class_c_rys_rog_a43ed28a51326f267c625650cc33309ee}} 
+\index{CRysRog@{CRysRog}!shape@{shape}}
+\index{shape@{shape}!CRysRog@{CRysRog}}
+\doxysubsubsection{\texorpdfstring{shape()}{shape()}}
+{\footnotesize\ttfamily QPainter\+Path CRys\+Rog\+::shape (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplementowana z \mbox{\hyperlink{class_c_rys_pole_adbc3da2eb8efabba8432d33004b946db}{CRys\+Pole}}.
+
+
+
+\doxysubsection{Dokumentacja atrybutów składowych}
+\mbox{\Hypertarget{class_c_rys_rog_a9a7a12c1b6625998fb8b5f894a48c769}\label{class_c_rys_rog_a9a7a12c1b6625998fb8b5f894a48c769}} 
+\index{CRysRog@{CRysRog}!napis\_1\_@{napis\_1\_}}
+\index{napis\_1\_@{napis\_1\_}!CRysRog@{CRysRog}}
+\doxysubsubsection{\texorpdfstring{napis\_1\_}{napis\_1\_}}
+{\footnotesize\ttfamily QString CRys\+Rog\+::napis\+\_\+1\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_rys_rog_aa2bf77f2973cd9aa17fb72b098648c7e}\label{class_c_rys_rog_aa2bf77f2973cd9aa17fb72b098648c7e}} 
+\index{CRysRog@{CRysRog}!polygon\_@{polygon\_}}
+\index{polygon\_@{polygon\_}!CRysRog@{CRysRog}}
+\doxysubsubsection{\texorpdfstring{polygon\_}{polygon\_}}
+{\footnotesize\ttfamily QPolygon CRys\+Rog\+::polygon\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+G\+:/\+Folder\+\_\+\+Dawida/\+Prace\+\_\+me/\+Git/\+Daw\+Rad-\/projekty/\+EURObiznes/\+EURObiznes/\+Rysunki\+\_\+h/\mbox{\hyperlink{crysrog_8h}{crysrog.\+h}}\item 
+G\+:/\+Folder\+\_\+\+Dawida/\+Prace\+\_\+me/\+Git/\+Daw\+Rad-\/projekty/\+EURObiznes/\+EURObiznes/\+Rysunki\+\_\+src/\mbox{\hyperlink{crysrog_8cpp}{crysrog.\+cpp}}\end{DoxyCompactItemize}

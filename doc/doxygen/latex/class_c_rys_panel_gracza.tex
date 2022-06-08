@@ -1,0 +1,210 @@
+\hypertarget{class_c_rys_panel_gracza}{}\doxysection{Dokumentacja klasy CRys\+Panel\+Gracza}
+\label{class_c_rys_panel_gracza}\index{CRysPanelGracza@{CRysPanelGracza}}
+
+
+Klasa graficzna.  
+
+
+
+
+{\ttfamily \#include $<$cryspanelgracza.\+h$>$}
+
+
+
+Diagram dziedziczenia dla CRys\+Panel\+Gracza
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=177pt]{class_c_rys_panel_gracza__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Diagram współpracy dla CRys\+Panel\+Gracza\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=301pt]{class_c_rys_panel_gracza__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_rys_panel_gracza_a68dabbb0d28c6274ec3d2f823da5529d}{CRys\+Panel\+Gracza}} ()
+\item 
+\mbox{\hyperlink{class_c_rys_panel_gracza_abdd2b98b70d43247d05eacb027a9cc22}{CRys\+Panel\+Gracza}} (QPoint top\+Left, QSizeF size, \mbox{\hyperlink{struct_s_dn_pionka}{SDn\+Pionka}} dane\+Pionka, \mbox{\hyperlink{struct_s_dn_gracza}{SDn\+Gracza}} dane\+Gr, QString img\+Path=\char`\"{}\+:/Zasoby/grafika/tla/tablica.\+jpg\char`\"{}, qreal rot=0)
+\item 
+\mbox{\hyperlink{class_c_rys_panel_gracza_a0a311e55d39391717ae2741662d778cf}{$\sim$\+CRys\+Panel\+Gracza}} ()
+\item 
+virtual void \mbox{\hyperlink{class_c_rys_panel_gracza_a5b6f59e242df34363cfaedd5c00b28b0}{paint}} (QPainter $\ast$painter, const QStyle\+Option\+Graphics\+Item $\ast$option, QWidget $\ast$widget) override
+\item 
+virtual QPainter\+Path \mbox{\hyperlink{class_c_rys_panel_gracza_a266d9d4cb689eb335d7793726faf7896}{shape}} () const override
+\item 
+void \mbox{\hyperlink{class_c_rys_panel_gracza_a0c33e14da78965192d7dc54e98e4175b}{aktualizuj\+Panel}} (\mbox{\hyperlink{struct_s_dn_pionka}{SDn\+Pionka}} dane\+Pionka, string rodz\+Gracza, string nick, int portfel, int lb\+Kart)
+\item 
+void \mbox{\hyperlink{class_c_rys_panel_gracza_aca94a55045a8e21c770dfa2b8cb037b5}{aktualizuj\+Panel}} (\mbox{\hyperlink{struct_s_dn_pionka}{SDn\+Pionka}} dane\+Pionka, \mbox{\hyperlink{struct_s_dn_gracza}{SDn\+Gracza}} dane\+Gr)
+\item 
+void \mbox{\hyperlink{class_c_rys_panel_gracza_a5a639be2153a9028682b5afe357ee607}{aktual\+Napis\+Portfel}} (int portfel)
+\item 
+void \mbox{\hyperlink{class_c_rys_panel_gracza_aad710ac48afb27d594d4a4515afee34e}{aktual\+Napislb\+Kart\+Wolnosc}} (int lb\+Kart)
+\item 
+void \mbox{\hyperlink{class_c_rys_panel_gracza_a9fa854ff20f7cebb2c109251545b8177}{gracz\+Uzyl\+Karty\+Wolnosc}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Statyczne metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+static QString \mbox{\hyperlink{class_c_rys_panel_gracza_a7d846791cc6257350c6afc383ae34524}{odkoduj\+Rodz\+Gracza}} (string rodz\+Gracza)
+\end{DoxyCompactItemize}
+\doxysubsection*{Atrybuty chronione}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_c_rys_panel_gracza_ada32ae6e68b650ad615dd163bb5c2b59}{crtd\+Mark\+\_\+}}
+\item 
+\mbox{\hyperlink{class_c_rys_pionek}{CRys\+Pionek}} $\ast$ \mbox{\hyperlink{class_c_rys_panel_gracza_a0ab76fe659c3d65f9873e7f29a03a909}{pionek\+\_\+}}
+\item 
+QString \mbox{\hyperlink{class_c_rys_panel_gracza_a010595222c8f191cd81cb57b828be4ad}{rodz\+Gracza\+\_\+}}
+\item 
+QString \mbox{\hyperlink{class_c_rys_panel_gracza_aaf328dd4b31d278c74f39f0fd6279120}{nick\+\_\+}}
+\item 
+QString \mbox{\hyperlink{class_c_rys_panel_gracza_a752cc9b49a542c878b02297e52d4a55c}{portfel\+\_\+}}
+\item 
+QString \mbox{\hyperlink{class_c_rys_panel_gracza_a4958b8a65eb9b83a3920bd3b9e6c67f4}{lb\+Kart\+Wolnosc\+\_\+}}
+\item 
+QString \mbox{\hyperlink{class_c_rys_panel_gracza_a9dd448133a9fd3643242078829fc8b55}{img\+Path\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Opis szczegółowy}
+Klasa graficzna. 
+
+\doxysubsection{Dokumentacja konstruktora i destruktora}
+\mbox{\Hypertarget{class_c_rys_panel_gracza_a68dabbb0d28c6274ec3d2f823da5529d}\label{class_c_rys_panel_gracza_a68dabbb0d28c6274ec3d2f823da5529d}} 
+\index{CRysPanelGracza@{CRysPanelGracza}!CRysPanelGracza@{CRysPanelGracza}}
+\index{CRysPanelGracza@{CRysPanelGracza}!CRysPanelGracza@{CRysPanelGracza}}
+\doxysubsubsection{\texorpdfstring{CRysPanelGracza()}{CRysPanelGracza()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily CRys\+Panel\+Gracza\+::\+CRys\+Panel\+Gracza (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_rys_panel_gracza_abdd2b98b70d43247d05eacb027a9cc22}\label{class_c_rys_panel_gracza_abdd2b98b70d43247d05eacb027a9cc22}} 
+\index{CRysPanelGracza@{CRysPanelGracza}!CRysPanelGracza@{CRysPanelGracza}}
+\index{CRysPanelGracza@{CRysPanelGracza}!CRysPanelGracza@{CRysPanelGracza}}
+\doxysubsubsection{\texorpdfstring{CRysPanelGracza()}{CRysPanelGracza()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily CRys\+Panel\+Gracza\+::\+CRys\+Panel\+Gracza (\begin{DoxyParamCaption}\item[{QPoint}]{top\+Left,  }\item[{QSizeF}]{size,  }\item[{\mbox{\hyperlink{struct_s_dn_pionka}{SDn\+Pionka}}}]{dane\+Pionka,  }\item[{\mbox{\hyperlink{struct_s_dn_gracza}{SDn\+Gracza}}}]{dane\+Gr,  }\item[{QString}]{img\+Path = {\ttfamily \char`\"{}\+:/Zasoby/grafika/tla/tablica.jpg\char`\"{}},  }\item[{qreal}]{rot = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_rys_panel_gracza_a0a311e55d39391717ae2741662d778cf}\label{class_c_rys_panel_gracza_a0a311e55d39391717ae2741662d778cf}} 
+\index{CRysPanelGracza@{CRysPanelGracza}!````~CRysPanelGracza@{$\sim$CRysPanelGracza}}
+\index{````~CRysPanelGracza@{$\sim$CRysPanelGracza}!CRysPanelGracza@{CRysPanelGracza}}
+\doxysubsubsection{\texorpdfstring{$\sim$CRysPanelGracza()}{~CRysPanelGracza()}}
+{\footnotesize\ttfamily CRys\+Panel\+Gracza\+::$\sim$\+CRys\+Panel\+Gracza (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Dokumentacja funkcji składowych}
+\mbox{\Hypertarget{class_c_rys_panel_gracza_aca94a55045a8e21c770dfa2b8cb037b5}\label{class_c_rys_panel_gracza_aca94a55045a8e21c770dfa2b8cb037b5}} 
+\index{CRysPanelGracza@{CRysPanelGracza}!aktualizujPanel@{aktualizujPanel}}
+\index{aktualizujPanel@{aktualizujPanel}!CRysPanelGracza@{CRysPanelGracza}}
+\doxysubsubsection{\texorpdfstring{aktualizujPanel()}{aktualizujPanel()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void CRys\+Panel\+Gracza\+::aktualizuj\+Panel (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_s_dn_pionka}{SDn\+Pionka}}}]{dane\+Pionka,  }\item[{\mbox{\hyperlink{struct_s_dn_gracza}{SDn\+Gracza}}}]{dane\+Gr }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_rys_panel_gracza_a0c33e14da78965192d7dc54e98e4175b}\label{class_c_rys_panel_gracza_a0c33e14da78965192d7dc54e98e4175b}} 
+\index{CRysPanelGracza@{CRysPanelGracza}!aktualizujPanel@{aktualizujPanel}}
+\index{aktualizujPanel@{aktualizujPanel}!CRysPanelGracza@{CRysPanelGracza}}
+\doxysubsubsection{\texorpdfstring{aktualizujPanel()}{aktualizujPanel()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void CRys\+Panel\+Gracza\+::aktualizuj\+Panel (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_s_dn_pionka}{SDn\+Pionka}}}]{dane\+Pionka,  }\item[{string}]{rodz\+Gracza,  }\item[{string}]{nick,  }\item[{int}]{portfel,  }\item[{int}]{lb\+Kart }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_rys_panel_gracza_aad710ac48afb27d594d4a4515afee34e}\label{class_c_rys_panel_gracza_aad710ac48afb27d594d4a4515afee34e}} 
+\index{CRysPanelGracza@{CRysPanelGracza}!aktualNapislbKartWolnosc@{aktualNapislbKartWolnosc}}
+\index{aktualNapislbKartWolnosc@{aktualNapislbKartWolnosc}!CRysPanelGracza@{CRysPanelGracza}}
+\doxysubsubsection{\texorpdfstring{aktualNapislbKartWolnosc()}{aktualNapislbKartWolnosc()}}
+{\footnotesize\ttfamily void CRys\+Panel\+Gracza\+::aktual\+Napislb\+Kart\+Wolnosc (\begin{DoxyParamCaption}\item[{int}]{lb\+Kart }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_rys_panel_gracza_a5a639be2153a9028682b5afe357ee607}\label{class_c_rys_panel_gracza_a5a639be2153a9028682b5afe357ee607}} 
+\index{CRysPanelGracza@{CRysPanelGracza}!aktualNapisPortfel@{aktualNapisPortfel}}
+\index{aktualNapisPortfel@{aktualNapisPortfel}!CRysPanelGracza@{CRysPanelGracza}}
+\doxysubsubsection{\texorpdfstring{aktualNapisPortfel()}{aktualNapisPortfel()}}
+{\footnotesize\ttfamily void CRys\+Panel\+Gracza\+::aktual\+Napis\+Portfel (\begin{DoxyParamCaption}\item[{int}]{portfel }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_rys_panel_gracza_a9fa854ff20f7cebb2c109251545b8177}\label{class_c_rys_panel_gracza_a9fa854ff20f7cebb2c109251545b8177}} 
+\index{CRysPanelGracza@{CRysPanelGracza}!graczUzylKartyWolnosc@{graczUzylKartyWolnosc}}
+\index{graczUzylKartyWolnosc@{graczUzylKartyWolnosc}!CRysPanelGracza@{CRysPanelGracza}}
+\doxysubsubsection{\texorpdfstring{graczUzylKartyWolnosc()}{graczUzylKartyWolnosc()}}
+{\footnotesize\ttfamily void CRys\+Panel\+Gracza\+::gracz\+Uzyl\+Karty\+Wolnosc (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_rys_panel_gracza_a7d846791cc6257350c6afc383ae34524}\label{class_c_rys_panel_gracza_a7d846791cc6257350c6afc383ae34524}} 
+\index{CRysPanelGracza@{CRysPanelGracza}!odkodujRodzGracza@{odkodujRodzGracza}}
+\index{odkodujRodzGracza@{odkodujRodzGracza}!CRysPanelGracza@{CRysPanelGracza}}
+\doxysubsubsection{\texorpdfstring{odkodujRodzGracza()}{odkodujRodzGracza()}}
+{\footnotesize\ttfamily QString CRys\+Panel\+Gracza\+::odkoduj\+Rodz\+Gracza (\begin{DoxyParamCaption}\item[{string}]{rodz\+Gracza }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c_rys_panel_gracza_a5b6f59e242df34363cfaedd5c00b28b0}\label{class_c_rys_panel_gracza_a5b6f59e242df34363cfaedd5c00b28b0}} 
+\index{CRysPanelGracza@{CRysPanelGracza}!paint@{paint}}
+\index{paint@{paint}!CRysPanelGracza@{CRysPanelGracza}}
+\doxysubsubsection{\texorpdfstring{paint()}{paint()}}
+{\footnotesize\ttfamily void CRys\+Panel\+Gracza\+::paint (\begin{DoxyParamCaption}\item[{QPainter $\ast$}]{painter,  }\item[{const QStyle\+Option\+Graphics\+Item $\ast$}]{option,  }\item[{QWidget $\ast$}]{widget }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implementuje \mbox{\hyperlink{class_c_rys_a02df2df7544fcf5f006c3a0550de4e23}{CRys}}.
+
+\mbox{\Hypertarget{class_c_rys_panel_gracza_a266d9d4cb689eb335d7793726faf7896}\label{class_c_rys_panel_gracza_a266d9d4cb689eb335d7793726faf7896}} 
+\index{CRysPanelGracza@{CRysPanelGracza}!shape@{shape}}
+\index{shape@{shape}!CRysPanelGracza@{CRysPanelGracza}}
+\doxysubsubsection{\texorpdfstring{shape()}{shape()}}
+{\footnotesize\ttfamily QPainter\+Path CRys\+Panel\+Gracza\+::shape (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implementuje \mbox{\hyperlink{class_c_rys_aad0239059383e806a88da10df030b7fd}{CRys}}.
+
+
+
+\doxysubsection{Dokumentacja atrybutów składowych}
+\mbox{\Hypertarget{class_c_rys_panel_gracza_ada32ae6e68b650ad615dd163bb5c2b59}\label{class_c_rys_panel_gracza_ada32ae6e68b650ad615dd163bb5c2b59}} 
+\index{CRysPanelGracza@{CRysPanelGracza}!crtdMark\_@{crtdMark\_}}
+\index{crtdMark\_@{crtdMark\_}!CRysPanelGracza@{CRysPanelGracza}}
+\doxysubsubsection{\texorpdfstring{crtdMark\_}{crtdMark\_}}
+{\footnotesize\ttfamily bool CRys\+Panel\+Gracza\+::crtd\+Mark\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_rys_panel_gracza_a9dd448133a9fd3643242078829fc8b55}\label{class_c_rys_panel_gracza_a9dd448133a9fd3643242078829fc8b55}} 
+\index{CRysPanelGracza@{CRysPanelGracza}!imgPath\_@{imgPath\_}}
+\index{imgPath\_@{imgPath\_}!CRysPanelGracza@{CRysPanelGracza}}
+\doxysubsubsection{\texorpdfstring{imgPath\_}{imgPath\_}}
+{\footnotesize\ttfamily QString CRys\+Panel\+Gracza\+::img\+Path\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_rys_panel_gracza_a4958b8a65eb9b83a3920bd3b9e6c67f4}\label{class_c_rys_panel_gracza_a4958b8a65eb9b83a3920bd3b9e6c67f4}} 
+\index{CRysPanelGracza@{CRysPanelGracza}!lbKartWolnosc\_@{lbKartWolnosc\_}}
+\index{lbKartWolnosc\_@{lbKartWolnosc\_}!CRysPanelGracza@{CRysPanelGracza}}
+\doxysubsubsection{\texorpdfstring{lbKartWolnosc\_}{lbKartWolnosc\_}}
+{\footnotesize\ttfamily QString CRys\+Panel\+Gracza\+::lb\+Kart\+Wolnosc\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_rys_panel_gracza_aaf328dd4b31d278c74f39f0fd6279120}\label{class_c_rys_panel_gracza_aaf328dd4b31d278c74f39f0fd6279120}} 
+\index{CRysPanelGracza@{CRysPanelGracza}!nick\_@{nick\_}}
+\index{nick\_@{nick\_}!CRysPanelGracza@{CRysPanelGracza}}
+\doxysubsubsection{\texorpdfstring{nick\_}{nick\_}}
+{\footnotesize\ttfamily QString CRys\+Panel\+Gracza\+::nick\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_rys_panel_gracza_a0ab76fe659c3d65f9873e7f29a03a909}\label{class_c_rys_panel_gracza_a0ab76fe659c3d65f9873e7f29a03a909}} 
+\index{CRysPanelGracza@{CRysPanelGracza}!pionek\_@{pionek\_}}
+\index{pionek\_@{pionek\_}!CRysPanelGracza@{CRysPanelGracza}}
+\doxysubsubsection{\texorpdfstring{pionek\_}{pionek\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_rys_pionek}{CRys\+Pionek}}$\ast$ CRys\+Panel\+Gracza\+::pionek\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_rys_panel_gracza_a752cc9b49a542c878b02297e52d4a55c}\label{class_c_rys_panel_gracza_a752cc9b49a542c878b02297e52d4a55c}} 
+\index{CRysPanelGracza@{CRysPanelGracza}!portfel\_@{portfel\_}}
+\index{portfel\_@{portfel\_}!CRysPanelGracza@{CRysPanelGracza}}
+\doxysubsubsection{\texorpdfstring{portfel\_}{portfel\_}}
+{\footnotesize\ttfamily QString CRys\+Panel\+Gracza\+::portfel\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_rys_panel_gracza_a010595222c8f191cd81cb57b828be4ad}\label{class_c_rys_panel_gracza_a010595222c8f191cd81cb57b828be4ad}} 
+\index{CRysPanelGracza@{CRysPanelGracza}!rodzGracza\_@{rodzGracza\_}}
+\index{rodzGracza\_@{rodzGracza\_}!CRysPanelGracza@{CRysPanelGracza}}
+\doxysubsubsection{\texorpdfstring{rodzGracza\_}{rodzGracza\_}}
+{\footnotesize\ttfamily QString CRys\+Panel\+Gracza\+::rodz\+Gracza\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+G\+:/\+Folder\+\_\+\+Dawida/\+Prace\+\_\+me/\+Git/\+Daw\+Rad-\/projekty/\+EURObiznes/\+EURObiznes/\+Rysunki\+\_\+h/\mbox{\hyperlink{cryspanelgracza_8h}{cryspanelgracza.\+h}}\item 
+G\+:/\+Folder\+\_\+\+Dawida/\+Prace\+\_\+me/\+Git/\+Daw\+Rad-\/projekty/\+EURObiznes/\+EURObiznes/\+Rysunki\+\_\+src/\mbox{\hyperlink{cryspanelgracza_8cpp}{cryspanelgracza.\+cpp}}\end{DoxyCompactItemize}

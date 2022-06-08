@@ -1,0 +1,272 @@
+\hypertarget{class_main_window}{}\doxysection{Dokumentacja klasy Main\+Window}
+\label{class_main_window}\index{MainWindow@{MainWindow}}
+
+
+Klasa graficzna -\/ okno główne.  
+
+
+
+
+{\ttfamily \#include $<$mainwindow.\+h$>$}
+
+
+
+Diagram dziedziczenia dla Main\+Window\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=160pt]{class_main_window__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Diagram współpracy dla Main\+Window\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_main_window__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_main_window_a996c5a2b6f77944776856f08ec30858d}{Main\+Window}} (QWidget $\ast$parent=nullptr)
+\item 
+\mbox{\hyperlink{class_main_window_ae98d00a93bc118200eeef9f9bba1dba7}{$\sim$\+Main\+Window}} ()
+\item 
+void \mbox{\hyperlink{class_main_window_a0b6a7f39d9e39ce7310228b7c91e1d14}{utworz\+Rys\+Pol}} (deque$<$ \mbox{\hyperlink{struct_s_dn_pola}{SDn\+Pola}} $>$ $\ast$dane\+Pol)
+\begin{DoxyCompactList}\small\item\em Tworzy rysunki pól na podstawie kolejki danych pobranych z pola gra\+\_\+. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Sloty prywatne}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_main_window_a290e05b4f1e371dc31289500383e660e}{on\+\_\+pb\+Nowa\+Gra\+\_\+clicked}} ()
+\item 
+void \mbox{\hyperlink{class_main_window_a397e8903fb4f660d6b3359de3b2b8a5f}{pokaz\+Sie}} ()
+\item 
+void \mbox{\hyperlink{class_main_window_a1d8095cbc91e97e88fa781ce57f5bc7c}{okno\+Ogolne\+Dalej}} (int kwota)
+\item 
+void \mbox{\hyperlink{class_main_window_ae74dfdb3d54588cf9f344819a55dac19}{okno\+Graczy\+Wstecz}} ()
+\item 
+void \mbox{\hyperlink{class_main_window_aabd411c2dde2a41607c10cc3b66f4331}{okno\+Graczy\+Dalej}} ()
+\item 
+void \mbox{\hyperlink{class_main_window_a1672749edf8e189904b432758c1bba8f}{okno\+Planszy\+Graj}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Metody prywatne}
+\begin{DoxyCompactItemize}
+\item 
+deque$<$ string $>$ $\ast$ \mbox{\hyperlink{class_main_window_ac77aa3236f1618b2c2b31c2fc037a0a6}{pobierz\+Dane\+Pol\+ZPliku}} (QString naz\+Pli)
+\item 
+void \mbox{\hyperlink{class_main_window_abd4102eb3303d77a875151bdfacd8c8d}{czyszczenie\+Deques}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Atrybuty prywatne}
+\begin{DoxyCompactItemize}
+\item 
+Ui\+::\+Main\+Window $\ast$ \mbox{\hyperlink{class_main_window_a35466a70ed47252a0191168126a352a5}{ui}}
+\item 
+\mbox{\hyperlink{class_n_g_ogolne}{NGOgolne}} $\ast$ \mbox{\hyperlink{class_main_window_a456a303910451c11bceff6ba6a083e8e}{nowa\+Gra\+Ogolne\+\_\+}}
+\item 
+\mbox{\hyperlink{class_n_g_gracze}{NGGracze}} $\ast$ \mbox{\hyperlink{class_main_window_a30e08e0d280740ec646ce4976ac435f6}{okno\+Graczy\+\_\+}}
+\item 
+\mbox{\hyperlink{class_n_g_plansza}{NGPlansza}} $\ast$ \mbox{\hyperlink{class_main_window_a6c274458f704310dad16018884ae1cbf}{okno\+Planszy\+\_\+}}
+\item 
+\mbox{\hyperlink{class_rozgrywka}{Rozgrywka}} $\ast$ \mbox{\hyperlink{class_main_window_a58882ee61177283b839f0e0383d17d59}{okno\+Rozgrywki\+\_\+}}
+\item 
+\mbox{\hyperlink{class_c_game}{CGame}} $\ast$ \mbox{\hyperlink{class_main_window_a3cea39100fcc505ee1eaa515b5ab812d}{gra\+\_\+}}
+\item 
+QString \mbox{\hyperlink{class_main_window_a5c49f456d06576552a0ac512e973c70a}{waluta\+\_\+}}
+\item 
+QTimer $\ast$ \mbox{\hyperlink{class_main_window_a8e1f8583b42f5f9e5764f9437f86df7b}{zegarmistrz\+Swiatla\+\_\+}}
+\item 
+deque$<$ \mbox{\hyperlink{class_c_rys_pionek}{CRys\+Pionek}} $\ast$ $>$ $\ast$ \mbox{\hyperlink{class_main_window_a4a65196ed028ca816439e29e444a11d3}{pionki\+\_\+}}
+\item 
+deque$<$ \mbox{\hyperlink{class_c_rys_pole}{CRys\+Pole}} $\ast$ $>$ $\ast$ \mbox{\hyperlink{class_main_window_a7acf3386e2fe06df47190ff7f6cf1d29}{pola\+\_\+}}
+\item 
+bool \mbox{\hyperlink{class_main_window_a6035856cf2aea7321b89621100b46fc0}{okno\+Ogolne\+Crtd\+\_\+}}
+\item 
+bool \mbox{\hyperlink{class_main_window_a7a2818a72df60c50da11c8c757d19e27}{okno\+Gracz\+Crtd\+\_\+}}
+\item 
+bool \mbox{\hyperlink{class_main_window_a45ea15c48178744f3087c5523dc51140}{okno\+Planszy\+Crtd\+\_\+}}
+\item 
+bool \mbox{\hyperlink{class_main_window_a20163c660618393c75d47de9253e8a6f}{okno\+Rozgrywki\+Crtd\+\_\+}}
+\item 
+bool $\ast$ \mbox{\hyperlink{class_main_window_a49ca24b5ae1e26523eee4d8125ce4d75}{end\+Game\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Opis szczegółowy}
+Klasa graficzna -\/ okno główne. 
+
+\doxysubsection{Dokumentacja konstruktora i destruktora}
+\mbox{\Hypertarget{class_main_window_a996c5a2b6f77944776856f08ec30858d}\label{class_main_window_a996c5a2b6f77944776856f08ec30858d}} 
+\index{MainWindow@{MainWindow}!MainWindow@{MainWindow}}
+\index{MainWindow@{MainWindow}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{MainWindow()}{MainWindow()}}
+{\footnotesize\ttfamily Main\+Window\+::\+Main\+Window (\begin{DoxyParamCaption}\item[{QWidget $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_main_window_ae98d00a93bc118200eeef9f9bba1dba7}\label{class_main_window_ae98d00a93bc118200eeef9f9bba1dba7}} 
+\index{MainWindow@{MainWindow}!````~MainWindow@{$\sim$MainWindow}}
+\index{````~MainWindow@{$\sim$MainWindow}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{$\sim$MainWindow()}{~MainWindow()}}
+{\footnotesize\ttfamily Main\+Window\+::$\sim$\+Main\+Window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Dokumentacja funkcji składowych}
+\mbox{\Hypertarget{class_main_window_abd4102eb3303d77a875151bdfacd8c8d}\label{class_main_window_abd4102eb3303d77a875151bdfacd8c8d}} 
+\index{MainWindow@{MainWindow}!czyszczenieDeques@{czyszczenieDeques}}
+\index{czyszczenieDeques@{czyszczenieDeques}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{czyszczenieDeques()}{czyszczenieDeques()}}
+{\footnotesize\ttfamily void Main\+Window\+::czyszczenie\+Deques (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_main_window_aabd411c2dde2a41607c10cc3b66f4331}\label{class_main_window_aabd411c2dde2a41607c10cc3b66f4331}} 
+\index{MainWindow@{MainWindow}!oknoGraczyDalej@{oknoGraczyDalej}}
+\index{oknoGraczyDalej@{oknoGraczyDalej}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{oknoGraczyDalej}{oknoGraczyDalej}}
+{\footnotesize\ttfamily void Main\+Window\+::okno\+Graczy\+Dalej (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+\mbox{\Hypertarget{class_main_window_ae74dfdb3d54588cf9f344819a55dac19}\label{class_main_window_ae74dfdb3d54588cf9f344819a55dac19}} 
+\index{MainWindow@{MainWindow}!oknoGraczyWstecz@{oknoGraczyWstecz}}
+\index{oknoGraczyWstecz@{oknoGraczyWstecz}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{oknoGraczyWstecz}{oknoGraczyWstecz}}
+{\footnotesize\ttfamily void Main\+Window\+::okno\+Graczy\+Wstecz (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+\mbox{\Hypertarget{class_main_window_a1d8095cbc91e97e88fa781ce57f5bc7c}\label{class_main_window_a1d8095cbc91e97e88fa781ce57f5bc7c}} 
+\index{MainWindow@{MainWindow}!oknoOgolneDalej@{oknoOgolneDalej}}
+\index{oknoOgolneDalej@{oknoOgolneDalej}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{oknoOgolneDalej}{oknoOgolneDalej}}
+{\footnotesize\ttfamily void Main\+Window\+::okno\+Ogolne\+Dalej (\begin{DoxyParamCaption}\item[{int}]{kwota }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+\mbox{\Hypertarget{class_main_window_a1672749edf8e189904b432758c1bba8f}\label{class_main_window_a1672749edf8e189904b432758c1bba8f}} 
+\index{MainWindow@{MainWindow}!oknoPlanszyGraj@{oknoPlanszyGraj}}
+\index{oknoPlanszyGraj@{oknoPlanszyGraj}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{oknoPlanszyGraj}{oknoPlanszyGraj}}
+{\footnotesize\ttfamily void Main\+Window\+::okno\+Planszy\+Graj (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+\mbox{\Hypertarget{class_main_window_a290e05b4f1e371dc31289500383e660e}\label{class_main_window_a290e05b4f1e371dc31289500383e660e}} 
+\index{MainWindow@{MainWindow}!on\_pbNowaGra\_clicked@{on\_pbNowaGra\_clicked}}
+\index{on\_pbNowaGra\_clicked@{on\_pbNowaGra\_clicked}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{on\_pbNowaGra\_clicked}{on\_pbNowaGra\_clicked}}
+{\footnotesize\ttfamily void Main\+Window\+::on\+\_\+pb\+Nowa\+Gra\+\_\+clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+\mbox{\Hypertarget{class_main_window_ac77aa3236f1618b2c2b31c2fc037a0a6}\label{class_main_window_ac77aa3236f1618b2c2b31c2fc037a0a6}} 
+\index{MainWindow@{MainWindow}!pobierzDanePolZPliku@{pobierzDanePolZPliku}}
+\index{pobierzDanePolZPliku@{pobierzDanePolZPliku}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{pobierzDanePolZPliku()}{pobierzDanePolZPliku()}}
+{\footnotesize\ttfamily deque$<$ string $>$ $\ast$ Main\+Window\+::pobierz\+Dane\+Pol\+ZPliku (\begin{DoxyParamCaption}\item[{QString}]{naz\+Pli }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_main_window_a397e8903fb4f660d6b3359de3b2b8a5f}\label{class_main_window_a397e8903fb4f660d6b3359de3b2b8a5f}} 
+\index{MainWindow@{MainWindow}!pokazSie@{pokazSie}}
+\index{pokazSie@{pokazSie}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{pokazSie}{pokazSie}}
+{\footnotesize\ttfamily void Main\+Window\+::pokaz\+Sie (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+\mbox{\Hypertarget{class_main_window_a0b6a7f39d9e39ce7310228b7c91e1d14}\label{class_main_window_a0b6a7f39d9e39ce7310228b7c91e1d14}} 
+\index{MainWindow@{MainWindow}!utworzRysPol@{utworzRysPol}}
+\index{utworzRysPol@{utworzRysPol}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{utworzRysPol()}{utworzRysPol()}}
+{\footnotesize\ttfamily void Main\+Window\+::utworz\+Rys\+Pol (\begin{DoxyParamCaption}\item[{deque$<$ \mbox{\hyperlink{struct_s_dn_pola}{SDn\+Pola}} $>$ $\ast$}]{dane\+Pol }\end{DoxyParamCaption})}
+
+
+
+Tworzy rysunki pól na podstawie kolejki danych pobranych z pola gra\+\_\+. 
+
+
+
+\doxysubsection{Dokumentacja atrybutów składowych}
+\mbox{\Hypertarget{class_main_window_a49ca24b5ae1e26523eee4d8125ce4d75}\label{class_main_window_a49ca24b5ae1e26523eee4d8125ce4d75}} 
+\index{MainWindow@{MainWindow}!endGame\_@{endGame\_}}
+\index{endGame\_@{endGame\_}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{endGame\_}{endGame\_}}
+{\footnotesize\ttfamily bool$\ast$ Main\+Window\+::end\+Game\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_main_window_a3cea39100fcc505ee1eaa515b5ab812d}\label{class_main_window_a3cea39100fcc505ee1eaa515b5ab812d}} 
+\index{MainWindow@{MainWindow}!gra\_@{gra\_}}
+\index{gra\_@{gra\_}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{gra\_}{gra\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_game}{CGame}}$\ast$ Main\+Window\+::gra\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_main_window_a456a303910451c11bceff6ba6a083e8e}\label{class_main_window_a456a303910451c11bceff6ba6a083e8e}} 
+\index{MainWindow@{MainWindow}!nowaGraOgolne\_@{nowaGraOgolne\_}}
+\index{nowaGraOgolne\_@{nowaGraOgolne\_}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{nowaGraOgolne\_}{nowaGraOgolne\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_n_g_ogolne}{NGOgolne}}$\ast$ Main\+Window\+::nowa\+Gra\+Ogolne\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_main_window_a7a2818a72df60c50da11c8c757d19e27}\label{class_main_window_a7a2818a72df60c50da11c8c757d19e27}} 
+\index{MainWindow@{MainWindow}!oknoGraczCrtd\_@{oknoGraczCrtd\_}}
+\index{oknoGraczCrtd\_@{oknoGraczCrtd\_}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{oknoGraczCrtd\_}{oknoGraczCrtd\_}}
+{\footnotesize\ttfamily bool Main\+Window\+::okno\+Gracz\+Crtd\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_main_window_a30e08e0d280740ec646ce4976ac435f6}\label{class_main_window_a30e08e0d280740ec646ce4976ac435f6}} 
+\index{MainWindow@{MainWindow}!oknoGraczy\_@{oknoGraczy\_}}
+\index{oknoGraczy\_@{oknoGraczy\_}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{oknoGraczy\_}{oknoGraczy\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_n_g_gracze}{NGGracze}}$\ast$ Main\+Window\+::okno\+Graczy\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_main_window_a6035856cf2aea7321b89621100b46fc0}\label{class_main_window_a6035856cf2aea7321b89621100b46fc0}} 
+\index{MainWindow@{MainWindow}!oknoOgolneCrtd\_@{oknoOgolneCrtd\_}}
+\index{oknoOgolneCrtd\_@{oknoOgolneCrtd\_}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{oknoOgolneCrtd\_}{oknoOgolneCrtd\_}}
+{\footnotesize\ttfamily bool Main\+Window\+::okno\+Ogolne\+Crtd\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_main_window_a6c274458f704310dad16018884ae1cbf}\label{class_main_window_a6c274458f704310dad16018884ae1cbf}} 
+\index{MainWindow@{MainWindow}!oknoPlanszy\_@{oknoPlanszy\_}}
+\index{oknoPlanszy\_@{oknoPlanszy\_}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{oknoPlanszy\_}{oknoPlanszy\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_n_g_plansza}{NGPlansza}}$\ast$ Main\+Window\+::okno\+Planszy\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_main_window_a45ea15c48178744f3087c5523dc51140}\label{class_main_window_a45ea15c48178744f3087c5523dc51140}} 
+\index{MainWindow@{MainWindow}!oknoPlanszyCrtd\_@{oknoPlanszyCrtd\_}}
+\index{oknoPlanszyCrtd\_@{oknoPlanszyCrtd\_}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{oknoPlanszyCrtd\_}{oknoPlanszyCrtd\_}}
+{\footnotesize\ttfamily bool Main\+Window\+::okno\+Planszy\+Crtd\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_main_window_a58882ee61177283b839f0e0383d17d59}\label{class_main_window_a58882ee61177283b839f0e0383d17d59}} 
+\index{MainWindow@{MainWindow}!oknoRozgrywki\_@{oknoRozgrywki\_}}
+\index{oknoRozgrywki\_@{oknoRozgrywki\_}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{oknoRozgrywki\_}{oknoRozgrywki\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_rozgrywka}{Rozgrywka}}$\ast$ Main\+Window\+::okno\+Rozgrywki\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_main_window_a20163c660618393c75d47de9253e8a6f}\label{class_main_window_a20163c660618393c75d47de9253e8a6f}} 
+\index{MainWindow@{MainWindow}!oknoRozgrywkiCrtd\_@{oknoRozgrywkiCrtd\_}}
+\index{oknoRozgrywkiCrtd\_@{oknoRozgrywkiCrtd\_}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{oknoRozgrywkiCrtd\_}{oknoRozgrywkiCrtd\_}}
+{\footnotesize\ttfamily bool Main\+Window\+::okno\+Rozgrywki\+Crtd\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_main_window_a4a65196ed028ca816439e29e444a11d3}\label{class_main_window_a4a65196ed028ca816439e29e444a11d3}} 
+\index{MainWindow@{MainWindow}!pionki\_@{pionki\_}}
+\index{pionki\_@{pionki\_}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{pionki\_}{pionki\_}}
+{\footnotesize\ttfamily deque$<$\mbox{\hyperlink{class_c_rys_pionek}{CRys\+Pionek}} $\ast$$>$$\ast$ Main\+Window\+::pionki\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_main_window_a7acf3386e2fe06df47190ff7f6cf1d29}\label{class_main_window_a7acf3386e2fe06df47190ff7f6cf1d29}} 
+\index{MainWindow@{MainWindow}!pola\_@{pola\_}}
+\index{pola\_@{pola\_}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{pola\_}{pola\_}}
+{\footnotesize\ttfamily deque$<$\mbox{\hyperlink{class_c_rys_pole}{CRys\+Pole}} $\ast$$>$$\ast$ Main\+Window\+::pola\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_main_window_a35466a70ed47252a0191168126a352a5}\label{class_main_window_a35466a70ed47252a0191168126a352a5}} 
+\index{MainWindow@{MainWindow}!ui@{ui}}
+\index{ui@{ui}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{ui}{ui}}
+{\footnotesize\ttfamily Ui\+::\+Main\+Window$\ast$ Main\+Window\+::ui\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_main_window_a5c49f456d06576552a0ac512e973c70a}\label{class_main_window_a5c49f456d06576552a0ac512e973c70a}} 
+\index{MainWindow@{MainWindow}!waluta\_@{waluta\_}}
+\index{waluta\_@{waluta\_}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{waluta\_}{waluta\_}}
+{\footnotesize\ttfamily QString Main\+Window\+::waluta\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_main_window_a8e1f8583b42f5f9e5764f9437f86df7b}\label{class_main_window_a8e1f8583b42f5f9e5764f9437f86df7b}} 
+\index{MainWindow@{MainWindow}!zegarmistrzSwiatla\_@{zegarmistrzSwiatla\_}}
+\index{zegarmistrzSwiatla\_@{zegarmistrzSwiatla\_}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{zegarmistrzSwiatla\_}{zegarmistrzSwiatla\_}}
+{\footnotesize\ttfamily QTimer$\ast$ Main\+Window\+::zegarmistrz\+Swiatla\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+G\+:/\+Folder\+\_\+\+Dawida/\+Prace\+\_\+me/\+Git/\+Daw\+Rad-\/projekty/\+EURObiznes/\+EURObiznes/\mbox{\hyperlink{mainwindow_8h}{mainwindow.\+h}}\item 
+G\+:/\+Folder\+\_\+\+Dawida/\+Prace\+\_\+me/\+Git/\+Daw\+Rad-\/projekty/\+EURObiznes/\+EURObiznes/\mbox{\hyperlink{mainwindow_8cpp}{mainwindow.\+cpp}}\end{DoxyCompactItemize}

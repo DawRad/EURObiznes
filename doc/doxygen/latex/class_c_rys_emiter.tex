@@ -1,0 +1,143 @@
+\hypertarget{class_c_rys_emiter}{}\doxysection{Dokumentacja klasy CRys\+Emiter}
+\label{class_c_rys_emiter}\index{CRysEmiter@{CRysEmiter}}
+
+
+Klasa graficzna.  
+
+
+
+
+{\ttfamily \#include $<$crysemiter.\+h$>$}
+
+
+
+Diagram dziedziczenia dla CRys\+Emiter
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=175pt]{class_c_rys_emiter__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Diagram współpracy dla CRys\+Emiter\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=293pt]{class_c_rys_emiter__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_rys_emiter_a729536fc24a1a741fad5b6e4fe81119d}{CRys\+Emiter}} ()
+\item 
+\mbox{\hyperlink{class_c_rys_emiter_a5888920d90cd49bb697a2c6315328f01}{CRys\+Emiter}} (QPoint top\+Left, QSizeF size, string imie\+Nad=\char`\"{}brak\char`\"{}, qreal rot=0)
+\item 
+virtual \mbox{\hyperlink{class_c_rys_emiter_a7a4e6e7bca8ddd1ad136f05396e05a52}{$\sim$\+CRys\+Emiter}} ()
+\item 
+virtual void \mbox{\hyperlink{class_c_rys_emiter_a21f03d8a5fcfd0c1a301984b9d8841f9}{paint}} (QPainter $\ast$painter, const QStyle\+Option\+Graphics\+Item $\ast$option, QWidget $\ast$widget) override=0
+\item 
+virtual QPainter\+Path \mbox{\hyperlink{class_c_rys_emiter_a651954dc1294974217a02d4eb98b2818}{shape}} () const override=0
+\item 
+QObject $\ast$ \mbox{\hyperlink{class_c_rys_emiter_a2cf0b65ccc7e2ae1697444ed63a40893}{podaj\+Nadawce}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Metody chronione}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_c_rys_emiter_a5a3f17cb6e0549f67513c1c5480f05e0}{mouse\+Press\+Event}} (QGraphics\+Scene\+Mouse\+Event $\ast$event) override=0
+\end{DoxyCompactItemize}
+\doxysubsection*{Atrybuty chronione}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_nadawca}{CNadawca}} $\ast$ \mbox{\hyperlink{class_c_rys_emiter_acfbf932b7f0dfddcd0ffb13125a6bf14}{nadawca\+\_\+}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Dodatkowe Dziedziczone Składowe}
+
+
+\doxysubsection{Opis szczegółowy}
+Klasa graficzna. 
+
+\doxysubsection{Dokumentacja konstruktora i destruktora}
+\mbox{\Hypertarget{class_c_rys_emiter_a729536fc24a1a741fad5b6e4fe81119d}\label{class_c_rys_emiter_a729536fc24a1a741fad5b6e4fe81119d}} 
+\index{CRysEmiter@{CRysEmiter}!CRysEmiter@{CRysEmiter}}
+\index{CRysEmiter@{CRysEmiter}!CRysEmiter@{CRysEmiter}}
+\doxysubsubsection{\texorpdfstring{CRysEmiter()}{CRysEmiter()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily CRys\+Emiter\+::\+CRys\+Emiter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_rys_emiter_a5888920d90cd49bb697a2c6315328f01}\label{class_c_rys_emiter_a5888920d90cd49bb697a2c6315328f01}} 
+\index{CRysEmiter@{CRysEmiter}!CRysEmiter@{CRysEmiter}}
+\index{CRysEmiter@{CRysEmiter}!CRysEmiter@{CRysEmiter}}
+\doxysubsubsection{\texorpdfstring{CRysEmiter()}{CRysEmiter()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily CRys\+Emiter\+::\+CRys\+Emiter (\begin{DoxyParamCaption}\item[{QPoint}]{top\+Left,  }\item[{QSizeF}]{size,  }\item[{string}]{imie\+Nad = {\ttfamily \char`\"{}brak\char`\"{}},  }\item[{qreal}]{rot = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_rys_emiter_a7a4e6e7bca8ddd1ad136f05396e05a52}\label{class_c_rys_emiter_a7a4e6e7bca8ddd1ad136f05396e05a52}} 
+\index{CRysEmiter@{CRysEmiter}!````~CRysEmiter@{$\sim$CRysEmiter}}
+\index{````~CRysEmiter@{$\sim$CRysEmiter}!CRysEmiter@{CRysEmiter}}
+\doxysubsubsection{\texorpdfstring{$\sim$CRysEmiter()}{~CRysEmiter()}}
+{\footnotesize\ttfamily CRys\+Emiter\+::$\sim$\+CRys\+Emiter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Dokumentacja funkcji składowych}
+\mbox{\Hypertarget{class_c_rys_emiter_a5a3f17cb6e0549f67513c1c5480f05e0}\label{class_c_rys_emiter_a5a3f17cb6e0549f67513c1c5480f05e0}} 
+\index{CRysEmiter@{CRysEmiter}!mousePressEvent@{mousePressEvent}}
+\index{mousePressEvent@{mousePressEvent}!CRysEmiter@{CRysEmiter}}
+\doxysubsubsection{\texorpdfstring{mousePressEvent()}{mousePressEvent()}}
+{\footnotesize\ttfamily virtual void CRys\+Emiter\+::mouse\+Press\+Event (\begin{DoxyParamCaption}\item[{QGraphics\+Scene\+Mouse\+Event $\ast$}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+Implementowany w \mbox{\hyperlink{class_c_rys_przycisk_af4cfbfa1a06f4b58f8fa24f718c64bb0}{CRys\+Przycisk}}.
+
+\mbox{\Hypertarget{class_c_rys_emiter_a21f03d8a5fcfd0c1a301984b9d8841f9}\label{class_c_rys_emiter_a21f03d8a5fcfd0c1a301984b9d8841f9}} 
+\index{CRysEmiter@{CRysEmiter}!paint@{paint}}
+\index{paint@{paint}!CRysEmiter@{CRysEmiter}}
+\doxysubsubsection{\texorpdfstring{paint()}{paint()}}
+{\footnotesize\ttfamily virtual void CRys\+Emiter\+::paint (\begin{DoxyParamCaption}\item[{QPainter $\ast$}]{painter,  }\item[{const QStyle\+Option\+Graphics\+Item $\ast$}]{option,  }\item[{QWidget $\ast$}]{widget }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [pure virtual]}}
+
+
+
+Implementuje \mbox{\hyperlink{class_c_rys_a02df2df7544fcf5f006c3a0550de4e23}{CRys}}.
+
+
+
+Implementowany w \mbox{\hyperlink{class_c_rys_przycisk_a5e70f45232721fabd6ab9d2a34c3a2a4}{CRys\+Przycisk}} i \mbox{\hyperlink{class_c_rys_przycisk_img_a08ffeea6ccbc97a97da9d151bd7b4ea3}{CRys\+Przycisk\+Img}}.
+
+\mbox{\Hypertarget{class_c_rys_emiter_a2cf0b65ccc7e2ae1697444ed63a40893}\label{class_c_rys_emiter_a2cf0b65ccc7e2ae1697444ed63a40893}} 
+\index{CRysEmiter@{CRysEmiter}!podajNadawce@{podajNadawce}}
+\index{podajNadawce@{podajNadawce}!CRysEmiter@{CRysEmiter}}
+\doxysubsubsection{\texorpdfstring{podajNadawce()}{podajNadawce()}}
+{\footnotesize\ttfamily QObject $\ast$ CRys\+Emiter\+::podaj\+Nadawce (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_rys_emiter_a651954dc1294974217a02d4eb98b2818}\label{class_c_rys_emiter_a651954dc1294974217a02d4eb98b2818}} 
+\index{CRysEmiter@{CRysEmiter}!shape@{shape}}
+\index{shape@{shape}!CRysEmiter@{CRysEmiter}}
+\doxysubsubsection{\texorpdfstring{shape()}{shape()}}
+{\footnotesize\ttfamily virtual QPainter\+Path CRys\+Emiter\+::shape (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [pure virtual]}}
+
+
+
+Implementuje \mbox{\hyperlink{class_c_rys_aad0239059383e806a88da10df030b7fd}{CRys}}.
+
+
+
+Implementowany w \mbox{\hyperlink{class_c_rys_przycisk_adfa24589a2b68f1f30ce4bd83faa5af0}{CRys\+Przycisk}}.
+
+
+
+\doxysubsection{Dokumentacja atrybutów składowych}
+\mbox{\Hypertarget{class_c_rys_emiter_acfbf932b7f0dfddcd0ffb13125a6bf14}\label{class_c_rys_emiter_acfbf932b7f0dfddcd0ffb13125a6bf14}} 
+\index{CRysEmiter@{CRysEmiter}!nadawca\_@{nadawca\_}}
+\index{nadawca\_@{nadawca\_}!CRysEmiter@{CRysEmiter}}
+\doxysubsubsection{\texorpdfstring{nadawca\_}{nadawca\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_nadawca}{CNadawca}}$\ast$ CRys\+Emiter\+::nadawca\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+G\+:/\+Folder\+\_\+\+Dawida/\+Prace\+\_\+me/\+Git/\+Daw\+Rad-\/projekty/\+EURObiznes/\+EURObiznes/\+Rysunki\+\_\+h/\mbox{\hyperlink{crysemiter_8h}{crysemiter.\+h}}\item 
+G\+:/\+Folder\+\_\+\+Dawida/\+Prace\+\_\+me/\+Git/\+Daw\+Rad-\/projekty/\+EURObiznes/\+EURObiznes/\+Rysunki\+\_\+src/\mbox{\hyperlink{crysemiter_8cpp}{crysemiter.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,891 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.3"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>EURObiznes: Dokumentacja klasy NGGracze</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">EURObiznes
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.9.3 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'Szukaj','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#signals">Sygnały</a> &#124;
+<a href="#pub-methods">Metody publiczne</a> &#124;
+<a href="#pri-slots">Sloty prywatne</a> &#124;
+<a href="#pri-methods">Metody prywatne</a> &#124;
+<a href="#pri-attribs">Atrybuty prywatne</a> &#124;
+<a href="class_n_g_gracze-members.html">Lista wszystkich składowych</a>  </div>
+  <div class="headertitle"><div class="title">Dokumentacja klasy NGGracze</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Klasa graficzna - okno graczy.  
+ <a href="class_n_g_gracze.html#details">Więcej...</a></p>
+
+<p><code>#include &lt;<a class="el" href="nggracze_8h_source.html">nggracze.h</a>&gt;</code></p>
+<div class="dynheader">
+Diagram dziedziczenia dla NGGracze</div>
+<div class="dyncontent">
+<div class="center"><img src="class_n_g_gracze__inherit__graph.png" border="0" usemap="#a_n_g_gracze_inherit__map" alt="Inheritance graph"/></div>
+<map name="a_n_g_gracze_inherit__map" id="a_n_g_gracze_inherit__map">
+<area shape="rect" title="Klasa graficzna &#45; okno graczy." alt="" coords="17,80,100,107"/>
+<area shape="rect" title=" " alt="" coords="5,5,112,32"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">legenda</a>]</span></center></div>
+<div class="dynheader">
+Diagram współpracy dla NGGracze:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_n_g_gracze__coll__graph.png" border="0" usemap="#a_n_g_gracze_coll__map" alt="Collaboration graph"/></div>
+<map name="a_n_g_gracze_coll__map" id="a_n_g_gracze_coll__map">
+<area shape="rect" title="Klasa graficzna &#45; okno graczy." alt="" coords="317,347,400,373"/>
+<area shape="rect" title=" " alt="" coords="56,213,163,240"/>
+<area shape="rect" href="class_c_game.html" title="Klasa logiki." alt="" coords="187,213,253,240"/>
+<area shape="rect" title=" " alt="" coords="25,109,159,136"/>
+<area shape="rect" href="class_c_plansza.html" title="Klasa logiki." alt="" coords="183,109,262,136"/>
+<area shape="rect" title=" " alt="" coords="5,5,136,32"/>
+<area shape="rect" title=" " alt="" coords="160,5,285,32"/>
+<area shape="rect" title=" " alt="" coords="310,5,423,32"/>
+<area shape="rect" title=" " alt="" coords="277,213,440,240"/>
+<area shape="rect" href="class_c_rys_pionek.html" title="Klasa graficzna." alt="" coords="465,213,559,240"/>
+<area shape="rect" href="class_c_rys.html" title="Klasa graficzna." alt="" coords="483,109,538,136"/>
+<area shape="rect" title=" " alt="" coords="453,5,563,32"/>
+<area shape="rect" href="class_c_nadawca.html" title="Klasa graficzna." alt="" coords="581,109,665,136"/>
+<area shape="rect" title=" " alt="" coords="587,5,658,32"/>
+<area shape="rect" title=" " alt="" coords="682,5,737,32"/>
+<area shape="rect" title=" " alt="" coords="583,213,678,240"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">legenda</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="signals" name="signals"></a>
+Sygnały</h2></td></tr>
+<tr class="memitem:a2069a783a9d920c671a2b2cb2d7360f2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_g_gracze.html#a2069a783a9d920c671a2b2cb2d7360f2">wstecz</a> ()</td></tr>
+<tr class="separator:a2069a783a9d920c671a2b2cb2d7360f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ea6dd98562c67e7b452a15df8727ff2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_g_gracze.html#a6ea6dd98562c67e7b452a15df8727ff2">dalej</a> ()</td></tr>
+<tr class="separator:a6ea6dd98562c67e7b452a15df8727ff2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Metody publiczne</h2></td></tr>
+<tr class="memitem:a1a1c29dbb516e79cb65169f0ab118b39"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_g_gracze.html#a1a1c29dbb516e79cb65169f0ab118b39">NGGracze</a> (<a class="el" href="class_c_game.html">CGame</a> *gra, deque&lt; <a class="el" href="class_c_rys_pionek.html">CRysPionek</a> * &gt; *pionki, QWidget *parent=nullptr)</td></tr>
+<tr class="separator:a1a1c29dbb516e79cb65169f0ab118b39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace9eff2cde88f74d289a222133c70815"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_g_gracze.html#ace9eff2cde88f74d289a222133c70815">~NGGracze</a> ()</td></tr>
+<tr class="separator:ace9eff2cde88f74d289a222133c70815"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-slots" name="pri-slots"></a>
+Sloty prywatne</h2></td></tr>
+<tr class="memitem:ae2dc6e2db86c095c2d06653d65e43b79"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_g_gracze.html#ae2dc6e2db86c095c2d06653d65e43b79">on_pbOknoWstecz_clicked</a> ()</td></tr>
+<tr class="separator:ae2dc6e2db86c095c2d06653d65e43b79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6abcb9fac9f905cc2d08fc99a7ed64cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_g_gracze.html#a6abcb9fac9f905cc2d08fc99a7ed64cf">on_pbDodGr_clicked</a> ()</td></tr>
+<tr class="separator:a6abcb9fac9f905cc2d08fc99a7ed64cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa695aefa2d6659d32904c544d665d1b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_g_gracze.html#aa695aefa2d6659d32904c544d665d1b8">on_pbDalej_clicked</a> ()</td></tr>
+<tr class="separator:aa695aefa2d6659d32904c544d665d1b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab5c1d4f4cb0a7989e893e4493afd4fb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_g_gracze.html#aab5c1d4f4cb0a7989e893e4493afd4fb">on_pbWstecz_clicked</a> ()</td></tr>
+<tr class="separator:aab5c1d4f4cb0a7989e893e4493afd4fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54100ef98ed1f3a838e2b8b31e67a36d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_g_gracze.html#a54100ef98ed1f3a838e2b8b31e67a36d">on_pbDalej_2_clicked</a> ()</td></tr>
+<tr class="separator:a54100ef98ed1f3a838e2b8b31e67a36d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abba3ffd1a7e50f3533eb84a97f1a93b4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_g_gracze.html#abba3ffd1a7e50f3533eb84a97f1a93b4">on_pbWstecz_2_clicked</a> ()</td></tr>
+<tr class="separator:abba3ffd1a7e50f3533eb84a97f1a93b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afea91022a1c3fe092d51491723a126c0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_g_gracze.html#afea91022a1c3fe092d51491723a126c0">on_pbDalej_3_clicked</a> ()</td></tr>
+<tr class="separator:afea91022a1c3fe092d51491723a126c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9aec1613ebf23635e8cb47bd670a26b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_g_gracze.html#ac9aec1613ebf23635e8cb47bd670a26b">on_pbWstecz_3_clicked</a> ()</td></tr>
+<tr class="separator:ac9aec1613ebf23635e8cb47bd670a26b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdb32bdddd91be146b323532b54de5f0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_g_gracze.html#acdb32bdddd91be146b323532b54de5f0">on_pbDalej_4_clicked</a> ()</td></tr>
+<tr class="separator:acdb32bdddd91be146b323532b54de5f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Metody prywatne</h2></td></tr>
+<tr class="memitem:a3c42d0e6441773adf158b1e48b1df3c2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_g_gracze.html#a3c42d0e6441773adf158b1e48b1df3c2">removingItemsFromScene</a> ()</td></tr>
+<tr class="memdesc:a3c42d0e6441773adf158b1e48b1df3c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda "odczepia" rysunki pionków od sceny tego okna.  <a href="class_n_g_gracze.html#a3c42d0e6441773adf158b1e48b1df3c2">Więcej...</a><br /></td></tr>
+<tr class="separator:a3c42d0e6441773adf158b1e48b1df3c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42c51aceddbf65f111963d073e52fd38"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_g_gracze.html#a42c51aceddbf65f111963d073e52fd38">zmianaRozmiaruPionkowNaOstat</a> ()</td></tr>
+<tr class="memdesc:a42c51aceddbf65f111963d073e52fd38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda zmienia pola topLeft_ i size_ rysunków pionków na wartości "do planszy".  <a href="class_n_g_gracze.html#a42c51aceddbf65f111963d073e52fd38">Więcej...</a><br /></td></tr>
+<tr class="separator:a42c51aceddbf65f111963d073e52fd38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c849d1335c0f002bc0744d3fbd95969"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_g_gracze.html#a7c849d1335c0f002bc0744d3fbd95969">dequeIntPrzod</a> (deque&lt; int &gt; &amp;kolejka)</td></tr>
+<tr class="separator:a7c849d1335c0f002bc0744d3fbd95969"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af19362683115770c03d77ea553d29529"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_g_gracze.html#af19362683115770c03d77ea553d29529">dequeIntTyl</a> (deque&lt; int &gt; &amp;kolejka)</td></tr>
+<tr class="separator:af19362683115770c03d77ea553d29529"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9dd54ad98e50d045625cedf3a9dab206"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_g_gracze.html#a9dd54ad98e50d045625cedf3a9dab206">dequeCRysPionekPrzod</a> (deque&lt; <a class="el" href="class_c_rys_pionek.html">CRysPionek</a> * &gt; &amp;pionki)</td></tr>
+<tr class="separator:a9dd54ad98e50d045625cedf3a9dab206"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa42e3d88cc8404820732fb1ad00a0301"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_g_gracze.html#aa42e3d88cc8404820732fb1ad00a0301">dequeCRysPionekTyl</a> (deque&lt; <a class="el" href="class_c_rys_pionek.html">CRysPionek</a> * &gt; &amp;pionki)</td></tr>
+<tr class="separator:aa42e3d88cc8404820732fb1ad00a0301"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Atrybuty prywatne</h2></td></tr>
+<tr class="memitem:aa91adab5c8247ae70f3e8e7ac729adbc"><td class="memItemLeft" align="right" valign="top">Ui::NGGracze *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_g_gracze.html#aa91adab5c8247ae70f3e8e7ac729adbc">ui</a></td></tr>
+<tr class="separator:aa91adab5c8247ae70f3e8e7ac729adbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41160978edc927855b43caec16b7fe68"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_game.html">CGame</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_g_gracze.html#a41160978edc927855b43caec16b7fe68">wskGry_</a></td></tr>
+<tr class="separator:a41160978edc927855b43caec16b7fe68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2275fc246e8c69ac730976b03b887f0f"><td class="memItemLeft" align="right" valign="top">deque&lt; <a class="el" href="class_c_rys_pionek.html">CRysPionek</a> * &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_g_gracze.html#a2275fc246e8c69ac730976b03b887f0f">pionki_</a></td></tr>
+<tr class="separator:a2275fc246e8c69ac730976b03b887f0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a333f71205a625fa18e9d1b36413dd953"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_rys_pionek.html">CRysPionek</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_g_gracze.html#a333f71205a625fa18e9d1b36413dd953">wskAktPionu_</a></td></tr>
+<tr class="separator:a333f71205a625fa18e9d1b36413dd953"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4601b241bb2991e847c28caf59d00a9c"><td class="memItemLeft" align="right" valign="top">QGraphicsScene *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_g_gracze.html#a4601b241bb2991e847c28caf59d00a9c">scene_</a></td></tr>
+<tr class="separator:a4601b241bb2991e847c28caf59d00a9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bc0a92986274580e46568953dbe0e55"><td class="memItemLeft" align="right" valign="top">deque&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_g_gracze.html#a2bc0a92986274580e46568953dbe0e55">ksztalty_</a></td></tr>
+<tr class="separator:a2bc0a92986274580e46568953dbe0e55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fb9b1f0311088ba3c1cd59653f3160a"><td class="memItemLeft" align="right" valign="top">deque&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_g_gracze.html#a8fb9b1f0311088ba3c1cd59653f3160a">symbole_</a></td></tr>
+<tr class="separator:a8fb9b1f0311088ba3c1cd59653f3160a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6039a9b423203d62e6b10cd52ec4556"><td class="memItemLeft" align="right" valign="top">deque&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_g_gracze.html#aa6039a9b423203d62e6b10cd52ec4556">koloryPionow_</a></td></tr>
+<tr class="separator:aa6039a9b423203d62e6b10cd52ec4556"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6aa21ce06eeeb489c0b5655d05931c2"><td class="memItemLeft" align="right" valign="top">deque&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_g_gracze.html#af6aa21ce06eeeb489c0b5655d05931c2">koloryUzyte_</a></td></tr>
+<tr class="separator:af6aa21ce06eeeb489c0b5655d05931c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Opis szczegółowy</h2>
+<div class="textblock"><p >Klasa graficzna - okno graczy. </p>
+</div><h2 class="groupheader">Dokumentacja konstruktora i destruktora</h2>
+<a id="a1a1c29dbb516e79cb65169f0ab118b39" name="a1a1c29dbb516e79cb65169f0ab118b39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a1c29dbb516e79cb65169f0ab118b39">&#9670;&nbsp;</a></span>NGGracze()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">NGGracze::NGGracze </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_game.html">CGame</a> *&#160;</td>
+          <td class="paramname"><em>gra</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">deque&lt; <a class="el" href="class_c_rys_pionek.html">CRysPionek</a> * &gt; *&#160;</td>
+          <td class="paramname"><em>pionki</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ace9eff2cde88f74d289a222133c70815" name="ace9eff2cde88f74d289a222133c70815"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace9eff2cde88f74d289a222133c70815">&#9670;&nbsp;</a></span>~NGGracze()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">NGGracze::~NGGracze </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentacja funkcji składowych</h2>
+<a id="a6ea6dd98562c67e7b452a15df8727ff2" name="a6ea6dd98562c67e7b452a15df8727ff2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ea6dd98562c67e7b452a15df8727ff2">&#9670;&nbsp;</a></span>dalej</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NGGracze::dalej </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9dd54ad98e50d045625cedf3a9dab206" name="a9dd54ad98e50d045625cedf3a9dab206"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9dd54ad98e50d045625cedf3a9dab206">&#9670;&nbsp;</a></span>dequeCRysPionekPrzod()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NGGracze::dequeCRysPionekPrzod </td>
+          <td>(</td>
+          <td class="paramtype">deque&lt; <a class="el" href="class_c_rys_pionek.html">CRysPionek</a> * &gt; &amp;&#160;</td>
+          <td class="paramname"><em>pionki</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa42e3d88cc8404820732fb1ad00a0301" name="aa42e3d88cc8404820732fb1ad00a0301"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa42e3d88cc8404820732fb1ad00a0301">&#9670;&nbsp;</a></span>dequeCRysPionekTyl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NGGracze::dequeCRysPionekTyl </td>
+          <td>(</td>
+          <td class="paramtype">deque&lt; <a class="el" href="class_c_rys_pionek.html">CRysPionek</a> * &gt; &amp;&#160;</td>
+          <td class="paramname"><em>pionki</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7c849d1335c0f002bc0744d3fbd95969" name="a7c849d1335c0f002bc0744d3fbd95969"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c849d1335c0f002bc0744d3fbd95969">&#9670;&nbsp;</a></span>dequeIntPrzod()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NGGracze::dequeIntPrzod </td>
+          <td>(</td>
+          <td class="paramtype">deque&lt; int &gt; &amp;&#160;</td>
+          <td class="paramname"><em>kolejka</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af19362683115770c03d77ea553d29529" name="af19362683115770c03d77ea553d29529"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af19362683115770c03d77ea553d29529">&#9670;&nbsp;</a></span>dequeIntTyl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NGGracze::dequeIntTyl </td>
+          <td>(</td>
+          <td class="paramtype">deque&lt; int &gt; &amp;&#160;</td>
+          <td class="paramname"><em>kolejka</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a54100ef98ed1f3a838e2b8b31e67a36d" name="a54100ef98ed1f3a838e2b8b31e67a36d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54100ef98ed1f3a838e2b8b31e67a36d">&#9670;&nbsp;</a></span>on_pbDalej_2_clicked</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NGGracze::on_pbDalej_2_clicked </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afea91022a1c3fe092d51491723a126c0" name="afea91022a1c3fe092d51491723a126c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afea91022a1c3fe092d51491723a126c0">&#9670;&nbsp;</a></span>on_pbDalej_3_clicked</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NGGracze::on_pbDalej_3_clicked </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acdb32bdddd91be146b323532b54de5f0" name="acdb32bdddd91be146b323532b54de5f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdb32bdddd91be146b323532b54de5f0">&#9670;&nbsp;</a></span>on_pbDalej_4_clicked</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NGGracze::on_pbDalej_4_clicked </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa695aefa2d6659d32904c544d665d1b8" name="aa695aefa2d6659d32904c544d665d1b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa695aefa2d6659d32904c544d665d1b8">&#9670;&nbsp;</a></span>on_pbDalej_clicked</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NGGracze::on_pbDalej_clicked </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6abcb9fac9f905cc2d08fc99a7ed64cf" name="a6abcb9fac9f905cc2d08fc99a7ed64cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6abcb9fac9f905cc2d08fc99a7ed64cf">&#9670;&nbsp;</a></span>on_pbDodGr_clicked</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NGGracze::on_pbDodGr_clicked </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae2dc6e2db86c095c2d06653d65e43b79" name="ae2dc6e2db86c095c2d06653d65e43b79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2dc6e2db86c095c2d06653d65e43b79">&#9670;&nbsp;</a></span>on_pbOknoWstecz_clicked</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NGGracze::on_pbOknoWstecz_clicked </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abba3ffd1a7e50f3533eb84a97f1a93b4" name="abba3ffd1a7e50f3533eb84a97f1a93b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abba3ffd1a7e50f3533eb84a97f1a93b4">&#9670;&nbsp;</a></span>on_pbWstecz_2_clicked</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NGGracze::on_pbWstecz_2_clicked </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac9aec1613ebf23635e8cb47bd670a26b" name="ac9aec1613ebf23635e8cb47bd670a26b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9aec1613ebf23635e8cb47bd670a26b">&#9670;&nbsp;</a></span>on_pbWstecz_3_clicked</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NGGracze::on_pbWstecz_3_clicked </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aab5c1d4f4cb0a7989e893e4493afd4fb" name="aab5c1d4f4cb0a7989e893e4493afd4fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab5c1d4f4cb0a7989e893e4493afd4fb">&#9670;&nbsp;</a></span>on_pbWstecz_clicked</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NGGracze::on_pbWstecz_clicked </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3c42d0e6441773adf158b1e48b1df3c2" name="a3c42d0e6441773adf158b1e48b1df3c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c42d0e6441773adf158b1e48b1df3c2">&#9670;&nbsp;</a></span>removingItemsFromScene()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NGGracze::removingItemsFromScene </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Metoda "odczepia" rysunki pionków od sceny tego okna. </p>
+
+</div>
+</div>
+<a id="a2069a783a9d920c671a2b2cb2d7360f2" name="a2069a783a9d920c671a2b2cb2d7360f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2069a783a9d920c671a2b2cb2d7360f2">&#9670;&nbsp;</a></span>wstecz</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NGGracze::wstecz </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a42c51aceddbf65f111963d073e52fd38" name="a42c51aceddbf65f111963d073e52fd38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42c51aceddbf65f111963d073e52fd38">&#9670;&nbsp;</a></span>zmianaRozmiaruPionkowNaOstat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NGGracze::zmianaRozmiaruPionkowNaOstat </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Metoda zmienia pola topLeft_ i size_ rysunków pionków na wartości "do planszy". </p>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentacja atrybutów składowych</h2>
+<a id="aa6039a9b423203d62e6b10cd52ec4556" name="aa6039a9b423203d62e6b10cd52ec4556"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6039a9b423203d62e6b10cd52ec4556">&#9670;&nbsp;</a></span>koloryPionow_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">deque&lt;int&gt; NGGracze::koloryPionow_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af6aa21ce06eeeb489c0b5655d05931c2" name="af6aa21ce06eeeb489c0b5655d05931c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6aa21ce06eeeb489c0b5655d05931c2">&#9670;&nbsp;</a></span>koloryUzyte_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">deque&lt;int&gt; NGGracze::koloryUzyte_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2bc0a92986274580e46568953dbe0e55" name="a2bc0a92986274580e46568953dbe0e55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2bc0a92986274580e46568953dbe0e55">&#9670;&nbsp;</a></span>ksztalty_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">deque&lt;int&gt; NGGracze::ksztalty_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2275fc246e8c69ac730976b03b887f0f" name="a2275fc246e8c69ac730976b03b887f0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2275fc246e8c69ac730976b03b887f0f">&#9670;&nbsp;</a></span>pionki_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">deque&lt;<a class="el" href="class_c_rys_pionek.html">CRysPionek</a> *&gt;* NGGracze::pionki_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4601b241bb2991e847c28caf59d00a9c" name="a4601b241bb2991e847c28caf59d00a9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4601b241bb2991e847c28caf59d00a9c">&#9670;&nbsp;</a></span>scene_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QGraphicsScene* NGGracze::scene_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8fb9b1f0311088ba3c1cd59653f3160a" name="a8fb9b1f0311088ba3c1cd59653f3160a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8fb9b1f0311088ba3c1cd59653f3160a">&#9670;&nbsp;</a></span>symbole_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">deque&lt;int&gt; NGGracze::symbole_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa91adab5c8247ae70f3e8e7ac729adbc" name="aa91adab5c8247ae70f3e8e7ac729adbc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa91adab5c8247ae70f3e8e7ac729adbc">&#9670;&nbsp;</a></span>ui</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Ui::NGGracze* NGGracze::ui</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a333f71205a625fa18e9d1b36413dd953" name="a333f71205a625fa18e9d1b36413dd953"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a333f71205a625fa18e9d1b36413dd953">&#9670;&nbsp;</a></span>wskAktPionu_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_rys_pionek.html">CRysPionek</a>* NGGracze::wskAktPionu_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a41160978edc927855b43caec16b7fe68" name="a41160978edc927855b43caec16b7fe68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41160978edc927855b43caec16b7fe68">&#9670;&nbsp;</a></span>wskGry_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_game.html">CGame</a>* NGGracze::wskGry_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>Dokumentacja dla tej klasy została wygenerowana z plików:<ul>
+<li>G:/Folder_Dawida/Prace_me/Git/DawRad-projekty/EURObiznes/EURObiznes/<a class="el" href="nggracze_8h_source.html">nggracze.h</a></li>
+<li>G:/Folder_Dawida/Prace_me/Git/DawRad-projekty/EURObiznes/EURObiznes/<a class="el" href="nggracze_8cpp.html">nggracze.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3
+</small></address>
+</body>
+</html>

@@ -1,0 +1,28 @@
+var searchData=
+[
+  ['nadawca_5f_0',['nadawca_',['../class_c_rys_emiter.html#acfbf932b7f0dfddcd0ffb13125a6bf14',1,'CRysEmiter']]],
+  ['napis_5f_1',['napis_',['../class_c_rys_pole.html#ae8d684f3eb43d8be242cba82152df091',1,'CRysPole']]],
+  ['napis_5f1_5f_2',['napis_1_',['../class_c_rys_rog.html#a9a7a12c1b6625998fb8b5f894a48c769',1,'CRysRog::napis_1_()'],['../class_c_rys_pole___pplus_w.html#a67fc734ad25b7e1adc2756d5152248f7',1,'CRysPole_PplusW::napis_1_()'],['../class_c_rys_pole_start.html#adb93bc89df41296ae063b92d87170f82',1,'CRysPoleStart::napis_1_()']]],
+  ['napis_5f2_5f_3',['napis_2_',['../class_c_rys_pole_start.html#a7e64f85da328169e1853bc939fc3db48',1,'CRysPoleStart']]],
+  ['nastepny_4',['nastepny',['../class_c_game.html#abf51ead5ecb1bacd973a56c20b92b595',1,'CGame']]],
+  ['nastpoz_5f_5',['nastPoz_',['../class_c_gracz.html#ae9ec33de61bbeae0139df8ac28114b35',1,'CGracz::nastPoz_()'],['../class_c_rys_pionek.html#ab02f121e2462422159ddf4eb5a89a016',1,'CRysPionek::nastPoz_()']]],
+  ['nastruchpiona_6',['nastRuchPiona',['../class_rozgrywka.html#acbd9a6907f610cc33630df78c3561829',1,'Rozgrywka']]],
+  ['nazwa_7',['nazwa',['../struct_s_dn_pocz_pola.html#ada4c0214af45598042444f6fb5098558',1,'SDnPoczPola']]],
+  ['nazwa_5f_8',['nazwa_',['../class_c_rys_przycisk.html#a706123fa15eb451867fecf81fd9c3ff2',1,'CRysPrzycisk::nazwa_()'],['../class_c_pole.html#a38758aca8f3e7c6f3961748e6d1abfd4',1,'CPole::nazwa_()']]],
+  ['nggracze_9',['NGGracze',['../class_n_g_gracze.html#a1a1c29dbb516e79cb65169f0ab118b39',1,'NGGracze::NGGracze()'],['../class_n_g_gracze.html',1,'NGGracze']]],
+  ['nggracze_2ecpp_10',['nggracze.cpp',['../nggracze_8cpp.html',1,'']]],
+  ['nggracze_2eh_11',['nggracze.h',['../nggracze_8h.html',1,'']]],
+  ['ngogolne_12',['NGOgolne',['../class_n_g_ogolne.html',1,'NGOgolne'],['../class_n_g_ogolne.html#a0b323d370ad69321f40be37c4a3c6fc5',1,'NGOgolne::NGOgolne()']]],
+  ['ngogolne_2ecpp_13',['ngogolne.cpp',['../ngogolne_8cpp.html',1,'']]],
+  ['ngogolne_2eh_14',['ngogolne.h',['../ngogolne_8h.html',1,'']]],
+  ['ngplansza_15',['NGPlansza',['../class_n_g_plansza.html',1,'NGPlansza'],['../class_n_g_plansza.html#a637060e12ee3af994e6ade835f68c280',1,'NGPlansza::NGPlansza()']]],
+  ['ngplansza_2ecpp_16',['ngplansza.cpp',['../ngplansza_8cpp.html',1,'']]],
+  ['ngplansza_2eh_17',['ngplansza.h',['../ngplansza_8h.html',1,'']]],
+  ['nick_18',['nick',['../struct_s_dn_gracza.html#ac262cd90f8f4f8f069222ee011e0b80b',1,'SDnGracza']]],
+  ['nick_5f_19',['nick_',['../class_c_gracz.html#a23d569abc5d7920b5055e0c62a07b029',1,'CGracz::nick_()'],['../class_c_rys_panel_gracza.html#aaf328dd4b31d278c74f39f0fd6279120',1,'CRysPanelGracza::nick_()']]],
+  ['nowagraogolne_5f_20',['nowaGraOgolne_',['../class_main_window.html#a456a303910451c11bceff6ba6a083e8e',1,'MainWindow']]],
+  ['nowapoz_5f_21',['nowaPoz_',['../class_c_karta_ruchu.html#a650bf248c88d8f7f3c0439b9a2455b7a',1,'CKartaRuchu']]],
+  ['nowepole_22',['nowePole',['../class_c_game.html#a6098f3eaeb3715f1219637b739c451a0',1,'CGame']]],
+  ['nr_23',['nr',['../struct_s_dn_karty.html#a1ff7293cc9477615a8cf265ac04f4ce5',1,'SDnKarty']]],
+  ['nr_5f_24',['nr_',['../class_c_karta.html#ae442d7644abda1d324196cc5c17731fb',1,'CKarta']]]
+];

@@ -1,0 +1,263 @@
+\hypertarget{class_c_pole_spec}{}\doxysection{Dokumentacja klasy CPole\+Spec}
+\label{class_c_pole_spec}\index{CPoleSpec@{CPoleSpec}}
+
+
+Klasa logiki.  
+
+
+
+
+{\ttfamily \#include $<$cpolespec.\+h$>$}
+
+
+
+Diagram dziedziczenia dla CPole\+Spec
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=232pt]{class_c_pole_spec__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Diagram współpracy dla CPole\+Spec\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=311pt]{class_c_pole_spec__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_pole_spec_a4f2849db5f333e327430e8b788c1af7c}{CPole\+Spec}} ()
+\item 
+\mbox{\hyperlink{class_c_pole_spec_aa3f10ab76908384e15e6bc7a15a7f4fd}{CPole\+Spec}} (\mbox{\hyperlink{struct_s_dn_pocz_pola}{SDn\+Pocz\+Pola}} \+\_\+dane)
+\item 
+\mbox{\hyperlink{class_c_pole_spec_af8913c8b29136d616bf279bc971a66ac}{$\sim$\+CPole\+Spec}} ()
+\item 
+virtual \mbox{\hyperlink{struct_s_wyn_akcji}{SWyn\+Akcji}} \mbox{\hyperlink{class_c_pole_spec_a8957dbfb5a6ea31d7fdac96b1aeb1086}{akcja}} (\mbox{\hyperlink{class_c_gracz}{CGracz}} $\ast$gracz)
+\begin{DoxyCompactList}\small\item\em Funkcja zwraca wartość, która pozwala określić dostępne dla tego pola akcje. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_c_pole_spec_af829b78d40f80751672f650a767f7578}{wpisz\+Dane}} (\mbox{\hyperlink{struct_s_dn_pocz_pola}{SDn\+Pocz\+Pola}} dane)
+\item 
+int \mbox{\hyperlink{class_c_pole_spec_ad5602d1a978bebdbfbe66c64d6a3d17e}{podaj\+Dane\+Int}} (int opt)
+\item 
+\mbox{\hyperlink{struct_s_dn_pola}{SDn\+Pola}} \mbox{\hyperlink{class_c_pole_spec_a0a8b16696ced00021337e37de59dc1e9}{podaj\+Dane}} ()
+\item 
+virtual void \mbox{\hyperlink{class_c_pole_spec_a0482ec72f9bde8bd96c32de6d4345a58}{sprzedawanie}} (\mbox{\hyperlink{class_c_gracz}{CGracz}} $\ast$kupiec)
+\item 
+\mbox{\hyperlink{class_c_gracz}{CGracz}} $\ast$ \mbox{\hyperlink{class_c_pole_spec_af17a5111b202427e94924ec5cc9ba8dd}{podaj\+Wlasciciela}} ()
+\item 
+int \mbox{\hyperlink{class_c_pole_spec_a07361776dddf3df5c5828c3e88ff4a2c}{zastawianie}} ()
+\item 
+void \mbox{\hyperlink{class_c_pole_spec_afcaa219a0723194da759e221230b1b27}{wykupowanie}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Atrybuty chronione}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_c_pole_spec_ab017c264d2a6045effc54ea4a00c2806}{cena\+\_\+}}
+\begin{DoxyCompactList}\small\item\em cena pola \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_c_pole_spec_a469ddb28b3af4b0d50dbd52c53bda8d6}{stan\+\_\+}}
+\begin{DoxyCompactList}\small\item\em stan pola (wolne, kupione, zastawione) \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_c_pole_spec_afbae3adc391ed764e3c0aa55ead7a6f7}{czynsz\+\_\+}}
+\begin{DoxyCompactList}\small\item\em czynsz, który jest pobierany po stanięciu na to pole \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_c_pole_spec_a6246db2a7bcaf2db6262007597c6affe}{hipoteka\+\_\+}}
+\begin{DoxyCompactList}\small\item\em wartość zastawienia pola \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_c_gracz}{CGracz}} $\ast$ \mbox{\hyperlink{class_c_pole_spec_abefc9db1649bd15de146f6ed2f0d1a89}{wlasciciel\+\_\+}}
+\begin{DoxyCompactList}\small\item\em do kogo pole należy \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Dodatkowe Dziedziczone Składowe}
+
+
+\doxysubsection{Opis szczegółowy}
+Klasa logiki. 
+
+\doxysubsection{Dokumentacja konstruktora i destruktora}
+\mbox{\Hypertarget{class_c_pole_spec_a4f2849db5f333e327430e8b788c1af7c}\label{class_c_pole_spec_a4f2849db5f333e327430e8b788c1af7c}} 
+\index{CPoleSpec@{CPoleSpec}!CPoleSpec@{CPoleSpec}}
+\index{CPoleSpec@{CPoleSpec}!CPoleSpec@{CPoleSpec}}
+\doxysubsubsection{\texorpdfstring{CPoleSpec()}{CPoleSpec()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily CPole\+Spec\+::\+CPole\+Spec (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_pole_spec_aa3f10ab76908384e15e6bc7a15a7f4fd}\label{class_c_pole_spec_aa3f10ab76908384e15e6bc7a15a7f4fd}} 
+\index{CPoleSpec@{CPoleSpec}!CPoleSpec@{CPoleSpec}}
+\index{CPoleSpec@{CPoleSpec}!CPoleSpec@{CPoleSpec}}
+\doxysubsubsection{\texorpdfstring{CPoleSpec()}{CPoleSpec()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily CPole\+Spec\+::\+CPole\+Spec (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_s_dn_pocz_pola}{SDn\+Pocz\+Pola}}}]{\+\_\+dane }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_pole_spec_af8913c8b29136d616bf279bc971a66ac}\label{class_c_pole_spec_af8913c8b29136d616bf279bc971a66ac}} 
+\index{CPoleSpec@{CPoleSpec}!````~CPoleSpec@{$\sim$CPoleSpec}}
+\index{````~CPoleSpec@{$\sim$CPoleSpec}!CPoleSpec@{CPoleSpec}}
+\doxysubsubsection{\texorpdfstring{$\sim$CPoleSpec()}{~CPoleSpec()}}
+{\footnotesize\ttfamily CPole\+Spec\+::$\sim$\+CPole\+Spec (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Dokumentacja funkcji składowych}
+\mbox{\Hypertarget{class_c_pole_spec_a8957dbfb5a6ea31d7fdac96b1aeb1086}\label{class_c_pole_spec_a8957dbfb5a6ea31d7fdac96b1aeb1086}} 
+\index{CPoleSpec@{CPoleSpec}!akcja@{akcja}}
+\index{akcja@{akcja}!CPoleSpec@{CPoleSpec}}
+\doxysubsubsection{\texorpdfstring{akcja()}{akcja()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_s_wyn_akcji}{SWyn\+Akcji}} CPole\+Spec\+::akcja (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_gracz}{CGracz}} $\ast$}]{gracz }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Funkcja zwraca wartość, która pozwala określić dostępne dla tego pola akcje. 
+
+W tym przypadku pozwala ona określić, że obiekt jest polem, na którym nie można budować nieruchomości, a czynsz zależy od liczby posiadanych przez właściciela pól tej klasy. 
+\begin{DoxyParams}{Parametry}
+{\em $\ast$gracz} & -\/ wskaźnik do obiektu klasy gracz, który stanął na polu \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+-\/ wartości\+: 
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{struct_s_wyn_akcji_af4f719af14df7f07431de76741de165d}{SWyn\+Akcji.\+y1}} = 0 mówiącą, że to klasa \mbox{\hyperlink{class_c_pole_spec}{CPole\+Spec}} 
+\item i \mbox{\hyperlink{struct_s_wyn_akcji_a63a87925129557da5bae70bd284aa99c}{SWyn\+Akcji.\+y2}} wskazującą, jaki rodzaj akcji może zostać podjęty\+: 
+\begin{DoxyItemize}
+\item 0 -\/ pole nie ma właściciela 
+\item 1 -\/ pole ma właściciela, ale {\itshape gracz} nim nie jest 
+\item 2 -\/ właścicielem jest {\itshape gracz} 
+\item 3 -\/ właścicielem jest {\itshape gracz}, ale pole jest zastawione 
+\item 4 -\/ {\itshape gracz} nie nie jest właścicielem, ale pole jest zastawione 
+\end{DoxyItemize}
+\end{DoxyItemize}
+\end{DoxyReturn}
+k jest liczbą posiadanych przez właściciela pól \mbox{\hyperlink{class_c_pole_spec}{CPole\+Spec}}
+
+Reimplementowana z \mbox{\hyperlink{class_c_pole_affb1ea726cccd744f66bdfe07bb8631b}{CPole}}.
+
+
+
+Reimplementowana w \mbox{\hyperlink{class_c_pole_ekstra_a3c7178e61b044212dcaed7a4f16612e9}{CPole\+Ekstra}} i \mbox{\hyperlink{class_c_pole_stnd_a2e98cf534a8351af036cc25281f36bf5}{CPole\+Stnd}}.
+
+\mbox{\Hypertarget{class_c_pole_spec_a0a8b16696ced00021337e37de59dc1e9}\label{class_c_pole_spec_a0a8b16696ced00021337e37de59dc1e9}} 
+\index{CPoleSpec@{CPoleSpec}!podajDane@{podajDane}}
+\index{podajDane@{podajDane}!CPoleSpec@{CPoleSpec}}
+\doxysubsubsection{\texorpdfstring{podajDane()}{podajDane()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_s_dn_pola}{SDn\+Pola}} CPole\+Spec\+::podaj\+Dane (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplementowana z \mbox{\hyperlink{class_c_pole_a7e76841275f3f6633d5314b435d3f9a0}{CPole}}.
+
+
+
+Reimplementowana w \mbox{\hyperlink{class_c_pole_stnd_ac8dcd09f496cdf848c096e57a61155e6}{CPole\+Stnd}}.
+
+\mbox{\Hypertarget{class_c_pole_spec_ad5602d1a978bebdbfbe66c64d6a3d17e}\label{class_c_pole_spec_ad5602d1a978bebdbfbe66c64d6a3d17e}} 
+\index{CPoleSpec@{CPoleSpec}!podajDaneInt@{podajDaneInt}}
+\index{podajDaneInt@{podajDaneInt}!CPoleSpec@{CPoleSpec}}
+\doxysubsubsection{\texorpdfstring{podajDaneInt()}{podajDaneInt()}}
+{\footnotesize\ttfamily int CPole\+Spec\+::podaj\+Dane\+Int (\begin{DoxyParamCaption}\item[{int}]{opt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplementowana z \mbox{\hyperlink{class_c_pole_a580bd8b300fa7d11afe6a2e440ded37d}{CPole}}.
+
+
+
+Reimplementowana w \mbox{\hyperlink{class_c_pole_stnd_a94aa7f1e94903be0742b6b637101573b}{CPole\+Stnd}}.
+
+\mbox{\Hypertarget{class_c_pole_spec_af17a5111b202427e94924ec5cc9ba8dd}\label{class_c_pole_spec_af17a5111b202427e94924ec5cc9ba8dd}} 
+\index{CPoleSpec@{CPoleSpec}!podajWlasciciela@{podajWlasciciela}}
+\index{podajWlasciciela@{podajWlasciciela}!CPoleSpec@{CPoleSpec}}
+\doxysubsubsection{\texorpdfstring{podajWlasciciela()}{podajWlasciciela()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_gracz}{CGracz}} $\ast$ CPole\+Spec\+::podaj\+Wlasciciela (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_pole_spec_a0482ec72f9bde8bd96c32de6d4345a58}\label{class_c_pole_spec_a0482ec72f9bde8bd96c32de6d4345a58}} 
+\index{CPoleSpec@{CPoleSpec}!sprzedawanie@{sprzedawanie}}
+\index{sprzedawanie@{sprzedawanie}!CPoleSpec@{CPoleSpec}}
+\doxysubsubsection{\texorpdfstring{sprzedawanie()}{sprzedawanie()}}
+{\footnotesize\ttfamily void CPole\+Spec\+::sprzedawanie (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_gracz}{CGracz}} $\ast$}]{kupiec }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplementowana w \mbox{\hyperlink{class_c_pole_ekstra_ad4d62ffdaaf4098316fa5cd0e8baea3e}{CPole\+Ekstra}} i \mbox{\hyperlink{class_c_pole_stnd_a43e26667338d7e0baa9afc22e7e89a19}{CPole\+Stnd}}.
+
+\mbox{\Hypertarget{class_c_pole_spec_af829b78d40f80751672f650a767f7578}\label{class_c_pole_spec_af829b78d40f80751672f650a767f7578}} 
+\index{CPoleSpec@{CPoleSpec}!wpiszDane@{wpiszDane}}
+\index{wpiszDane@{wpiszDane}!CPoleSpec@{CPoleSpec}}
+\doxysubsubsection{\texorpdfstring{wpiszDane()}{wpiszDane()}}
+{\footnotesize\ttfamily void CPole\+Spec\+::wpisz\+Dane (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_s_dn_pocz_pola}{SDn\+Pocz\+Pola}}}]{dane }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplementowana z \mbox{\hyperlink{class_c_pole_a2b6c9f08e84ed1894df899b9e9d13fe3}{CPole}}.
+
+
+
+Reimplementowana w \mbox{\hyperlink{class_c_pole_ekstra_ac189d56da867a7235c335d86445424e7}{CPole\+Ekstra}} i \mbox{\hyperlink{class_c_pole_stnd_a37e774f522a431bc30c717a9d6245174}{CPole\+Stnd}}.
+
+\mbox{\Hypertarget{class_c_pole_spec_afcaa219a0723194da759e221230b1b27}\label{class_c_pole_spec_afcaa219a0723194da759e221230b1b27}} 
+\index{CPoleSpec@{CPoleSpec}!wykupowanie@{wykupowanie}}
+\index{wykupowanie@{wykupowanie}!CPoleSpec@{CPoleSpec}}
+\doxysubsubsection{\texorpdfstring{wykupowanie()}{wykupowanie()}}
+{\footnotesize\ttfamily void CPole\+Spec\+::wykupowanie (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_pole_spec_a07361776dddf3df5c5828c3e88ff4a2c}\label{class_c_pole_spec_a07361776dddf3df5c5828c3e88ff4a2c}} 
+\index{CPoleSpec@{CPoleSpec}!zastawianie@{zastawianie}}
+\index{zastawianie@{zastawianie}!CPoleSpec@{CPoleSpec}}
+\doxysubsubsection{\texorpdfstring{zastawianie()}{zastawianie()}}
+{\footnotesize\ttfamily int CPole\+Spec\+::zastawianie (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Dokumentacja atrybutów składowych}
+\mbox{\Hypertarget{class_c_pole_spec_ab017c264d2a6045effc54ea4a00c2806}\label{class_c_pole_spec_ab017c264d2a6045effc54ea4a00c2806}} 
+\index{CPoleSpec@{CPoleSpec}!cena\_@{cena\_}}
+\index{cena\_@{cena\_}!CPoleSpec@{CPoleSpec}}
+\doxysubsubsection{\texorpdfstring{cena\_}{cena\_}}
+{\footnotesize\ttfamily int CPole\+Spec\+::cena\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+cena pola 
+
+\mbox{\Hypertarget{class_c_pole_spec_afbae3adc391ed764e3c0aa55ead7a6f7}\label{class_c_pole_spec_afbae3adc391ed764e3c0aa55ead7a6f7}} 
+\index{CPoleSpec@{CPoleSpec}!czynsz\_@{czynsz\_}}
+\index{czynsz\_@{czynsz\_}!CPoleSpec@{CPoleSpec}}
+\doxysubsubsection{\texorpdfstring{czynsz\_}{czynsz\_}}
+{\footnotesize\ttfamily int CPole\+Spec\+::czynsz\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+czynsz, który jest pobierany po stanięciu na to pole 
+
+\mbox{\Hypertarget{class_c_pole_spec_a6246db2a7bcaf2db6262007597c6affe}\label{class_c_pole_spec_a6246db2a7bcaf2db6262007597c6affe}} 
+\index{CPoleSpec@{CPoleSpec}!hipoteka\_@{hipoteka\_}}
+\index{hipoteka\_@{hipoteka\_}!CPoleSpec@{CPoleSpec}}
+\doxysubsubsection{\texorpdfstring{hipoteka\_}{hipoteka\_}}
+{\footnotesize\ttfamily int CPole\+Spec\+::hipoteka\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+wartość zastawienia pola 
+
+\mbox{\Hypertarget{class_c_pole_spec_a469ddb28b3af4b0d50dbd52c53bda8d6}\label{class_c_pole_spec_a469ddb28b3af4b0d50dbd52c53bda8d6}} 
+\index{CPoleSpec@{CPoleSpec}!stan\_@{stan\_}}
+\index{stan\_@{stan\_}!CPoleSpec@{CPoleSpec}}
+\doxysubsubsection{\texorpdfstring{stan\_}{stan\_}}
+{\footnotesize\ttfamily int CPole\+Spec\+::stan\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+stan pola (wolne, kupione, zastawione) 
+
+\mbox{\Hypertarget{class_c_pole_spec_abefc9db1649bd15de146f6ed2f0d1a89}\label{class_c_pole_spec_abefc9db1649bd15de146f6ed2f0d1a89}} 
+\index{CPoleSpec@{CPoleSpec}!wlasciciel\_@{wlasciciel\_}}
+\index{wlasciciel\_@{wlasciciel\_}!CPoleSpec@{CPoleSpec}}
+\doxysubsubsection{\texorpdfstring{wlasciciel\_}{wlasciciel\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_gracz}{CGracz}}$\ast$ CPole\+Spec\+::wlasciciel\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+do kogo pole należy 
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+G\+:/\+Folder\+\_\+\+Dawida/\+Prace\+\_\+me/\+Git/\+Daw\+Rad-\/projekty/\+EURObiznes/\+EURObiznes/\+Logika\+\_\+h/\mbox{\hyperlink{cpolespec_8h}{cpolespec.\+h}}\item 
+G\+:/\+Folder\+\_\+\+Dawida/\+Prace\+\_\+me/\+Git/\+Daw\+Rad-\/projekty/\+EURObiznes/\+EURObiznes/\+Logika\+\_\+src/\mbox{\hyperlink{cpolespec_8cpp}{cpolespec.\+cpp}}\end{DoxyCompactItemize}

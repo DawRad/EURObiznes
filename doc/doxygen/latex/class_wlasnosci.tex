@@ -1,0 +1,145 @@
+\hypertarget{class_wlasnosci}{}\doxysection{Dokumentacja klasy Wlasnosci}
+\label{class_wlasnosci}\index{Wlasnosci@{Wlasnosci}}
+
+
+Klasa graficzna -\/ okno własności.  
+
+
+
+
+{\ttfamily \#include $<$wlasnosci.\+h$>$}
+
+
+
+Diagram dziedziczenia dla Wlasnosci\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=160pt]{class_wlasnosci__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Diagram współpracy dla Wlasnosci\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wlasnosci__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_wlasnosci_a210bac7d9e2717c89e638bbf26aabce3}{Wlasnosci}} (\mbox{\hyperlink{class_c_game}{CGame}} $\ast$wsk\+Gry, QWidget $\ast$parent=nullptr)
+\item 
+\mbox{\hyperlink{class_wlasnosci_a0bf35ecc5346a9e2dbe61b5087f251bf}{$\sim$\+Wlasnosci}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Sloty prywatne}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_wlasnosci_a8a975fa7ea9b05b8e7216aceae99618a}{on\+\_\+pb\+Poprz\+\_\+clicked}} ()
+\item 
+void \mbox{\hyperlink{class_wlasnosci_a20955ce1e147ba1c39e4839a5ed21569}{on\+\_\+pb\+Nast\+\_\+clicked}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Atrybuty prywatne}
+\begin{DoxyCompactItemize}
+\item 
+Ui\+::\+Wlasnosci $\ast$ \mbox{\hyperlink{class_wlasnosci_a0c24b6340291988ba2f0ab0242d8e71d}{ui}}
+\item 
+\mbox{\hyperlink{class_c_game}{CGame}} $\ast$ \mbox{\hyperlink{class_wlasnosci_a32754d86fc816b8c5d571bc9a2eef117}{wsk\+Gry\+\_\+}}
+\item 
+deque$<$ \mbox{\hyperlink{struct_s_dn_pola}{SDn\+Pola}} $>$ \mbox{\hyperlink{class_wlasnosci_a89c38511a47dd99fd85e9589b837db4b}{dane\+Pol\+Gracza\+\_\+}}
+\item 
+deque$<$ \mbox{\hyperlink{class_c_rys_pole}{CRys\+Pole}} $\ast$ $>$ \mbox{\hyperlink{class_wlasnosci_a5488960d515878dcaea5448d04ff4f67}{rysunki\+Pol\+\_\+}}
+\item 
+QGraphics\+Scene $\ast$ \mbox{\hyperlink{class_wlasnosci_ad86226b67ebe8ae3219d1867b9774bfb}{scene\+\_\+}}
+\item 
+deque$<$ \mbox{\hyperlink{class_c_rys_pole}{CRys\+Pole}} $\ast$ $>$\+::iterator \mbox{\hyperlink{class_wlasnosci_aeab7f75e529c1770cb3eac0aca3babf6}{it\+Pol\+\_\+}}
+\item 
+deque$<$ \mbox{\hyperlink{struct_s_dn_pola}{SDn\+Pola}} $>$\+::iterator \mbox{\hyperlink{class_wlasnosci_a26b45dcd8063214d5c4722e220afdeb3}{it\+Danych\+Pol\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Opis szczegółowy}
+Klasa graficzna -\/ okno własności. 
+
+\doxysubsection{Dokumentacja konstruktora i destruktora}
+\mbox{\Hypertarget{class_wlasnosci_a210bac7d9e2717c89e638bbf26aabce3}\label{class_wlasnosci_a210bac7d9e2717c89e638bbf26aabce3}} 
+\index{Wlasnosci@{Wlasnosci}!Wlasnosci@{Wlasnosci}}
+\index{Wlasnosci@{Wlasnosci}!Wlasnosci@{Wlasnosci}}
+\doxysubsubsection{\texorpdfstring{Wlasnosci()}{Wlasnosci()}}
+{\footnotesize\ttfamily Wlasnosci\+::\+Wlasnosci (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_game}{CGame}} $\ast$}]{wsk\+Gry,  }\item[{QWidget $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+\mbox{\Hypertarget{class_wlasnosci_a0bf35ecc5346a9e2dbe61b5087f251bf}\label{class_wlasnosci_a0bf35ecc5346a9e2dbe61b5087f251bf}} 
+\index{Wlasnosci@{Wlasnosci}!````~Wlasnosci@{$\sim$Wlasnosci}}
+\index{````~Wlasnosci@{$\sim$Wlasnosci}!Wlasnosci@{Wlasnosci}}
+\doxysubsubsection{\texorpdfstring{$\sim$Wlasnosci()}{~Wlasnosci()}}
+{\footnotesize\ttfamily Wlasnosci\+::$\sim$\+Wlasnosci (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Dokumentacja funkcji składowych}
+\mbox{\Hypertarget{class_wlasnosci_a20955ce1e147ba1c39e4839a5ed21569}\label{class_wlasnosci_a20955ce1e147ba1c39e4839a5ed21569}} 
+\index{Wlasnosci@{Wlasnosci}!on\_pbNast\_clicked@{on\_pbNast\_clicked}}
+\index{on\_pbNast\_clicked@{on\_pbNast\_clicked}!Wlasnosci@{Wlasnosci}}
+\doxysubsubsection{\texorpdfstring{on\_pbNast\_clicked}{on\_pbNast\_clicked}}
+{\footnotesize\ttfamily void Wlasnosci\+::on\+\_\+pb\+Nast\+\_\+clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+\mbox{\Hypertarget{class_wlasnosci_a8a975fa7ea9b05b8e7216aceae99618a}\label{class_wlasnosci_a8a975fa7ea9b05b8e7216aceae99618a}} 
+\index{Wlasnosci@{Wlasnosci}!on\_pbPoprz\_clicked@{on\_pbPoprz\_clicked}}
+\index{on\_pbPoprz\_clicked@{on\_pbPoprz\_clicked}!Wlasnosci@{Wlasnosci}}
+\doxysubsubsection{\texorpdfstring{on\_pbPoprz\_clicked}{on\_pbPoprz\_clicked}}
+{\footnotesize\ttfamily void Wlasnosci\+::on\+\_\+pb\+Poprz\+\_\+clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+\doxysubsection{Dokumentacja atrybutów składowych}
+\mbox{\Hypertarget{class_wlasnosci_a89c38511a47dd99fd85e9589b837db4b}\label{class_wlasnosci_a89c38511a47dd99fd85e9589b837db4b}} 
+\index{Wlasnosci@{Wlasnosci}!danePolGracza\_@{danePolGracza\_}}
+\index{danePolGracza\_@{danePolGracza\_}!Wlasnosci@{Wlasnosci}}
+\doxysubsubsection{\texorpdfstring{danePolGracza\_}{danePolGracza\_}}
+{\footnotesize\ttfamily deque$<$\mbox{\hyperlink{struct_s_dn_pola}{SDn\+Pola}}$>$ Wlasnosci\+::dane\+Pol\+Gracza\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_wlasnosci_a26b45dcd8063214d5c4722e220afdeb3}\label{class_wlasnosci_a26b45dcd8063214d5c4722e220afdeb3}} 
+\index{Wlasnosci@{Wlasnosci}!itDanychPol\_@{itDanychPol\_}}
+\index{itDanychPol\_@{itDanychPol\_}!Wlasnosci@{Wlasnosci}}
+\doxysubsubsection{\texorpdfstring{itDanychPol\_}{itDanychPol\_}}
+{\footnotesize\ttfamily deque$<$\mbox{\hyperlink{struct_s_dn_pola}{SDn\+Pola}}$>$\+::iterator Wlasnosci\+::it\+Danych\+Pol\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_wlasnosci_aeab7f75e529c1770cb3eac0aca3babf6}\label{class_wlasnosci_aeab7f75e529c1770cb3eac0aca3babf6}} 
+\index{Wlasnosci@{Wlasnosci}!itPol\_@{itPol\_}}
+\index{itPol\_@{itPol\_}!Wlasnosci@{Wlasnosci}}
+\doxysubsubsection{\texorpdfstring{itPol\_}{itPol\_}}
+{\footnotesize\ttfamily deque$<$\mbox{\hyperlink{class_c_rys_pole}{CRys\+Pole}}$\ast$$>$\+::iterator Wlasnosci\+::it\+Pol\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_wlasnosci_a5488960d515878dcaea5448d04ff4f67}\label{class_wlasnosci_a5488960d515878dcaea5448d04ff4f67}} 
+\index{Wlasnosci@{Wlasnosci}!rysunkiPol\_@{rysunkiPol\_}}
+\index{rysunkiPol\_@{rysunkiPol\_}!Wlasnosci@{Wlasnosci}}
+\doxysubsubsection{\texorpdfstring{rysunkiPol\_}{rysunkiPol\_}}
+{\footnotesize\ttfamily deque$<$\mbox{\hyperlink{class_c_rys_pole}{CRys\+Pole}} $\ast$$>$ Wlasnosci\+::rysunki\+Pol\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_wlasnosci_ad86226b67ebe8ae3219d1867b9774bfb}\label{class_wlasnosci_ad86226b67ebe8ae3219d1867b9774bfb}} 
+\index{Wlasnosci@{Wlasnosci}!scene\_@{scene\_}}
+\index{scene\_@{scene\_}!Wlasnosci@{Wlasnosci}}
+\doxysubsubsection{\texorpdfstring{scene\_}{scene\_}}
+{\footnotesize\ttfamily QGraphics\+Scene$\ast$ Wlasnosci\+::scene\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_wlasnosci_a0c24b6340291988ba2f0ab0242d8e71d}\label{class_wlasnosci_a0c24b6340291988ba2f0ab0242d8e71d}} 
+\index{Wlasnosci@{Wlasnosci}!ui@{ui}}
+\index{ui@{ui}!Wlasnosci@{Wlasnosci}}
+\doxysubsubsection{\texorpdfstring{ui}{ui}}
+{\footnotesize\ttfamily Ui\+::\+Wlasnosci$\ast$ Wlasnosci\+::ui\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_wlasnosci_a32754d86fc816b8c5d571bc9a2eef117}\label{class_wlasnosci_a32754d86fc816b8c5d571bc9a2eef117}} 
+\index{Wlasnosci@{Wlasnosci}!wskGry\_@{wskGry\_}}
+\index{wskGry\_@{wskGry\_}!Wlasnosci@{Wlasnosci}}
+\doxysubsubsection{\texorpdfstring{wskGry\_}{wskGry\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_game}{CGame}}$\ast$ Wlasnosci\+::wsk\+Gry\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+G\+:/\+Folder\+\_\+\+Dawida/\+Prace\+\_\+me/\+Git/\+Daw\+Rad-\/projekty/\+EURObiznes/\+EURObiznes/\mbox{\hyperlink{wlasnosci_8h}{wlasnosci.\+h}}\item 
+G\+:/\+Folder\+\_\+\+Dawida/\+Prace\+\_\+me/\+Git/\+Daw\+Rad-\/projekty/\+EURObiznes/\+EURObiznes/\mbox{\hyperlink{wlasnosci_8cpp}{wlasnosci.\+cpp}}\end{DoxyCompactItemize}

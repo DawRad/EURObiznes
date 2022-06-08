@@ -179,7 +179,9 @@ CGracz *CPoleSpec::podajWlasciciela()
 int CPoleSpec::zastawianie()
 {
     wlasciciel_->aktualPortfel(hipoteka_);
-    stan_ = 2;   
+    stan_ = 2;
+
+    return wlasciciel_->podajStanKonta();
 }
 
 void CPoleSpec::wykupowanie()

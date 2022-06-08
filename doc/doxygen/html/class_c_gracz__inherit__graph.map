@@ -1,0 +1,5 @@
+<map id="CGracz" name="CGracz">
+<area shape="rect" id="node1" title="Klasa logiki." alt="" coords="68,5,135,32"/>
+<area shape="rect" id="node2" href="$class_c_czlowiek.html" title="Klasa logiki." alt="" coords="5,80,88,107"/>
+<area shape="rect" id="node3" href="$class_c_komputer.html" title="Klasa logiki." alt="" coords="113,80,199,107"/>
+</map>

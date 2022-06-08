@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.3"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>EURObiznes: Plik źródłowy G:/Folder_Dawida/Prace_me/Git/DawRad-projekty/EURObiznes/EURObiznes/Rysunki_h/crysprzycisk.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">EURObiznes
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.9.3 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'Szukaj','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_0997e24728e807d371577e874f845402.html">EURObiznes</a></li><li class="navelem"><a class="el" href="dir_233c1c2145cb75692b24ba59dd6a145b.html">Rysunki_h</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">crysprzycisk.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="crysprzycisk_8h.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef CRYSPRZYCISK_H</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define CRYSPRZYCISK_H</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;<a class="code" href="crysemiter_8h.html">Rysunki_h/crysemiter.h</a>&quot;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="class_c_rys_przycisk.html">   13</a></span><span class="keyword">class </span><a class="code hl_class" href="class_c_rys_przycisk.html">CRysPrzycisk</a> : <span class="keyword">public</span> <a class="code hl_class" href="class_c_rys_emiter.html">CRysEmiter</a></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>{</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="comment">/* 0 ---&gt; rect</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">     * 1 ---&gt; ellipse</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">     */</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="class_c_rys_przycisk.html#acd81f019c04a6c069b50f01c555ffa50">   20</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_c_rys_przycisk.html#acd81f019c04a6c069b50f01c555ffa50">shape_</a>;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="class_c_rys_przycisk.html#a706123fa15eb451867fecf81fd9c3ff2">   22</a></span>    QString <a class="code hl_variable" href="class_c_rys_przycisk.html#a706123fa15eb451867fecf81fd9c3ff2">nazwa_</a>;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <a class="code hl_function" href="class_c_rys_przycisk.html#a070dc6d819aebfa6ca50176b7ce8476c">CRysPrzycisk</a>();</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <a class="code hl_function" href="class_c_rys_przycisk.html#a070dc6d819aebfa6ca50176b7ce8476c">CRysPrzycisk</a>(QPoint topLeft, QSizeF size, QString nazwa, <span class="keywordtype">int</span> <a class="code hl_function" href="class_c_rys_przycisk.html#adfa24589a2b68f1f30ce4bd83faa5af0">shape</a>, <span class="keywordtype">string</span> imieNad = <span class="stringliteral">&quot;brak&quot;</span>, qreal rot = 0);</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keyword">virtual</span> <a class="code hl_function" href="class_c_rys_przycisk.html#afee3dac19836533844bb4e51c720cdcb">~CRysPrzycisk</a>();</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_c_rys_przycisk.html#a5e70f45232721fabd6ab9d2a34c3a2a4">paint</a>(QPainter *painter, <span class="keyword">const</span> QStyleOptionGraphicsItem *option,</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>               QWidget *widget) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keyword">virtual</span> QPainterPath <a class="code hl_function" href="class_c_rys_przycisk.html#adfa24589a2b68f1f30ce4bd83faa5af0">shape</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_c_rys_przycisk.html#af4cfbfa1a06f4b58f8fa24f718c64bb0">mousePressEvent</a>(QGraphicsSceneMouseEvent *event) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_c_rys_przycisk.html#ac670781c59213e3091dad59a76cb67ce">drawShape</a>(QPainter *painter);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>};</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="preprocessor">#endif </span><span class="comment">// CRYSPRZYCISK_H</span></div>
+<div class="ttc" id="aclass_c_rys_emiter_html"><div class="ttname"><a href="class_c_rys_emiter.html">CRysEmiter</a></div><div class="ttdoc">Klasa graficzna.</div><div class="ttdef"><b>Definition:</b> crysemiter.h:15</div></div>
+<div class="ttc" id="aclass_c_rys_przycisk_html"><div class="ttname"><a href="class_c_rys_przycisk.html">CRysPrzycisk</a></div><div class="ttdoc">Klasa graficzna.</div><div class="ttdef"><b>Definition:</b> crysprzycisk.h:14</div></div>
+<div class="ttc" id="aclass_c_rys_przycisk_html_a070dc6d819aebfa6ca50176b7ce8476c"><div class="ttname"><a href="class_c_rys_przycisk.html#a070dc6d819aebfa6ca50176b7ce8476c">CRysPrzycisk::CRysPrzycisk</a></div><div class="ttdeci">CRysPrzycisk()</div><div class="ttdef"><b>Definition:</b> crysprzycisk.cpp:7</div></div>
+<div class="ttc" id="aclass_c_rys_przycisk_html_a5e70f45232721fabd6ab9d2a34c3a2a4"><div class="ttname"><a href="class_c_rys_przycisk.html#a5e70f45232721fabd6ab9d2a34c3a2a4">CRysPrzycisk::paint</a></div><div class="ttdeci">virtual void paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget) override</div><div class="ttdef"><b>Definition:</b> crysprzycisk.cpp:35</div></div>
+<div class="ttc" id="aclass_c_rys_przycisk_html_a706123fa15eb451867fecf81fd9c3ff2"><div class="ttname"><a href="class_c_rys_przycisk.html#a706123fa15eb451867fecf81fd9c3ff2">CRysPrzycisk::nazwa_</a></div><div class="ttdeci">QString nazwa_</div><div class="ttdef"><b>Definition:</b> crysprzycisk.h:22</div></div>
+<div class="ttc" id="aclass_c_rys_przycisk_html_ac670781c59213e3091dad59a76cb67ce"><div class="ttname"><a href="class_c_rys_przycisk.html#ac670781c59213e3091dad59a76cb67ce">CRysPrzycisk::drawShape</a></div><div class="ttdeci">void drawShape(QPainter *painter)</div><div class="ttdef"><b>Definition:</b> crysprzycisk.cpp:107</div></div>
+<div class="ttc" id="aclass_c_rys_przycisk_html_acd81f019c04a6c069b50f01c555ffa50"><div class="ttname"><a href="class_c_rys_przycisk.html#acd81f019c04a6c069b50f01c555ffa50">CRysPrzycisk::shape_</a></div><div class="ttdeci">int shape_</div><div class="ttdef"><b>Definition:</b> crysprzycisk.h:20</div></div>
+<div class="ttc" id="aclass_c_rys_przycisk_html_adfa24589a2b68f1f30ce4bd83faa5af0"><div class="ttname"><a href="class_c_rys_przycisk.html#adfa24589a2b68f1f30ce4bd83faa5af0">CRysPrzycisk::shape</a></div><div class="ttdeci">virtual QPainterPath shape() const override</div><div class="ttdef"><b>Definition:</b> crysprzycisk.cpp:72</div></div>
+<div class="ttc" id="aclass_c_rys_przycisk_html_af4cfbfa1a06f4b58f8fa24f718c64bb0"><div class="ttname"><a href="class_c_rys_przycisk.html#af4cfbfa1a06f4b58f8fa24f718c64bb0">CRysPrzycisk::mousePressEvent</a></div><div class="ttdeci">virtual void mousePressEvent(QGraphicsSceneMouseEvent *event) override</div><div class="ttdef"><b>Definition:</b> crysprzycisk.cpp:98</div></div>
+<div class="ttc" id="aclass_c_rys_przycisk_html_afee3dac19836533844bb4e51c720cdcb"><div class="ttname"><a href="class_c_rys_przycisk.html#afee3dac19836533844bb4e51c720cdcb">CRysPrzycisk::~CRysPrzycisk</a></div><div class="ttdeci">virtual ~CRysPrzycisk()</div><div class="ttdef"><b>Definition:</b> crysprzycisk.cpp:26</div></div>
+<div class="ttc" id="acrysemiter_8h_html"><div class="ttname"><a href="crysemiter_8h.html">crysemiter.h</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3
+</small></address>
+</body>
+</html>

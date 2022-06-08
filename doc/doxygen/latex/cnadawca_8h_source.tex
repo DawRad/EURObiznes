@@ -1,0 +1,48 @@
+\hypertarget{cnadawca_8h_source}{}\doxysection{cnadawca.\+h}
+\label{cnadawca_8h_source}\index{G:/Folder\_Dawida/Prace\_me/Git/DawRad-\/projekty/EURObiznes/EURObiznes/Rysunki\_h/cnadawca.h@{G:/Folder\_Dawida/Prace\_me/Git/DawRad-\/projekty/EURObiznes/EURObiznes/Rysunki\_h/cnadawca.h}}
+\mbox{\hyperlink{cnadawca_8h}{Idź do dokumentacji tego pliku.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef CNADAWCA\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define CNADAWCA\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{comment}{//\#include <iostream>}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <QObject>}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 \textcolor{keyword}{using} std::string;}
+\DoxyCodeLine{9 }
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 }
+\DoxyCodeLine{13 }
+\DoxyCodeLine{17 \textcolor{keyword}{class }\mbox{\hyperlink{class_c_nadawca}{CNadawca}} : \textcolor{keyword}{public} QObject}
+\DoxyCodeLine{18 \{}
+\DoxyCodeLine{19     Q\_OBJECT}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21     std::string \mbox{\hyperlink{class_c_nadawca_a2da9d1892266da4be8441a1c29ba1f4c}{imie\_}};}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{23 \textcolor{keyword}{public}:}
+\DoxyCodeLine{24     \textcolor{keyword}{explicit} \mbox{\hyperlink{class_c_nadawca_ab23e012fd4a4e94cb86e7b3091d6aa1a}{CNadawca}}(\textcolor{keywordtype}{string} imie = \textcolor{stringliteral}{"{}N\_i"{}}, QObject *parent = \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{25     \mbox{\hyperlink{class_c_nadawca_a84aaf0f4e3eedf3b21afe71a33848328}{\string~CNadawca}}();}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{27     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_nadawca_a60984665b121a35c8f8d41c779164102}{emitPressedSig}}();}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{29     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_nadawca_a2078bb0fcff027d2095df0f3461749da}{emitRzutWykonany}}();}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{39     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_nadawca_af9d5aec84367a1255b353943f8ca292a}{emitPionSiePoruszyl}}(\textcolor{keywordtype}{int} aktPozPola, \textcolor{keywordtype}{int} nastPozPola);}
+\DoxyCodeLine{40 }
+\DoxyCodeLine{41     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_nadawca_a948286d58b20ae7d24759877a07c7a40}{emitPionDotarl}}();}
+\DoxyCodeLine{42 }
+\DoxyCodeLine{43     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_nadawca_abe3134766c59c7a5ed8b70f43851535f}{ustawImie}}(\textcolor{keywordtype}{string} imie);}
+\DoxyCodeLine{44 }
+\DoxyCodeLine{45 signals:}
+\DoxyCodeLine{46     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_nadawca_ae7f90503f97ce4370ec51fe1019b7fe4}{wasPressed}}();}
+\DoxyCodeLine{47     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_nadawca_a88267a4ddbf158de20c4ed27c85ae205}{rzutWykonany}}();    }
+\DoxyCodeLine{48     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_nadawca_a02bb688835f4970a8a021b43c9a9b732}{pionSiePoruszyl}}(\textcolor{keywordtype}{int},\textcolor{keywordtype}{int});}
+\DoxyCodeLine{49     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_nadawca_aca11089ca906adee3a860b73d057de06}{pionDotarl}}();}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{51 \};}
+\DoxyCodeLine{52 }
+\DoxyCodeLine{53 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// CNADAWCA\_H}}
+
+\end{DoxyCode}

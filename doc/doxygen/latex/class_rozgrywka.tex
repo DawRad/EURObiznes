@@ -1,0 +1,389 @@
+\hypertarget{class_rozgrywka}{}\doxysection{Dokumentacja klasy Rozgrywka}
+\label{class_rozgrywka}\index{Rozgrywka@{Rozgrywka}}
+
+
+Klasa graficzna -\/ okno rozgrywki.  
+
+
+
+
+{\ttfamily \#include $<$rozgrywka.\+h$>$}
+
+
+
+Diagram dziedziczenia dla Rozgrywka\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=160pt]{class_rozgrywka__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Diagram współpracy dla Rozgrywka\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_rozgrywka__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Sygnały}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_rozgrywka_a701d01bb4b92591a7d149d73c9126c99}{zacznij\+Ture\+Gracza}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_rozgrywka_ae25233f3b56482ebe16dec3dae8c9e6b}{Rozgrywka}} (\mbox{\hyperlink{class_c_game}{CGame}} $\ast$wsk\+Gry, deque$<$ \mbox{\hyperlink{class_c_rys_pole}{CRys\+Pole}} $\ast$ $>$ $\ast$wsk\+Deq\+Pol, deque$<$ \mbox{\hyperlink{class_c_rys_pionek}{CRys\+Pionek}} $\ast$ $>$ $\ast$wsk\+Pionkow, bool $\ast$wsk\+End\+Game, QWidget $\ast$parent=nullptr)
+\item 
+\mbox{\hyperlink{class_rozgrywka_a93116ad903e955bc6c7fa76454835608}{$\sim$\+Rozgrywka}} ()
+\item 
+void \mbox{\hyperlink{class_rozgrywka_ae42d26c4880f81391813f2b32dda1312}{przygotuj\+Pola\+Do\+Rysowania}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Sloty prywatne}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_rozgrywka_adaddd8d08812a2b9a7eb20bda81b038e}{on\+\_\+pb\+Nast\+Runda\+\_\+clicked}} ()
+\item 
+void \mbox{\hyperlink{class_rozgrywka_ad43387100a0e80206e2c2d14cb6f8413}{action\+Wyjscie\+Clicked}} ()
+\item 
+void \mbox{\hyperlink{class_rozgrywka_a0ad80549d4622be0d8dc26c8ffa49dbe}{rzut\+Wykonany}} ()
+\item 
+void \mbox{\hyperlink{class_rozgrywka_acbd9a6907f610cc33630df78c3561829}{nast\+Ruch\+Piona}} (int akt\+Poz\+Pola, int nast\+Poz\+Pola)
+\item 
+void \mbox{\hyperlink{class_rozgrywka_acbb3949d031280bc6f67807dcde5bb64}{pion\+Na\+Celu}} ()
+\item 
+void \mbox{\hyperlink{class_rozgrywka_a292b932950e05b438178ac41e55e0412}{tura\+Gracza}} ()
+\item 
+void \mbox{\hyperlink{class_rozgrywka_acad48721fdb157126f4f4959a80fe65c}{usun\+Info}} ()
+\item 
+void \mbox{\hyperlink{class_rozgrywka_a01628422ba19918d3da54b8f09de84e9}{on\+\_\+pb\+Kostki\+\_\+clicked}} ()
+\item 
+void \mbox{\hyperlink{class_rozgrywka_af866e9180d8063c27c1b30fd758e06a7}{on\+\_\+pb\+Uwolnij\+\_\+clicked}} ()
+\item 
+void \mbox{\hyperlink{class_rozgrywka_ac5924ac23b61b250306caab87b8ac4f9}{on\+\_\+pb\+Kup\+\_\+clicked}} ()
+\begin{DoxyCompactList}\small\item\em Slot związany z przyciskiem kupna. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_rozgrywka_a9842d7c90ea35b4174e39824da06727e}{on\+\_\+pb\+Wlasnosci\+\_\+clicked}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Metody prywatne}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_rozgrywka_adc74b5c3af5c420a0bec2a2fd13f3aff}{ustaw\+Poz\+Pol}} (int size)
+\item 
+void \mbox{\hyperlink{class_rozgrywka_ad5638c58b6458f3d8d8c6bcee697aece}{ustaw\+Wymiary\+Pol}} (int size)
+\item 
+void \mbox{\hyperlink{class_rozgrywka_ae6527acdb0b0a4dbcd3731a448260e3c}{akcja\+Karty\+Kwoty}} (\mbox{\hyperlink{struct_s_dn_karty}{SDn\+Karty}} dane)
+\item 
+void \mbox{\hyperlink{class_rozgrywka_aa0c4e9aae4b9661e46f99227c22a1ccc}{akcja\+Karty\+Ruchu}} (\mbox{\hyperlink{struct_s_dn_karty}{SDn\+Karty}} dane)
+\item 
+void \mbox{\hyperlink{class_rozgrywka_a97fa5cba00f61fd5da465b763f51ec9d}{akcja\+Karty\+Wiezienia}} ()
+\item 
+void \mbox{\hyperlink{class_rozgrywka_abc5783b19a1e71979d591d1014af1974}{akcja\+Karty\+Wolnosc}} ()
+\item 
+void \mbox{\hyperlink{class_rozgrywka_a17c77645e7d2cd3ebf179a577e643132}{czyszczenie\+Deques}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Atrybuty prywatne}
+\begin{DoxyCompactItemize}
+\item 
+Ui\+::\+Rozgrywka $\ast$ \mbox{\hyperlink{class_rozgrywka_a95bc6492ad953a2772ed9f57b28e0f67}{ui}}
+\item 
+\mbox{\hyperlink{class_c_game}{CGame}} $\ast$ \mbox{\hyperlink{class_rozgrywka_ad62473de2a834e91f1f3c82d4969b365}{wsk\+Gry\+\_\+}}
+\item 
+deque$<$ \mbox{\hyperlink{class_c_rys_pole}{CRys\+Pole}} $\ast$ $>$ $\ast$ \mbox{\hyperlink{class_rozgrywka_ad743964515940f7f869ce48679faec5b}{wsk\+Deq\+Pol\+\_\+}}
+\item 
+deque$<$ \mbox{\hyperlink{class_c_rys_pionek}{CRys\+Pionek}} $\ast$ $>$ $\ast$ \mbox{\hyperlink{class_rozgrywka_a34d113850be3c687ad3433ee7f5bda53}{wsk\+Pionki\+\_\+}}
+\item 
+bool $\ast$ \mbox{\hyperlink{class_rozgrywka_a62cbf39e5f08531ae29cdd117a998f0b}{wsk\+End\+Game\+\_\+}}
+\item 
+QGraphics\+Scene $\ast$ \mbox{\hyperlink{class_rozgrywka_a132041ab7283a4ec051209553086c37d}{scene\+Plansza\+\_\+}}
+\item 
+QGraphics\+Scene $\ast$ \mbox{\hyperlink{class_rozgrywka_a76f6095ad2ae47caa234cdf3aebc9fa8}{scene\+Panel\+Gracza\+\_\+}}
+\item 
+\mbox{\hyperlink{class_c_rys_panel_gracza}{CRys\+Panel\+Gracza}} $\ast$ \mbox{\hyperlink{class_rozgrywka_a79ed189d8fb4f71b6b617bf344780608}{panel\+Gracza\+\_\+}}
+\item 
+\mbox{\hyperlink{class_c_rys_info}{CRys\+Info}} $\ast$ \mbox{\hyperlink{class_rozgrywka_a4defa4fd47cc8883a2e04d2ddd5c8902}{info\+\_\+}}
+\item 
+QTimer $\ast$ \mbox{\hyperlink{class_rozgrywka_a27a266fd2027c7feebc611a56e04f51f}{timer\+Prime\+\_\+}}
+\item 
+QTimer $\ast$ \mbox{\hyperlink{class_rozgrywka_a106da41b4033983bdadc610db3f34397}{timer\+Info\+\_\+}}
+\item 
+\mbox{\hyperlink{class_c_nadawca}{CNadawca}} $\ast$ \mbox{\hyperlink{class_rozgrywka_abd97854981e8460fa26ecc13d3b1ed12}{wyzwalacz\+\_\+}}
+\item 
+deque$<$ \mbox{\hyperlink{class_c_rys_kostki}{CRys\+Kostki}} $\ast$ $>$ $\ast$ \mbox{\hyperlink{class_rozgrywka_abb6cbd5673d83fe05395b289b1f43b8e}{kostki\+\_\+}}
+\item 
+int \mbox{\hyperlink{class_rozgrywka_af1b050754252a587146c2fcbea37837c}{wymiar\+A\+\_\+}}
+\item 
+int \mbox{\hyperlink{class_rozgrywka_a0531fae38bc6efef9c853425690b8882}{wymiar\+B\+\_\+}}
+\item 
+int \mbox{\hyperlink{class_rozgrywka_ae1a06efae923c6c5d889b15989f8f19f}{wymiar\+Planszy\+\_\+}}
+\item 
+\mbox{\hyperlink{struct_s_dn_karty}{SDn\+Karty}} \mbox{\hyperlink{class_rozgrywka_a4ee41911e5f4a4476ab7feb7ea48ccb9}{akt\+Karta\+\_\+}}
+\item 
+\mbox{\hyperlink{class_wlasnosci}{Wlasnosci}} $\ast$ \mbox{\hyperlink{class_rozgrywka_a8a87f07db40affdab3f63f447889c990}{okno\+Wlasnosci\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Opis szczegółowy}
+Klasa graficzna -\/ okno rozgrywki. 
+
+Klasa ta zawiera metody potrzebne do przeprowadzenia wirtualnej rozgrywki 
+
+\doxysubsection{Dokumentacja konstruktora i destruktora}
+\mbox{\Hypertarget{class_rozgrywka_ae25233f3b56482ebe16dec3dae8c9e6b}\label{class_rozgrywka_ae25233f3b56482ebe16dec3dae8c9e6b}} 
+\index{Rozgrywka@{Rozgrywka}!Rozgrywka@{Rozgrywka}}
+\index{Rozgrywka@{Rozgrywka}!Rozgrywka@{Rozgrywka}}
+\doxysubsubsection{\texorpdfstring{Rozgrywka()}{Rozgrywka()}}
+{\footnotesize\ttfamily Rozgrywka\+::\+Rozgrywka (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_game}{CGame}} $\ast$}]{wsk\+Gry,  }\item[{deque$<$ \mbox{\hyperlink{class_c_rys_pole}{CRys\+Pole}} $\ast$ $>$ $\ast$}]{wsk\+Deq\+Pol,  }\item[{deque$<$ \mbox{\hyperlink{class_c_rys_pionek}{CRys\+Pionek}} $\ast$ $>$ $\ast$}]{wsk\+Pionkow,  }\item[{bool $\ast$}]{wsk\+End\+Game,  }\item[{QWidget $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+\mbox{\Hypertarget{class_rozgrywka_a93116ad903e955bc6c7fa76454835608}\label{class_rozgrywka_a93116ad903e955bc6c7fa76454835608}} 
+\index{Rozgrywka@{Rozgrywka}!````~Rozgrywka@{$\sim$Rozgrywka}}
+\index{````~Rozgrywka@{$\sim$Rozgrywka}!Rozgrywka@{Rozgrywka}}
+\doxysubsubsection{\texorpdfstring{$\sim$Rozgrywka()}{~Rozgrywka()}}
+{\footnotesize\ttfamily Rozgrywka\+::$\sim$\+Rozgrywka (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Dokumentacja funkcji składowych}
+\mbox{\Hypertarget{class_rozgrywka_ad43387100a0e80206e2c2d14cb6f8413}\label{class_rozgrywka_ad43387100a0e80206e2c2d14cb6f8413}} 
+\index{Rozgrywka@{Rozgrywka}!actionWyjscieClicked@{actionWyjscieClicked}}
+\index{actionWyjscieClicked@{actionWyjscieClicked}!Rozgrywka@{Rozgrywka}}
+\doxysubsubsection{\texorpdfstring{actionWyjscieClicked}{actionWyjscieClicked}}
+{\footnotesize\ttfamily void Rozgrywka\+::action\+Wyjscie\+Clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+\mbox{\Hypertarget{class_rozgrywka_ae6527acdb0b0a4dbcd3731a448260e3c}\label{class_rozgrywka_ae6527acdb0b0a4dbcd3731a448260e3c}} 
+\index{Rozgrywka@{Rozgrywka}!akcjaKartyKwoty@{akcjaKartyKwoty}}
+\index{akcjaKartyKwoty@{akcjaKartyKwoty}!Rozgrywka@{Rozgrywka}}
+\doxysubsubsection{\texorpdfstring{akcjaKartyKwoty()}{akcjaKartyKwoty()}}
+{\footnotesize\ttfamily void Rozgrywka\+::akcja\+Karty\+Kwoty (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_s_dn_karty}{SDn\+Karty}}}]{dane }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_rozgrywka_aa0c4e9aae4b9661e46f99227c22a1ccc}\label{class_rozgrywka_aa0c4e9aae4b9661e46f99227c22a1ccc}} 
+\index{Rozgrywka@{Rozgrywka}!akcjaKartyRuchu@{akcjaKartyRuchu}}
+\index{akcjaKartyRuchu@{akcjaKartyRuchu}!Rozgrywka@{Rozgrywka}}
+\doxysubsubsection{\texorpdfstring{akcjaKartyRuchu()}{akcjaKartyRuchu()}}
+{\footnotesize\ttfamily void Rozgrywka\+::akcja\+Karty\+Ruchu (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_s_dn_karty}{SDn\+Karty}}}]{dane }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_rozgrywka_a97fa5cba00f61fd5da465b763f51ec9d}\label{class_rozgrywka_a97fa5cba00f61fd5da465b763f51ec9d}} 
+\index{Rozgrywka@{Rozgrywka}!akcjaKartyWiezienia@{akcjaKartyWiezienia}}
+\index{akcjaKartyWiezienia@{akcjaKartyWiezienia}!Rozgrywka@{Rozgrywka}}
+\doxysubsubsection{\texorpdfstring{akcjaKartyWiezienia()}{akcjaKartyWiezienia()}}
+{\footnotesize\ttfamily void Rozgrywka\+::akcja\+Karty\+Wiezienia (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_rozgrywka_abc5783b19a1e71979d591d1014af1974}\label{class_rozgrywka_abc5783b19a1e71979d591d1014af1974}} 
+\index{Rozgrywka@{Rozgrywka}!akcjaKartyWolnosc@{akcjaKartyWolnosc}}
+\index{akcjaKartyWolnosc@{akcjaKartyWolnosc}!Rozgrywka@{Rozgrywka}}
+\doxysubsubsection{\texorpdfstring{akcjaKartyWolnosc()}{akcjaKartyWolnosc()}}
+{\footnotesize\ttfamily void Rozgrywka\+::akcja\+Karty\+Wolnosc (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_rozgrywka_a17c77645e7d2cd3ebf179a577e643132}\label{class_rozgrywka_a17c77645e7d2cd3ebf179a577e643132}} 
+\index{Rozgrywka@{Rozgrywka}!czyszczenieDeques@{czyszczenieDeques}}
+\index{czyszczenieDeques@{czyszczenieDeques}!Rozgrywka@{Rozgrywka}}
+\doxysubsubsection{\texorpdfstring{czyszczenieDeques()}{czyszczenieDeques()}}
+{\footnotesize\ttfamily void Rozgrywka\+::czyszczenie\+Deques (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_rozgrywka_acbd9a6907f610cc33630df78c3561829}\label{class_rozgrywka_acbd9a6907f610cc33630df78c3561829}} 
+\index{Rozgrywka@{Rozgrywka}!nastRuchPiona@{nastRuchPiona}}
+\index{nastRuchPiona@{nastRuchPiona}!Rozgrywka@{Rozgrywka}}
+\doxysubsubsection{\texorpdfstring{nastRuchPiona}{nastRuchPiona}}
+{\footnotesize\ttfamily void Rozgrywka\+::nast\+Ruch\+Piona (\begin{DoxyParamCaption}\item[{int}]{akt\+Poz\+Pola,  }\item[{int}]{nast\+Poz\+Pola }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+\mbox{\Hypertarget{class_rozgrywka_a01628422ba19918d3da54b8f09de84e9}\label{class_rozgrywka_a01628422ba19918d3da54b8f09de84e9}} 
+\index{Rozgrywka@{Rozgrywka}!on\_pbKostki\_clicked@{on\_pbKostki\_clicked}}
+\index{on\_pbKostki\_clicked@{on\_pbKostki\_clicked}!Rozgrywka@{Rozgrywka}}
+\doxysubsubsection{\texorpdfstring{on\_pbKostki\_clicked}{on\_pbKostki\_clicked}}
+{\footnotesize\ttfamily void Rozgrywka\+::on\+\_\+pb\+Kostki\+\_\+clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+\mbox{\Hypertarget{class_rozgrywka_ac5924ac23b61b250306caab87b8ac4f9}\label{class_rozgrywka_ac5924ac23b61b250306caab87b8ac4f9}} 
+\index{Rozgrywka@{Rozgrywka}!on\_pbKup\_clicked@{on\_pbKup\_clicked}}
+\index{on\_pbKup\_clicked@{on\_pbKup\_clicked}!Rozgrywka@{Rozgrywka}}
+\doxysubsubsection{\texorpdfstring{on\_pbKup\_clicked}{on\_pbKup\_clicked}}
+{\footnotesize\ttfamily void Rozgrywka\+::on\+\_\+pb\+Kup\+\_\+clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Slot związany z przyciskiem kupna. 
+
+Inicjuje wykonanie metody \mbox{\hyperlink{class_c_game_a2335f1b5a7dc6f7e2f901b6e6170069a}{CGame\+::gracz\+Kupuje()}} oraz zaktualizowanie panelu gracza \mbox{\Hypertarget{class_rozgrywka_adaddd8d08812a2b9a7eb20bda81b038e}\label{class_rozgrywka_adaddd8d08812a2b9a7eb20bda81b038e}} 
+\index{Rozgrywka@{Rozgrywka}!on\_pbNastRunda\_clicked@{on\_pbNastRunda\_clicked}}
+\index{on\_pbNastRunda\_clicked@{on\_pbNastRunda\_clicked}!Rozgrywka@{Rozgrywka}}
+\doxysubsubsection{\texorpdfstring{on\_pbNastRunda\_clicked}{on\_pbNastRunda\_clicked}}
+{\footnotesize\ttfamily void Rozgrywka\+::on\+\_\+pb\+Nast\+Runda\+\_\+clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+\mbox{\Hypertarget{class_rozgrywka_af866e9180d8063c27c1b30fd758e06a7}\label{class_rozgrywka_af866e9180d8063c27c1b30fd758e06a7}} 
+\index{Rozgrywka@{Rozgrywka}!on\_pbUwolnij\_clicked@{on\_pbUwolnij\_clicked}}
+\index{on\_pbUwolnij\_clicked@{on\_pbUwolnij\_clicked}!Rozgrywka@{Rozgrywka}}
+\doxysubsubsection{\texorpdfstring{on\_pbUwolnij\_clicked}{on\_pbUwolnij\_clicked}}
+{\footnotesize\ttfamily void Rozgrywka\+::on\+\_\+pb\+Uwolnij\+\_\+clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+\mbox{\Hypertarget{class_rozgrywka_a9842d7c90ea35b4174e39824da06727e}\label{class_rozgrywka_a9842d7c90ea35b4174e39824da06727e}} 
+\index{Rozgrywka@{Rozgrywka}!on\_pbWlasnosci\_clicked@{on\_pbWlasnosci\_clicked}}
+\index{on\_pbWlasnosci\_clicked@{on\_pbWlasnosci\_clicked}!Rozgrywka@{Rozgrywka}}
+\doxysubsubsection{\texorpdfstring{on\_pbWlasnosci\_clicked}{on\_pbWlasnosci\_clicked}}
+{\footnotesize\ttfamily void Rozgrywka\+::on\+\_\+pb\+Wlasnosci\+\_\+clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+\mbox{\Hypertarget{class_rozgrywka_acbb3949d031280bc6f67807dcde5bb64}\label{class_rozgrywka_acbb3949d031280bc6f67807dcde5bb64}} 
+\index{Rozgrywka@{Rozgrywka}!pionNaCelu@{pionNaCelu}}
+\index{pionNaCelu@{pionNaCelu}!Rozgrywka@{Rozgrywka}}
+\doxysubsubsection{\texorpdfstring{pionNaCelu}{pionNaCelu}}
+{\footnotesize\ttfamily void Rozgrywka\+::pion\+Na\+Celu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+\mbox{\Hypertarget{class_rozgrywka_ae42d26c4880f81391813f2b32dda1312}\label{class_rozgrywka_ae42d26c4880f81391813f2b32dda1312}} 
+\index{Rozgrywka@{Rozgrywka}!przygotujPolaDoRysowania@{przygotujPolaDoRysowania}}
+\index{przygotujPolaDoRysowania@{przygotujPolaDoRysowania}!Rozgrywka@{Rozgrywka}}
+\doxysubsubsection{\texorpdfstring{przygotujPolaDoRysowania()}{przygotujPolaDoRysowania()}}
+{\footnotesize\ttfamily void Rozgrywka\+::przygotuj\+Pola\+Do\+Rysowania (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_rozgrywka_a0ad80549d4622be0d8dc26c8ffa49dbe}\label{class_rozgrywka_a0ad80549d4622be0d8dc26c8ffa49dbe}} 
+\index{Rozgrywka@{Rozgrywka}!rzutWykonany@{rzutWykonany}}
+\index{rzutWykonany@{rzutWykonany}!Rozgrywka@{Rozgrywka}}
+\doxysubsubsection{\texorpdfstring{rzutWykonany}{rzutWykonany}}
+{\footnotesize\ttfamily void Rozgrywka\+::rzut\+Wykonany (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+\mbox{\Hypertarget{class_rozgrywka_a292b932950e05b438178ac41e55e0412}\label{class_rozgrywka_a292b932950e05b438178ac41e55e0412}} 
+\index{Rozgrywka@{Rozgrywka}!turaGracza@{turaGracza}}
+\index{turaGracza@{turaGracza}!Rozgrywka@{Rozgrywka}}
+\doxysubsubsection{\texorpdfstring{turaGracza}{turaGracza}}
+{\footnotesize\ttfamily void Rozgrywka\+::tura\+Gracza (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+\mbox{\Hypertarget{class_rozgrywka_adc74b5c3af5c420a0bec2a2fd13f3aff}\label{class_rozgrywka_adc74b5c3af5c420a0bec2a2fd13f3aff}} 
+\index{Rozgrywka@{Rozgrywka}!ustawPozPol@{ustawPozPol}}
+\index{ustawPozPol@{ustawPozPol}!Rozgrywka@{Rozgrywka}}
+\doxysubsubsection{\texorpdfstring{ustawPozPol()}{ustawPozPol()}}
+{\footnotesize\ttfamily void Rozgrywka\+::ustaw\+Poz\+Pol (\begin{DoxyParamCaption}\item[{int}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_rozgrywka_ad5638c58b6458f3d8d8c6bcee697aece}\label{class_rozgrywka_ad5638c58b6458f3d8d8c6bcee697aece}} 
+\index{Rozgrywka@{Rozgrywka}!ustawWymiaryPol@{ustawWymiaryPol}}
+\index{ustawWymiaryPol@{ustawWymiaryPol}!Rozgrywka@{Rozgrywka}}
+\doxysubsubsection{\texorpdfstring{ustawWymiaryPol()}{ustawWymiaryPol()}}
+{\footnotesize\ttfamily void Rozgrywka\+::ustaw\+Wymiary\+Pol (\begin{DoxyParamCaption}\item[{int}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_rozgrywka_acad48721fdb157126f4f4959a80fe65c}\label{class_rozgrywka_acad48721fdb157126f4f4959a80fe65c}} 
+\index{Rozgrywka@{Rozgrywka}!usunInfo@{usunInfo}}
+\index{usunInfo@{usunInfo}!Rozgrywka@{Rozgrywka}}
+\doxysubsubsection{\texorpdfstring{usunInfo}{usunInfo}}
+{\footnotesize\ttfamily void Rozgrywka\+::usun\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+\mbox{\Hypertarget{class_rozgrywka_a701d01bb4b92591a7d149d73c9126c99}\label{class_rozgrywka_a701d01bb4b92591a7d149d73c9126c99}} 
+\index{Rozgrywka@{Rozgrywka}!zacznijTureGracza@{zacznijTureGracza}}
+\index{zacznijTureGracza@{zacznijTureGracza}!Rozgrywka@{Rozgrywka}}
+\doxysubsubsection{\texorpdfstring{zacznijTureGracza}{zacznijTureGracza}}
+{\footnotesize\ttfamily void Rozgrywka\+::zacznij\+Ture\+Gracza (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+\doxysubsection{Dokumentacja atrybutów składowych}
+\mbox{\Hypertarget{class_rozgrywka_a4ee41911e5f4a4476ab7feb7ea48ccb9}\label{class_rozgrywka_a4ee41911e5f4a4476ab7feb7ea48ccb9}} 
+\index{Rozgrywka@{Rozgrywka}!aktKarta\_@{aktKarta\_}}
+\index{aktKarta\_@{aktKarta\_}!Rozgrywka@{Rozgrywka}}
+\doxysubsubsection{\texorpdfstring{aktKarta\_}{aktKarta\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_s_dn_karty}{SDn\+Karty}} Rozgrywka\+::akt\+Karta\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_rozgrywka_a4defa4fd47cc8883a2e04d2ddd5c8902}\label{class_rozgrywka_a4defa4fd47cc8883a2e04d2ddd5c8902}} 
+\index{Rozgrywka@{Rozgrywka}!info\_@{info\_}}
+\index{info\_@{info\_}!Rozgrywka@{Rozgrywka}}
+\doxysubsubsection{\texorpdfstring{info\_}{info\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_rys_info}{CRys\+Info}}$\ast$ Rozgrywka\+::info\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_rozgrywka_abb6cbd5673d83fe05395b289b1f43b8e}\label{class_rozgrywka_abb6cbd5673d83fe05395b289b1f43b8e}} 
+\index{Rozgrywka@{Rozgrywka}!kostki\_@{kostki\_}}
+\index{kostki\_@{kostki\_}!Rozgrywka@{Rozgrywka}}
+\doxysubsubsection{\texorpdfstring{kostki\_}{kostki\_}}
+{\footnotesize\ttfamily deque$<$\mbox{\hyperlink{class_c_rys_kostki}{CRys\+Kostki}} $\ast$$>$$\ast$ Rozgrywka\+::kostki\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_rozgrywka_a8a87f07db40affdab3f63f447889c990}\label{class_rozgrywka_a8a87f07db40affdab3f63f447889c990}} 
+\index{Rozgrywka@{Rozgrywka}!oknoWlasnosci\_@{oknoWlasnosci\_}}
+\index{oknoWlasnosci\_@{oknoWlasnosci\_}!Rozgrywka@{Rozgrywka}}
+\doxysubsubsection{\texorpdfstring{oknoWlasnosci\_}{oknoWlasnosci\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_wlasnosci}{Wlasnosci}}$\ast$ Rozgrywka\+::okno\+Wlasnosci\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_rozgrywka_a79ed189d8fb4f71b6b617bf344780608}\label{class_rozgrywka_a79ed189d8fb4f71b6b617bf344780608}} 
+\index{Rozgrywka@{Rozgrywka}!panelGracza\_@{panelGracza\_}}
+\index{panelGracza\_@{panelGracza\_}!Rozgrywka@{Rozgrywka}}
+\doxysubsubsection{\texorpdfstring{panelGracza\_}{panelGracza\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_rys_panel_gracza}{CRys\+Panel\+Gracza}}$\ast$ Rozgrywka\+::panel\+Gracza\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_rozgrywka_a76f6095ad2ae47caa234cdf3aebc9fa8}\label{class_rozgrywka_a76f6095ad2ae47caa234cdf3aebc9fa8}} 
+\index{Rozgrywka@{Rozgrywka}!scenePanelGracza\_@{scenePanelGracza\_}}
+\index{scenePanelGracza\_@{scenePanelGracza\_}!Rozgrywka@{Rozgrywka}}
+\doxysubsubsection{\texorpdfstring{scenePanelGracza\_}{scenePanelGracza\_}}
+{\footnotesize\ttfamily QGraphics\+Scene$\ast$ Rozgrywka\+::scene\+Panel\+Gracza\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_rozgrywka_a132041ab7283a4ec051209553086c37d}\label{class_rozgrywka_a132041ab7283a4ec051209553086c37d}} 
+\index{Rozgrywka@{Rozgrywka}!scenePlansza\_@{scenePlansza\_}}
+\index{scenePlansza\_@{scenePlansza\_}!Rozgrywka@{Rozgrywka}}
+\doxysubsubsection{\texorpdfstring{scenePlansza\_}{scenePlansza\_}}
+{\footnotesize\ttfamily QGraphics\+Scene$\ast$ Rozgrywka\+::scene\+Plansza\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_rozgrywka_a106da41b4033983bdadc610db3f34397}\label{class_rozgrywka_a106da41b4033983bdadc610db3f34397}} 
+\index{Rozgrywka@{Rozgrywka}!timerInfo\_@{timerInfo\_}}
+\index{timerInfo\_@{timerInfo\_}!Rozgrywka@{Rozgrywka}}
+\doxysubsubsection{\texorpdfstring{timerInfo\_}{timerInfo\_}}
+{\footnotesize\ttfamily QTimer$\ast$ Rozgrywka\+::timer\+Info\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_rozgrywka_a27a266fd2027c7feebc611a56e04f51f}\label{class_rozgrywka_a27a266fd2027c7feebc611a56e04f51f}} 
+\index{Rozgrywka@{Rozgrywka}!timerPrime\_@{timerPrime\_}}
+\index{timerPrime\_@{timerPrime\_}!Rozgrywka@{Rozgrywka}}
+\doxysubsubsection{\texorpdfstring{timerPrime\_}{timerPrime\_}}
+{\footnotesize\ttfamily QTimer$\ast$ Rozgrywka\+::timer\+Prime\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_rozgrywka_a95bc6492ad953a2772ed9f57b28e0f67}\label{class_rozgrywka_a95bc6492ad953a2772ed9f57b28e0f67}} 
+\index{Rozgrywka@{Rozgrywka}!ui@{ui}}
+\index{ui@{ui}!Rozgrywka@{Rozgrywka}}
+\doxysubsubsection{\texorpdfstring{ui}{ui}}
+{\footnotesize\ttfamily Ui\+::\+Rozgrywka$\ast$ Rozgrywka\+::ui\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_rozgrywka_ad743964515940f7f869ce48679faec5b}\label{class_rozgrywka_ad743964515940f7f869ce48679faec5b}} 
+\index{Rozgrywka@{Rozgrywka}!wskDeqPol\_@{wskDeqPol\_}}
+\index{wskDeqPol\_@{wskDeqPol\_}!Rozgrywka@{Rozgrywka}}
+\doxysubsubsection{\texorpdfstring{wskDeqPol\_}{wskDeqPol\_}}
+{\footnotesize\ttfamily deque$<$\mbox{\hyperlink{class_c_rys_pole}{CRys\+Pole}} $\ast$$>$$\ast$ Rozgrywka\+::wsk\+Deq\+Pol\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_rozgrywka_a62cbf39e5f08531ae29cdd117a998f0b}\label{class_rozgrywka_a62cbf39e5f08531ae29cdd117a998f0b}} 
+\index{Rozgrywka@{Rozgrywka}!wskEndGame\_@{wskEndGame\_}}
+\index{wskEndGame\_@{wskEndGame\_}!Rozgrywka@{Rozgrywka}}
+\doxysubsubsection{\texorpdfstring{wskEndGame\_}{wskEndGame\_}}
+{\footnotesize\ttfamily bool$\ast$ Rozgrywka\+::wsk\+End\+Game\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_rozgrywka_ad62473de2a834e91f1f3c82d4969b365}\label{class_rozgrywka_ad62473de2a834e91f1f3c82d4969b365}} 
+\index{Rozgrywka@{Rozgrywka}!wskGry\_@{wskGry\_}}
+\index{wskGry\_@{wskGry\_}!Rozgrywka@{Rozgrywka}}
+\doxysubsubsection{\texorpdfstring{wskGry\_}{wskGry\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_game}{CGame}}$\ast$ Rozgrywka\+::wsk\+Gry\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_rozgrywka_a34d113850be3c687ad3433ee7f5bda53}\label{class_rozgrywka_a34d113850be3c687ad3433ee7f5bda53}} 
+\index{Rozgrywka@{Rozgrywka}!wskPionki\_@{wskPionki\_}}
+\index{wskPionki\_@{wskPionki\_}!Rozgrywka@{Rozgrywka}}
+\doxysubsubsection{\texorpdfstring{wskPionki\_}{wskPionki\_}}
+{\footnotesize\ttfamily deque$<$\mbox{\hyperlink{class_c_rys_pionek}{CRys\+Pionek}} $\ast$$>$$\ast$ Rozgrywka\+::wsk\+Pionki\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_rozgrywka_af1b050754252a587146c2fcbea37837c}\label{class_rozgrywka_af1b050754252a587146c2fcbea37837c}} 
+\index{Rozgrywka@{Rozgrywka}!wymiarA\_@{wymiarA\_}}
+\index{wymiarA\_@{wymiarA\_}!Rozgrywka@{Rozgrywka}}
+\doxysubsubsection{\texorpdfstring{wymiarA\_}{wymiarA\_}}
+{\footnotesize\ttfamily int Rozgrywka\+::wymiar\+A\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_rozgrywka_a0531fae38bc6efef9c853425690b8882}\label{class_rozgrywka_a0531fae38bc6efef9c853425690b8882}} 
+\index{Rozgrywka@{Rozgrywka}!wymiarB\_@{wymiarB\_}}
+\index{wymiarB\_@{wymiarB\_}!Rozgrywka@{Rozgrywka}}
+\doxysubsubsection{\texorpdfstring{wymiarB\_}{wymiarB\_}}
+{\footnotesize\ttfamily int Rozgrywka\+::wymiar\+B\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_rozgrywka_ae1a06efae923c6c5d889b15989f8f19f}\label{class_rozgrywka_ae1a06efae923c6c5d889b15989f8f19f}} 
+\index{Rozgrywka@{Rozgrywka}!wymiarPlanszy\_@{wymiarPlanszy\_}}
+\index{wymiarPlanszy\_@{wymiarPlanszy\_}!Rozgrywka@{Rozgrywka}}
+\doxysubsubsection{\texorpdfstring{wymiarPlanszy\_}{wymiarPlanszy\_}}
+{\footnotesize\ttfamily int Rozgrywka\+::wymiar\+Planszy\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_rozgrywka_abd97854981e8460fa26ecc13d3b1ed12}\label{class_rozgrywka_abd97854981e8460fa26ecc13d3b1ed12}} 
+\index{Rozgrywka@{Rozgrywka}!wyzwalacz\_@{wyzwalacz\_}}
+\index{wyzwalacz\_@{wyzwalacz\_}!Rozgrywka@{Rozgrywka}}
+\doxysubsubsection{\texorpdfstring{wyzwalacz\_}{wyzwalacz\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_nadawca}{CNadawca}}$\ast$ Rozgrywka\+::wyzwalacz\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+G\+:/\+Folder\+\_\+\+Dawida/\+Prace\+\_\+me/\+Git/\+Daw\+Rad-\/projekty/\+EURObiznes/\+EURObiznes/\mbox{\hyperlink{rozgrywka_8h}{rozgrywka.\+h}}\item 
+G\+:/\+Folder\+\_\+\+Dawida/\+Prace\+\_\+me/\+Git/\+Daw\+Rad-\/projekty/\+EURObiznes/\+EURObiznes/\mbox{\hyperlink{rozgrywka_8cpp}{rozgrywka.\+cpp}}\end{DoxyCompactItemize}

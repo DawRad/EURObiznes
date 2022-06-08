@@ -1,0 +1,55 @@
+\hypertarget{cpolespec_8h_source}{}\doxysection{cpolespec.\+h}
+\label{cpolespec_8h_source}\index{G:/Folder\_Dawida/Prace\_me/Git/DawRad-\/projekty/EURObiznes/EURObiznes/Logika\_h/cpolespec.h@{G:/Folder\_Dawida/Prace\_me/Git/DawRad-\/projekty/EURObiznes/EURObiznes/Logika\_h/cpolespec.h}}
+\mbox{\hyperlink{cpolespec_8h}{Idź do dokumentacji tego pliku.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef CPOLESPEC\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define CPOLESPEC\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{cpole_8h}{Logika\_h/cpole.h}}"{}}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9 }
+\DoxyCodeLine{13 \textcolor{keyword}{class }\mbox{\hyperlink{class_c_pole_spec}{CPoleSpec}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_c_pole}{CPole}}}
+\DoxyCodeLine{14 \{}
+\DoxyCodeLine{15 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{17     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_pole_spec_ab017c264d2a6045effc54ea4a00c2806}{cena\_}};}
+\DoxyCodeLine{18 }
+\DoxyCodeLine{20     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_pole_spec_a469ddb28b3af4b0d50dbd52c53bda8d6}{stan\_}};}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{23     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_pole_spec_afbae3adc391ed764e3c0aa55ead7a6f7}{czynsz\_}};}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{26     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_pole_spec_a6246db2a7bcaf2db6262007597c6affe}{hipoteka\_}};}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{29     \mbox{\hyperlink{class_c_gracz}{CGracz}} *\mbox{\hyperlink{class_c_pole_spec_abefc9db1649bd15de146f6ed2f0d1a89}{wlasciciel\_}};}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{31 }
+\DoxyCodeLine{32 \textcolor{keyword}{public}:}
+\DoxyCodeLine{33     \mbox{\hyperlink{class_c_pole_spec_a4f2849db5f333e327430e8b788c1af7c}{CPoleSpec}}();}
+\DoxyCodeLine{34     \mbox{\hyperlink{class_c_pole_spec_a4f2849db5f333e327430e8b788c1af7c}{CPoleSpec}}(\mbox{\hyperlink{struct_s_dn_pocz_pola}{SDnPoczPola}} \_dane);}
+\DoxyCodeLine{35     \mbox{\hyperlink{class_c_pole_spec_af8913c8b29136d616bf279bc971a66ac}{\string~CPoleSpec}}();}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{37     \textcolor{comment}{// <-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/> deklaracje funkcji wirtualnych <-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/>}}
+\DoxyCodeLine{38 }
+\DoxyCodeLine{58     \textcolor{keyword}{virtual} \mbox{\hyperlink{struct_s_wyn_akcji}{SWynAkcji}} \mbox{\hyperlink{class_c_pole_spec_a8957dbfb5a6ea31d7fdac96b1aeb1086}{akcja}}(\mbox{\hyperlink{class_c_gracz}{CGracz}} *gracz);}
+\DoxyCodeLine{59 }
+\DoxyCodeLine{60     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_pole_spec_af829b78d40f80751672f650a767f7578}{wpiszDane}}(\mbox{\hyperlink{struct_s_dn_pocz_pola}{SDnPoczPola}} dane);}
+\DoxyCodeLine{61 }
+\DoxyCodeLine{62     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_pole_spec_ad5602d1a978bebdbfbe66c64d6a3d17e}{podajDaneInt}}(\textcolor{keywordtype}{int} opt);}
+\DoxyCodeLine{63 }
+\DoxyCodeLine{64     \mbox{\hyperlink{struct_s_dn_pola}{SDnPola}} \mbox{\hyperlink{class_c_pole_spec_a0a8b16696ced00021337e37de59dc1e9}{podajDane}}();}
+\DoxyCodeLine{65 }
+\DoxyCodeLine{66     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_pole_spec_a0482ec72f9bde8bd96c32de6d4345a58}{sprzedawanie}}(\mbox{\hyperlink{class_c_gracz}{CGracz}} *kupiec);}
+\DoxyCodeLine{67 }
+\DoxyCodeLine{68     \textcolor{comment}{// <-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/> <-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/> <-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/>}}
+\DoxyCodeLine{69 }
+\DoxyCodeLine{70     \mbox{\hyperlink{class_c_gracz}{CGracz}} *\mbox{\hyperlink{class_c_pole_spec_af17a5111b202427e94924ec5cc9ba8dd}{podajWlasciciela}}();}
+\DoxyCodeLine{71     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_pole_spec_a07361776dddf3df5c5828c3e88ff4a2c}{zastawianie}}();}
+\DoxyCodeLine{72     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_pole_spec_afcaa219a0723194da759e221230b1b27}{wykupowanie}}();}
+\DoxyCodeLine{73 }
+\DoxyCodeLine{74 \};}
+\DoxyCodeLine{75 }
+\DoxyCodeLine{76 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// CPOLESPEC\_H}}
+
+\end{DoxyCode}

@@ -81,6 +81,11 @@ private slots:
 
     void on_pbUwolnij_clicked();
 
+    /**
+     * @brief Slot związany z przyciskiem kupna
+     *
+     * Inicjuje wykonanie metody CGame::graczKupuje() oraz zaktualizowanie panelu gracza
+     */
     void on_pbKup_clicked();
 
     void on_pbWlasnosci_clicked();

@@ -1,0 +1,131 @@
+\hypertarget{class_c_komputer}{}\doxysection{Dokumentacja klasy CKomputer}
+\label{class_c_komputer}\index{CKomputer@{CKomputer}}
+
+
+Klasa logiki.  
+
+
+
+
+{\ttfamily \#include $<$ckomputer.\+h$>$}
+
+
+
+Diagram dziedziczenia dla CKomputer
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=145pt]{class_c_komputer__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Diagram współpracy dla CKomputer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=293pt]{class_c_komputer__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_komputer_aef7c99f617a5272033014ac47456accc}{CKomputer}} (\mbox{\hyperlink{struct_s_dn_gracza}{SDn\+Gracza}} \+\_\+dane)
+\item 
+virtual \mbox{\hyperlink{class_c_komputer_a748d685eb3ac53030ffea33fa33d3a5e}{$\sim$\+CKomputer}} ()
+\item 
+string \mbox{\hyperlink{class_c_komputer_a6a20b4619f3c1af5216ed3796173c9cb}{przedstaw\+Sie}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja służy do zidentyfikowania klasy obiektu. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_s_wyn_akcji}{SWyn\+Akcji}} \mbox{\hyperlink{class_c_komputer_a435c1958a912525c7c7bba5c108e6945}{rzuc\+Koscmi}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja zwraca wartość rzutu podwójnymi kośćmi przez gracza. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_c_komputer_aaea60f58155c04fdbd60f391db92986c}{decyduj}} (int stan, int kwota, int lb\+Pol)
+\begin{DoxyCompactList}\small\item\em Funkcja zwracająca decyzję gracza dotycząca pola, na którym stanął. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Dodatkowe Dziedziczone Składowe}
+
+
+\doxysubsection{Opis szczegółowy}
+Klasa logiki. 
+
+\doxysubsection{Dokumentacja konstruktora i destruktora}
+\mbox{\Hypertarget{class_c_komputer_aef7c99f617a5272033014ac47456accc}\label{class_c_komputer_aef7c99f617a5272033014ac47456accc}} 
+\index{CKomputer@{CKomputer}!CKomputer@{CKomputer}}
+\index{CKomputer@{CKomputer}!CKomputer@{CKomputer}}
+\doxysubsubsection{\texorpdfstring{CKomputer()}{CKomputer()}}
+{\footnotesize\ttfamily CKomputer\+::\+CKomputer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_s_dn_gracza}{SDn\+Gracza}}}]{\+\_\+dane }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_komputer_a748d685eb3ac53030ffea33fa33d3a5e}\label{class_c_komputer_a748d685eb3ac53030ffea33fa33d3a5e}} 
+\index{CKomputer@{CKomputer}!````~CKomputer@{$\sim$CKomputer}}
+\index{````~CKomputer@{$\sim$CKomputer}!CKomputer@{CKomputer}}
+\doxysubsubsection{\texorpdfstring{$\sim$CKomputer()}{~CKomputer()}}
+{\footnotesize\ttfamily CKomputer\+::$\sim$\+CKomputer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Dokumentacja funkcji składowych}
+\mbox{\Hypertarget{class_c_komputer_aaea60f58155c04fdbd60f391db92986c}\label{class_c_komputer_aaea60f58155c04fdbd60f391db92986c}} 
+\index{CKomputer@{CKomputer}!decyduj@{decyduj}}
+\index{decyduj@{decyduj}!CKomputer@{CKomputer}}
+\doxysubsubsection{\texorpdfstring{decyduj()}{decyduj()}}
+{\footnotesize\ttfamily int CKomputer\+::decyduj (\begin{DoxyParamCaption}\item[{int}]{stan,  }\item[{int}]{kwota,  }\item[{int}]{lb\+Pol }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Funkcja zwracająca decyzję gracza dotycząca pola, na którym stanął. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em stan} & -\/ stan pola, na którym stanął gracz\+: \begin{DoxyItemize}
+\item 0 -\/ wolne \item 1 -\/ zajęte \item 2 -\/ zastawione \end{DoxyItemize}
+\\
+\hline
+{\em kwota} & -\/ jest to, w zależności od stanu pola, koszt jego kupna, budowy nieruchomości albo wykupienia z zastawu. \\
+\hline
+{\em lb\+Pol} & -\/ parametr podawany w przypadku pól standardowych -\/ mówi o liczbie posiadanych przez gracza pól koloru, jaki odpowiada polu, na którym gracz aktualnie się znajduje \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+Zwraca zgodę na wykonanie akcji (1) albo jej brak (0). 
+\end{DoxyReturn}
+
+
+Implementuje \mbox{\hyperlink{class_c_gracz_a0e937c2c0dae00e4df94f93476050b43}{CGracz}}.
+
+\mbox{\Hypertarget{class_c_komputer_a6a20b4619f3c1af5216ed3796173c9cb}\label{class_c_komputer_a6a20b4619f3c1af5216ed3796173c9cb}} 
+\index{CKomputer@{CKomputer}!przedstawSie@{przedstawSie}}
+\index{przedstawSie@{przedstawSie}!CKomputer@{CKomputer}}
+\doxysubsubsection{\texorpdfstring{przedstawSie()}{przedstawSie()}}
+{\footnotesize\ttfamily string CKomputer\+::przedstaw\+Sie (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Funkcja służy do zidentyfikowania klasy obiektu. 
+
+
+
+Implementuje \mbox{\hyperlink{class_c_gracz_a2de8ef4bda0bcfa3c3ce18fa499b5ccc}{CGracz}}.
+
+\mbox{\Hypertarget{class_c_komputer_a435c1958a912525c7c7bba5c108e6945}\label{class_c_komputer_a435c1958a912525c7c7bba5c108e6945}} 
+\index{CKomputer@{CKomputer}!rzucKoscmi@{rzucKoscmi}}
+\index{rzucKoscmi@{rzucKoscmi}!CKomputer@{CKomputer}}
+\doxysubsubsection{\texorpdfstring{rzucKoscmi()}{rzucKoscmi()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_s_wyn_akcji}{SWyn\+Akcji}} CKomputer\+::rzuc\+Koscmi (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Funkcja zwraca wartość rzutu podwójnymi kośćmi przez gracza. 
+
+\begin{DoxyReturn}{Zwraca}
+Zwraca wartość dla obu kości. 
+\end{DoxyReturn}
+
+
+Implementuje \mbox{\hyperlink{class_c_gracz_acfc59ebd08ead4a00f052467d995af43}{CGracz}}.
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+G\+:/\+Folder\+\_\+\+Dawida/\+Prace\+\_\+me/\+Git/\+Daw\+Rad-\/projekty/\+EURObiznes/\+EURObiznes/\+Logika\+\_\+h/\mbox{\hyperlink{ckomputer_8h}{ckomputer.\+h}}\item 
+G\+:/\+Folder\+\_\+\+Dawida/\+Prace\+\_\+me/\+Git/\+Daw\+Rad-\/projekty/\+EURObiznes/\+EURObiznes/\+Logika\+\_\+src/\mbox{\hyperlink{ckomputer_8cpp}{ckomputer.\+cpp}}\end{DoxyCompactItemize}

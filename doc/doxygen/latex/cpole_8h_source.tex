@@ -1,0 +1,57 @@
+\hypertarget{cpole_8h_source}{}\doxysection{cpole.\+h}
+\label{cpole_8h_source}\index{G:/Folder\_Dawida/Prace\_me/Git/DawRad-\/projekty/EURObiznes/EURObiznes/Logika\_h/cpole.h@{G:/Folder\_Dawida/Prace\_me/Git/DawRad-\/projekty/EURObiznes/EURObiznes/Logika\_h/cpole.h}}
+\mbox{\hyperlink{cpole_8h}{Idź do dokumentacji tego pliku.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef CPOLE\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define CPOLE\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_struktury_8h}{Logika\_h/Struktury.h}}"{}}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{cgracz_8h}{Logika\_h/cgracz.h}}"{}}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 \textcolor{keyword}{using} std::to\_string;}
+\DoxyCodeLine{9 }
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 }
+\DoxyCodeLine{13 }
+\DoxyCodeLine{17 \textcolor{keyword}{class }\mbox{\hyperlink{class_c_pole}{CPole}}}
+\DoxyCodeLine{18 \{}
+\DoxyCodeLine{19 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{21     \textcolor{keywordtype}{string} \mbox{\hyperlink{class_c_pole_a38758aca8f3e7c6f3961748e6d1abfd4}{nazwa\_}};}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{24     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_pole_aa08ed96e35cf641d19205a7bc9b9338e}{pozycja\_}};}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{26 \textcolor{keyword}{public}:}
+\DoxyCodeLine{27     \mbox{\hyperlink{class_c_pole_ab2b7d5e71ead367ad2fb9a0207db81ea}{CPole}}();}
+\DoxyCodeLine{28     \mbox{\hyperlink{class_c_pole_ab2b7d5e71ead367ad2fb9a0207db81ea}{CPole}}(\mbox{\hyperlink{struct_s_dn_pocz_pola}{SDnPoczPola}} \_dane);}
+\DoxyCodeLine{29     \textcolor{keyword}{virtual} \mbox{\hyperlink{class_c_pole_aa7ca11f4d0915464ea51e8e136881b30}{\string~CPole}}();}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{31     \textcolor{comment}{// <-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/> deklaracje metod wirtualnych <-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/>}}
+\DoxyCodeLine{32 }
+\DoxyCodeLine{40     \textcolor{keyword}{virtual} \mbox{\hyperlink{struct_s_wyn_akcji}{SWynAkcji}} \mbox{\hyperlink{class_c_pole_affb1ea726cccd744f66bdfe07bb8631b}{akcja}}(\mbox{\hyperlink{class_c_gracz}{CGracz}} *gracz);}
+\DoxyCodeLine{41 }
+\DoxyCodeLine{42     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_pole_a2b6c9f08e84ed1894df899b9e9d13fe3}{wpiszDane}}(\mbox{\hyperlink{struct_s_dn_pocz_pola}{SDnPoczPola}} \_dane);}
+\DoxyCodeLine{43 }
+\DoxyCodeLine{44     \textcolor{keyword}{virtual} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_pole_a580bd8b300fa7d11afe6a2e440ded37d}{podajDaneInt}}(\textcolor{keywordtype}{int} opt);}
+\DoxyCodeLine{45 }
+\DoxyCodeLine{46     \textcolor{keyword}{virtual} \mbox{\hyperlink{struct_s_dn_pola}{SDnPola}} \mbox{\hyperlink{class_c_pole_a7e76841275f3f6633d5314b435d3f9a0}{podajDane}}();}
+\DoxyCodeLine{47 }
+\DoxyCodeLine{48     \textcolor{comment}{// <-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/> <-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/> <-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/>}}
+\DoxyCodeLine{49 }
+\DoxyCodeLine{50     \textcolor{keywordtype}{string} \mbox{\hyperlink{class_c_pole_a91d29ad24b16087452d279a90479f766}{podajNazwe}}();}
+\DoxyCodeLine{51 }
+\DoxyCodeLine{52 }
+\DoxyCodeLine{53 }
+\DoxyCodeLine{54 }
+\DoxyCodeLine{55 }
+\DoxyCodeLine{56     \textcolor{comment}{// <-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/> deklaracje metod statycznych <-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/>}}
+\DoxyCodeLine{57 }
+\DoxyCodeLine{62     \textcolor{keyword}{static} \textcolor{keywordtype}{string} \mbox{\hyperlink{class_c_pole_a6c7caa9d590b854f1e4b6b7fcc25eba2}{kolorToStr}}(\textcolor{keywordtype}{int} kolor);}
+\DoxyCodeLine{63 }
+\DoxyCodeLine{64     \textcolor{comment}{// <-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/> <-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/> <-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/>}}
+\DoxyCodeLine{65 \};}
+\DoxyCodeLine{66 }
+\DoxyCodeLine{67 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// CPOLE\_H}}
+
+\end{DoxyCode}

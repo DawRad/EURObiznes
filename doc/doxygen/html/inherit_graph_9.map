@@ -1,0 +1,8 @@
+<map id="Graficzna hierarchia klas" name="Graficzna hierarchia klas">
+<area shape="rect" id="node1" title=" " alt="" coords="5,107,112,133"/>
+<area shape="rect" id="node2" href="$class_main_window.html" title="Klasa graficzna &#45; okno główne." alt="" coords="160,5,256,32"/>
+<area shape="rect" id="node3" href="$class_n_g_gracze.html" title="Klasa graficzna &#45; okno graczy." alt="" coords="167,56,249,83"/>
+<area shape="rect" id="node4" href="$class_n_g_plansza.html" title="Klasa graficzna &#45; okno planszy." alt="" coords="164,107,252,133"/>
+<area shape="rect" id="node5" href="$class_rozgrywka.html" title="Klasa graficzna &#45; okno rozgrywki." alt="" coords="165,157,251,184"/>
+<area shape="rect" id="node6" href="$class_wlasnosci.html" title="Klasa graficzna &#45; okno własności." alt="" coords="167,208,249,235"/>
+</map>

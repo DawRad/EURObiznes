@@ -1,0 +1,449 @@
+\hypertarget{class_c_rys_pionek}{}\doxysection{Dokumentacja klasy CRys\+Pionek}
+\label{class_c_rys_pionek}\index{CRysPionek@{CRysPionek}}
+
+
+Klasa graficzna.  
+
+
+
+
+{\ttfamily \#include $<$cryspionek.\+h$>$}
+
+
+
+Diagram dziedziczenia dla CRys\+Pionek
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=162pt]{class_c_rys_pionek__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Diagram współpracy dla CRys\+Pionek\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=293pt]{class_c_rys_pionek__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_rys_pionek_a5cb3015e738dd418cd4dc4b258d7faa1}{CRys\+Pionek}} ()
+\item 
+\mbox{\hyperlink{class_c_rys_pionek_a3ce9a256ba53586e33ea24cb48ce14de}{CRys\+Pionek}} (QPoint top\+Left, QSizeF size, int \mbox{\hyperlink{class_c_rys_pionek_a42200ba2b9d0032fe4892a1f3d44c65c}{shape}}, int inner\+Shape, int kolor, qreal rot=0)
+\item 
+\mbox{\hyperlink{class_c_rys_pionek_ac7ad00609cd78d60430d0298dcdc9d79}{CRys\+Pionek}} (\mbox{\hyperlink{struct_s_dn_pionka}{SDn\+Pionka}} dane)
+\begin{DoxyCompactList}\small\item\em Konstruktor z myślą o panelu gracza. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_c_rys_pionek_a00b05bf294aaba32607604968a24f46b}{$\sim$\+CRys\+Pionek}} ()
+\item 
+virtual void \mbox{\hyperlink{class_c_rys_pionek_a2b4834bc1334f83d8cee826d916c9173}{paint}} (QPainter $\ast$painter, const QStyle\+Option\+Graphics\+Item $\ast$option, QWidget $\ast$widget) override
+\item 
+virtual QPainter\+Path \mbox{\hyperlink{class_c_rys_pionek_a42200ba2b9d0032fe4892a1f3d44c65c}{shape}} () const override
+\item 
+\mbox{\hyperlink{struct_s_dn_pionka}{SDn\+Pionka}} \mbox{\hyperlink{class_c_rys_pionek_a5dd343973aa437b2706f2714936d9dfb}{podaj\+Swoje\+Skladniki}} ()
+\item 
+void \mbox{\hyperlink{class_c_rys_pionek_af7824be3cb5e1dc373896cc01b0039ea}{set\+Shape}} (int \mbox{\hyperlink{class_c_rys_pionek_a42200ba2b9d0032fe4892a1f3d44c65c}{shape}})
+\item 
+void \mbox{\hyperlink{class_c_rys_pionek_aef6ca8c1a6848d14011f4b9867687c41}{set\+Inner\+Shape}} (int inner\+Shape)
+\item 
+void \mbox{\hyperlink{class_c_rys_pionek_a1f41e7c7569f2b0c138b579ab3abb004}{set\+Kolor}} (int kolor)
+\item 
+void \mbox{\hyperlink{class_c_rys_pionek_a06f41a484c79708c15f0fcb9586bcdc8}{set\+Timer}} (QTimer $\ast$timer)
+\item 
+void \mbox{\hyperlink{class_c_rys_pionek_a1cb93ad4f123aaa5feb5a205cb078607}{set\+Wsk\+Wyzw}} (\mbox{\hyperlink{class_c_nadawca}{CNadawca}} $\ast$wsk\+Wyzw)
+\item 
+void \mbox{\hyperlink{class_c_rys_pionek_a538f9806c32f6d8fb2bfaa1a293b1a9b}{ustaw\+Param\+Ruchu}} (QPointF start, QPointF p\+Celu)
+\item 
+void \mbox{\hyperlink{class_c_rys_pionek_aee200b0d88e6e1ef8f6d0246072e333c}{ustaw\+Param\+Ruchu}} (int kroki, QPointF start, QPointF p\+Celu)
+\item 
+void \mbox{\hyperlink{class_c_rys_pionek_a5e3a97c5df4919b97e89aed6bd2a2387}{ustaw\+Param\+Ruchu}} (int kroki, QPointF start, QPointF p\+Celu, int fin\+Poz\+Pola)
+\item 
+void \mbox{\hyperlink{class_c_rys_pionek_aa507290b941aa5537ff5a62fd5d417bb}{zmien\+Akt\+Poz}} (int akt\+Poz)
+\end{DoxyCompactItemize}
+\doxysubsection*{Statyczne metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{class_c_rys_pionek_a6c457fb872ececa495e68727ed2cc6ac}{inn\+Kol\+From\+Kol}} (int kolor)
+\end{DoxyCompactItemize}
+\doxysubsection*{Metody chronione}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_c_rys_pionek_a6738a30c56c37309cb436f1d7431fbeb}{advance}} (int step) override
+\item 
+void \mbox{\hyperlink{class_c_rys_pionek_a556244cbf7813c435a75f721b84033a9}{draw\+Shape}} (QPainter $\ast$painter)
+\item 
+void \mbox{\hyperlink{class_c_rys_pionek_ac20ac50869631e6e2b9b5fee9ccc52cd}{draw\+Inner\+Shape}} (QPainter $\ast$painter)
+\item 
+void \mbox{\hyperlink{class_c_rys_pionek_a56538fd81f31f5fa168d7a9545c89948}{draw\+Inner\+Shape\+Bow}} (QPainter $\ast$painter)
+\item 
+void \mbox{\hyperlink{class_c_rys_pionek_a0a78c02d5e20725c70309f8f5ffc2fe2}{draw\+Inner\+Shape\+Three\+Squares}} (QPainter $\ast$painter)
+\item 
+void \mbox{\hyperlink{class_c_rys_pionek_af525fd27efdfd1bc51d02fdf97484974}{draw\+Inner\+Shape\+Four\+Circles}} (QPainter $\ast$painter)
+\item 
+void \mbox{\hyperlink{class_c_rys_pionek_af085913355a6bd86b6004e00abc790a3}{draw\+Inner\+Shape\+Square8}} (QPainter $\ast$painter)
+\item 
+void \mbox{\hyperlink{class_c_rys_pionek_a01d3a3f8a766b21928b8e79060dad24b}{draw\+Inner\+Shape\+Semicircles}} (QPainter $\ast$painter)
+\item 
+void \mbox{\hyperlink{class_c_rys_pionek_af1dc32183286a4979f7041409d91cb78}{draw\+Inner\+Shape\+Smaller\+Greater}} (QPainter $\ast$painter)
+\item 
+void \mbox{\hyperlink{class_c_rys_pionek_a41a3fe91dee00936fc058a6f5895cc7e}{poziomo\+WLewo}} ()
+\item 
+void \mbox{\hyperlink{class_c_rys_pionek_ac48d79bf69eae4e17f811be89aa02cc1}{poziomo\+WPrawo}} ()
+\item 
+void \mbox{\hyperlink{class_c_rys_pionek_aa1bb53f859572f59ff28b92a0541aaa0}{pionowo\+WGore}} ()
+\item 
+void \mbox{\hyperlink{class_c_rys_pionek_a942662a4716f9c2449965614ec393b67}{pionowo\+WDol}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Atrybuty chronione}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_c_rys_pionek_ab3f94be82de05a78c41bc68f6a29eb7c}{shape\+\_\+}}
+\item 
+int \mbox{\hyperlink{class_c_rys_pionek_a16a925cca2ee93cffd25d7a7af878900}{inner\+Shape\+\_\+}}
+\item 
+QColor \mbox{\hyperlink{class_c_rys_pionek_a0b4a2ce2de1232bab7af9c20238830fd}{kolor\+\_\+}}
+\item 
+QColor \mbox{\hyperlink{class_c_rys_pionek_a4edcaaae4459def49ee7118d35fe79e6}{inner\+Kolor\+\_\+}}
+\item 
+QTimer $\ast$ \mbox{\hyperlink{class_c_rys_pionek_a8a6ab9d589d3deddaf9dc9a47ae361ec}{scene\+Timer\+\_\+}}
+\item 
+\mbox{\hyperlink{class_c_nadawca}{CNadawca}} $\ast$ \mbox{\hyperlink{class_c_rys_pionek_acb0584be860fc3316743535c4ae7d6cb}{wsk\+Wyzwalacza\+\_\+}}
+\item 
+QPointF \mbox{\hyperlink{class_c_rys_pionek_af0b056c1a27867f63a74ab4a620bf1d2}{start\+Poz\+\_\+}}
+\begin{DoxyCompactList}\small\item\em środek kolejnego pola w układzie obiektu tej klasy \end{DoxyCompactList}\item 
+QPointF \mbox{\hyperlink{class_c_rys_pionek_ab02f121e2462422159ddf4eb5a89a016}{nast\+Poz\+\_\+}}
+\item 
+int \mbox{\hyperlink{class_c_rys_pionek_a047d5107d99548aa43dbecbc3756b184}{akt\+Poz\+Pola\+\_\+}}
+\item 
+int \mbox{\hyperlink{class_c_rys_pionek_aec7cf50fbafabf7a58518d76b153a8ce}{fin\+Poz\+Pola\+\_\+}}
+\item 
+int \mbox{\hyperlink{class_c_rys_pionek_a2cf4feb46f2132fe157043bff71e94bc}{krok\+\_\+}}
+\item 
+int \mbox{\hyperlink{class_c_rys_pionek_aa65acda7a61ce37296d742add1802fe4}{kroki\+Do\+Zrob\+\_\+}}
+\item 
+double \mbox{\hyperlink{class_c_rys_pionek_a8b0fd89f156417fd29af31dd925cf9e3}{dx\+\_\+}}
+\item 
+bool \mbox{\hyperlink{class_c_rys_pionek_a977fff319fd8be646132c3aadcd08e58}{move\+Token\+\_\+}}
+\begin{DoxyCompactList}\small\item\em pozwolenie na ruch \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Statyczne atrybuty chronione}
+\begin{DoxyCompactItemize}
+\item 
+static double \mbox{\hyperlink{class_c_rys_pionek_a459b310d38e98291826c44c9be57582a}{par\+A\+\_\+}} = 0.\+03
+\begin{DoxyCompactList}\small\item\em parametry toru ruchu \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Opis szczegółowy}
+Klasa graficzna. 
+
+\doxysubsection{Dokumentacja konstruktora i destruktora}
+\mbox{\Hypertarget{class_c_rys_pionek_a5cb3015e738dd418cd4dc4b258d7faa1}\label{class_c_rys_pionek_a5cb3015e738dd418cd4dc4b258d7faa1}} 
+\index{CRysPionek@{CRysPionek}!CRysPionek@{CRysPionek}}
+\index{CRysPionek@{CRysPionek}!CRysPionek@{CRysPionek}}
+\doxysubsubsection{\texorpdfstring{CRysPionek()}{CRysPionek()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily CRys\+Pionek\+::\+CRys\+Pionek (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_rys_pionek_a3ce9a256ba53586e33ea24cb48ce14de}\label{class_c_rys_pionek_a3ce9a256ba53586e33ea24cb48ce14de}} 
+\index{CRysPionek@{CRysPionek}!CRysPionek@{CRysPionek}}
+\index{CRysPionek@{CRysPionek}!CRysPionek@{CRysPionek}}
+\doxysubsubsection{\texorpdfstring{CRysPionek()}{CRysPionek()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily CRys\+Pionek\+::\+CRys\+Pionek (\begin{DoxyParamCaption}\item[{QPoint}]{top\+Left,  }\item[{QSizeF}]{size,  }\item[{int}]{shape,  }\item[{int}]{inner\+Shape,  }\item[{int}]{kolor,  }\item[{qreal}]{rot = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_rys_pionek_ac7ad00609cd78d60430d0298dcdc9d79}\label{class_c_rys_pionek_ac7ad00609cd78d60430d0298dcdc9d79}} 
+\index{CRysPionek@{CRysPionek}!CRysPionek@{CRysPionek}}
+\index{CRysPionek@{CRysPionek}!CRysPionek@{CRysPionek}}
+\doxysubsubsection{\texorpdfstring{CRysPionek()}{CRysPionek()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily CRys\+Pionek\+::\+CRys\+Pionek (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_s_dn_pionka}{SDn\+Pionka}}}]{dane }\end{DoxyParamCaption})}
+
+
+
+Konstruktor z myślą o panelu gracza. 
+
+\mbox{\Hypertarget{class_c_rys_pionek_a00b05bf294aaba32607604968a24f46b}\label{class_c_rys_pionek_a00b05bf294aaba32607604968a24f46b}} 
+\index{CRysPionek@{CRysPionek}!````~CRysPionek@{$\sim$CRysPionek}}
+\index{````~CRysPionek@{$\sim$CRysPionek}!CRysPionek@{CRysPionek}}
+\doxysubsubsection{\texorpdfstring{$\sim$CRysPionek()}{~CRysPionek()}}
+{\footnotesize\ttfamily CRys\+Pionek\+::$\sim$\+CRys\+Pionek (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Dokumentacja funkcji składowych}
+\mbox{\Hypertarget{class_c_rys_pionek_a6738a30c56c37309cb436f1d7431fbeb}\label{class_c_rys_pionek_a6738a30c56c37309cb436f1d7431fbeb}} 
+\index{CRysPionek@{CRysPionek}!advance@{advance}}
+\index{advance@{advance}!CRysPionek@{CRysPionek}}
+\doxysubsubsection{\texorpdfstring{advance()}{advance()}}
+{\footnotesize\ttfamily void CRys\+Pionek\+::advance (\begin{DoxyParamCaption}\item[{int}]{step }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_rys_pionek_ac20ac50869631e6e2b9b5fee9ccc52cd}\label{class_c_rys_pionek_ac20ac50869631e6e2b9b5fee9ccc52cd}} 
+\index{CRysPionek@{CRysPionek}!drawInnerShape@{drawInnerShape}}
+\index{drawInnerShape@{drawInnerShape}!CRysPionek@{CRysPionek}}
+\doxysubsubsection{\texorpdfstring{drawInnerShape()}{drawInnerShape()}}
+{\footnotesize\ttfamily void CRys\+Pionek\+::draw\+Inner\+Shape (\begin{DoxyParamCaption}\item[{QPainter $\ast$}]{painter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_rys_pionek_a56538fd81f31f5fa168d7a9545c89948}\label{class_c_rys_pionek_a56538fd81f31f5fa168d7a9545c89948}} 
+\index{CRysPionek@{CRysPionek}!drawInnerShapeBow@{drawInnerShapeBow}}
+\index{drawInnerShapeBow@{drawInnerShapeBow}!CRysPionek@{CRysPionek}}
+\doxysubsubsection{\texorpdfstring{drawInnerShapeBow()}{drawInnerShapeBow()}}
+{\footnotesize\ttfamily void CRys\+Pionek\+::draw\+Inner\+Shape\+Bow (\begin{DoxyParamCaption}\item[{QPainter $\ast$}]{painter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_rys_pionek_af525fd27efdfd1bc51d02fdf97484974}\label{class_c_rys_pionek_af525fd27efdfd1bc51d02fdf97484974}} 
+\index{CRysPionek@{CRysPionek}!drawInnerShapeFourCircles@{drawInnerShapeFourCircles}}
+\index{drawInnerShapeFourCircles@{drawInnerShapeFourCircles}!CRysPionek@{CRysPionek}}
+\doxysubsubsection{\texorpdfstring{drawInnerShapeFourCircles()}{drawInnerShapeFourCircles()}}
+{\footnotesize\ttfamily void CRys\+Pionek\+::draw\+Inner\+Shape\+Four\+Circles (\begin{DoxyParamCaption}\item[{QPainter $\ast$}]{painter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_rys_pionek_a01d3a3f8a766b21928b8e79060dad24b}\label{class_c_rys_pionek_a01d3a3f8a766b21928b8e79060dad24b}} 
+\index{CRysPionek@{CRysPionek}!drawInnerShapeSemicircles@{drawInnerShapeSemicircles}}
+\index{drawInnerShapeSemicircles@{drawInnerShapeSemicircles}!CRysPionek@{CRysPionek}}
+\doxysubsubsection{\texorpdfstring{drawInnerShapeSemicircles()}{drawInnerShapeSemicircles()}}
+{\footnotesize\ttfamily void CRys\+Pionek\+::draw\+Inner\+Shape\+Semicircles (\begin{DoxyParamCaption}\item[{QPainter $\ast$}]{painter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_rys_pionek_af1dc32183286a4979f7041409d91cb78}\label{class_c_rys_pionek_af1dc32183286a4979f7041409d91cb78}} 
+\index{CRysPionek@{CRysPionek}!drawInnerShapeSmallerGreater@{drawInnerShapeSmallerGreater}}
+\index{drawInnerShapeSmallerGreater@{drawInnerShapeSmallerGreater}!CRysPionek@{CRysPionek}}
+\doxysubsubsection{\texorpdfstring{drawInnerShapeSmallerGreater()}{drawInnerShapeSmallerGreater()}}
+{\footnotesize\ttfamily void CRys\+Pionek\+::draw\+Inner\+Shape\+Smaller\+Greater (\begin{DoxyParamCaption}\item[{QPainter $\ast$}]{painter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_rys_pionek_af085913355a6bd86b6004e00abc790a3}\label{class_c_rys_pionek_af085913355a6bd86b6004e00abc790a3}} 
+\index{CRysPionek@{CRysPionek}!drawInnerShapeSquare8@{drawInnerShapeSquare8}}
+\index{drawInnerShapeSquare8@{drawInnerShapeSquare8}!CRysPionek@{CRysPionek}}
+\doxysubsubsection{\texorpdfstring{drawInnerShapeSquare8()}{drawInnerShapeSquare8()}}
+{\footnotesize\ttfamily void CRys\+Pionek\+::draw\+Inner\+Shape\+Square8 (\begin{DoxyParamCaption}\item[{QPainter $\ast$}]{painter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_rys_pionek_a0a78c02d5e20725c70309f8f5ffc2fe2}\label{class_c_rys_pionek_a0a78c02d5e20725c70309f8f5ffc2fe2}} 
+\index{CRysPionek@{CRysPionek}!drawInnerShapeThreeSquares@{drawInnerShapeThreeSquares}}
+\index{drawInnerShapeThreeSquares@{drawInnerShapeThreeSquares}!CRysPionek@{CRysPionek}}
+\doxysubsubsection{\texorpdfstring{drawInnerShapeThreeSquares()}{drawInnerShapeThreeSquares()}}
+{\footnotesize\ttfamily void CRys\+Pionek\+::draw\+Inner\+Shape\+Three\+Squares (\begin{DoxyParamCaption}\item[{QPainter $\ast$}]{painter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_rys_pionek_a556244cbf7813c435a75f721b84033a9}\label{class_c_rys_pionek_a556244cbf7813c435a75f721b84033a9}} 
+\index{CRysPionek@{CRysPionek}!drawShape@{drawShape}}
+\index{drawShape@{drawShape}!CRysPionek@{CRysPionek}}
+\doxysubsubsection{\texorpdfstring{drawShape()}{drawShape()}}
+{\footnotesize\ttfamily void CRys\+Pionek\+::draw\+Shape (\begin{DoxyParamCaption}\item[{QPainter $\ast$}]{painter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_rys_pionek_a6c457fb872ececa495e68727ed2cc6ac}\label{class_c_rys_pionek_a6c457fb872ececa495e68727ed2cc6ac}} 
+\index{CRysPionek@{CRysPionek}!innKolFromKol@{innKolFromKol}}
+\index{innKolFromKol@{innKolFromKol}!CRysPionek@{CRysPionek}}
+\doxysubsubsection{\texorpdfstring{innKolFromKol()}{innKolFromKol()}}
+{\footnotesize\ttfamily int CRys\+Pionek\+::inn\+Kol\+From\+Kol (\begin{DoxyParamCaption}\item[{int}]{kolor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c_rys_pionek_a2b4834bc1334f83d8cee826d916c9173}\label{class_c_rys_pionek_a2b4834bc1334f83d8cee826d916c9173}} 
+\index{CRysPionek@{CRysPionek}!paint@{paint}}
+\index{paint@{paint}!CRysPionek@{CRysPionek}}
+\doxysubsubsection{\texorpdfstring{paint()}{paint()}}
+{\footnotesize\ttfamily void CRys\+Pionek\+::paint (\begin{DoxyParamCaption}\item[{QPainter $\ast$}]{painter,  }\item[{const QStyle\+Option\+Graphics\+Item $\ast$}]{option,  }\item[{QWidget $\ast$}]{widget }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implementuje \mbox{\hyperlink{class_c_rys_a02df2df7544fcf5f006c3a0550de4e23}{CRys}}.
+
+\mbox{\Hypertarget{class_c_rys_pionek_a942662a4716f9c2449965614ec393b67}\label{class_c_rys_pionek_a942662a4716f9c2449965614ec393b67}} 
+\index{CRysPionek@{CRysPionek}!pionowoWDol@{pionowoWDol}}
+\index{pionowoWDol@{pionowoWDol}!CRysPionek@{CRysPionek}}
+\doxysubsubsection{\texorpdfstring{pionowoWDol()}{pionowoWDol()}}
+{\footnotesize\ttfamily void CRys\+Pionek\+::pionowo\+WDol (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_rys_pionek_aa1bb53f859572f59ff28b92a0541aaa0}\label{class_c_rys_pionek_aa1bb53f859572f59ff28b92a0541aaa0}} 
+\index{CRysPionek@{CRysPionek}!pionowoWGore@{pionowoWGore}}
+\index{pionowoWGore@{pionowoWGore}!CRysPionek@{CRysPionek}}
+\doxysubsubsection{\texorpdfstring{pionowoWGore()}{pionowoWGore()}}
+{\footnotesize\ttfamily void CRys\+Pionek\+::pionowo\+WGore (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_rys_pionek_a5dd343973aa437b2706f2714936d9dfb}\label{class_c_rys_pionek_a5dd343973aa437b2706f2714936d9dfb}} 
+\index{CRysPionek@{CRysPionek}!podajSwojeSkladniki@{podajSwojeSkladniki}}
+\index{podajSwojeSkladniki@{podajSwojeSkladniki}!CRysPionek@{CRysPionek}}
+\doxysubsubsection{\texorpdfstring{podajSwojeSkladniki()}{podajSwojeSkladniki()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_s_dn_pionka}{SDn\+Pionka}} CRys\+Pionek\+::podaj\+Swoje\+Skladniki (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_rys_pionek_a41a3fe91dee00936fc058a6f5895cc7e}\label{class_c_rys_pionek_a41a3fe91dee00936fc058a6f5895cc7e}} 
+\index{CRysPionek@{CRysPionek}!poziomoWLewo@{poziomoWLewo}}
+\index{poziomoWLewo@{poziomoWLewo}!CRysPionek@{CRysPionek}}
+\doxysubsubsection{\texorpdfstring{poziomoWLewo()}{poziomoWLewo()}}
+{\footnotesize\ttfamily void CRys\+Pionek\+::poziomo\+WLewo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_rys_pionek_ac48d79bf69eae4e17f811be89aa02cc1}\label{class_c_rys_pionek_ac48d79bf69eae4e17f811be89aa02cc1}} 
+\index{CRysPionek@{CRysPionek}!poziomoWPrawo@{poziomoWPrawo}}
+\index{poziomoWPrawo@{poziomoWPrawo}!CRysPionek@{CRysPionek}}
+\doxysubsubsection{\texorpdfstring{poziomoWPrawo()}{poziomoWPrawo()}}
+{\footnotesize\ttfamily void CRys\+Pionek\+::poziomo\+WPrawo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_rys_pionek_aef6ca8c1a6848d14011f4b9867687c41}\label{class_c_rys_pionek_aef6ca8c1a6848d14011f4b9867687c41}} 
+\index{CRysPionek@{CRysPionek}!setInnerShape@{setInnerShape}}
+\index{setInnerShape@{setInnerShape}!CRysPionek@{CRysPionek}}
+\doxysubsubsection{\texorpdfstring{setInnerShape()}{setInnerShape()}}
+{\footnotesize\ttfamily void CRys\+Pionek\+::set\+Inner\+Shape (\begin{DoxyParamCaption}\item[{int}]{inner\+Shape }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_rys_pionek_a1f41e7c7569f2b0c138b579ab3abb004}\label{class_c_rys_pionek_a1f41e7c7569f2b0c138b579ab3abb004}} 
+\index{CRysPionek@{CRysPionek}!setKolor@{setKolor}}
+\index{setKolor@{setKolor}!CRysPionek@{CRysPionek}}
+\doxysubsubsection{\texorpdfstring{setKolor()}{setKolor()}}
+{\footnotesize\ttfamily void CRys\+Pionek\+::set\+Kolor (\begin{DoxyParamCaption}\item[{int}]{kolor }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_rys_pionek_af7824be3cb5e1dc373896cc01b0039ea}\label{class_c_rys_pionek_af7824be3cb5e1dc373896cc01b0039ea}} 
+\index{CRysPionek@{CRysPionek}!setShape@{setShape}}
+\index{setShape@{setShape}!CRysPionek@{CRysPionek}}
+\doxysubsubsection{\texorpdfstring{setShape()}{setShape()}}
+{\footnotesize\ttfamily void CRys\+Pionek\+::set\+Shape (\begin{DoxyParamCaption}\item[{int}]{shape }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_rys_pionek_a06f41a484c79708c15f0fcb9586bcdc8}\label{class_c_rys_pionek_a06f41a484c79708c15f0fcb9586bcdc8}} 
+\index{CRysPionek@{CRysPionek}!setTimer@{setTimer}}
+\index{setTimer@{setTimer}!CRysPionek@{CRysPionek}}
+\doxysubsubsection{\texorpdfstring{setTimer()}{setTimer()}}
+{\footnotesize\ttfamily void CRys\+Pionek\+::set\+Timer (\begin{DoxyParamCaption}\item[{QTimer $\ast$}]{timer }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_rys_pionek_a1cb93ad4f123aaa5feb5a205cb078607}\label{class_c_rys_pionek_a1cb93ad4f123aaa5feb5a205cb078607}} 
+\index{CRysPionek@{CRysPionek}!setWskWyzw@{setWskWyzw}}
+\index{setWskWyzw@{setWskWyzw}!CRysPionek@{CRysPionek}}
+\doxysubsubsection{\texorpdfstring{setWskWyzw()}{setWskWyzw()}}
+{\footnotesize\ttfamily void CRys\+Pionek\+::set\+Wsk\+Wyzw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_nadawca}{CNadawca}} $\ast$}]{wsk\+Wyzw }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_rys_pionek_a42200ba2b9d0032fe4892a1f3d44c65c}\label{class_c_rys_pionek_a42200ba2b9d0032fe4892a1f3d44c65c}} 
+\index{CRysPionek@{CRysPionek}!shape@{shape}}
+\index{shape@{shape}!CRysPionek@{CRysPionek}}
+\doxysubsubsection{\texorpdfstring{shape()}{shape()}}
+{\footnotesize\ttfamily QPainter\+Path CRys\+Pionek\+::shape (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implementuje \mbox{\hyperlink{class_c_rys_aad0239059383e806a88da10df030b7fd}{CRys}}.
+
+\mbox{\Hypertarget{class_c_rys_pionek_aee200b0d88e6e1ef8f6d0246072e333c}\label{class_c_rys_pionek_aee200b0d88e6e1ef8f6d0246072e333c}} 
+\index{CRysPionek@{CRysPionek}!ustawParamRuchu@{ustawParamRuchu}}
+\index{ustawParamRuchu@{ustawParamRuchu}!CRysPionek@{CRysPionek}}
+\doxysubsubsection{\texorpdfstring{ustawParamRuchu()}{ustawParamRuchu()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily void CRys\+Pionek\+::ustaw\+Param\+Ruchu (\begin{DoxyParamCaption}\item[{int}]{kroki,  }\item[{QPointF}]{start,  }\item[{QPointF}]{p\+Celu }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_rys_pionek_a5e3a97c5df4919b97e89aed6bd2a2387}\label{class_c_rys_pionek_a5e3a97c5df4919b97e89aed6bd2a2387}} 
+\index{CRysPionek@{CRysPionek}!ustawParamRuchu@{ustawParamRuchu}}
+\index{ustawParamRuchu@{ustawParamRuchu}!CRysPionek@{CRysPionek}}
+\doxysubsubsection{\texorpdfstring{ustawParamRuchu()}{ustawParamRuchu()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily void CRys\+Pionek\+::ustaw\+Param\+Ruchu (\begin{DoxyParamCaption}\item[{int}]{kroki,  }\item[{QPointF}]{start,  }\item[{QPointF}]{p\+Celu,  }\item[{int}]{fin\+Poz\+Pola }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_rys_pionek_a538f9806c32f6d8fb2bfaa1a293b1a9b}\label{class_c_rys_pionek_a538f9806c32f6d8fb2bfaa1a293b1a9b}} 
+\index{CRysPionek@{CRysPionek}!ustawParamRuchu@{ustawParamRuchu}}
+\index{ustawParamRuchu@{ustawParamRuchu}!CRysPionek@{CRysPionek}}
+\doxysubsubsection{\texorpdfstring{ustawParamRuchu()}{ustawParamRuchu()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily void CRys\+Pionek\+::ustaw\+Param\+Ruchu (\begin{DoxyParamCaption}\item[{QPointF}]{start,  }\item[{QPointF}]{p\+Celu }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_rys_pionek_aa507290b941aa5537ff5a62fd5d417bb}\label{class_c_rys_pionek_aa507290b941aa5537ff5a62fd5d417bb}} 
+\index{CRysPionek@{CRysPionek}!zmienAktPoz@{zmienAktPoz}}
+\index{zmienAktPoz@{zmienAktPoz}!CRysPionek@{CRysPionek}}
+\doxysubsubsection{\texorpdfstring{zmienAktPoz()}{zmienAktPoz()}}
+{\footnotesize\ttfamily void CRys\+Pionek\+::zmien\+Akt\+Poz (\begin{DoxyParamCaption}\item[{int}]{akt\+Poz }\end{DoxyParamCaption})}
+
+/brief Do użycia w przypadku, gdy pion zmienił pozycję nie w wyniku rzutu kośćmi. 
+
+\doxysubsection{Dokumentacja atrybutów składowych}
+\mbox{\Hypertarget{class_c_rys_pionek_a047d5107d99548aa43dbecbc3756b184}\label{class_c_rys_pionek_a047d5107d99548aa43dbecbc3756b184}} 
+\index{CRysPionek@{CRysPionek}!aktPozPola\_@{aktPozPola\_}}
+\index{aktPozPola\_@{aktPozPola\_}!CRysPionek@{CRysPionek}}
+\doxysubsubsection{\texorpdfstring{aktPozPola\_}{aktPozPola\_}}
+{\footnotesize\ttfamily int CRys\+Pionek\+::akt\+Poz\+Pola\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_rys_pionek_a8b0fd89f156417fd29af31dd925cf9e3}\label{class_c_rys_pionek_a8b0fd89f156417fd29af31dd925cf9e3}} 
+\index{CRysPionek@{CRysPionek}!dx\_@{dx\_}}
+\index{dx\_@{dx\_}!CRysPionek@{CRysPionek}}
+\doxysubsubsection{\texorpdfstring{dx\_}{dx\_}}
+{\footnotesize\ttfamily double CRys\+Pionek\+::dx\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_rys_pionek_aec7cf50fbafabf7a58518d76b153a8ce}\label{class_c_rys_pionek_aec7cf50fbafabf7a58518d76b153a8ce}} 
+\index{CRysPionek@{CRysPionek}!finPozPola\_@{finPozPola\_}}
+\index{finPozPola\_@{finPozPola\_}!CRysPionek@{CRysPionek}}
+\doxysubsubsection{\texorpdfstring{finPozPola\_}{finPozPola\_}}
+{\footnotesize\ttfamily int CRys\+Pionek\+::fin\+Poz\+Pola\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_rys_pionek_a4edcaaae4459def49ee7118d35fe79e6}\label{class_c_rys_pionek_a4edcaaae4459def49ee7118d35fe79e6}} 
+\index{CRysPionek@{CRysPionek}!innerKolor\_@{innerKolor\_}}
+\index{innerKolor\_@{innerKolor\_}!CRysPionek@{CRysPionek}}
+\doxysubsubsection{\texorpdfstring{innerKolor\_}{innerKolor\_}}
+{\footnotesize\ttfamily QColor CRys\+Pionek\+::inner\+Kolor\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_rys_pionek_a16a925cca2ee93cffd25d7a7af878900}\label{class_c_rys_pionek_a16a925cca2ee93cffd25d7a7af878900}} 
+\index{CRysPionek@{CRysPionek}!innerShape\_@{innerShape\_}}
+\index{innerShape\_@{innerShape\_}!CRysPionek@{CRysPionek}}
+\doxysubsubsection{\texorpdfstring{innerShape\_}{innerShape\_}}
+{\footnotesize\ttfamily int CRys\+Pionek\+::inner\+Shape\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_rys_pionek_a0b4a2ce2de1232bab7af9c20238830fd}\label{class_c_rys_pionek_a0b4a2ce2de1232bab7af9c20238830fd}} 
+\index{CRysPionek@{CRysPionek}!kolor\_@{kolor\_}}
+\index{kolor\_@{kolor\_}!CRysPionek@{CRysPionek}}
+\doxysubsubsection{\texorpdfstring{kolor\_}{kolor\_}}
+{\footnotesize\ttfamily QColor CRys\+Pionek\+::kolor\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_rys_pionek_a2cf4feb46f2132fe157043bff71e94bc}\label{class_c_rys_pionek_a2cf4feb46f2132fe157043bff71e94bc}} 
+\index{CRysPionek@{CRysPionek}!krok\_@{krok\_}}
+\index{krok\_@{krok\_}!CRysPionek@{CRysPionek}}
+\doxysubsubsection{\texorpdfstring{krok\_}{krok\_}}
+{\footnotesize\ttfamily int CRys\+Pionek\+::krok\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_rys_pionek_aa65acda7a61ce37296d742add1802fe4}\label{class_c_rys_pionek_aa65acda7a61ce37296d742add1802fe4}} 
+\index{CRysPionek@{CRysPionek}!krokiDoZrob\_@{krokiDoZrob\_}}
+\index{krokiDoZrob\_@{krokiDoZrob\_}!CRysPionek@{CRysPionek}}
+\doxysubsubsection{\texorpdfstring{krokiDoZrob\_}{krokiDoZrob\_}}
+{\footnotesize\ttfamily int CRys\+Pionek\+::kroki\+Do\+Zrob\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_rys_pionek_a977fff319fd8be646132c3aadcd08e58}\label{class_c_rys_pionek_a977fff319fd8be646132c3aadcd08e58}} 
+\index{CRysPionek@{CRysPionek}!moveToken\_@{moveToken\_}}
+\index{moveToken\_@{moveToken\_}!CRysPionek@{CRysPionek}}
+\doxysubsubsection{\texorpdfstring{moveToken\_}{moveToken\_}}
+{\footnotesize\ttfamily bool CRys\+Pionek\+::move\+Token\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+pozwolenie na ruch 
+
+\mbox{\Hypertarget{class_c_rys_pionek_ab02f121e2462422159ddf4eb5a89a016}\label{class_c_rys_pionek_ab02f121e2462422159ddf4eb5a89a016}} 
+\index{CRysPionek@{CRysPionek}!nastPoz\_@{nastPoz\_}}
+\index{nastPoz\_@{nastPoz\_}!CRysPionek@{CRysPionek}}
+\doxysubsubsection{\texorpdfstring{nastPoz\_}{nastPoz\_}}
+{\footnotesize\ttfamily QPointF CRys\+Pionek\+::nast\+Poz\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_rys_pionek_a459b310d38e98291826c44c9be57582a}\label{class_c_rys_pionek_a459b310d38e98291826c44c9be57582a}} 
+\index{CRysPionek@{CRysPionek}!parA\_@{parA\_}}
+\index{parA\_@{parA\_}!CRysPionek@{CRysPionek}}
+\doxysubsubsection{\texorpdfstring{parA\_}{parA\_}}
+{\footnotesize\ttfamily double CRys\+Pionek\+::par\+A\+\_\+ = 0.\+03\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+parametry toru ruchu 
+
+\mbox{\Hypertarget{class_c_rys_pionek_a8a6ab9d589d3deddaf9dc9a47ae361ec}\label{class_c_rys_pionek_a8a6ab9d589d3deddaf9dc9a47ae361ec}} 
+\index{CRysPionek@{CRysPionek}!sceneTimer\_@{sceneTimer\_}}
+\index{sceneTimer\_@{sceneTimer\_}!CRysPionek@{CRysPionek}}
+\doxysubsubsection{\texorpdfstring{sceneTimer\_}{sceneTimer\_}}
+{\footnotesize\ttfamily QTimer$\ast$ CRys\+Pionek\+::scene\+Timer\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_rys_pionek_ab3f94be82de05a78c41bc68f6a29eb7c}\label{class_c_rys_pionek_ab3f94be82de05a78c41bc68f6a29eb7c}} 
+\index{CRysPionek@{CRysPionek}!shape\_@{shape\_}}
+\index{shape\_@{shape\_}!CRysPionek@{CRysPionek}}
+\doxysubsubsection{\texorpdfstring{shape\_}{shape\_}}
+{\footnotesize\ttfamily int CRys\+Pionek\+::shape\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_rys_pionek_af0b056c1a27867f63a74ab4a620bf1d2}\label{class_c_rys_pionek_af0b056c1a27867f63a74ab4a620bf1d2}} 
+\index{CRysPionek@{CRysPionek}!startPoz\_@{startPoz\_}}
+\index{startPoz\_@{startPoz\_}!CRysPionek@{CRysPionek}}
+\doxysubsubsection{\texorpdfstring{startPoz\_}{startPoz\_}}
+{\footnotesize\ttfamily QPointF CRys\+Pionek\+::start\+Poz\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+środek kolejnego pola w układzie obiektu tej klasy 
+
+\mbox{\Hypertarget{class_c_rys_pionek_acb0584be860fc3316743535c4ae7d6cb}\label{class_c_rys_pionek_acb0584be860fc3316743535c4ae7d6cb}} 
+\index{CRysPionek@{CRysPionek}!wskWyzwalacza\_@{wskWyzwalacza\_}}
+\index{wskWyzwalacza\_@{wskWyzwalacza\_}!CRysPionek@{CRysPionek}}
+\doxysubsubsection{\texorpdfstring{wskWyzwalacza\_}{wskWyzwalacza\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_nadawca}{CNadawca}}$\ast$ CRys\+Pionek\+::wsk\+Wyzwalacza\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+G\+:/\+Folder\+\_\+\+Dawida/\+Prace\+\_\+me/\+Git/\+Daw\+Rad-\/projekty/\+EURObiznes/\+EURObiznes/\+Rysunki\+\_\+h/\mbox{\hyperlink{cryspionek_8h}{cryspionek.\+h}}\item 
+G\+:/\+Folder\+\_\+\+Dawida/\+Prace\+\_\+me/\+Git/\+Daw\+Rad-\/projekty/\+EURObiznes/\+EURObiznes/\mbox{\hyperlink{main_8cpp}{main.\+cpp}}\item 
+G\+:/\+Folder\+\_\+\+Dawida/\+Prace\+\_\+me/\+Git/\+Daw\+Rad-\/projekty/\+EURObiznes/\+EURObiznes/\+Rysunki\+\_\+src/\mbox{\hyperlink{cryspionek_8cpp}{cryspionek.\+cpp}}\end{DoxyCompactItemize}

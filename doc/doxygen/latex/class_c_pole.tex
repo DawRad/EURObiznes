@@ -1,0 +1,186 @@
+\hypertarget{class_c_pole}{}\doxysection{Dokumentacja klasy CPole}
+\label{class_c_pole}\index{CPole@{CPole}}
+
+
+Klasa logiki.  
+
+
+
+
+{\ttfamily \#include $<$cpole.\+h$>$}
+
+
+
+Diagram dziedziczenia dla CPole
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_pole__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Diagram współpracy dla CPole\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=139pt]{class_c_pole__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_pole_ab2b7d5e71ead367ad2fb9a0207db81ea}{CPole}} ()
+\item 
+\mbox{\hyperlink{class_c_pole_adfd01a4348109f906375660d96c781fe}{CPole}} (\mbox{\hyperlink{struct_s_dn_pocz_pola}{SDn\+Pocz\+Pola}} \+\_\+dane)
+\item 
+virtual \mbox{\hyperlink{class_c_pole_aa7ca11f4d0915464ea51e8e136881b30}{$\sim$\+CPole}} ()
+\item 
+virtual \mbox{\hyperlink{struct_s_wyn_akcji}{SWyn\+Akcji}} \mbox{\hyperlink{class_c_pole_affb1ea726cccd744f66bdfe07bb8631b}{akcja}} (\mbox{\hyperlink{class_c_gracz}{CGracz}} $\ast$gracz)
+\begin{DoxyCompactList}\small\item\em Funkcja zwraca wartość, która pozwala określić dostępne dla tego pola akcje. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_c_pole_a2b6c9f08e84ed1894df899b9e9d13fe3}{wpisz\+Dane}} (\mbox{\hyperlink{struct_s_dn_pocz_pola}{SDn\+Pocz\+Pola}} \+\_\+dane)
+\item 
+virtual int \mbox{\hyperlink{class_c_pole_a580bd8b300fa7d11afe6a2e440ded37d}{podaj\+Dane\+Int}} (int opt)
+\item 
+virtual \mbox{\hyperlink{struct_s_dn_pola}{SDn\+Pola}} \mbox{\hyperlink{class_c_pole_a7e76841275f3f6633d5314b435d3f9a0}{podaj\+Dane}} ()
+\item 
+string \mbox{\hyperlink{class_c_pole_a91d29ad24b16087452d279a90479f766}{podaj\+Nazwe}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Statyczne metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+static string \mbox{\hyperlink{class_c_pole_a6c7caa9d590b854f1e4b6b7fcc25eba2}{kolor\+To\+Str}} (int kolor)
+\begin{DoxyCompactList}\small\item\em Metoda zamienia kolor wyrażony w postaci typu int na typ string. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Atrybuty chronione}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_c_pole_a38758aca8f3e7c6f3961748e6d1abfd4}{nazwa\+\_\+}}
+\begin{DoxyCompactList}\small\item\em nazwa pola \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_c_pole_aa08ed96e35cf641d19205a7bc9b9338e}{pozycja\+\_\+}}
+\begin{DoxyCompactList}\small\item\em pozycja pola na planszy \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Opis szczegółowy}
+Klasa logiki. 
+
+\doxysubsection{Dokumentacja konstruktora i destruktora}
+\mbox{\Hypertarget{class_c_pole_ab2b7d5e71ead367ad2fb9a0207db81ea}\label{class_c_pole_ab2b7d5e71ead367ad2fb9a0207db81ea}} 
+\index{CPole@{CPole}!CPole@{CPole}}
+\index{CPole@{CPole}!CPole@{CPole}}
+\doxysubsubsection{\texorpdfstring{CPole()}{CPole()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily CPole\+::\+CPole (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_pole_adfd01a4348109f906375660d96c781fe}\label{class_c_pole_adfd01a4348109f906375660d96c781fe}} 
+\index{CPole@{CPole}!CPole@{CPole}}
+\index{CPole@{CPole}!CPole@{CPole}}
+\doxysubsubsection{\texorpdfstring{CPole()}{CPole()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily CPole\+::\+CPole (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_s_dn_pocz_pola}{SDn\+Pocz\+Pola}}}]{\+\_\+dane }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_pole_aa7ca11f4d0915464ea51e8e136881b30}\label{class_c_pole_aa7ca11f4d0915464ea51e8e136881b30}} 
+\index{CPole@{CPole}!````~CPole@{$\sim$CPole}}
+\index{````~CPole@{$\sim$CPole}!CPole@{CPole}}
+\doxysubsubsection{\texorpdfstring{$\sim$CPole()}{~CPole()}}
+{\footnotesize\ttfamily CPole\+::$\sim$\+CPole (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Dokumentacja funkcji składowych}
+\mbox{\Hypertarget{class_c_pole_affb1ea726cccd744f66bdfe07bb8631b}\label{class_c_pole_affb1ea726cccd744f66bdfe07bb8631b}} 
+\index{CPole@{CPole}!akcja@{akcja}}
+\index{akcja@{akcja}!CPole@{CPole}}
+\doxysubsubsection{\texorpdfstring{akcja()}{akcja()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_s_wyn_akcji}{SWyn\+Akcji}} CPole\+::akcja (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_gracz}{CGracz}} $\ast$}]{gracz }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Funkcja zwraca wartość, która pozwala określić dostępne dla tego pola akcje. 
+
+W tym przypadku pozwala ona określić, że obiekt jest polem bazowym/neutralnym. 
+\begin{DoxyParams}{Parametry}
+{\em $\ast$gracz} & -\/ wskaźnik do obiektu klasy gracz, który stanął na polu \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+Zwraca wartość \mbox{\hyperlink{struct_s_wyn_akcji_af4f719af14df7f07431de76741de165d}{SWyn\+Akcji.\+y1}} = 6 mówiąca, że to klasa \mbox{\hyperlink{class_c_pole}{CPole}} i \mbox{\hyperlink{struct_s_wyn_akcji_a63a87925129557da5bae70bd284aa99c}{SWyn\+Akcji.\+y2}} wskazującą, jaka jest pozycja tego obiektu na planszy. 
+\end{DoxyReturn}
+
+
+Reimplementowana w \mbox{\hyperlink{class_c_pole_do_wiezienia_a83a3fd4b06225152fa5264417f351be5}{CPole\+Do\+Wiezienia}}, \mbox{\hyperlink{class_c_pole_ekstra_a3c7178e61b044212dcaed7a4f16612e9}{CPole\+Ekstra}}, \mbox{\hyperlink{class_c_pole_kasa_a9e28bad4bb1d4c321b3fe63b7bac3358}{CPole\+Kasa}}, \mbox{\hyperlink{class_c_pole_spec_a8957dbfb5a6ea31d7fdac96b1aeb1086}{CPole\+Spec}}, \mbox{\hyperlink{class_c_pole_stnd_a2e98cf534a8351af036cc25281f36bf5}{CPole\+Stnd}} i \mbox{\hyperlink{class_c_pole_szansa_a6e667dfc9944a9eb6ee580f324e8a4c1}{CPole\+Szansa}}.
+
+\mbox{\Hypertarget{class_c_pole_a6c7caa9d590b854f1e4b6b7fcc25eba2}\label{class_c_pole_a6c7caa9d590b854f1e4b6b7fcc25eba2}} 
+\index{CPole@{CPole}!kolorToStr@{kolorToStr}}
+\index{kolorToStr@{kolorToStr}!CPole@{CPole}}
+\doxysubsubsection{\texorpdfstring{kolorToStr()}{kolorToStr()}}
+{\footnotesize\ttfamily string CPole\+::kolor\+To\+Str (\begin{DoxyParamCaption}\item[{int}]{kolor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Metoda zamienia kolor wyrażony w postaci typu int na typ string. 
+
+\mbox{\Hypertarget{class_c_pole_a7e76841275f3f6633d5314b435d3f9a0}\label{class_c_pole_a7e76841275f3f6633d5314b435d3f9a0}} 
+\index{CPole@{CPole}!podajDane@{podajDane}}
+\index{podajDane@{podajDane}!CPole@{CPole}}
+\doxysubsubsection{\texorpdfstring{podajDane()}{podajDane()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_s_dn_pola}{SDn\+Pola}} CPole\+::podaj\+Dane (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplementowana w \mbox{\hyperlink{class_c_pole_do_wiezienia_a17f370552f06c7e8a1db7a537a38ca06}{CPole\+Do\+Wiezienia}}, \mbox{\hyperlink{class_c_pole_ekstra_a7416d75901ae62d7b2c6aa0f596987c8}{CPole\+Ekstra}}, \mbox{\hyperlink{class_c_pole_kasa_a70d2b48c722842f9a591626571f1eff9}{CPole\+Kasa}}, \mbox{\hyperlink{class_c_pole_spec_a0a8b16696ced00021337e37de59dc1e9}{CPole\+Spec}}, \mbox{\hyperlink{class_c_pole_stnd_ac8dcd09f496cdf848c096e57a61155e6}{CPole\+Stnd}} i \mbox{\hyperlink{class_c_pole_szansa_aea3856d08860d788b92443be4a860b11}{CPole\+Szansa}}.
+
+\mbox{\Hypertarget{class_c_pole_a580bd8b300fa7d11afe6a2e440ded37d}\label{class_c_pole_a580bd8b300fa7d11afe6a2e440ded37d}} 
+\index{CPole@{CPole}!podajDaneInt@{podajDaneInt}}
+\index{podajDaneInt@{podajDaneInt}!CPole@{CPole}}
+\doxysubsubsection{\texorpdfstring{podajDaneInt()}{podajDaneInt()}}
+{\footnotesize\ttfamily int CPole\+::podaj\+Dane\+Int (\begin{DoxyParamCaption}\item[{int}]{opt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplementowana w \mbox{\hyperlink{class_c_pole_do_wiezienia_a1db6177a9cc050a327d4ded5c9416baf}{CPole\+Do\+Wiezienia}}, \mbox{\hyperlink{class_c_pole_ekstra_aa2d2483995cdc77455368cb2de80b96d}{CPole\+Ekstra}}, \mbox{\hyperlink{class_c_pole_kasa_a764e95cfbfac31f34b64c4321b092f46}{CPole\+Kasa}}, \mbox{\hyperlink{class_c_pole_spec_ad5602d1a978bebdbfbe66c64d6a3d17e}{CPole\+Spec}}, \mbox{\hyperlink{class_c_pole_stnd_a94aa7f1e94903be0742b6b637101573b}{CPole\+Stnd}} i \mbox{\hyperlink{class_c_pole_szansa_a5bff4eea42808ce07f8cdb01311fe43a}{CPole\+Szansa}}.
+
+\mbox{\Hypertarget{class_c_pole_a91d29ad24b16087452d279a90479f766}\label{class_c_pole_a91d29ad24b16087452d279a90479f766}} 
+\index{CPole@{CPole}!podajNazwe@{podajNazwe}}
+\index{podajNazwe@{podajNazwe}!CPole@{CPole}}
+\doxysubsubsection{\texorpdfstring{podajNazwe()}{podajNazwe()}}
+{\footnotesize\ttfamily string CPole\+::podaj\+Nazwe (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_pole_a2b6c9f08e84ed1894df899b9e9d13fe3}\label{class_c_pole_a2b6c9f08e84ed1894df899b9e9d13fe3}} 
+\index{CPole@{CPole}!wpiszDane@{wpiszDane}}
+\index{wpiszDane@{wpiszDane}!CPole@{CPole}}
+\doxysubsubsection{\texorpdfstring{wpiszDane()}{wpiszDane()}}
+{\footnotesize\ttfamily void CPole\+::wpisz\+Dane (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_s_dn_pocz_pola}{SDn\+Pocz\+Pola}}}]{\+\_\+dane }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplementowana w \mbox{\hyperlink{class_c_pole_do_wiezienia_a7524d005fbaa5655c00dfdc0b7b85f1e}{CPole\+Do\+Wiezienia}}, \mbox{\hyperlink{class_c_pole_ekstra_ac189d56da867a7235c335d86445424e7}{CPole\+Ekstra}}, \mbox{\hyperlink{class_c_pole_kasa_ac5f9506d305e7d3f8b444d258dc1601d}{CPole\+Kasa}}, \mbox{\hyperlink{class_c_pole_spec_af829b78d40f80751672f650a767f7578}{CPole\+Spec}}, \mbox{\hyperlink{class_c_pole_stnd_a37e774f522a431bc30c717a9d6245174}{CPole\+Stnd}} i \mbox{\hyperlink{class_c_pole_szansa_ae1ad8c93620adba12fc53ed9deef159b}{CPole\+Szansa}}.
+
+
+
+\doxysubsection{Dokumentacja atrybutów składowych}
+\mbox{\Hypertarget{class_c_pole_a38758aca8f3e7c6f3961748e6d1abfd4}\label{class_c_pole_a38758aca8f3e7c6f3961748e6d1abfd4}} 
+\index{CPole@{CPole}!nazwa\_@{nazwa\_}}
+\index{nazwa\_@{nazwa\_}!CPole@{CPole}}
+\doxysubsubsection{\texorpdfstring{nazwa\_}{nazwa\_}}
+{\footnotesize\ttfamily string CPole\+::nazwa\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+nazwa pola 
+
+\mbox{\Hypertarget{class_c_pole_aa08ed96e35cf641d19205a7bc9b9338e}\label{class_c_pole_aa08ed96e35cf641d19205a7bc9b9338e}} 
+\index{CPole@{CPole}!pozycja\_@{pozycja\_}}
+\index{pozycja\_@{pozycja\_}!CPole@{CPole}}
+\doxysubsubsection{\texorpdfstring{pozycja\_}{pozycja\_}}
+{\footnotesize\ttfamily int CPole\+::pozycja\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+pozycja pola na planszy 
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+G\+:/\+Folder\+\_\+\+Dawida/\+Prace\+\_\+me/\+Git/\+Daw\+Rad-\/projekty/\+EURObiznes/\+EURObiznes/\+Logika\+\_\+h/\mbox{\hyperlink{cpole_8h}{cpole.\+h}}\item 
+G\+:/\+Folder\+\_\+\+Dawida/\+Prace\+\_\+me/\+Git/\+Daw\+Rad-\/projekty/\+EURObiznes/\+EURObiznes/\+Logika\+\_\+src/\mbox{\hyperlink{cpole_8cpp}{cpole.\+cpp}}\end{DoxyCompactItemize}

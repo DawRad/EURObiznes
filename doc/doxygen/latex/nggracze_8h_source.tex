@@ -1,0 +1,107 @@
+\hypertarget{nggracze_8h_source}{}\doxysection{nggracze.\+h}
+\label{nggracze_8h_source}\index{G:/Folder\_Dawida/Prace\_me/Git/DawRad-\/projekty/EURObiznes/EURObiznes/nggracze.h@{G:/Folder\_Dawida/Prace\_me/Git/DawRad-\/projekty/EURObiznes/EURObiznes/nggracze.h}}
+\mbox{\hyperlink{nggracze_8h}{Idź do dokumentacji tego pliku.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef NGGRACZE\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define NGGRACZE\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <QMainWindow>}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{cadministratorcrys_8h}{cadministratorcrys.h}}"{}}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9 }
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespace_ui}{Ui}} \{}
+\DoxyCodeLine{13 \textcolor{keyword}{class }\mbox{\hyperlink{class_n_g_gracze}{NGGracze}};}
+\DoxyCodeLine{14 \}}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{19 \textcolor{keyword}{class }\mbox{\hyperlink{class_n_g_gracze}{NGGracze}} : \textcolor{keyword}{public} QMainWindow}
+\DoxyCodeLine{20 \{}
+\DoxyCodeLine{21     Q\_OBJECT}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{23 \textcolor{keyword}{public}:}
+\DoxyCodeLine{24     \textcolor{keyword}{explicit} \mbox{\hyperlink{class_n_g_gracze_a1a1c29dbb516e79cb65169f0ab118b39}{NGGracze}}(\mbox{\hyperlink{class_c_game}{CGame}} *gra, deque<CRysPionek *> *pionki, QWidget *parent = \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{25     \mbox{\hyperlink{class_n_g_gracze_ace9eff2cde88f74d289a222133c70815}{\string~NGGracze}}();}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{27 \textcolor{keyword}{private}:}
+\DoxyCodeLine{28     \textcolor{comment}{// metody do destruktora}}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{34     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_n_g_gracze_a3c42d0e6441773adf158b1e48b1df3c2}{removingItemsFromScene}}();}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{40     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_n_g_gracze_a42c51aceddbf65f111963d073e52fd38}{zmianaRozmiaruPionkowNaOstat}}();}
+\DoxyCodeLine{41 }
+\DoxyCodeLine{42     \textcolor{comment}{// metody do "{}chodzenia"{} po kolejkach}}
+\DoxyCodeLine{43 }
+\DoxyCodeLine{44     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_n_g_gracze_a7c849d1335c0f002bc0744d3fbd95969}{dequeIntPrzod}}(deque<int> \&kolejka);}
+\DoxyCodeLine{45 }
+\DoxyCodeLine{46     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_n_g_gracze_af19362683115770c03d77ea553d29529}{dequeIntTyl}}(deque<int> \&kolejka);}
+\DoxyCodeLine{47 }
+\DoxyCodeLine{48     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_n_g_gracze_a9dd54ad98e50d045625cedf3a9dab206}{dequeCRysPionekPrzod}}(deque<CRysPionek *> \&pionki);}
+\DoxyCodeLine{49 }
+\DoxyCodeLine{50     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_n_g_gracze_aa42e3d88cc8404820732fb1ad00a0301}{dequeCRysPionekTyl}}(deque<CRysPionek *> \&pionki);}
+\DoxyCodeLine{51 }
+\DoxyCodeLine{52     \textcolor{comment}{// * * * * * * * * * *}}
+\DoxyCodeLine{53 signals:}
+\DoxyCodeLine{54     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_n_g_gracze_a2069a783a9d920c671a2b2cb2d7360f2}{wstecz}}();}
+\DoxyCodeLine{55     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_n_g_gracze_a6ea6dd98562c67e7b452a15df8727ff2}{dalej}}();}
+\DoxyCodeLine{56 }
+\DoxyCodeLine{57     \textcolor{comment}{// * * * * * * * * * *}}
+\DoxyCodeLine{58 \textcolor{keyword}{private} slots:}
+\DoxyCodeLine{59     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_n_g_gracze_ae2dc6e2db86c095c2d06653d65e43b79}{on\_pbOknoWstecz\_clicked}}();}
+\DoxyCodeLine{60 }
+\DoxyCodeLine{61     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_n_g_gracze_a6abcb9fac9f905cc2d08fc99a7ed64cf}{on\_pbDodGr\_clicked}}();}
+\DoxyCodeLine{62 }
+\DoxyCodeLine{63     \textcolor{comment}{// * * * * * * * * * *}}
+\DoxyCodeLine{64     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_n_g_gracze_aa695aefa2d6659d32904c544d665d1b8}{on\_pbDalej\_clicked}}();}
+\DoxyCodeLine{65 }
+\DoxyCodeLine{66     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_n_g_gracze_aab5c1d4f4cb0a7989e893e4493afd4fb}{on\_pbWstecz\_clicked}}();}
+\DoxyCodeLine{67 }
+\DoxyCodeLine{68     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_n_g_gracze_a54100ef98ed1f3a838e2b8b31e67a36d}{on\_pbDalej\_2\_clicked}}();}
+\DoxyCodeLine{69 }
+\DoxyCodeLine{70     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_n_g_gracze_abba3ffd1a7e50f3533eb84a97f1a93b4}{on\_pbWstecz\_2\_clicked}}();}
+\DoxyCodeLine{71 }
+\DoxyCodeLine{72     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_n_g_gracze_afea91022a1c3fe092d51491723a126c0}{on\_pbDalej\_3\_clicked}}();}
+\DoxyCodeLine{73 }
+\DoxyCodeLine{74     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_n_g_gracze_ac9aec1613ebf23635e8cb47bd670a26b}{on\_pbWstecz\_3\_clicked}}();}
+\DoxyCodeLine{75 }
+\DoxyCodeLine{76     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_n_g_gracze_acdb32bdddd91be146b323532b54de5f0}{on\_pbDalej\_4\_clicked}}();}
+\DoxyCodeLine{77 }
+\DoxyCodeLine{78 \textcolor{keyword}{private}:}
+\DoxyCodeLine{79     Ui::NGGracze *\mbox{\hyperlink{class_n_g_gracze_aa91adab5c8247ae70f3e8e7ac729adbc}{ui}};}
+\DoxyCodeLine{80 }
+\DoxyCodeLine{81     \textcolor{comment}{// -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/}}
+\DoxyCodeLine{82     \textcolor{comment}{// wskaźniki pól MainWindow}}
+\DoxyCodeLine{83 }
+\DoxyCodeLine{84     \mbox{\hyperlink{class_c_game}{CGame}} *\mbox{\hyperlink{class_n_g_gracze_a41160978edc927855b43caec16b7fe68}{wskGry\_}};}
+\DoxyCodeLine{85 }
+\DoxyCodeLine{86     deque<CRysPionek *> *\mbox{\hyperlink{class_n_g_gracze_a2275fc246e8c69ac730976b03b887f0f}{pionki\_}};}
+\DoxyCodeLine{87 }
+\DoxyCodeLine{88     \mbox{\hyperlink{class_c_rys_pionek}{CRysPionek}} *\mbox{\hyperlink{class_n_g_gracze_a333f71205a625fa18e9d1b36413dd953}{wskAktPionu\_}};}
+\DoxyCodeLine{89 }
+\DoxyCodeLine{90     \textcolor{comment}{// * * * * * * * * * *}}
+\DoxyCodeLine{91     \textcolor{comment}{// -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/}}
+\DoxyCodeLine{92     \textcolor{comment}{// pola tylko tej klasy}}
+\DoxyCodeLine{93 }
+\DoxyCodeLine{94     QGraphicsScene *\mbox{\hyperlink{class_n_g_gracze_a4601b241bb2991e847c28caf59d00a9c}{scene\_}};}
+\DoxyCodeLine{95 }
+\DoxyCodeLine{96     \textcolor{comment}{// * * * * * * * * * *}}
+\DoxyCodeLine{97     \textcolor{comment}{// -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/}}
+\DoxyCodeLine{98     \textcolor{comment}{// zakodowane opcje do wyboru}}
+\DoxyCodeLine{99 }
+\DoxyCodeLine{100     deque<int> \mbox{\hyperlink{class_n_g_gracze_a2bc0a92986274580e46568953dbe0e55}{ksztalty\_}};}
+\DoxyCodeLine{101     deque<int> \mbox{\hyperlink{class_n_g_gracze_a8fb9b1f0311088ba3c1cd59653f3160a}{symbole\_}};}
+\DoxyCodeLine{102     deque<int> \mbox{\hyperlink{class_n_g_gracze_aa6039a9b423203d62e6b10cd52ec4556}{koloryPionow\_}};}
+\DoxyCodeLine{103     deque<int> \mbox{\hyperlink{class_n_g_gracze_af6aa21ce06eeeb489c0b5655d05931c2}{koloryUzyte\_}};}
+\DoxyCodeLine{104 }
+\DoxyCodeLine{105     \textcolor{comment}{// * * * * * * * * * *}}
+\DoxyCodeLine{106 }
+\DoxyCodeLine{107     \textcolor{comment}{// -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/}}
+\DoxyCodeLine{108     \textcolor{comment}{// flagi okna}}
+\DoxyCodeLine{109 }
+\DoxyCodeLine{110 \};}
+\DoxyCodeLine{111 }
+\DoxyCodeLine{112 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// NGGRACZE\_H}}
+
+\end{DoxyCode}

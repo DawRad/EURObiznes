@@ -1,0 +1,147 @@
+\hypertarget{class_c_rys_przycisk}{}\doxysection{Dokumentacja klasy CRys\+Przycisk}
+\label{class_c_rys_przycisk}\index{CRysPrzycisk@{CRysPrzycisk}}
+
+
+Klasa graficzna.  
+
+
+
+
+{\ttfamily \#include $<$crysprzycisk.\+h$>$}
+
+
+
+Diagram dziedziczenia dla CRys\+Przycisk
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=175pt]{class_c_rys_przycisk__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Diagram współpracy dla CRys\+Przycisk\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=293pt]{class_c_rys_przycisk__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_rys_przycisk_a070dc6d819aebfa6ca50176b7ce8476c}{CRys\+Przycisk}} ()
+\item 
+\mbox{\hyperlink{class_c_rys_przycisk_ab33144449ae28397adebb8abecd0ecae}{CRys\+Przycisk}} (QPoint top\+Left, QSizeF size, QString nazwa, int \mbox{\hyperlink{class_c_rys_przycisk_adfa24589a2b68f1f30ce4bd83faa5af0}{shape}}, string imie\+Nad=\char`\"{}brak\char`\"{}, qreal rot=0)
+\item 
+virtual \mbox{\hyperlink{class_c_rys_przycisk_afee3dac19836533844bb4e51c720cdcb}{$\sim$\+CRys\+Przycisk}} ()
+\item 
+virtual void \mbox{\hyperlink{class_c_rys_przycisk_a5e70f45232721fabd6ab9d2a34c3a2a4}{paint}} (QPainter $\ast$painter, const QStyle\+Option\+Graphics\+Item $\ast$option, QWidget $\ast$widget) override
+\item 
+virtual QPainter\+Path \mbox{\hyperlink{class_c_rys_przycisk_adfa24589a2b68f1f30ce4bd83faa5af0}{shape}} () const override
+\end{DoxyCompactItemize}
+\doxysubsection*{Metody chronione}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_c_rys_przycisk_af4cfbfa1a06f4b58f8fa24f718c64bb0}{mouse\+Press\+Event}} (QGraphics\+Scene\+Mouse\+Event $\ast$event) override
+\item 
+void \mbox{\hyperlink{class_c_rys_przycisk_ac670781c59213e3091dad59a76cb67ce}{draw\+Shape}} (QPainter $\ast$painter)
+\end{DoxyCompactItemize}
+\doxysubsection*{Atrybuty chronione}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_c_rys_przycisk_acd81f019c04a6c069b50f01c555ffa50}{shape\+\_\+}}
+\item 
+QString \mbox{\hyperlink{class_c_rys_przycisk_a706123fa15eb451867fecf81fd9c3ff2}{nazwa\+\_\+}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Dodatkowe Dziedziczone Składowe}
+
+
+\doxysubsection{Opis szczegółowy}
+Klasa graficzna. 
+
+\doxysubsection{Dokumentacja konstruktora i destruktora}
+\mbox{\Hypertarget{class_c_rys_przycisk_a070dc6d819aebfa6ca50176b7ce8476c}\label{class_c_rys_przycisk_a070dc6d819aebfa6ca50176b7ce8476c}} 
+\index{CRysPrzycisk@{CRysPrzycisk}!CRysPrzycisk@{CRysPrzycisk}}
+\index{CRysPrzycisk@{CRysPrzycisk}!CRysPrzycisk@{CRysPrzycisk}}
+\doxysubsubsection{\texorpdfstring{CRysPrzycisk()}{CRysPrzycisk()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily CRys\+Przycisk\+::\+CRys\+Przycisk (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_rys_przycisk_ab33144449ae28397adebb8abecd0ecae}\label{class_c_rys_przycisk_ab33144449ae28397adebb8abecd0ecae}} 
+\index{CRysPrzycisk@{CRysPrzycisk}!CRysPrzycisk@{CRysPrzycisk}}
+\index{CRysPrzycisk@{CRysPrzycisk}!CRysPrzycisk@{CRysPrzycisk}}
+\doxysubsubsection{\texorpdfstring{CRysPrzycisk()}{CRysPrzycisk()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily CRys\+Przycisk\+::\+CRys\+Przycisk (\begin{DoxyParamCaption}\item[{QPoint}]{top\+Left,  }\item[{QSizeF}]{size,  }\item[{QString}]{nazwa,  }\item[{int}]{shape,  }\item[{string}]{imie\+Nad = {\ttfamily \char`\"{}brak\char`\"{}},  }\item[{qreal}]{rot = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_rys_przycisk_afee3dac19836533844bb4e51c720cdcb}\label{class_c_rys_przycisk_afee3dac19836533844bb4e51c720cdcb}} 
+\index{CRysPrzycisk@{CRysPrzycisk}!````~CRysPrzycisk@{$\sim$CRysPrzycisk}}
+\index{````~CRysPrzycisk@{$\sim$CRysPrzycisk}!CRysPrzycisk@{CRysPrzycisk}}
+\doxysubsubsection{\texorpdfstring{$\sim$CRysPrzycisk()}{~CRysPrzycisk()}}
+{\footnotesize\ttfamily CRys\+Przycisk\+::$\sim$\+CRys\+Przycisk (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Dokumentacja funkcji składowych}
+\mbox{\Hypertarget{class_c_rys_przycisk_ac670781c59213e3091dad59a76cb67ce}\label{class_c_rys_przycisk_ac670781c59213e3091dad59a76cb67ce}} 
+\index{CRysPrzycisk@{CRysPrzycisk}!drawShape@{drawShape}}
+\index{drawShape@{drawShape}!CRysPrzycisk@{CRysPrzycisk}}
+\doxysubsubsection{\texorpdfstring{drawShape()}{drawShape()}}
+{\footnotesize\ttfamily void CRys\+Przycisk\+::draw\+Shape (\begin{DoxyParamCaption}\item[{QPainter $\ast$}]{painter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_rys_przycisk_af4cfbfa1a06f4b58f8fa24f718c64bb0}\label{class_c_rys_przycisk_af4cfbfa1a06f4b58f8fa24f718c64bb0}} 
+\index{CRysPrzycisk@{CRysPrzycisk}!mousePressEvent@{mousePressEvent}}
+\index{mousePressEvent@{mousePressEvent}!CRysPrzycisk@{CRysPrzycisk}}
+\doxysubsubsection{\texorpdfstring{mousePressEvent()}{mousePressEvent()}}
+{\footnotesize\ttfamily void CRys\+Przycisk\+::mouse\+Press\+Event (\begin{DoxyParamCaption}\item[{QGraphics\+Scene\+Mouse\+Event $\ast$}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Implementuje \mbox{\hyperlink{class_c_rys_emiter_a5a3f17cb6e0549f67513c1c5480f05e0}{CRys\+Emiter}}.
+
+\mbox{\Hypertarget{class_c_rys_przycisk_a5e70f45232721fabd6ab9d2a34c3a2a4}\label{class_c_rys_przycisk_a5e70f45232721fabd6ab9d2a34c3a2a4}} 
+\index{CRysPrzycisk@{CRysPrzycisk}!paint@{paint}}
+\index{paint@{paint}!CRysPrzycisk@{CRysPrzycisk}}
+\doxysubsubsection{\texorpdfstring{paint()}{paint()}}
+{\footnotesize\ttfamily void CRys\+Przycisk\+::paint (\begin{DoxyParamCaption}\item[{QPainter $\ast$}]{painter,  }\item[{const QStyle\+Option\+Graphics\+Item $\ast$}]{option,  }\item[{QWidget $\ast$}]{widget }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implementuje \mbox{\hyperlink{class_c_rys_emiter_a21f03d8a5fcfd0c1a301984b9d8841f9}{CRys\+Emiter}}.
+
+
+
+Reimplementowana w \mbox{\hyperlink{class_c_rys_przycisk_img_a08ffeea6ccbc97a97da9d151bd7b4ea3}{CRys\+Przycisk\+Img}}.
+
+\mbox{\Hypertarget{class_c_rys_przycisk_adfa24589a2b68f1f30ce4bd83faa5af0}\label{class_c_rys_przycisk_adfa24589a2b68f1f30ce4bd83faa5af0}} 
+\index{CRysPrzycisk@{CRysPrzycisk}!shape@{shape}}
+\index{shape@{shape}!CRysPrzycisk@{CRysPrzycisk}}
+\doxysubsubsection{\texorpdfstring{shape()}{shape()}}
+{\footnotesize\ttfamily QPainter\+Path CRys\+Przycisk\+::shape (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implementuje \mbox{\hyperlink{class_c_rys_emiter_a651954dc1294974217a02d4eb98b2818}{CRys\+Emiter}}.
+
+
+
+\doxysubsection{Dokumentacja atrybutów składowych}
+\mbox{\Hypertarget{class_c_rys_przycisk_a706123fa15eb451867fecf81fd9c3ff2}\label{class_c_rys_przycisk_a706123fa15eb451867fecf81fd9c3ff2}} 
+\index{CRysPrzycisk@{CRysPrzycisk}!nazwa\_@{nazwa\_}}
+\index{nazwa\_@{nazwa\_}!CRysPrzycisk@{CRysPrzycisk}}
+\doxysubsubsection{\texorpdfstring{nazwa\_}{nazwa\_}}
+{\footnotesize\ttfamily QString CRys\+Przycisk\+::nazwa\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_rys_przycisk_acd81f019c04a6c069b50f01c555ffa50}\label{class_c_rys_przycisk_acd81f019c04a6c069b50f01c555ffa50}} 
+\index{CRysPrzycisk@{CRysPrzycisk}!shape\_@{shape\_}}
+\index{shape\_@{shape\_}!CRysPrzycisk@{CRysPrzycisk}}
+\doxysubsubsection{\texorpdfstring{shape\_}{shape\_}}
+{\footnotesize\ttfamily int CRys\+Przycisk\+::shape\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+G\+:/\+Folder\+\_\+\+Dawida/\+Prace\+\_\+me/\+Git/\+Daw\+Rad-\/projekty/\+EURObiznes/\+EURObiznes/\+Rysunki\+\_\+h/\mbox{\hyperlink{crysprzycisk_8h}{crysprzycisk.\+h}}\item 
+G\+:/\+Folder\+\_\+\+Dawida/\+Prace\+\_\+me/\+Git/\+Daw\+Rad-\/projekty/\+EURObiznes/\+EURObiznes/\+Rysunki\+\_\+src/\mbox{\hyperlink{crysprzycisk_8cpp}{crysprzycisk.\+cpp}}\end{DoxyCompactItemize}

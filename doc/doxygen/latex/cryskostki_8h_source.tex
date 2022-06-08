@@ -1,0 +1,51 @@
+\hypertarget{cryskostki_8h_source}{}\doxysection{cryskostki.\+h}
+\label{cryskostki_8h_source}\index{G:/Folder\_Dawida/Prace\_me/Git/DawRad-\/projekty/EURObiznes/EURObiznes/Rysunki\_h/cryskostki.h@{G:/Folder\_Dawida/Prace\_me/Git/DawRad-\/projekty/EURObiznes/EURObiznes/Rysunki\_h/cryskostki.h}}
+\mbox{\hyperlink{cryskostki_8h}{Idź do dokumentacji tego pliku.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef CRYSKOSTKI\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define CRYSKOSTKI\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{cryspoleobraz_8h}{Rysunki\_h/cryspoleobraz.h}}"{}}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{cnadawca_8h}{Rysunki\_h/cnadawca.h}}"{}}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9 }
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11 }
+\DoxyCodeLine{15 \textcolor{keyword}{class }\mbox{\hyperlink{class_c_rys_kostki}{CRysKostki}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_c_rys_pole_obraz}{CRysPoleObraz}}}
+\DoxyCodeLine{16 \{}
+\DoxyCodeLine{17 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{18     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_rys_kostki_af734df8d73c83af43b653158158e79b6}{faza\_}};}
+\DoxyCodeLine{19     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_c_rys_kostki_aa58d5b10097dca33aead63d6508a94f8}{moveToken\_}};}
+\DoxyCodeLine{20     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_c_rys_kostki_a8f58ed63553778e110186310a6dded55}{primaryDice\_}};}
+\DoxyCodeLine{21     QString \mbox{\hyperlink{class_c_rys_kostki_a872eb42c5e2928e6e3214e40838d8139}{oczka\_}};}
+\DoxyCodeLine{22     QTimer *\mbox{\hyperlink{class_c_rys_kostki_adc473fcee6cb6a730150c4dab14536ef}{timer\_}};}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{25     \mbox{\hyperlink{class_c_nadawca}{CNadawca}} *\mbox{\hyperlink{class_c_rys_kostki_ad1354c6ec4c764695914025cc21faa2d}{wskWyzwalacza\_}};}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{27 }
+\DoxyCodeLine{28 \textcolor{keyword}{public}:}
+\DoxyCodeLine{29     \mbox{\hyperlink{class_c_rys_kostki_a89dbcec714df54c4ee18ec490663e688}{CRysKostki}}();}
+\DoxyCodeLine{30     \mbox{\hyperlink{class_c_rys_kostki_a89dbcec714df54c4ee18ec490663e688}{CRysKostki}}(QPoint topLeft, QSizeF size, QTimer *timer, \mbox{\hyperlink{class_c_nadawca}{CNadawca}} *wskNadawcy, \textcolor{keywordtype}{int} poz = -\/1, QString napis = \textcolor{stringliteral}{"{}"{}},}
+\DoxyCodeLine{31                QString imgPath = \textcolor{stringliteral}{"{}:/Zasoby/grafika/inne\_elementy/oczko\_0.png"{}}, \mbox{\hyperlink{class_c_wsp_skalowania_img}{CWspSkalowaniaImg}} skalaImg = \mbox{\hyperlink{_consts___qt_8h_a299bd45518d51b024eedf4e1de17ad09}{SKALA\_KOSTKI}}, qreal rot = 0);}
+\DoxyCodeLine{32     \mbox{\hyperlink{class_c_rys_kostki_af5a34303eadc080b132317da9407827a}{\string~CRysKostki}}();}
+\DoxyCodeLine{33 }
+\DoxyCodeLine{34     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_rys_kostki_a065cbfee8691bf3a3a1879754b32f5c8}{paint}}(QPainter *painter, \textcolor{keyword}{const} QStyleOptionGraphicsItem *option,}
+\DoxyCodeLine{35                QWidget *widget) \textcolor{keyword}{override};}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{37     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_rys_kostki_a7d9d4a45d99bc53d9f124708a556bd91}{ustawOczka}}(QString oczka);}
+\DoxyCodeLine{38     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_rys_kostki_a7d9d4a45d99bc53d9f124708a556bd91}{ustawOczka}}(\textcolor{keywordtype}{int} oczka);}
+\DoxyCodeLine{39 }
+\DoxyCodeLine{47     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_rys_kostki_a1a8f65f1012c2aec60bc18b4239d0a29}{setPrimaryDice}}(\textcolor{keywordtype}{bool} state);}
+\DoxyCodeLine{48 }
+\DoxyCodeLine{49     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_rys_kostki_a25ba7d985f1a43a11abab63888b54071}{drawMyUpdatedImage}}(QPainter *painter, QRectF rect);}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{51 }
+\DoxyCodeLine{52 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{53     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_rys_kostki_a56ef036d9dff31f578159e7cef2bd5a7}{advance}}(\textcolor{keywordtype}{int} step) \textcolor{keyword}{override};}
+\DoxyCodeLine{54 \};}
+\DoxyCodeLine{55 }
+\DoxyCodeLine{56 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// CRYSKOSTKI\_H}}
+
+\end{DoxyCode}

@@ -1,0 +1,191 @@
+\hypertarget{class_c_rys_kostki}{}\doxysection{Dokumentacja klasy CRys\+Kostki}
+\label{class_c_rys_kostki}\index{CRysKostki@{CRysKostki}}
+
+
+Klasa graficzna.  
+
+
+
+
+{\ttfamily \#include $<$cryskostki.\+h$>$}
+
+
+
+Diagram dziedziczenia dla CRys\+Kostki
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=166pt]{class_c_rys_kostki__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Diagram współpracy dla CRys\+Kostki\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_rys_kostki__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_rys_kostki_a89dbcec714df54c4ee18ec490663e688}{CRys\+Kostki}} ()
+\item 
+\mbox{\hyperlink{class_c_rys_kostki_a16ed60462ab0edc66d9cd5b92d8e4442}{CRys\+Kostki}} (QPoint top\+Left, QSizeF size, QTimer $\ast$timer, \mbox{\hyperlink{class_c_nadawca}{CNadawca}} $\ast$wsk\+Nadawcy, int poz=-\/1, QString napis=\char`\"{}\char`\"{}, QString img\+Path=\char`\"{}\+:/Zasoby/grafika/inne\+\_\+elementy/oczko\+\_\+0.\+png\char`\"{}, CWsp\+Skalowania\+Img skala\+Img=\mbox{\hyperlink{_consts___qt_8h_a299bd45518d51b024eedf4e1de17ad09}{SKALA\+\_\+\+KOSTKI}}, qreal rot=0)
+\item 
+\mbox{\hyperlink{class_c_rys_kostki_af5a34303eadc080b132317da9407827a}{$\sim$\+CRys\+Kostki}} ()
+\item 
+void \mbox{\hyperlink{class_c_rys_kostki_a065cbfee8691bf3a3a1879754b32f5c8}{paint}} (QPainter $\ast$painter, const QStyle\+Option\+Graphics\+Item $\ast$option, QWidget $\ast$widget) override
+\item 
+void \mbox{\hyperlink{class_c_rys_kostki_a7d9d4a45d99bc53d9f124708a556bd91}{ustaw\+Oczka}} (QString oczka)
+\item 
+void \mbox{\hyperlink{class_c_rys_kostki_a7eb95c77b394d14dc474d734ad89600a}{ustaw\+Oczka}} (int oczka)
+\item 
+void \mbox{\hyperlink{class_c_rys_kostki_a1a8f65f1012c2aec60bc18b4239d0a29}{set\+Primary\+Dice}} (bool state)
+\begin{DoxyCompactList}\small\item\em Metoda ustala, która kostka wysyła sygnał rzut\+Wykonany() \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_rys_kostki_a25ba7d985f1a43a11abab63888b54071}{draw\+My\+Updated\+Image}} (QPainter $\ast$painter, QRectF rect)
+\end{DoxyCompactItemize}
+\doxysubsection*{Metody chronione}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_c_rys_kostki_a56ef036d9dff31f578159e7cef2bd5a7}{advance}} (int step) override
+\end{DoxyCompactItemize}
+\doxysubsection*{Atrybuty chronione}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_c_rys_kostki_af734df8d73c83af43b653158158e79b6}{faza\+\_\+}}
+\item 
+bool \mbox{\hyperlink{class_c_rys_kostki_aa58d5b10097dca33aead63d6508a94f8}{move\+Token\+\_\+}}
+\item 
+bool \mbox{\hyperlink{class_c_rys_kostki_a8f58ed63553778e110186310a6dded55}{primary\+Dice\+\_\+}}
+\item 
+QString \mbox{\hyperlink{class_c_rys_kostki_a872eb42c5e2928e6e3214e40838d8139}{oczka\+\_\+}}
+\item 
+QTimer $\ast$ \mbox{\hyperlink{class_c_rys_kostki_adc473fcee6cb6a730150c4dab14536ef}{timer\+\_\+}}
+\item 
+\mbox{\hyperlink{class_c_nadawca}{CNadawca}} $\ast$ \mbox{\hyperlink{class_c_rys_kostki_ad1354c6ec4c764695914025cc21faa2d}{wsk\+Wyzwalacza\+\_\+}}
+\begin{DoxyCompactList}\small\item\em wskaźnik \mbox{\hyperlink{class_c_nadawca}{CNadawca}} z okna rozgrywki \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Dodatkowe Dziedziczone Składowe}
+
+
+\doxysubsection{Opis szczegółowy}
+Klasa graficzna. 
+
+\doxysubsection{Dokumentacja konstruktora i destruktora}
+\mbox{\Hypertarget{class_c_rys_kostki_a89dbcec714df54c4ee18ec490663e688}\label{class_c_rys_kostki_a89dbcec714df54c4ee18ec490663e688}} 
+\index{CRysKostki@{CRysKostki}!CRysKostki@{CRysKostki}}
+\index{CRysKostki@{CRysKostki}!CRysKostki@{CRysKostki}}
+\doxysubsubsection{\texorpdfstring{CRysKostki()}{CRysKostki()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily CRys\+Kostki\+::\+CRys\+Kostki (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_rys_kostki_a16ed60462ab0edc66d9cd5b92d8e4442}\label{class_c_rys_kostki_a16ed60462ab0edc66d9cd5b92d8e4442}} 
+\index{CRysKostki@{CRysKostki}!CRysKostki@{CRysKostki}}
+\index{CRysKostki@{CRysKostki}!CRysKostki@{CRysKostki}}
+\doxysubsubsection{\texorpdfstring{CRysKostki()}{CRysKostki()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily CRys\+Kostki\+::\+CRys\+Kostki (\begin{DoxyParamCaption}\item[{QPoint}]{top\+Left,  }\item[{QSizeF}]{size,  }\item[{QTimer $\ast$}]{timer,  }\item[{\mbox{\hyperlink{class_c_nadawca}{CNadawca}} $\ast$}]{wsk\+Nadawcy,  }\item[{int}]{poz = {\ttfamily -\/1},  }\item[{QString}]{napis = {\ttfamily \char`\"{}\char`\"{}},  }\item[{QString}]{img\+Path = {\ttfamily \char`\"{}\+:/Zasoby/grafika/inne\+\_\+elementy/oczko\+\_\+0.png\char`\"{}},  }\item[{\mbox{\hyperlink{class_c_wsp_skalowania_img}{CWsp\+Skalowania\+Img}}}]{skala\+Img = {\ttfamily \mbox{\hyperlink{_consts___qt_8h_a299bd45518d51b024eedf4e1de17ad09}{SKALA\+\_\+\+KOSTKI}}},  }\item[{qreal}]{rot = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_rys_kostki_af5a34303eadc080b132317da9407827a}\label{class_c_rys_kostki_af5a34303eadc080b132317da9407827a}} 
+\index{CRysKostki@{CRysKostki}!````~CRysKostki@{$\sim$CRysKostki}}
+\index{````~CRysKostki@{$\sim$CRysKostki}!CRysKostki@{CRysKostki}}
+\doxysubsubsection{\texorpdfstring{$\sim$CRysKostki()}{~CRysKostki()}}
+{\footnotesize\ttfamily CRys\+Kostki\+::$\sim$\+CRys\+Kostki (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Dokumentacja funkcji składowych}
+\mbox{\Hypertarget{class_c_rys_kostki_a56ef036d9dff31f578159e7cef2bd5a7}\label{class_c_rys_kostki_a56ef036d9dff31f578159e7cef2bd5a7}} 
+\index{CRysKostki@{CRysKostki}!advance@{advance}}
+\index{advance@{advance}!CRysKostki@{CRysKostki}}
+\doxysubsubsection{\texorpdfstring{advance()}{advance()}}
+{\footnotesize\ttfamily void CRys\+Kostki\+::advance (\begin{DoxyParamCaption}\item[{int}]{step }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_rys_kostki_a25ba7d985f1a43a11abab63888b54071}\label{class_c_rys_kostki_a25ba7d985f1a43a11abab63888b54071}} 
+\index{CRysKostki@{CRysKostki}!drawMyUpdatedImage@{drawMyUpdatedImage}}
+\index{drawMyUpdatedImage@{drawMyUpdatedImage}!CRysKostki@{CRysKostki}}
+\doxysubsubsection{\texorpdfstring{drawMyUpdatedImage()}{drawMyUpdatedImage()}}
+{\footnotesize\ttfamily void CRys\+Kostki\+::draw\+My\+Updated\+Image (\begin{DoxyParamCaption}\item[{QPainter $\ast$}]{painter,  }\item[{QRectF}]{rect }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_rys_kostki_a065cbfee8691bf3a3a1879754b32f5c8}\label{class_c_rys_kostki_a065cbfee8691bf3a3a1879754b32f5c8}} 
+\index{CRysKostki@{CRysKostki}!paint@{paint}}
+\index{paint@{paint}!CRysKostki@{CRysKostki}}
+\doxysubsubsection{\texorpdfstring{paint()}{paint()}}
+{\footnotesize\ttfamily void CRys\+Kostki\+::paint (\begin{DoxyParamCaption}\item[{QPainter $\ast$}]{painter,  }\item[{const QStyle\+Option\+Graphics\+Item $\ast$}]{option,  }\item[{QWidget $\ast$}]{widget }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplementowana z \mbox{\hyperlink{class_c_rys_pole_abcf5cc7d943ed964b57aa2ee75412873}{CRys\+Pole}}.
+
+\mbox{\Hypertarget{class_c_rys_kostki_a1a8f65f1012c2aec60bc18b4239d0a29}\label{class_c_rys_kostki_a1a8f65f1012c2aec60bc18b4239d0a29}} 
+\index{CRysKostki@{CRysKostki}!setPrimaryDice@{setPrimaryDice}}
+\index{setPrimaryDice@{setPrimaryDice}!CRysKostki@{CRysKostki}}
+\doxysubsubsection{\texorpdfstring{setPrimaryDice()}{setPrimaryDice()}}
+{\footnotesize\ttfamily void CRys\+Kostki\+::set\+Primary\+Dice (\begin{DoxyParamCaption}\item[{bool}]{state }\end{DoxyParamCaption})}
+
+
+
+Metoda ustala, która kostka wysyła sygnał rzut\+Wykonany() 
+
+Jeśli state == false -\/ kostka nie wysyła, jeśli state == true -\/ wysyła. Należy dbać, aby podczas gry tylko jedna z używanych kostek miała wartość pola primary\+Dice\+\_\+ == true (domyślnie podczas tworzenia wszystkie instancje tej klasy mają wartość false). \mbox{\Hypertarget{class_c_rys_kostki_a7eb95c77b394d14dc474d734ad89600a}\label{class_c_rys_kostki_a7eb95c77b394d14dc474d734ad89600a}} 
+\index{CRysKostki@{CRysKostki}!ustawOczka@{ustawOczka}}
+\index{ustawOczka@{ustawOczka}!CRysKostki@{CRysKostki}}
+\doxysubsubsection{\texorpdfstring{ustawOczka()}{ustawOczka()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void CRys\+Kostki\+::ustaw\+Oczka (\begin{DoxyParamCaption}\item[{int}]{oczka }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_rys_kostki_a7d9d4a45d99bc53d9f124708a556bd91}\label{class_c_rys_kostki_a7d9d4a45d99bc53d9f124708a556bd91}} 
+\index{CRysKostki@{CRysKostki}!ustawOczka@{ustawOczka}}
+\index{ustawOczka@{ustawOczka}!CRysKostki@{CRysKostki}}
+\doxysubsubsection{\texorpdfstring{ustawOczka()}{ustawOczka()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void CRys\+Kostki\+::ustaw\+Oczka (\begin{DoxyParamCaption}\item[{QString}]{oczka }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Dokumentacja atrybutów składowych}
+\mbox{\Hypertarget{class_c_rys_kostki_af734df8d73c83af43b653158158e79b6}\label{class_c_rys_kostki_af734df8d73c83af43b653158158e79b6}} 
+\index{CRysKostki@{CRysKostki}!faza\_@{faza\_}}
+\index{faza\_@{faza\_}!CRysKostki@{CRysKostki}}
+\doxysubsubsection{\texorpdfstring{faza\_}{faza\_}}
+{\footnotesize\ttfamily int CRys\+Kostki\+::faza\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_rys_kostki_aa58d5b10097dca33aead63d6508a94f8}\label{class_c_rys_kostki_aa58d5b10097dca33aead63d6508a94f8}} 
+\index{CRysKostki@{CRysKostki}!moveToken\_@{moveToken\_}}
+\index{moveToken\_@{moveToken\_}!CRysKostki@{CRysKostki}}
+\doxysubsubsection{\texorpdfstring{moveToken\_}{moveToken\_}}
+{\footnotesize\ttfamily bool CRys\+Kostki\+::move\+Token\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_rys_kostki_a872eb42c5e2928e6e3214e40838d8139}\label{class_c_rys_kostki_a872eb42c5e2928e6e3214e40838d8139}} 
+\index{CRysKostki@{CRysKostki}!oczka\_@{oczka\_}}
+\index{oczka\_@{oczka\_}!CRysKostki@{CRysKostki}}
+\doxysubsubsection{\texorpdfstring{oczka\_}{oczka\_}}
+{\footnotesize\ttfamily QString CRys\+Kostki\+::oczka\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_rys_kostki_a8f58ed63553778e110186310a6dded55}\label{class_c_rys_kostki_a8f58ed63553778e110186310a6dded55}} 
+\index{CRysKostki@{CRysKostki}!primaryDice\_@{primaryDice\_}}
+\index{primaryDice\_@{primaryDice\_}!CRysKostki@{CRysKostki}}
+\doxysubsubsection{\texorpdfstring{primaryDice\_}{primaryDice\_}}
+{\footnotesize\ttfamily bool CRys\+Kostki\+::primary\+Dice\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_rys_kostki_adc473fcee6cb6a730150c4dab14536ef}\label{class_c_rys_kostki_adc473fcee6cb6a730150c4dab14536ef}} 
+\index{CRysKostki@{CRysKostki}!timer\_@{timer\_}}
+\index{timer\_@{timer\_}!CRysKostki@{CRysKostki}}
+\doxysubsubsection{\texorpdfstring{timer\_}{timer\_}}
+{\footnotesize\ttfamily QTimer$\ast$ CRys\+Kostki\+::timer\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_rys_kostki_ad1354c6ec4c764695914025cc21faa2d}\label{class_c_rys_kostki_ad1354c6ec4c764695914025cc21faa2d}} 
+\index{CRysKostki@{CRysKostki}!wskWyzwalacza\_@{wskWyzwalacza\_}}
+\index{wskWyzwalacza\_@{wskWyzwalacza\_}!CRysKostki@{CRysKostki}}
+\doxysubsubsection{\texorpdfstring{wskWyzwalacza\_}{wskWyzwalacza\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_nadawca}{CNadawca}}$\ast$ CRys\+Kostki\+::wsk\+Wyzwalacza\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+wskaźnik \mbox{\hyperlink{class_c_nadawca}{CNadawca}} z okna rozgrywki 
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+G\+:/\+Folder\+\_\+\+Dawida/\+Prace\+\_\+me/\+Git/\+Daw\+Rad-\/projekty/\+EURObiznes/\+EURObiznes/\+Rysunki\+\_\+h/\mbox{\hyperlink{cryskostki_8h}{cryskostki.\+h}}\item 
+G\+:/\+Folder\+\_\+\+Dawida/\+Prace\+\_\+me/\+Git/\+Daw\+Rad-\/projekty/\+EURObiznes/\+EURObiznes/\+Rysunki\+\_\+src/\mbox{\hyperlink{cryskostki_8cpp}{cryskostki.\+cpp}}\end{DoxyCompactItemize}

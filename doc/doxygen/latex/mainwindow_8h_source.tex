@@ -1,0 +1,110 @@
+\hypertarget{mainwindow_8h_source}{}\doxysection{mainwindow.\+h}
+\label{mainwindow_8h_source}\index{G:/Folder\_Dawida/Prace\_me/Git/DawRad-\/projekty/EURObiznes/EURObiznes/mainwindow.h@{G:/Folder\_Dawida/Prace\_me/Git/DawRad-\/projekty/EURObiznes/EURObiznes/mainwindow.h}}
+\mbox{\hyperlink{mainwindow_8h}{Idź do dokumentacji tego pliku.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef MAINWINDOW\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define MAINWINDOW\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{comment}{//\#include "{}Logika\_h/cgame.h"{}}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 \textcolor{comment}{// okna poboczne}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{ngogolne_8h}{ngogolne.h}}"{}}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{nggracze_8h}{nggracze.h}}"{}}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{ngplansza_8h}{ngplansza.h}}"{}}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{rozgrywka_8h}{rozgrywka.h}}"{}}}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 }
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14 QT\_BEGIN\_NAMESPACE}
+\DoxyCodeLine{15 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespace_ui}{Ui}} \{ \textcolor{keyword}{class }\mbox{\hyperlink{class_main_window}{MainWindow}}; \}}
+\DoxyCodeLine{16 QT\_END\_NAMESPACE}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{18 }
+\DoxyCodeLine{19 }
+\DoxyCodeLine{23 \textcolor{keyword}{class }\mbox{\hyperlink{class_main_window}{MainWindow}} : \textcolor{keyword}{public} QMainWindow}
+\DoxyCodeLine{24 \{}
+\DoxyCodeLine{25     Q\_OBJECT}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{27     \textcolor{comment}{// -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/}}
+\DoxyCodeLine{28 \textcolor{keyword}{public}:}
+\DoxyCodeLine{29     \mbox{\hyperlink{class_main_window_a996c5a2b6f77944776856f08ec30858d}{MainWindow}}(QWidget *parent = \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{30     \mbox{\hyperlink{class_main_window_ae98d00a93bc118200eeef9f9bba1dba7}{\string~MainWindow}}();}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{35     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_main_window_a0b6a7f39d9e39ce7310228b7c91e1d14}{utworzRysPol}}(deque<SDnPola> *danePol);}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{37 }
+\DoxyCodeLine{38     \textcolor{comment}{// -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/}}
+\DoxyCodeLine{39 \textcolor{keyword}{private}:}
+\DoxyCodeLine{40     \textcolor{comment}{// wczytywanie danych}}
+\DoxyCodeLine{41     deque<string> *\mbox{\hyperlink{class_main_window_ac77aa3236f1618b2c2b31c2fc037a0a6}{pobierzDanePolZPliku}}(QString nazPli);}
+\DoxyCodeLine{42 }
+\DoxyCodeLine{43     \textcolor{comment}{// metody do destruktora}}
+\DoxyCodeLine{44     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_main_window_abd4102eb3303d77a875151bdfacd8c8d}{czyszczenieDeques}}();}
+\DoxyCodeLine{45 }
+\DoxyCodeLine{46 }
+\DoxyCodeLine{47     \textcolor{comment}{// -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/}}
+\DoxyCodeLine{48 \textcolor{keyword}{private} slots:}
+\DoxyCodeLine{49     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_main_window_a290e05b4f1e371dc31289500383e660e}{on\_pbNowaGra\_clicked}}();}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{51     \textcolor{comment}{// -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/}}
+\DoxyCodeLine{52     \textcolor{comment}{// moje sloty}}
+\DoxyCodeLine{53 }
+\DoxyCodeLine{54     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_main_window_a397e8903fb4f660d6b3359de3b2b8a5f}{pokazSie}}();}
+\DoxyCodeLine{55 }
+\DoxyCodeLine{56     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_main_window_a1d8095cbc91e97e88fa781ce57f5bc7c}{oknoOgolneDalej}}(\textcolor{keywordtype}{int} kwota);}
+\DoxyCodeLine{57 }
+\DoxyCodeLine{58     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_main_window_ae74dfdb3d54588cf9f344819a55dac19}{oknoGraczyWstecz}}();}
+\DoxyCodeLine{59 }
+\DoxyCodeLine{60     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_main_window_aabd411c2dde2a41607c10cc3b66f4331}{oknoGraczyDalej}}();}
+\DoxyCodeLine{61 }
+\DoxyCodeLine{62     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_main_window_a1672749edf8e189904b432758c1bba8f}{oknoPlanszyGraj}}();}
+\DoxyCodeLine{63 }
+\DoxyCodeLine{64     \textcolor{comment}{// -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/}}
+\DoxyCodeLine{65 \textcolor{keyword}{private}:}
+\DoxyCodeLine{66     Ui::MainWindow *\mbox{\hyperlink{class_main_window_a35466a70ed47252a0191168126a352a5}{ui}};}
+\DoxyCodeLine{67 }
+\DoxyCodeLine{68     \textcolor{comment}{// -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/}}
+\DoxyCodeLine{69     \textcolor{comment}{// okna poboczne}}
+\DoxyCodeLine{70 }
+\DoxyCodeLine{71     \mbox{\hyperlink{class_n_g_ogolne}{NGOgolne}} *\mbox{\hyperlink{class_main_window_a456a303910451c11bceff6ba6a083e8e}{nowaGraOgolne\_}};}
+\DoxyCodeLine{72 }
+\DoxyCodeLine{73     \mbox{\hyperlink{class_n_g_gracze}{NGGracze}} *\mbox{\hyperlink{class_main_window_a30e08e0d280740ec646ce4976ac435f6}{oknoGraczy\_}};}
+\DoxyCodeLine{74 }
+\DoxyCodeLine{75     \mbox{\hyperlink{class_n_g_plansza}{NGPlansza}} *\mbox{\hyperlink{class_main_window_a6c274458f704310dad16018884ae1cbf}{oknoPlanszy\_}};}
+\DoxyCodeLine{76 }
+\DoxyCodeLine{77     \mbox{\hyperlink{class_rozgrywka}{Rozgrywka}} *\mbox{\hyperlink{class_main_window_a58882ee61177283b839f0e0383d17d59}{oknoRozgrywki\_}};}
+\DoxyCodeLine{78 }
+\DoxyCodeLine{79     \textcolor{comment}{// * * * * * * * * * *}}
+\DoxyCodeLine{80     \textcolor{comment}{// -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/}}
+\DoxyCodeLine{81 }
+\DoxyCodeLine{82     \textcolor{comment}{// -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/}}
+\DoxyCodeLine{83     \textcolor{comment}{// gra}}
+\DoxyCodeLine{84 }
+\DoxyCodeLine{85     \mbox{\hyperlink{class_c_game}{CGame}} *\mbox{\hyperlink{class_main_window_a3cea39100fcc505ee1eaa515b5ab812d}{gra\_}};}
+\DoxyCodeLine{86 }
+\DoxyCodeLine{87     QString \mbox{\hyperlink{class_main_window_a5c49f456d06576552a0ac512e973c70a}{waluta\_}};}
+\DoxyCodeLine{88 }
+\DoxyCodeLine{89     QTimer *\mbox{\hyperlink{class_main_window_a8e1f8583b42f5f9e5764f9437f86df7b}{zegarmistrzSwiatla\_}};}
+\DoxyCodeLine{90 }
+\DoxyCodeLine{91     \textcolor{comment}{// * * * * * * * * * *}}
+\DoxyCodeLine{92     \textcolor{comment}{// -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/}}
+\DoxyCodeLine{93     \textcolor{comment}{// grafika}}
+\DoxyCodeLine{94 }
+\DoxyCodeLine{95     deque<CRysPionek *> *\mbox{\hyperlink{class_main_window_a4a65196ed028ca816439e29e444a11d3}{pionki\_}};}
+\DoxyCodeLine{96 }
+\DoxyCodeLine{97     deque<CRysPole *> *\mbox{\hyperlink{class_main_window_a7acf3386e2fe06df47190ff7f6cf1d29}{pola\_}};}
+\DoxyCodeLine{98 }
+\DoxyCodeLine{99     \textcolor{comment}{// * * * * * * * * * *}}
+\DoxyCodeLine{100     \textcolor{comment}{// -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/}}
+\DoxyCodeLine{101     \textcolor{comment}{// flagi okna}}
+\DoxyCodeLine{102     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_main_window_a6035856cf2aea7321b89621100b46fc0}{oknoOgolneCrtd\_}};           \textcolor{comment}{// czy utworzone nowaGraOgolne\_}}
+\DoxyCodeLine{103     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_main_window_a7a2818a72df60c50da11c8c757d19e27}{oknoGraczCrtd\_}};            \textcolor{comment}{// czy utworzone okno graczy}}
+\DoxyCodeLine{104     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_main_window_a45ea15c48178744f3087c5523dc51140}{oknoPlanszyCrtd\_}};          \textcolor{comment}{// czy utworzone okno planszy}}
+\DoxyCodeLine{105     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_main_window_a20163c660618393c75d47de9253e8a6f}{oknoRozgrywkiCrtd\_}};          \textcolor{comment}{// czy utworzone okno rozgrywki}}
+\DoxyCodeLine{106 }
+\DoxyCodeLine{107     \textcolor{keywordtype}{bool} *\mbox{\hyperlink{class_main_window_a49ca24b5ae1e26523eee4d8125ce4d75}{endGame\_}};                  \textcolor{comment}{// czy upłynął czas rozgrywki}}
+\DoxyCodeLine{108 }
+\DoxyCodeLine{109 \};}
+\DoxyCodeLine{110 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// MAINWINDOW\_H}}
+
+\end{DoxyCode}

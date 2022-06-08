@@ -1,0 +1,22 @@
+var searchData=
+[
+  ['tasowaniekart_0',['tasowanieKart',['../class_c_plansza.html#a1295673b3d4eaa71c33f5996aeeb2ba7',1,'CPlansza']]],
+  ['text_5f_1',['text_',['../class_c_rys_info.html#ab12ef963e6d32bed885f0f9d2f51cbad',1,'CRysInfo']]],
+  ['timer_5f_2',['timer_',['../class_c_rys_kostki.html#adc473fcee6cb6a730150c4dab14536ef',1,'CRysKostki']]],
+  ['timer_5finterval_3',['TIMER_INTERVAL',['../_consts_8h.html#aed895f8ae331b63dd02a0bce789ac7a6',1,'Consts.h']]],
+  ['timerinfo_5f_4',['timerInfo_',['../class_rozgrywka.html#a106da41b4033983bdadc610db3f34397',1,'Rozgrywka']]],
+  ['timerprime_5f_5',['timerPrime_',['../class_rozgrywka.html#a27a266fd2027c7feebc611a56e04f51f',1,'Rozgrywka']]],
+  ['topleft_6',['topLeft',['../struct_s_dn_pionka.html#a9a14f42e49619dee48e1f2149828951d',1,'SDnPionka']]],
+  ['topleft_5f_7',['topLeft_',['../class_c_rys.html#af7e489a830bb38ade4e63ddcfcfb7fac',1,'CRys']]],
+  ['topleft_5fpiona_5fpan_5fgr_8',['TOPLEFT_PIONA_PAN_GR',['../_consts___qt_8h.html#a360d578d7cdc5fb4cb7ef9f01d7793d5',1,'Consts_Qt.h']]],
+  ['topleft_5fpiona_5fplansza_9',['TOPLEFT_PIONA_PLANSZA',['../_consts___qt_8h.html#af333ffb4e21008698f8f596cf3b5693e',1,'Consts_Qt.h']]],
+  ['topleft_5fpiona_5fwybor_10',['TOPLEFT_PIONA_WYBOR',['../_consts___qt_8h.html#aee88c2d4c4be3df3e5faf4157490c26c',1,'Consts_Qt.h']]],
+  ['topleft_5fpola_5fnarkw_5fplansza_11',['TOPLEFT_POLA_NARKW_PLANSZA',['../_consts___qt_8h.html#a4449ab0f77ee124bb160013e46b4a89a',1,'Consts_Qt.h']]],
+  ['topleft_5fpola_5fnarkw_5fwybor_12',['TOPLEFT_POLA_NARKW_WYBOR',['../_consts___qt_8h.html#a2d6c2aa3eec526f9e8d0c3aafe903979',1,'Consts_Qt.h']]],
+  ['topleft_5fpola_5fzwykl_5fplansza_13',['TOPLEFT_POLA_ZWYKL_PLANSZA',['../_consts___qt_8h.html#a2a0fa67cc77a97bb4afa6d85ae2806ba',1,'Consts_Qt.h']]],
+  ['topleft_5fpola_5fzwykl_5fwybor_14',['TOPLEFT_POLA_ZWYKL_WYBOR',['../_consts___qt_8h.html#af330750493dd99e10287e44ddfc0404f',1,'Consts_Qt.h']]],
+  ['topleft_5fpole_5finfo_15',['TOPLEFT_POLE_INFO',['../_consts___qt_8h.html#a6f73403eea513d55a19a9d3de654d32e',1,'Consts_Qt.h']]],
+  ['tresc_16',['tresc',['../struct_s_dn_karty.html#a105dc3730d70693e083b81c1d252b740',1,'SDnKarty']]],
+  ['tresc_5f_17',['tresc_',['../class_c_karta.html#ae636c3ce6b1e4dcc5f86f6b8ca8bf706',1,'CKarta']]],
+  ['turagracza_18',['turaGracza',['../class_rozgrywka.html#a292b932950e05b438178ac41e55e0412',1,'Rozgrywka']]]
+];

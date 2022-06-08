@@ -1,0 +1,5 @@
+<map id="Graficzna hierarchia klas" name="Graficzna hierarchia klas">
+<area shape="rect" id="node1" href="$class_c_gracz.html" title="Klasa logiki." alt="" coords="5,31,72,57"/>
+<area shape="rect" id="node2" href="$class_c_czlowiek.html" title="Klasa logiki." alt="" coords="122,5,205,32"/>
+<area shape="rect" id="node3" href="$class_c_komputer.html" title="Klasa logiki." alt="" coords="120,56,207,83"/>
+</map>

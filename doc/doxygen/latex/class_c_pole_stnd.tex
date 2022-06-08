@@ -1,0 +1,230 @@
+\hypertarget{class_c_pole_stnd}{}\doxysection{Dokumentacja klasy CPole\+Stnd}
+\label{class_c_pole_stnd}\index{CPoleStnd@{CPoleStnd}}
+
+
+Klasa logiki.  
+
+
+
+
+{\ttfamily \#include $<$cpolestnd.\+h$>$}
+
+
+
+Diagram dziedziczenia dla CPole\+Stnd
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=145pt]{class_c_pole_stnd__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Diagram współpracy dla CPole\+Stnd\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=311pt]{class_c_pole_stnd__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_pole_stnd_a41c3e6c5bf2f2de213dfb8347571ec9c}{CPole\+Stnd}} ()
+\item 
+\mbox{\hyperlink{class_c_pole_stnd_a7f006506485c809a0ad48c749144474b}{CPole\+Stnd}} (\mbox{\hyperlink{struct_s_dn_pocz_pola}{SDn\+Pocz\+Pola}} dane)
+\item 
+\mbox{\hyperlink{class_c_pole_stnd_af4dee3cb7cb796ba39e42e97a3fec3d3}{$\sim$\+CPole\+Stnd}} ()
+\item 
+\mbox{\hyperlink{struct_s_wyn_akcji}{SWyn\+Akcji}} \mbox{\hyperlink{class_c_pole_stnd_a2e98cf534a8351af036cc25281f36bf5}{akcja}} (\mbox{\hyperlink{class_c_gracz}{CGracz}} $\ast$gracz)
+\begin{DoxyCompactList}\small\item\em Funkcja zwraca wartość, która pozwala określić dostępne dla tego pola akcje. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_c_pole_stnd_a94aa7f1e94903be0742b6b637101573b}{podaj\+Dane\+Int}} (int opt)
+\item 
+\mbox{\hyperlink{struct_s_dn_pola}{SDn\+Pola}} \mbox{\hyperlink{class_c_pole_stnd_ac8dcd09f496cdf848c096e57a61155e6}{podaj\+Dane}} ()
+\item 
+void \mbox{\hyperlink{class_c_pole_stnd_a43e26667338d7e0baa9afc22e7e89a19}{sprzedawanie}} (\mbox{\hyperlink{class_c_gracz}{CGracz}} $\ast$kupiec)
+\item 
+void \mbox{\hyperlink{class_c_pole_stnd_a37e774f522a431bc30c717a9d6245174}{wpisz\+Dane}} (\mbox{\hyperlink{struct_s_dn_pocz_pola}{SDn\+Pocz\+Pola}} dane)
+\item 
+void \mbox{\hyperlink{class_c_pole_stnd_a4ffca27f5cd3b6329eba89da16b5b682}{aktual\+Czynsz}} ()
+\item 
+void \mbox{\hyperlink{class_c_pole_stnd_a869128e91ca88f96306295604e1eb896}{buduj}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Atrybuty prywatne}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_c_pole_stnd_a3b1decf92260c77c492450dbac762857}{kolor\+\_\+}}
+\begin{DoxyCompactList}\small\item\em kolor pola \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_c_pole_stnd_a1bf016c7ffb21318e3c67cd31ff0856e}{lb\+Apartam\+\_\+}}
+\begin{DoxyCompactList}\small\item\em liczba apartamentów na polu \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_c_pole_stnd_a3b2f44dc7b3bb88c177db72bc2a7c599}{lb\+Hoteli\+\_\+}}
+\begin{DoxyCompactList}\small\item\em liczba hoteli (może być tylko 0 lub 1) \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_c_pole_stnd_a82e2469a6f1abcfaac08c9acdbc893ad}{cena\+Apartam\+\_\+}}
+\begin{DoxyCompactList}\small\item\em cena apartamentu \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_c_pole_stnd_ace99c0781e78ca3541e7bb37f8b046e7}{cena\+Hotelu\+\_\+}}
+\begin{DoxyCompactList}\small\item\em cena hotelu \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Dodatkowe Dziedziczone Składowe}
+
+
+\doxysubsection{Opis szczegółowy}
+Klasa logiki. 
+
+\doxysubsection{Dokumentacja konstruktora i destruktora}
+\mbox{\Hypertarget{class_c_pole_stnd_a41c3e6c5bf2f2de213dfb8347571ec9c}\label{class_c_pole_stnd_a41c3e6c5bf2f2de213dfb8347571ec9c}} 
+\index{CPoleStnd@{CPoleStnd}!CPoleStnd@{CPoleStnd}}
+\index{CPoleStnd@{CPoleStnd}!CPoleStnd@{CPoleStnd}}
+\doxysubsubsection{\texorpdfstring{CPoleStnd()}{CPoleStnd()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily CPole\+Stnd\+::\+CPole\+Stnd (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_pole_stnd_a7f006506485c809a0ad48c749144474b}\label{class_c_pole_stnd_a7f006506485c809a0ad48c749144474b}} 
+\index{CPoleStnd@{CPoleStnd}!CPoleStnd@{CPoleStnd}}
+\index{CPoleStnd@{CPoleStnd}!CPoleStnd@{CPoleStnd}}
+\doxysubsubsection{\texorpdfstring{CPoleStnd()}{CPoleStnd()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily CPole\+Stnd\+::\+CPole\+Stnd (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_s_dn_pocz_pola}{SDn\+Pocz\+Pola}}}]{dane }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_pole_stnd_af4dee3cb7cb796ba39e42e97a3fec3d3}\label{class_c_pole_stnd_af4dee3cb7cb796ba39e42e97a3fec3d3}} 
+\index{CPoleStnd@{CPoleStnd}!````~CPoleStnd@{$\sim$CPoleStnd}}
+\index{````~CPoleStnd@{$\sim$CPoleStnd}!CPoleStnd@{CPoleStnd}}
+\doxysubsubsection{\texorpdfstring{$\sim$CPoleStnd()}{~CPoleStnd()}}
+{\footnotesize\ttfamily CPole\+Stnd\+::$\sim$\+CPole\+Stnd (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Dokumentacja funkcji składowych}
+\mbox{\Hypertarget{class_c_pole_stnd_a2e98cf534a8351af036cc25281f36bf5}\label{class_c_pole_stnd_a2e98cf534a8351af036cc25281f36bf5}} 
+\index{CPoleStnd@{CPoleStnd}!akcja@{akcja}}
+\index{akcja@{akcja}!CPoleStnd@{CPoleStnd}}
+\doxysubsubsection{\texorpdfstring{akcja()}{akcja()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_s_wyn_akcji}{SWyn\+Akcji}} CPole\+Stnd\+::akcja (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_gracz}{CGracz}} $\ast$}]{gracz }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Funkcja zwraca wartość, która pozwala określić dostępne dla tego pola akcje. 
+
+W tym przypadku pozwala ona określić, że obiekt jest polem o określonym kolorze i na którym można budować nieruchomości, a czynsz zależy od liczby wybudowanych na polu nieruchomości. 
+\begin{DoxyParams}{Parametry}
+{\em $\ast$gracz} & -\/ wskaźnik do obiektu klasy gracz, który stanął na polu \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+Wartości\+: \begin{DoxyItemize}
+\item \mbox{\hyperlink{struct_s_wyn_akcji_af4f719af14df7f07431de76741de165d}{SWyn\+Akcji.\+y1}} = 1 mówiącą, że to klasa \mbox{\hyperlink{class_c_pole_stnd}{CPole\+Stnd}} \item \mbox{\hyperlink{struct_s_wyn_akcji_a63a87925129557da5bae70bd284aa99c}{SWyn\+Akcji.\+y2}} wskazującą, jaki rodzaj akcji może zostać podjęty \end{DoxyItemize}
+
+\end{DoxyReturn}
+
+
+Reimplementowana z \mbox{\hyperlink{class_c_pole_spec_a8957dbfb5a6ea31d7fdac96b1aeb1086}{CPole\+Spec}}.
+
+\mbox{\Hypertarget{class_c_pole_stnd_a4ffca27f5cd3b6329eba89da16b5b682}\label{class_c_pole_stnd_a4ffca27f5cd3b6329eba89da16b5b682}} 
+\index{CPoleStnd@{CPoleStnd}!aktualCzynsz@{aktualCzynsz}}
+\index{aktualCzynsz@{aktualCzynsz}!CPoleStnd@{CPoleStnd}}
+\doxysubsubsection{\texorpdfstring{aktualCzynsz()}{aktualCzynsz()}}
+{\footnotesize\ttfamily void CPole\+Stnd\+::aktual\+Czynsz (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_pole_stnd_a869128e91ca88f96306295604e1eb896}\label{class_c_pole_stnd_a869128e91ca88f96306295604e1eb896}} 
+\index{CPoleStnd@{CPoleStnd}!buduj@{buduj}}
+\index{buduj@{buduj}!CPoleStnd@{CPoleStnd}}
+\doxysubsubsection{\texorpdfstring{buduj()}{buduj()}}
+{\footnotesize\ttfamily void CPole\+Stnd\+::buduj (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_pole_stnd_ac8dcd09f496cdf848c096e57a61155e6}\label{class_c_pole_stnd_ac8dcd09f496cdf848c096e57a61155e6}} 
+\index{CPoleStnd@{CPoleStnd}!podajDane@{podajDane}}
+\index{podajDane@{podajDane}!CPoleStnd@{CPoleStnd}}
+\doxysubsubsection{\texorpdfstring{podajDane()}{podajDane()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_s_dn_pola}{SDn\+Pola}} CPole\+Stnd\+::podaj\+Dane (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplementowana z \mbox{\hyperlink{class_c_pole_spec_a0a8b16696ced00021337e37de59dc1e9}{CPole\+Spec}}.
+
+\mbox{\Hypertarget{class_c_pole_stnd_a94aa7f1e94903be0742b6b637101573b}\label{class_c_pole_stnd_a94aa7f1e94903be0742b6b637101573b}} 
+\index{CPoleStnd@{CPoleStnd}!podajDaneInt@{podajDaneInt}}
+\index{podajDaneInt@{podajDaneInt}!CPoleStnd@{CPoleStnd}}
+\doxysubsubsection{\texorpdfstring{podajDaneInt()}{podajDaneInt()}}
+{\footnotesize\ttfamily int CPole\+Stnd\+::podaj\+Dane\+Int (\begin{DoxyParamCaption}\item[{int}]{opt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplementowana z \mbox{\hyperlink{class_c_pole_spec_ad5602d1a978bebdbfbe66c64d6a3d17e}{CPole\+Spec}}.
+
+\mbox{\Hypertarget{class_c_pole_stnd_a43e26667338d7e0baa9afc22e7e89a19}\label{class_c_pole_stnd_a43e26667338d7e0baa9afc22e7e89a19}} 
+\index{CPoleStnd@{CPoleStnd}!sprzedawanie@{sprzedawanie}}
+\index{sprzedawanie@{sprzedawanie}!CPoleStnd@{CPoleStnd}}
+\doxysubsubsection{\texorpdfstring{sprzedawanie()}{sprzedawanie()}}
+{\footnotesize\ttfamily void CPole\+Stnd\+::sprzedawanie (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_gracz}{CGracz}} $\ast$}]{kupiec }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplementowana z \mbox{\hyperlink{class_c_pole_spec_a0482ec72f9bde8bd96c32de6d4345a58}{CPole\+Spec}}.
+
+\mbox{\Hypertarget{class_c_pole_stnd_a37e774f522a431bc30c717a9d6245174}\label{class_c_pole_stnd_a37e774f522a431bc30c717a9d6245174}} 
+\index{CPoleStnd@{CPoleStnd}!wpiszDane@{wpiszDane}}
+\index{wpiszDane@{wpiszDane}!CPoleStnd@{CPoleStnd}}
+\doxysubsubsection{\texorpdfstring{wpiszDane()}{wpiszDane()}}
+{\footnotesize\ttfamily void CPole\+Stnd\+::wpisz\+Dane (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_s_dn_pocz_pola}{SDn\+Pocz\+Pola}}}]{dane }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplementowana z \mbox{\hyperlink{class_c_pole_spec_af829b78d40f80751672f650a767f7578}{CPole\+Spec}}.
+
+
+
+\doxysubsection{Dokumentacja atrybutów składowych}
+\mbox{\Hypertarget{class_c_pole_stnd_a82e2469a6f1abcfaac08c9acdbc893ad}\label{class_c_pole_stnd_a82e2469a6f1abcfaac08c9acdbc893ad}} 
+\index{CPoleStnd@{CPoleStnd}!cenaApartam\_@{cenaApartam\_}}
+\index{cenaApartam\_@{cenaApartam\_}!CPoleStnd@{CPoleStnd}}
+\doxysubsubsection{\texorpdfstring{cenaApartam\_}{cenaApartam\_}}
+{\footnotesize\ttfamily int CPole\+Stnd\+::cena\+Apartam\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+cena apartamentu 
+
+\mbox{\Hypertarget{class_c_pole_stnd_ace99c0781e78ca3541e7bb37f8b046e7}\label{class_c_pole_stnd_ace99c0781e78ca3541e7bb37f8b046e7}} 
+\index{CPoleStnd@{CPoleStnd}!cenaHotelu\_@{cenaHotelu\_}}
+\index{cenaHotelu\_@{cenaHotelu\_}!CPoleStnd@{CPoleStnd}}
+\doxysubsubsection{\texorpdfstring{cenaHotelu\_}{cenaHotelu\_}}
+{\footnotesize\ttfamily int CPole\+Stnd\+::cena\+Hotelu\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+cena hotelu 
+
+\mbox{\Hypertarget{class_c_pole_stnd_a3b1decf92260c77c492450dbac762857}\label{class_c_pole_stnd_a3b1decf92260c77c492450dbac762857}} 
+\index{CPoleStnd@{CPoleStnd}!kolor\_@{kolor\_}}
+\index{kolor\_@{kolor\_}!CPoleStnd@{CPoleStnd}}
+\doxysubsubsection{\texorpdfstring{kolor\_}{kolor\_}}
+{\footnotesize\ttfamily int CPole\+Stnd\+::kolor\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+kolor pola 
+
+\mbox{\Hypertarget{class_c_pole_stnd_a1bf016c7ffb21318e3c67cd31ff0856e}\label{class_c_pole_stnd_a1bf016c7ffb21318e3c67cd31ff0856e}} 
+\index{CPoleStnd@{CPoleStnd}!lbApartam\_@{lbApartam\_}}
+\index{lbApartam\_@{lbApartam\_}!CPoleStnd@{CPoleStnd}}
+\doxysubsubsection{\texorpdfstring{lbApartam\_}{lbApartam\_}}
+{\footnotesize\ttfamily int CPole\+Stnd\+::lb\+Apartam\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+liczba apartamentów na polu 
+
+\mbox{\Hypertarget{class_c_pole_stnd_a3b2f44dc7b3bb88c177db72bc2a7c599}\label{class_c_pole_stnd_a3b2f44dc7b3bb88c177db72bc2a7c599}} 
+\index{CPoleStnd@{CPoleStnd}!lbHoteli\_@{lbHoteli\_}}
+\index{lbHoteli\_@{lbHoteli\_}!CPoleStnd@{CPoleStnd}}
+\doxysubsubsection{\texorpdfstring{lbHoteli\_}{lbHoteli\_}}
+{\footnotesize\ttfamily int CPole\+Stnd\+::lb\+Hoteli\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+liczba hoteli (może być tylko 0 lub 1) 
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+G\+:/\+Folder\+\_\+\+Dawida/\+Prace\+\_\+me/\+Git/\+Daw\+Rad-\/projekty/\+EURObiznes/\+EURObiznes/\+Logika\+\_\+h/\mbox{\hyperlink{cpolestnd_8h}{cpolestnd.\+h}}\item 
+G\+:/\+Folder\+\_\+\+Dawida/\+Prace\+\_\+me/\+Git/\+Daw\+Rad-\/projekty/\+EURObiznes/\+EURObiznes/\+Logika\+\_\+src/\mbox{\hyperlink{cpolestnd_8cpp}{cpolestnd.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,236 @@
+\hypertarget{class_c_administrator_c_rys}{}\doxysection{Dokumentacja klasy CAdministrator\+CRys}
+\label{class_c_administrator_c_rys}\index{CAdministratorCRys@{CAdministratorCRys}}
+
+
+Klasa interfejs do zarządzania obiektami graficznymi.  
+
+
+
+
+{\ttfamily \#include $<$cadministratorcrys.\+h$>$}
+
+\doxysubsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_administrator_c_rys_a622cbe25c2b0eb8d42d01c9e74f67d9a}{CAdministrator\+CRys}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Statyczne metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_c_administrator_c_rys_a7fab57f89cd5beb0df884d96bd1bf1ea}{przesun\+Pole\+Poz\+Zero\+Na\+Pocz}} (deque$<$ \mbox{\hyperlink{class_c_rys_pole}{CRys\+Pole}} $\ast$ $>$ $\ast$pola)
+\begin{DoxyCompactList}\small\item\em Ustawia pole o polu poz\+\_\+ == 0 na początku kolejki. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_c_administrator_c_rys_a70cf439ce29464028980fc84ae15c000}{aktual\+Pensje\+Na\+Start}} (deque$<$ \mbox{\hyperlink{class_c_rys_pole}{CRys\+Pole}} $\ast$ $>$ $\ast$pola, int kwota, QString waluta)
+\item 
+static void \mbox{\hyperlink{class_c_administrator_c_rys_ac8757cce09890adf6532654c2d0888b3}{deque\+Int\+Przod}} (deque$<$ int $>$ \&kolejka)
+\item 
+static void \mbox{\hyperlink{class_c_administrator_c_rys_ace563b352ebbffc6f1e1796385cf9309}{deque\+Int\+Tyl}} (deque$<$ int $>$ \&kolejka)
+\item 
+static void \mbox{\hyperlink{class_c_administrator_c_rys_a742987b96a87c44c24a05df47c9bdaac}{deque\+CRys\+Pionek\+Przod}} (deque$<$ \mbox{\hyperlink{class_c_rys_pionek}{CRys\+Pionek}} $\ast$ $>$ $\ast$pionki)
+\item 
+static void \mbox{\hyperlink{class_c_administrator_c_rys_ae7af4896ee98815cf0b069266bb20e00}{deque\+CRys\+Pionek\+Tyl}} (deque$<$ \mbox{\hyperlink{class_c_rys_pionek}{CRys\+Pionek}} $\ast$ $>$ $\ast$pionki)
+\item 
+static void \mbox{\hyperlink{class_c_administrator_c_rys_a3bc5fa75c68d585d585a6a83316d3e80}{deque\+CRys\+Pole\+Przod}} (deque$<$ \mbox{\hyperlink{class_c_rys_pole}{CRys\+Pole}} $\ast$ $>$ $\ast$pola)
+\item 
+static void \mbox{\hyperlink{class_c_administrator_c_rys_a9a974bdcd689a0b40d95097ea3073103}{deque\+CRys\+Pole\+Tyl}} (deque$<$ \mbox{\hyperlink{class_c_rys_pole}{CRys\+Pole}} $\ast$ $>$ $\ast$pola)
+\item 
+static void \mbox{\hyperlink{class_c_administrator_c_rys_aa51b70f9fa5803b2b9fb1526228363e0}{wyczysc\+Deque\+CRys\+Pole}} (deque$<$ \mbox{\hyperlink{class_c_rys_pole}{CRys\+Pole}} $\ast$ $>$ $\ast$deq\+Pol)
+\item 
+static \mbox{\hyperlink{class_c_rys_pole_stnd}{CRys\+Pole\+Stnd}} $\ast$ \mbox{\hyperlink{class_c_administrator_c_rys_a770a0567a32e23e55fb9746213167a54}{utworz\+Rys\+Pola\+Stnd\+ZDn\+Pol}} (const \mbox{\hyperlink{struct_s_dn_pola}{SDn\+Pola}} \&dane)
+\item 
+static \mbox{\hyperlink{class_c_rys_pole_spec}{CRys\+Pole\+Spec}} $\ast$ \mbox{\hyperlink{class_c_administrator_c_rys_a186a324b28857d95062998cbcd2fbb29}{utworz\+Rys\+Pola\+Spec\+ZDn\+Pol}} (const \mbox{\hyperlink{struct_s_dn_pola}{SDn\+Pola}} \&dane)
+\item 
+static \mbox{\hyperlink{class_c_rys_pole_szansa}{CRys\+Pole\+Szansa}} $\ast$ \mbox{\hyperlink{class_c_administrator_c_rys_a57144f1c3b4d58e54af14612c5852b40}{utworz\+Rys\+Pola\+Szansa\+ZDn\+Pol}} (const \mbox{\hyperlink{struct_s_dn_pola}{SDn\+Pola}} \&dane)
+\item 
+static \mbox{\hyperlink{class_c_rys_pole_szansa}{CRys\+Pole\+Szansa}} $\ast$ \mbox{\hyperlink{class_c_administrator_c_rys_a4fe68ce0289e5a468b261f13dd9030e5}{utworz\+Rys\+Pola\+Kasa\+ZDn\+Pol}} (const \mbox{\hyperlink{struct_s_dn_pola}{SDn\+Pola}} \&dane)
+\item 
+static \mbox{\hyperlink{class_c_rys_pole_start}{CRys\+Pole\+Start}} $\ast$ \mbox{\hyperlink{class_c_administrator_c_rys_a2b87dd698b207a7ad785b81d02b9f437}{utworz\+Rys\+Pola\+Start\+ZDn\+Pol}} (const \mbox{\hyperlink{struct_s_dn_pola}{SDn\+Pola}} \&dane, QString \&waluta)
+\item 
+static \mbox{\hyperlink{class_c_rys_pole___pplus_w}{CRys\+Pole\+\_\+\+PplusW}} $\ast$ \mbox{\hyperlink{class_c_administrator_c_rys_afb0f387002ae9f595e3b001b94eb858c}{utworz\+Rys\+Pola\+\_\+\+Pplus\+W\+\_\+\+ZDn\+Pol}} (const \mbox{\hyperlink{struct_s_dn_pola}{SDn\+Pola}} \&dane, QString \&napis2)
+\item 
+static \mbox{\hyperlink{class_c_rys_rog}{CRys\+Rog}} $\ast$ \mbox{\hyperlink{class_c_administrator_c_rys_a1478fa71fd2e4044eb4ccf118733091e}{utworz\+Rys\+Pola\+Rog\+ZDn\+Pol}} (const \mbox{\hyperlink{struct_s_dn_pola}{SDn\+Pola}} \&dane)
+\item 
+static \mbox{\hyperlink{class_c_rys_pole_obraz}{CRys\+Pole\+Obraz}} $\ast$ \mbox{\hyperlink{class_c_administrator_c_rys_a981357fed9f4ba547fc730b035833211}{utworz\+Rys\+Pola\+Obraz\+ZDn\+Pol}} (const \mbox{\hyperlink{struct_s_dn_pola}{SDn\+Pola}} \&dane)
+\item 
+static \mbox{\hyperlink{class_c_rys_pole_szansa}{CRys\+Pole\+Szansa}} $\ast$ \mbox{\hyperlink{class_c_administrator_c_rys_aaf16117fce654e1238d276f84900cea2}{utworz\+Rys\+Pola\+ZErrorem\+ZDn\+Pol}} (const \mbox{\hyperlink{struct_s_dn_pola}{SDn\+Pola}} \&dane)
+\item 
+static deque$<$ \mbox{\hyperlink{class_c_rys_pole}{CRys\+Pole}} $\ast$ $>$ \mbox{\hyperlink{class_c_administrator_c_rys_aff53585200f84bce3683edd871fb92c8}{utworz\+Kolejke\+Pol}} (deque$<$ \mbox{\hyperlink{struct_s_dn_pola}{SDn\+Pola}} $>$ \&dane\+Pol)
+\item 
+static void \mbox{\hyperlink{class_c_administrator_c_rys_ab84331cf8cd8eca3c0fda5a5fd689931}{zamien\+Na\+CRys\+Pola\+Stnd}} (deque$<$ \mbox{\hyperlink{class_c_rys_pole}{CRys\+Pole}} $\ast$ $>$ $\ast$deq\+Pol, const \mbox{\hyperlink{struct_s_dn_pola}{SDn\+Pola}} \&dane, QGraphics\+Scene $\ast$scene)
+\item 
+static void \mbox{\hyperlink{class_c_administrator_c_rys_aded5dfefd5f77d572164cfbfbea4d89e}{zamien\+Na\+CRys\+Pola\+Spec}} (deque$<$ \mbox{\hyperlink{class_c_rys_pole}{CRys\+Pole}} $\ast$ $>$ $\ast$deq\+Pol, const \mbox{\hyperlink{struct_s_dn_pola}{SDn\+Pola}} \&dane, QGraphics\+Scene $\ast$scene)
+\item 
+static void \mbox{\hyperlink{class_c_administrator_c_rys_a6545151bae91d753dea6284956296270}{zamien\+Na\+CRys\+Pola\+Ekstra}} (deque$<$ \mbox{\hyperlink{class_c_rys_pole}{CRys\+Pole}} $\ast$ $>$ $\ast$deq\+Pol, const \mbox{\hyperlink{struct_s_dn_pola}{SDn\+Pola}} \&dane, QGraphics\+Scene $\ast$scene)
+\item 
+static void \mbox{\hyperlink{class_c_administrator_c_rys_afa375f69ebc8ea3dcd66181169860cbe}{zamien\+Na\+CRys\+Pola\+Szansa}} (deque$<$ \mbox{\hyperlink{class_c_rys_pole}{CRys\+Pole}} $\ast$ $>$ $\ast$deq\+Pol, const \mbox{\hyperlink{struct_s_dn_pola}{SDn\+Pola}} \&dane, QGraphics\+Scene $\ast$scene)
+\item 
+static void \mbox{\hyperlink{class_c_administrator_c_rys_acccfe2596ec4d993d0546933387cbcb8}{zamien\+Na\+CRys\+Pola\+Kasa}} (deque$<$ \mbox{\hyperlink{class_c_rys_pole}{CRys\+Pole}} $\ast$ $>$ $\ast$deq\+Pol, const \mbox{\hyperlink{struct_s_dn_pola}{SDn\+Pola}} \&dane, QGraphics\+Scene $\ast$scene)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Opis szczegółowy}
+Klasa interfejs do zarządzania obiektami graficznymi. 
+
+\doxysubsection{Dokumentacja konstruktora i destruktora}
+\mbox{\Hypertarget{class_c_administrator_c_rys_a622cbe25c2b0eb8d42d01c9e74f67d9a}\label{class_c_administrator_c_rys_a622cbe25c2b0eb8d42d01c9e74f67d9a}} 
+\index{CAdministratorCRys@{CAdministratorCRys}!CAdministratorCRys@{CAdministratorCRys}}
+\index{CAdministratorCRys@{CAdministratorCRys}!CAdministratorCRys@{CAdministratorCRys}}
+\doxysubsubsection{\texorpdfstring{CAdministratorCRys()}{CAdministratorCRys()}}
+{\footnotesize\ttfamily CAdministrator\+CRys\+::\+CAdministrator\+CRys (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Dokumentacja funkcji składowych}
+\mbox{\Hypertarget{class_c_administrator_c_rys_a70cf439ce29464028980fc84ae15c000}\label{class_c_administrator_c_rys_a70cf439ce29464028980fc84ae15c000}} 
+\index{CAdministratorCRys@{CAdministratorCRys}!aktualPensjeNaStart@{aktualPensjeNaStart}}
+\index{aktualPensjeNaStart@{aktualPensjeNaStart}!CAdministratorCRys@{CAdministratorCRys}}
+\doxysubsubsection{\texorpdfstring{aktualPensjeNaStart()}{aktualPensjeNaStart()}}
+{\footnotesize\ttfamily void CAdministrator\+CRys\+::aktual\+Pensje\+Na\+Start (\begin{DoxyParamCaption}\item[{deque$<$ \mbox{\hyperlink{class_c_rys_pole}{CRys\+Pole}} $\ast$ $>$ $\ast$}]{pola,  }\item[{int}]{kwota,  }\item[{QString}]{waluta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c_administrator_c_rys_a742987b96a87c44c24a05df47c9bdaac}\label{class_c_administrator_c_rys_a742987b96a87c44c24a05df47c9bdaac}} 
+\index{CAdministratorCRys@{CAdministratorCRys}!dequeCRysPionekPrzod@{dequeCRysPionekPrzod}}
+\index{dequeCRysPionekPrzod@{dequeCRysPionekPrzod}!CAdministratorCRys@{CAdministratorCRys}}
+\doxysubsubsection{\texorpdfstring{dequeCRysPionekPrzod()}{dequeCRysPionekPrzod()}}
+{\footnotesize\ttfamily void CAdministrator\+CRys\+::deque\+CRys\+Pionek\+Przod (\begin{DoxyParamCaption}\item[{deque$<$ \mbox{\hyperlink{class_c_rys_pionek}{CRys\+Pionek}} $\ast$ $>$ $\ast$}]{pionki }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c_administrator_c_rys_ae7af4896ee98815cf0b069266bb20e00}\label{class_c_administrator_c_rys_ae7af4896ee98815cf0b069266bb20e00}} 
+\index{CAdministratorCRys@{CAdministratorCRys}!dequeCRysPionekTyl@{dequeCRysPionekTyl}}
+\index{dequeCRysPionekTyl@{dequeCRysPionekTyl}!CAdministratorCRys@{CAdministratorCRys}}
+\doxysubsubsection{\texorpdfstring{dequeCRysPionekTyl()}{dequeCRysPionekTyl()}}
+{\footnotesize\ttfamily void CAdministrator\+CRys\+::deque\+CRys\+Pionek\+Tyl (\begin{DoxyParamCaption}\item[{deque$<$ \mbox{\hyperlink{class_c_rys_pionek}{CRys\+Pionek}} $\ast$ $>$ $\ast$}]{pionki }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c_administrator_c_rys_a3bc5fa75c68d585d585a6a83316d3e80}\label{class_c_administrator_c_rys_a3bc5fa75c68d585d585a6a83316d3e80}} 
+\index{CAdministratorCRys@{CAdministratorCRys}!dequeCRysPolePrzod@{dequeCRysPolePrzod}}
+\index{dequeCRysPolePrzod@{dequeCRysPolePrzod}!CAdministratorCRys@{CAdministratorCRys}}
+\doxysubsubsection{\texorpdfstring{dequeCRysPolePrzod()}{dequeCRysPolePrzod()}}
+{\footnotesize\ttfamily void CAdministrator\+CRys\+::deque\+CRys\+Pole\+Przod (\begin{DoxyParamCaption}\item[{deque$<$ \mbox{\hyperlink{class_c_rys_pole}{CRys\+Pole}} $\ast$ $>$ $\ast$}]{pola }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c_administrator_c_rys_a9a974bdcd689a0b40d95097ea3073103}\label{class_c_administrator_c_rys_a9a974bdcd689a0b40d95097ea3073103}} 
+\index{CAdministratorCRys@{CAdministratorCRys}!dequeCRysPoleTyl@{dequeCRysPoleTyl}}
+\index{dequeCRysPoleTyl@{dequeCRysPoleTyl}!CAdministratorCRys@{CAdministratorCRys}}
+\doxysubsubsection{\texorpdfstring{dequeCRysPoleTyl()}{dequeCRysPoleTyl()}}
+{\footnotesize\ttfamily void CAdministrator\+CRys\+::deque\+CRys\+Pole\+Tyl (\begin{DoxyParamCaption}\item[{deque$<$ \mbox{\hyperlink{class_c_rys_pole}{CRys\+Pole}} $\ast$ $>$ $\ast$}]{pola }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c_administrator_c_rys_ac8757cce09890adf6532654c2d0888b3}\label{class_c_administrator_c_rys_ac8757cce09890adf6532654c2d0888b3}} 
+\index{CAdministratorCRys@{CAdministratorCRys}!dequeIntPrzod@{dequeIntPrzod}}
+\index{dequeIntPrzod@{dequeIntPrzod}!CAdministratorCRys@{CAdministratorCRys}}
+\doxysubsubsection{\texorpdfstring{dequeIntPrzod()}{dequeIntPrzod()}}
+{\footnotesize\ttfamily void CAdministrator\+CRys\+::deque\+Int\+Przod (\begin{DoxyParamCaption}\item[{deque$<$ int $>$ \&}]{kolejka }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c_administrator_c_rys_ace563b352ebbffc6f1e1796385cf9309}\label{class_c_administrator_c_rys_ace563b352ebbffc6f1e1796385cf9309}} 
+\index{CAdministratorCRys@{CAdministratorCRys}!dequeIntTyl@{dequeIntTyl}}
+\index{dequeIntTyl@{dequeIntTyl}!CAdministratorCRys@{CAdministratorCRys}}
+\doxysubsubsection{\texorpdfstring{dequeIntTyl()}{dequeIntTyl()}}
+{\footnotesize\ttfamily void CAdministrator\+CRys\+::deque\+Int\+Tyl (\begin{DoxyParamCaption}\item[{deque$<$ int $>$ \&}]{kolejka }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c_administrator_c_rys_a7fab57f89cd5beb0df884d96bd1bf1ea}\label{class_c_administrator_c_rys_a7fab57f89cd5beb0df884d96bd1bf1ea}} 
+\index{CAdministratorCRys@{CAdministratorCRys}!przesunPolePozZeroNaPocz@{przesunPolePozZeroNaPocz}}
+\index{przesunPolePozZeroNaPocz@{przesunPolePozZeroNaPocz}!CAdministratorCRys@{CAdministratorCRys}}
+\doxysubsubsection{\texorpdfstring{przesunPolePozZeroNaPocz()}{przesunPolePozZeroNaPocz()}}
+{\footnotesize\ttfamily void CAdministrator\+CRys\+::przesun\+Pole\+Poz\+Zero\+Na\+Pocz (\begin{DoxyParamCaption}\item[{deque$<$ \mbox{\hyperlink{class_c_rys_pole}{CRys\+Pole}} $\ast$ $>$ $\ast$}]{pola }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Ustawia pole o polu poz\+\_\+ == 0 na początku kolejki. 
+
+Założenie\+: pozycje pól w kolejce nie są pomieszane, są tylko przesunięte względem indeksu zerowego kolejki. \mbox{\Hypertarget{class_c_administrator_c_rys_aff53585200f84bce3683edd871fb92c8}\label{class_c_administrator_c_rys_aff53585200f84bce3683edd871fb92c8}} 
+\index{CAdministratorCRys@{CAdministratorCRys}!utworzKolejkePol@{utworzKolejkePol}}
+\index{utworzKolejkePol@{utworzKolejkePol}!CAdministratorCRys@{CAdministratorCRys}}
+\doxysubsubsection{\texorpdfstring{utworzKolejkePol()}{utworzKolejkePol()}}
+{\footnotesize\ttfamily deque$<$ \mbox{\hyperlink{class_c_rys_pole}{CRys\+Pole}} $\ast$ $>$ CAdministrator\+CRys\+::utworz\+Kolejke\+Pol (\begin{DoxyParamCaption}\item[{deque$<$ \mbox{\hyperlink{struct_s_dn_pola}{SDn\+Pola}} $>$ \&}]{dane\+Pol }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c_administrator_c_rys_afb0f387002ae9f595e3b001b94eb858c}\label{class_c_administrator_c_rys_afb0f387002ae9f595e3b001b94eb858c}} 
+\index{CAdministratorCRys@{CAdministratorCRys}!utworzRysPola\_PplusW\_ZDnPol@{utworzRysPola\_PplusW\_ZDnPol}}
+\index{utworzRysPola\_PplusW\_ZDnPol@{utworzRysPola\_PplusW\_ZDnPol}!CAdministratorCRys@{CAdministratorCRys}}
+\doxysubsubsection{\texorpdfstring{utworzRysPola\_PplusW\_ZDnPol()}{utworzRysPola\_PplusW\_ZDnPol()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_rys_pole___pplus_w}{CRys\+Pole\+\_\+\+PplusW}} $\ast$ CAdministrator\+CRys\+::utworz\+Rys\+Pola\+\_\+\+Pplus\+W\+\_\+\+ZDn\+Pol (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_s_dn_pola}{SDn\+Pola}} \&}]{dane,  }\item[{QString \&}]{napis2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c_administrator_c_rys_a4fe68ce0289e5a468b261f13dd9030e5}\label{class_c_administrator_c_rys_a4fe68ce0289e5a468b261f13dd9030e5}} 
+\index{CAdministratorCRys@{CAdministratorCRys}!utworzRysPolaKasaZDnPol@{utworzRysPolaKasaZDnPol}}
+\index{utworzRysPolaKasaZDnPol@{utworzRysPolaKasaZDnPol}!CAdministratorCRys@{CAdministratorCRys}}
+\doxysubsubsection{\texorpdfstring{utworzRysPolaKasaZDnPol()}{utworzRysPolaKasaZDnPol()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_rys_pole_szansa}{CRys\+Pole\+Szansa}} $\ast$ CAdministrator\+CRys\+::utworz\+Rys\+Pola\+Kasa\+ZDn\+Pol (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_s_dn_pola}{SDn\+Pola}} \&}]{dane }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c_administrator_c_rys_a981357fed9f4ba547fc730b035833211}\label{class_c_administrator_c_rys_a981357fed9f4ba547fc730b035833211}} 
+\index{CAdministratorCRys@{CAdministratorCRys}!utworzRysPolaObrazZDnPol@{utworzRysPolaObrazZDnPol}}
+\index{utworzRysPolaObrazZDnPol@{utworzRysPolaObrazZDnPol}!CAdministratorCRys@{CAdministratorCRys}}
+\doxysubsubsection{\texorpdfstring{utworzRysPolaObrazZDnPol()}{utworzRysPolaObrazZDnPol()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_rys_pole_obraz}{CRys\+Pole\+Obraz}} $\ast$ CAdministrator\+CRys\+::utworz\+Rys\+Pola\+Obraz\+ZDn\+Pol (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_s_dn_pola}{SDn\+Pola}} \&}]{dane }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c_administrator_c_rys_a1478fa71fd2e4044eb4ccf118733091e}\label{class_c_administrator_c_rys_a1478fa71fd2e4044eb4ccf118733091e}} 
+\index{CAdministratorCRys@{CAdministratorCRys}!utworzRysPolaRogZDnPol@{utworzRysPolaRogZDnPol}}
+\index{utworzRysPolaRogZDnPol@{utworzRysPolaRogZDnPol}!CAdministratorCRys@{CAdministratorCRys}}
+\doxysubsubsection{\texorpdfstring{utworzRysPolaRogZDnPol()}{utworzRysPolaRogZDnPol()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_rys_rog}{CRys\+Rog}} $\ast$ CAdministrator\+CRys\+::utworz\+Rys\+Pola\+Rog\+ZDn\+Pol (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_s_dn_pola}{SDn\+Pola}} \&}]{dane }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c_administrator_c_rys_a186a324b28857d95062998cbcd2fbb29}\label{class_c_administrator_c_rys_a186a324b28857d95062998cbcd2fbb29}} 
+\index{CAdministratorCRys@{CAdministratorCRys}!utworzRysPolaSpecZDnPol@{utworzRysPolaSpecZDnPol}}
+\index{utworzRysPolaSpecZDnPol@{utworzRysPolaSpecZDnPol}!CAdministratorCRys@{CAdministratorCRys}}
+\doxysubsubsection{\texorpdfstring{utworzRysPolaSpecZDnPol()}{utworzRysPolaSpecZDnPol()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_rys_pole_spec}{CRys\+Pole\+Spec}} $\ast$ CAdministrator\+CRys\+::utworz\+Rys\+Pola\+Spec\+ZDn\+Pol (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_s_dn_pola}{SDn\+Pola}} \&}]{dane }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c_administrator_c_rys_a2b87dd698b207a7ad785b81d02b9f437}\label{class_c_administrator_c_rys_a2b87dd698b207a7ad785b81d02b9f437}} 
+\index{CAdministratorCRys@{CAdministratorCRys}!utworzRysPolaStartZDnPol@{utworzRysPolaStartZDnPol}}
+\index{utworzRysPolaStartZDnPol@{utworzRysPolaStartZDnPol}!CAdministratorCRys@{CAdministratorCRys}}
+\doxysubsubsection{\texorpdfstring{utworzRysPolaStartZDnPol()}{utworzRysPolaStartZDnPol()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_rys_pole_start}{CRys\+Pole\+Start}} $\ast$ CAdministrator\+CRys\+::utworz\+Rys\+Pola\+Start\+ZDn\+Pol (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_s_dn_pola}{SDn\+Pola}} \&}]{dane,  }\item[{QString \&}]{waluta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c_administrator_c_rys_a770a0567a32e23e55fb9746213167a54}\label{class_c_administrator_c_rys_a770a0567a32e23e55fb9746213167a54}} 
+\index{CAdministratorCRys@{CAdministratorCRys}!utworzRysPolaStndZDnPol@{utworzRysPolaStndZDnPol}}
+\index{utworzRysPolaStndZDnPol@{utworzRysPolaStndZDnPol}!CAdministratorCRys@{CAdministratorCRys}}
+\doxysubsubsection{\texorpdfstring{utworzRysPolaStndZDnPol()}{utworzRysPolaStndZDnPol()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_rys_pole_stnd}{CRys\+Pole\+Stnd}} $\ast$ CAdministrator\+CRys\+::utworz\+Rys\+Pola\+Stnd\+ZDn\+Pol (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_s_dn_pola}{SDn\+Pola}} \&}]{dane }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c_administrator_c_rys_a57144f1c3b4d58e54af14612c5852b40}\label{class_c_administrator_c_rys_a57144f1c3b4d58e54af14612c5852b40}} 
+\index{CAdministratorCRys@{CAdministratorCRys}!utworzRysPolaSzansaZDnPol@{utworzRysPolaSzansaZDnPol}}
+\index{utworzRysPolaSzansaZDnPol@{utworzRysPolaSzansaZDnPol}!CAdministratorCRys@{CAdministratorCRys}}
+\doxysubsubsection{\texorpdfstring{utworzRysPolaSzansaZDnPol()}{utworzRysPolaSzansaZDnPol()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_rys_pole_szansa}{CRys\+Pole\+Szansa}} $\ast$ CAdministrator\+CRys\+::utworz\+Rys\+Pola\+Szansa\+ZDn\+Pol (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_s_dn_pola}{SDn\+Pola}} \&}]{dane }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c_administrator_c_rys_aaf16117fce654e1238d276f84900cea2}\label{class_c_administrator_c_rys_aaf16117fce654e1238d276f84900cea2}} 
+\index{CAdministratorCRys@{CAdministratorCRys}!utworzRysPolaZErroremZDnPol@{utworzRysPolaZErroremZDnPol}}
+\index{utworzRysPolaZErroremZDnPol@{utworzRysPolaZErroremZDnPol}!CAdministratorCRys@{CAdministratorCRys}}
+\doxysubsubsection{\texorpdfstring{utworzRysPolaZErroremZDnPol()}{utworzRysPolaZErroremZDnPol()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_rys_pole_szansa}{CRys\+Pole\+Szansa}} $\ast$ CAdministrator\+CRys\+::utworz\+Rys\+Pola\+ZErrorem\+ZDn\+Pol (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_s_dn_pola}{SDn\+Pola}} \&}]{dane }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c_administrator_c_rys_aa51b70f9fa5803b2b9fb1526228363e0}\label{class_c_administrator_c_rys_aa51b70f9fa5803b2b9fb1526228363e0}} 
+\index{CAdministratorCRys@{CAdministratorCRys}!wyczyscDequeCRysPole@{wyczyscDequeCRysPole}}
+\index{wyczyscDequeCRysPole@{wyczyscDequeCRysPole}!CAdministratorCRys@{CAdministratorCRys}}
+\doxysubsubsection{\texorpdfstring{wyczyscDequeCRysPole()}{wyczyscDequeCRysPole()}}
+{\footnotesize\ttfamily void CAdministrator\+CRys\+::wyczysc\+Deque\+CRys\+Pole (\begin{DoxyParamCaption}\item[{deque$<$ \mbox{\hyperlink{class_c_rys_pole}{CRys\+Pole}} $\ast$ $>$ $\ast$}]{deq\+Pol }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c_administrator_c_rys_a6545151bae91d753dea6284956296270}\label{class_c_administrator_c_rys_a6545151bae91d753dea6284956296270}} 
+\index{CAdministratorCRys@{CAdministratorCRys}!zamienNaCRysPolaEkstra@{zamienNaCRysPolaEkstra}}
+\index{zamienNaCRysPolaEkstra@{zamienNaCRysPolaEkstra}!CAdministratorCRys@{CAdministratorCRys}}
+\doxysubsubsection{\texorpdfstring{zamienNaCRysPolaEkstra()}{zamienNaCRysPolaEkstra()}}
+{\footnotesize\ttfamily void CAdministrator\+CRys\+::zamien\+Na\+CRys\+Pola\+Ekstra (\begin{DoxyParamCaption}\item[{deque$<$ \mbox{\hyperlink{class_c_rys_pole}{CRys\+Pole}} $\ast$ $>$ $\ast$}]{deq\+Pol,  }\item[{const \mbox{\hyperlink{struct_s_dn_pola}{SDn\+Pola}} \&}]{dane,  }\item[{QGraphics\+Scene $\ast$}]{scene }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c_administrator_c_rys_acccfe2596ec4d993d0546933387cbcb8}\label{class_c_administrator_c_rys_acccfe2596ec4d993d0546933387cbcb8}} 
+\index{CAdministratorCRys@{CAdministratorCRys}!zamienNaCRysPolaKasa@{zamienNaCRysPolaKasa}}
+\index{zamienNaCRysPolaKasa@{zamienNaCRysPolaKasa}!CAdministratorCRys@{CAdministratorCRys}}
+\doxysubsubsection{\texorpdfstring{zamienNaCRysPolaKasa()}{zamienNaCRysPolaKasa()}}
+{\footnotesize\ttfamily void CAdministrator\+CRys\+::zamien\+Na\+CRys\+Pola\+Kasa (\begin{DoxyParamCaption}\item[{deque$<$ \mbox{\hyperlink{class_c_rys_pole}{CRys\+Pole}} $\ast$ $>$ $\ast$}]{deq\+Pol,  }\item[{const \mbox{\hyperlink{struct_s_dn_pola}{SDn\+Pola}} \&}]{dane,  }\item[{QGraphics\+Scene $\ast$}]{scene }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c_administrator_c_rys_aded5dfefd5f77d572164cfbfbea4d89e}\label{class_c_administrator_c_rys_aded5dfefd5f77d572164cfbfbea4d89e}} 
+\index{CAdministratorCRys@{CAdministratorCRys}!zamienNaCRysPolaSpec@{zamienNaCRysPolaSpec}}
+\index{zamienNaCRysPolaSpec@{zamienNaCRysPolaSpec}!CAdministratorCRys@{CAdministratorCRys}}
+\doxysubsubsection{\texorpdfstring{zamienNaCRysPolaSpec()}{zamienNaCRysPolaSpec()}}
+{\footnotesize\ttfamily void CAdministrator\+CRys\+::zamien\+Na\+CRys\+Pola\+Spec (\begin{DoxyParamCaption}\item[{deque$<$ \mbox{\hyperlink{class_c_rys_pole}{CRys\+Pole}} $\ast$ $>$ $\ast$}]{deq\+Pol,  }\item[{const \mbox{\hyperlink{struct_s_dn_pola}{SDn\+Pola}} \&}]{dane,  }\item[{QGraphics\+Scene $\ast$}]{scene }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c_administrator_c_rys_ab84331cf8cd8eca3c0fda5a5fd689931}\label{class_c_administrator_c_rys_ab84331cf8cd8eca3c0fda5a5fd689931}} 
+\index{CAdministratorCRys@{CAdministratorCRys}!zamienNaCRysPolaStnd@{zamienNaCRysPolaStnd}}
+\index{zamienNaCRysPolaStnd@{zamienNaCRysPolaStnd}!CAdministratorCRys@{CAdministratorCRys}}
+\doxysubsubsection{\texorpdfstring{zamienNaCRysPolaStnd()}{zamienNaCRysPolaStnd()}}
+{\footnotesize\ttfamily void CAdministrator\+CRys\+::zamien\+Na\+CRys\+Pola\+Stnd (\begin{DoxyParamCaption}\item[{deque$<$ \mbox{\hyperlink{class_c_rys_pole}{CRys\+Pole}} $\ast$ $>$ $\ast$}]{deq\+Pol,  }\item[{const \mbox{\hyperlink{struct_s_dn_pola}{SDn\+Pola}} \&}]{dane,  }\item[{QGraphics\+Scene $\ast$}]{scene }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c_administrator_c_rys_afa375f69ebc8ea3dcd66181169860cbe}\label{class_c_administrator_c_rys_afa375f69ebc8ea3dcd66181169860cbe}} 
+\index{CAdministratorCRys@{CAdministratorCRys}!zamienNaCRysPolaSzansa@{zamienNaCRysPolaSzansa}}
+\index{zamienNaCRysPolaSzansa@{zamienNaCRysPolaSzansa}!CAdministratorCRys@{CAdministratorCRys}}
+\doxysubsubsection{\texorpdfstring{zamienNaCRysPolaSzansa()}{zamienNaCRysPolaSzansa()}}
+{\footnotesize\ttfamily void CAdministrator\+CRys\+::zamien\+Na\+CRys\+Pola\+Szansa (\begin{DoxyParamCaption}\item[{deque$<$ \mbox{\hyperlink{class_c_rys_pole}{CRys\+Pole}} $\ast$ $>$ $\ast$}]{deq\+Pol,  }\item[{const \mbox{\hyperlink{struct_s_dn_pola}{SDn\+Pola}} \&}]{dane,  }\item[{QGraphics\+Scene $\ast$}]{scene }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+G\+:/\+Folder\+\_\+\+Dawida/\+Prace\+\_\+me/\+Git/\+Daw\+Rad-\/projekty/\+EURObiznes/\+EURObiznes/\mbox{\hyperlink{cadministratorcrys_8h}{cadministratorcrys.\+h}}\item 
+G\+:/\+Folder\+\_\+\+Dawida/\+Prace\+\_\+me/\+Git/\+Daw\+Rad-\/projekty/\+EURObiznes/\+EURObiznes/\mbox{\hyperlink{cadministratorcrys_8cpp}{cadministratorcrys.\+cpp}}\end{DoxyCompactItemize}

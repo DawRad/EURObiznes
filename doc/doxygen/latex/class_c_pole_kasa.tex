@@ -1,0 +1,169 @@
+\hypertarget{class_c_pole_kasa}{}\doxysection{Dokumentacja klasy CPole\+Kasa}
+\label{class_c_pole_kasa}\index{CPoleKasa@{CPoleKasa}}
+
+
+Klasa logiki.  
+
+
+
+
+{\ttfamily \#include $<$cpolekasa.\+h$>$}
+
+
+
+Diagram dziedziczenia dla CPole\+Kasa
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=145pt]{class_c_pole_kasa__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Diagram współpracy dla CPole\+Kasa\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=150pt]{class_c_pole_kasa__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_pole_kasa_a08202c62f12bbf1468bf790687927b06}{CPole\+Kasa}} ()
+\item 
+\mbox{\hyperlink{class_c_pole_kasa_a9761dd0a1b7cc9a2817760d7b5f16ba9}{CPole\+Kasa}} (\mbox{\hyperlink{struct_s_dn_pocz_pola}{SDn\+Pocz\+Pola}} dane)
+\item 
+\mbox{\hyperlink{class_c_pole_kasa_a5dfffeb85e2b4859c4915cc864c6fed1}{$\sim$\+CPole\+Kasa}} ()
+\item 
+\mbox{\hyperlink{struct_s_wyn_akcji}{SWyn\+Akcji}} \mbox{\hyperlink{class_c_pole_kasa_a9e28bad4bb1d4c321b3fe63b7bac3358}{akcja}} (\mbox{\hyperlink{class_c_gracz}{CGracz}} $\ast$gracz)
+\begin{DoxyCompactList}\small\item\em Funkcja zwraca wartość, która pozwala określić dostępne dla tego pola akcje. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_c_pole_kasa_a764e95cfbfac31f34b64c4321b092f46}{podaj\+Dane\+Int}} (int opt)
+\item 
+\mbox{\hyperlink{struct_s_dn_pola}{SDn\+Pola}} \mbox{\hyperlink{class_c_pole_kasa_a70d2b48c722842f9a591626571f1eff9}{podaj\+Dane}} ()
+\item 
+void \mbox{\hyperlink{class_c_pole_kasa_ac5f9506d305e7d3f8b444d258dc1601d}{wpisz\+Dane}} (\mbox{\hyperlink{struct_s_dn_pocz_pola}{SDn\+Pocz\+Pola}} dane)
+\item 
+void \mbox{\hyperlink{class_c_pole_kasa_a45d32eb61ff50cecb546b887c71de284}{ustaw\+Kwote}} (int wartosc)
+\begin{DoxyCompactList}\small\item\em Pozwala zmienić wartość atrybutu kwota\+\_\+ klasy. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Atrybuty prywatne}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_c_pole_kasa_a5fda846906e80a08a252ed129f950272}{kwota\+\_\+}}
+\begin{DoxyCompactList}\small\item\em kwota pobierana (ujemna) przez pole od gracza albo oddawana (dodatnia) graczowi \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Dodatkowe Dziedziczone Składowe}
+
+
+\doxysubsection{Opis szczegółowy}
+Klasa logiki. 
+
+\doxysubsection{Dokumentacja konstruktora i destruktora}
+\mbox{\Hypertarget{class_c_pole_kasa_a08202c62f12bbf1468bf790687927b06}\label{class_c_pole_kasa_a08202c62f12bbf1468bf790687927b06}} 
+\index{CPoleKasa@{CPoleKasa}!CPoleKasa@{CPoleKasa}}
+\index{CPoleKasa@{CPoleKasa}!CPoleKasa@{CPoleKasa}}
+\doxysubsubsection{\texorpdfstring{CPoleKasa()}{CPoleKasa()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily CPole\+Kasa\+::\+CPole\+Kasa (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_pole_kasa_a9761dd0a1b7cc9a2817760d7b5f16ba9}\label{class_c_pole_kasa_a9761dd0a1b7cc9a2817760d7b5f16ba9}} 
+\index{CPoleKasa@{CPoleKasa}!CPoleKasa@{CPoleKasa}}
+\index{CPoleKasa@{CPoleKasa}!CPoleKasa@{CPoleKasa}}
+\doxysubsubsection{\texorpdfstring{CPoleKasa()}{CPoleKasa()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily CPole\+Kasa\+::\+CPole\+Kasa (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_s_dn_pocz_pola}{SDn\+Pocz\+Pola}}}]{dane }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_pole_kasa_a5dfffeb85e2b4859c4915cc864c6fed1}\label{class_c_pole_kasa_a5dfffeb85e2b4859c4915cc864c6fed1}} 
+\index{CPoleKasa@{CPoleKasa}!````~CPoleKasa@{$\sim$CPoleKasa}}
+\index{````~CPoleKasa@{$\sim$CPoleKasa}!CPoleKasa@{CPoleKasa}}
+\doxysubsubsection{\texorpdfstring{$\sim$CPoleKasa()}{~CPoleKasa()}}
+{\footnotesize\ttfamily CPole\+Kasa\+::$\sim$\+CPole\+Kasa (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Dokumentacja funkcji składowych}
+\mbox{\Hypertarget{class_c_pole_kasa_a9e28bad4bb1d4c321b3fe63b7bac3358}\label{class_c_pole_kasa_a9e28bad4bb1d4c321b3fe63b7bac3358}} 
+\index{CPoleKasa@{CPoleKasa}!akcja@{akcja}}
+\index{akcja@{akcja}!CPoleKasa@{CPoleKasa}}
+\doxysubsubsection{\texorpdfstring{akcja()}{akcja()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_s_wyn_akcji}{SWyn\+Akcji}} CPole\+Kasa\+::akcja (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_gracz}{CGracz}} $\ast$}]{gracz }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Funkcja zwraca wartość, która pozwala określić dostępne dla tego pola akcje. 
+
+W tym przypadku pozwala ona określić, że obiekt jest polem, które dodaje lub odejmuje daną kwotę z zasobów gracza stającego. 
+\begin{DoxyParams}{Parametry}
+{\em $\ast$gracz} & -\/ wskaźnik do obiektu klasy gracz, który stanął na polu \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+Zwraca wartość \mbox{\hyperlink{struct_s_wyn_akcji_af4f719af14df7f07431de76741de165d}{SWyn\+Akcji.\+y1}} = 4 mówiąca, że to klasa \mbox{\hyperlink{class_c_pole_kasa}{CPole\+Kasa}} i \mbox{\hyperlink{struct_s_wyn_akcji_a63a87925129557da5bae70bd284aa99c}{SWyn\+Akcji.\+y2}} wskazującą, ile pieniędzy gracz otrzymuje albo traci. 
+\end{DoxyReturn}
+
+
+Reimplementowana z \mbox{\hyperlink{class_c_pole_affb1ea726cccd744f66bdfe07bb8631b}{CPole}}.
+
+\mbox{\Hypertarget{class_c_pole_kasa_a70d2b48c722842f9a591626571f1eff9}\label{class_c_pole_kasa_a70d2b48c722842f9a591626571f1eff9}} 
+\index{CPoleKasa@{CPoleKasa}!podajDane@{podajDane}}
+\index{podajDane@{podajDane}!CPoleKasa@{CPoleKasa}}
+\doxysubsubsection{\texorpdfstring{podajDane()}{podajDane()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_s_dn_pola}{SDn\+Pola}} CPole\+Kasa\+::podaj\+Dane (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplementowana z \mbox{\hyperlink{class_c_pole_a7e76841275f3f6633d5314b435d3f9a0}{CPole}}.
+
+\mbox{\Hypertarget{class_c_pole_kasa_a764e95cfbfac31f34b64c4321b092f46}\label{class_c_pole_kasa_a764e95cfbfac31f34b64c4321b092f46}} 
+\index{CPoleKasa@{CPoleKasa}!podajDaneInt@{podajDaneInt}}
+\index{podajDaneInt@{podajDaneInt}!CPoleKasa@{CPoleKasa}}
+\doxysubsubsection{\texorpdfstring{podajDaneInt()}{podajDaneInt()}}
+{\footnotesize\ttfamily int CPole\+Kasa\+::podaj\+Dane\+Int (\begin{DoxyParamCaption}\item[{int}]{opt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplementowana z \mbox{\hyperlink{class_c_pole_a580bd8b300fa7d11afe6a2e440ded37d}{CPole}}.
+
+\mbox{\Hypertarget{class_c_pole_kasa_a45d32eb61ff50cecb546b887c71de284}\label{class_c_pole_kasa_a45d32eb61ff50cecb546b887c71de284}} 
+\index{CPoleKasa@{CPoleKasa}!ustawKwote@{ustawKwote}}
+\index{ustawKwote@{ustawKwote}!CPoleKasa@{CPoleKasa}}
+\doxysubsubsection{\texorpdfstring{ustawKwote()}{ustawKwote()}}
+{\footnotesize\ttfamily void CPole\+Kasa\+::ustaw\+Kwote (\begin{DoxyParamCaption}\item[{int}]{wartosc }\end{DoxyParamCaption})}
+
+
+
+Pozwala zmienić wartość atrybutu kwota\+\_\+ klasy. 
+
+Z założenia funkcja ta służy do ustawienia kwoty, jaka jest wypłacana lub pobierana od gracza, który staje na tym polu. 
+\begin{DoxyParams}{Parametry}
+{\em wartosc} & -\/ wartosc, która ma zostać przypisana do atrybutu \mbox{\hyperlink{class_c_pole_kasa_a5fda846906e80a08a252ed129f950272}{CPole\+Kasa\+::kwota\+\_\+}}, może być zarówno dodatnia, jak i ujemna \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_pole_kasa_ac5f9506d305e7d3f8b444d258dc1601d}\label{class_c_pole_kasa_ac5f9506d305e7d3f8b444d258dc1601d}} 
+\index{CPoleKasa@{CPoleKasa}!wpiszDane@{wpiszDane}}
+\index{wpiszDane@{wpiszDane}!CPoleKasa@{CPoleKasa}}
+\doxysubsubsection{\texorpdfstring{wpiszDane()}{wpiszDane()}}
+{\footnotesize\ttfamily void CPole\+Kasa\+::wpisz\+Dane (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_s_dn_pocz_pola}{SDn\+Pocz\+Pola}}}]{dane }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplementowana z \mbox{\hyperlink{class_c_pole_a2b6c9f08e84ed1894df899b9e9d13fe3}{CPole}}.
+
+
+
+\doxysubsection{Dokumentacja atrybutów składowych}
+\mbox{\Hypertarget{class_c_pole_kasa_a5fda846906e80a08a252ed129f950272}\label{class_c_pole_kasa_a5fda846906e80a08a252ed129f950272}} 
+\index{CPoleKasa@{CPoleKasa}!kwota\_@{kwota\_}}
+\index{kwota\_@{kwota\_}!CPoleKasa@{CPoleKasa}}
+\doxysubsubsection{\texorpdfstring{kwota\_}{kwota\_}}
+{\footnotesize\ttfamily int CPole\+Kasa\+::kwota\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+kwota pobierana (ujemna) przez pole od gracza albo oddawana (dodatnia) graczowi 
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+G\+:/\+Folder\+\_\+\+Dawida/\+Prace\+\_\+me/\+Git/\+Daw\+Rad-\/projekty/\+EURObiznes/\+EURObiznes/\+Logika\+\_\+h/\mbox{\hyperlink{cpolekasa_8h}{cpolekasa.\+h}}\item 
+G\+:/\+Folder\+\_\+\+Dawida/\+Prace\+\_\+me/\+Git/\+Daw\+Rad-\/projekty/\+EURObiznes/\+EURObiznes/\+Logika\+\_\+src/\mbox{\hyperlink{cpolekasa_8cpp}{cpolekasa.\+cpp}}\end{DoxyCompactItemize}

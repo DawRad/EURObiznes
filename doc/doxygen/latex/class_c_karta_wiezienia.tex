@@ -1,0 +1,95 @@
+\hypertarget{class_c_karta_wiezienia}{}\doxysection{Dokumentacja klasy CKarta\+Wiezienia}
+\label{class_c_karta_wiezienia}\index{CKartaWiezienia@{CKartaWiezienia}}
+
+
+Klasa logiki.  
+
+
+
+
+{\ttfamily \#include $<$ckartawiezienia.\+h$>$}
+
+
+
+Diagram dziedziczenia dla CKarta\+Wiezienia
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=169pt]{class_c_karta_wiezienia__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Diagram współpracy dla CKarta\+Wiezienia\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=169pt]{class_c_karta_wiezienia__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_karta_wiezienia_af657c240d2a5716387c52694fc97475b}{CKarta\+Wiezienia}} ()
+\item 
+\mbox{\hyperlink{class_c_karta_wiezienia_ae19ae884d22c1e40f3c196aa43ad4ca8}{CKarta\+Wiezienia}} (\mbox{\hyperlink{struct_s_dn_karty}{SDn\+Karty}} dane)
+\item 
+\mbox{\hyperlink{class_c_karta_wiezienia_a641c52829cc7d119366f75c2d5bfb94c}{$\sim$\+CKarta\+Wiezienia}} ()
+\item 
+\mbox{\hyperlink{struct_s_dn_karty}{SDn\+Karty}} \mbox{\hyperlink{class_c_karta_wiezienia_ac470fee1ad3f67035714767c39dae4f9}{akcja}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja zwraca dane, które reprezentuje obiekt tej klasy. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Dodatkowe Dziedziczone Składowe}
+
+
+\doxysubsection{Opis szczegółowy}
+Klasa logiki. 
+
+\doxysubsection{Dokumentacja konstruktora i destruktora}
+\mbox{\Hypertarget{class_c_karta_wiezienia_af657c240d2a5716387c52694fc97475b}\label{class_c_karta_wiezienia_af657c240d2a5716387c52694fc97475b}} 
+\index{CKartaWiezienia@{CKartaWiezienia}!CKartaWiezienia@{CKartaWiezienia}}
+\index{CKartaWiezienia@{CKartaWiezienia}!CKartaWiezienia@{CKartaWiezienia}}
+\doxysubsubsection{\texorpdfstring{CKartaWiezienia()}{CKartaWiezienia()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily CKarta\+Wiezienia\+::\+CKarta\+Wiezienia (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_karta_wiezienia_ae19ae884d22c1e40f3c196aa43ad4ca8}\label{class_c_karta_wiezienia_ae19ae884d22c1e40f3c196aa43ad4ca8}} 
+\index{CKartaWiezienia@{CKartaWiezienia}!CKartaWiezienia@{CKartaWiezienia}}
+\index{CKartaWiezienia@{CKartaWiezienia}!CKartaWiezienia@{CKartaWiezienia}}
+\doxysubsubsection{\texorpdfstring{CKartaWiezienia()}{CKartaWiezienia()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily CKarta\+Wiezienia\+::\+CKarta\+Wiezienia (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_s_dn_karty}{SDn\+Karty}}}]{dane }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_karta_wiezienia_a641c52829cc7d119366f75c2d5bfb94c}\label{class_c_karta_wiezienia_a641c52829cc7d119366f75c2d5bfb94c}} 
+\index{CKartaWiezienia@{CKartaWiezienia}!````~CKartaWiezienia@{$\sim$CKartaWiezienia}}
+\index{````~CKartaWiezienia@{$\sim$CKartaWiezienia}!CKartaWiezienia@{CKartaWiezienia}}
+\doxysubsubsection{\texorpdfstring{$\sim$CKartaWiezienia()}{~CKartaWiezienia()}}
+{\footnotesize\ttfamily CKarta\+Wiezienia\+::$\sim$\+CKarta\+Wiezienia (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Dokumentacja funkcji składowych}
+\mbox{\Hypertarget{class_c_karta_wiezienia_ac470fee1ad3f67035714767c39dae4f9}\label{class_c_karta_wiezienia_ac470fee1ad3f67035714767c39dae4f9}} 
+\index{CKartaWiezienia@{CKartaWiezienia}!akcja@{akcja}}
+\index{akcja@{akcja}!CKartaWiezienia@{CKartaWiezienia}}
+\doxysubsubsection{\texorpdfstring{akcja()}{akcja()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_s_dn_karty}{SDn\+Karty}} CKarta\+Wiezienia\+::akcja (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Funkcja zwraca dane, które reprezentuje obiekt tej klasy. 
+
+W tym przypadku karta zawiera polecenie aresztowania gracza. \begin{DoxyReturn}{Zwraca}
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{struct_s_dn_karty_a51fbdef1085a00fd3609e9a6a56f698d}{SDn\+Karty.\+rodzaj}} -\/ informacja o tym, jakiej klasy jest obiekt danej karty (w tym przypadku \mbox{\hyperlink{struct_s_dn_karty_a51fbdef1085a00fd3609e9a6a56f698d}{SDn\+Karty.\+rodzaj}} = 2) \item \mbox{\hyperlink{struct_s_dn_karty_a1ff7293cc9477615a8cf265ac04f4ce5}{SDn\+Karty.\+nr}} -\/ numer karty w talii \item \mbox{\hyperlink{struct_s_dn_karty_a105dc3730d70693e083b81c1d252b740}{SDn\+Karty.\+tresc}} -\/ tekst, który zawiera karta \item \mbox{\hyperlink{struct_s_dn_karty_a7e0af3404da8e865eca8051c835eaba2}{SDn\+Karty.\+wartosc}} -\/ numer pola \char`\"{}\+Więzienie\char`\"{} \end{DoxyItemize}
+
+\end{DoxyReturn}
+
+
+Implementuje \mbox{\hyperlink{class_c_karta_a942d31d601d22b38c3e397f80d44c92f}{CKarta}}.
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+G\+:/\+Folder\+\_\+\+Dawida/\+Prace\+\_\+me/\+Git/\+Daw\+Rad-\/projekty/\+EURObiznes/\+EURObiznes/\+Logika\+\_\+h/\mbox{\hyperlink{ckartawiezienia_8h}{ckartawiezienia.\+h}}\item 
+G\+:/\+Folder\+\_\+\+Dawida/\+Prace\+\_\+me/\+Git/\+Daw\+Rad-\/projekty/\+EURObiznes/\+EURObiznes/\+Logika\+\_\+src/\mbox{\hyperlink{ckartawiezienia_8cpp}{ckartawiezienia.\+cpp}}\end{DoxyCompactItemize}

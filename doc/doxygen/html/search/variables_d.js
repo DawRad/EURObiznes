@@ -1,0 +1,26 @@
+var searchData=
+[
+  ['p_5fdo_5fwiez_0',['P_DO_WIEZ',['../_stale_8h.html#aca91043ec2e8cb89f94dfb7364540264',1,'Stale.h']]],
+  ['p_5fodwiedziny_1',['P_ODWIEDZINY',['../_stale_8h.html#ae4032e3b092cadb9ce587c036d1cd793',1,'Stale.h']]],
+  ['p_5fparking_2',['P_PARKING',['../_stale_8h.html#a8e995cf65194e0b3eae00be551f03c62',1,'Stale.h']]],
+  ['p_5fstart_3',['P_START',['../_stale_8h.html#a34848cbf431576b709e5b948148be9b9',1,'Stale.h']]],
+  ['p_5fwiezienie_4',['P_WIEZIENIE',['../_stale_8h.html#a61ebef6b3829e28599b56b717f732f2d',1,'Stale.h']]],
+  ['panelgracza_5f_5',['panelGracza_',['../class_rozgrywka.html#a79ed189d8fb4f71b6b617bf344780608',1,'Rozgrywka']]],
+  ['para_5f_6',['parA_',['../class_c_rys_pionek.html#a459b310d38e98291826c44c9be57582a',1,'CRysPionek']]],
+  ['path_5f_7',['path_',['../class_c_rys_przycisk_img.html#aef9841b57c038740067e2a0d02fc1da5',1,'CRysPrzyciskImg']]],
+  ['pathdisab_5f_8',['pathDisab_',['../class_c_rys_przycisk_img.html#a8becb5a407a4f3435999e363e3410b78',1,'CRysPrzyciskImg']]],
+  ['pensjastart_5f_9',['pensjaStart_',['../class_c_plansza.html#a7ae2a7005aca6b43205ccfd6d125af78',1,'CPlansza']]],
+  ['pionek_5f_10',['pionek_',['../class_c_rys_panel_gracza.html#a0ab76fe659c3d65f9873e7f29a03a909',1,'CRysPanelGracza']]],
+  ['pionki_5f_11',['pionki_',['../class_main_window.html#a4a65196ed028ca816439e29e444a11d3',1,'MainWindow::pionki_()'],['../class_n_g_gracze.html#a2275fc246e8c69ac730976b03b887f0f',1,'NGGracze::pionki_()']]],
+  ['plansza_5f_12',['plansza_',['../class_c_game.html#a6e57db266bafa5e54fd465a5ef013f1d',1,'CGame']]],
+  ['pocz_13',['pocz',['../struct_s_parsed_elem.html#ab17fd50cf9a50e93e97c845b08e6eca5',1,'SParsedElem']]],
+  ['pola_5f_14',['pola_',['../class_c_plansza.html#a4ac4197dfea9bc5a71f7b93e4439245b',1,'CPlansza::pola_()'],['../class_main_window.html#a7acf3386e2fe06df47190ff7f6cf1d29',1,'MainWindow::pola_()']]],
+  ['polygon_5f_15',['polygon_',['../class_c_rys_rog.html#aa2bf77f2973cd9aa17fb72b098648c7e',1,'CRysRog']]],
+  ['portfel_16',['portfel',['../struct_s_dn_gracza.html#a450f832665eda92e968a8f242b258e2c',1,'SDnGracza']]],
+  ['portfel_5f_17',['portfel_',['../class_c_gracz.html#a757406b45f6b2ee151726a3134117577',1,'CGracz::portfel_()'],['../class_c_rys_panel_gracza.html#a752cc9b49a542c878b02297e52d4a55c',1,'CRysPanelGracza::portfel_()']]],
+  ['poz_18',['poz',['../struct_s_dn_pocz_pola.html#abf1cfb9e57d4a47e0ef9d73f475b607a',1,'SDnPoczPola::poz()'],['../struct_s_dn_pola.html#ad0f0b77415612289c8b05afc3c8234c0',1,'SDnPola::poz()']]],
+  ['poz_5f_19',['poz_',['../class_c_rys_pole.html#a617c3330c026e36919df5f78a4d3bfe6',1,'CRysPole']]],
+  ['pozycja_5f_20',['pozycja_',['../class_c_pole.html#aa08ed96e35cf641d19205a7bc9b9338e',1,'CPole']]],
+  ['primarydice_5f_21',['primaryDice_',['../class_c_rys_kostki.html#a8f58ed63553778e110186310a6dded55',1,'CRysKostki']]],
+  ['przegrani_5f_22',['przegrani_',['../class_c_game.html#a4a9bda4a50211a016659e24a2fb53944',1,'CGame']]]
+];

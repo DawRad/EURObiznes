@@ -1,0 +1,136 @@
+\hypertarget{rozgrywka_8h_source}{}\doxysection{rozgrywka.\+h}
+\label{rozgrywka_8h_source}\index{G:/Folder\_Dawida/Prace\_me/Git/DawRad-\/projekty/EURObiznes/EURObiznes/rozgrywka.h@{G:/Folder\_Dawida/Prace\_me/Git/DawRad-\/projekty/EURObiznes/EURObiznes/rozgrywka.h}}
+\mbox{\hyperlink{rozgrywka_8h}{Idź do dokumentacji tego pliku.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef ROZGRYWKA\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define ROZGRYWKA\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <QMainWindow>}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{cadministratorcrys_8h}{cadministratorcrys.h}}"{}}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{cryspanelgracza_8h}{Rysunki\_h/cryspanelgracza.h}}"{}}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{crysinfo_8h}{Rysunki\_h/crysinfo.h}}"{}}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{wlasnosci_8h}{wlasnosci.h}}"{}}}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 }
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespace_ui}{Ui}} \{}
+\DoxyCodeLine{16 \textcolor{keyword}{class }\mbox{\hyperlink{class_rozgrywka}{Rozgrywka}};}
+\DoxyCodeLine{17 \}}
+\DoxyCodeLine{18 }
+\DoxyCodeLine{19 }
+\DoxyCodeLine{25 \textcolor{keyword}{class }\mbox{\hyperlink{class_rozgrywka}{Rozgrywka}} : \textcolor{keyword}{public} QMainWindow}
+\DoxyCodeLine{26 \{}
+\DoxyCodeLine{27     Q\_OBJECT}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{29      \textcolor{comment}{// -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/}}
+\DoxyCodeLine{30 \textcolor{keyword}{public}:}
+\DoxyCodeLine{31     \textcolor{keyword}{explicit} \mbox{\hyperlink{class_rozgrywka_ae25233f3b56482ebe16dec3dae8c9e6b}{Rozgrywka}}(\mbox{\hyperlink{class_c_game}{CGame}} *wskGry, deque<CRysPole *> *wskDeqPol, deque<CRysPionek *> *wskPionkow, \textcolor{keywordtype}{bool} *wskEndGame, QWidget *parent = \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{32     \mbox{\hyperlink{class_rozgrywka_a93116ad903e955bc6c7fa76454835608}{\string~Rozgrywka}}();}
+\DoxyCodeLine{33 }
+\DoxyCodeLine{34     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_rozgrywka_ae42d26c4880f81391813f2b32dda1312}{przygotujPolaDoRysowania}}();}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{36 }
+\DoxyCodeLine{37     \textcolor{comment}{// -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/}}
+\DoxyCodeLine{38 \textcolor{keyword}{private}:}
+\DoxyCodeLine{39     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_rozgrywka_adc74b5c3af5c420a0bec2a2fd13f3aff}{ustawPozPol}}(\textcolor{keywordtype}{int} size);}
+\DoxyCodeLine{40     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_rozgrywka_ad5638c58b6458f3d8d8c6bcee697aece}{ustawWymiaryPol}}(\textcolor{keywordtype}{int} size);}
+\DoxyCodeLine{41 }
+\DoxyCodeLine{42     \textcolor{comment}{// -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/}}
+\DoxyCodeLine{43     \textcolor{comment}{// akcje kart}}
+\DoxyCodeLine{44     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_rozgrywka_ae6527acdb0b0a4dbcd3731a448260e3c}{akcjaKartyKwoty}}(\mbox{\hyperlink{struct_s_dn_karty}{SDnKarty}} dane);}
+\DoxyCodeLine{45     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_rozgrywka_aa0c4e9aae4b9661e46f99227c22a1ccc}{akcjaKartyRuchu}}(\mbox{\hyperlink{struct_s_dn_karty}{SDnKarty}} dane);}
+\DoxyCodeLine{46     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_rozgrywka_a97fa5cba00f61fd5da465b763f51ec9d}{akcjaKartyWiezienia}}();}
+\DoxyCodeLine{47     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_rozgrywka_abc5783b19a1e71979d591d1014af1974}{akcjaKartyWolnosc}}();}
+\DoxyCodeLine{48 }
+\DoxyCodeLine{49 }
+\DoxyCodeLine{50     \textcolor{comment}{// -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/}}
+\DoxyCodeLine{51     \textcolor{comment}{// metody do destruktora}}
+\DoxyCodeLine{52     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_rozgrywka_a17c77645e7d2cd3ebf179a577e643132}{czyszczenieDeques}}();}
+\DoxyCodeLine{53 }
+\DoxyCodeLine{54 }
+\DoxyCodeLine{55     \textcolor{comment}{// -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/}}
+\DoxyCodeLine{56 signals:}
+\DoxyCodeLine{57     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_rozgrywka_a701d01bb4b92591a7d149d73c9126c99}{zacznijTureGracza}}();}
+\DoxyCodeLine{58 }
+\DoxyCodeLine{59 }
+\DoxyCodeLine{60     \textcolor{comment}{// -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/}}
+\DoxyCodeLine{61 \textcolor{keyword}{private} slots:}
+\DoxyCodeLine{62     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_rozgrywka_adaddd8d08812a2b9a7eb20bda81b038e}{on\_pbNastRunda\_clicked}}();}
+\DoxyCodeLine{63 }
+\DoxyCodeLine{64     \textcolor{comment}{// -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/}}
+\DoxyCodeLine{65     \textcolor{comment}{// moje sloty}}
+\DoxyCodeLine{66     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_rozgrywka_ad43387100a0e80206e2c2d14cb6f8413}{actionWyjscieClicked}}();}
+\DoxyCodeLine{67 }
+\DoxyCodeLine{68     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_rozgrywka_a0ad80549d4622be0d8dc26c8ffa49dbe}{rzutWykonany}}();}
+\DoxyCodeLine{69 }
+\DoxyCodeLine{70     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_rozgrywka_acbd9a6907f610cc33630df78c3561829}{nastRuchPiona}}(\textcolor{keywordtype}{int} aktPozPola, \textcolor{keywordtype}{int} nastPozPola);}
+\DoxyCodeLine{71 }
+\DoxyCodeLine{72     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_rozgrywka_acbb3949d031280bc6f67807dcde5bb64}{pionNaCelu}}();}
+\DoxyCodeLine{73 }
+\DoxyCodeLine{74     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_rozgrywka_a292b932950e05b438178ac41e55e0412}{turaGracza}}();}
+\DoxyCodeLine{75 }
+\DoxyCodeLine{76     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_rozgrywka_acad48721fdb157126f4f4959a80fe65c}{usunInfo}}();}
+\DoxyCodeLine{77 }
+\DoxyCodeLine{78 }
+\DoxyCodeLine{79     \textcolor{comment}{// -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/}}
+\DoxyCodeLine{80     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_rozgrywka_a01628422ba19918d3da54b8f09de84e9}{on\_pbKostki\_clicked}}();}
+\DoxyCodeLine{81 }
+\DoxyCodeLine{82     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_rozgrywka_af866e9180d8063c27c1b30fd758e06a7}{on\_pbUwolnij\_clicked}}();}
+\DoxyCodeLine{83 }
+\DoxyCodeLine{89     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_rozgrywka_ac5924ac23b61b250306caab87b8ac4f9}{on\_pbKup\_clicked}}();}
+\DoxyCodeLine{90 }
+\DoxyCodeLine{91     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_rozgrywka_a9842d7c90ea35b4174e39824da06727e}{on\_pbWlasnosci\_clicked}}();}
+\DoxyCodeLine{92 }
+\DoxyCodeLine{93 \textcolor{keyword}{private}:}
+\DoxyCodeLine{94     Ui::Rozgrywka *\mbox{\hyperlink{class_rozgrywka_a95bc6492ad953a2772ed9f57b28e0f67}{ui}};}
+\DoxyCodeLine{95 }
+\DoxyCodeLine{96     \textcolor{comment}{// -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/}}
+\DoxyCodeLine{97     \textcolor{comment}{// wskaźniki z MainWindow}}
+\DoxyCodeLine{98     \mbox{\hyperlink{class_c_game}{CGame}} *\mbox{\hyperlink{class_rozgrywka_ad62473de2a834e91f1f3c82d4969b365}{wskGry\_}};}
+\DoxyCodeLine{99 }
+\DoxyCodeLine{100     deque<CRysPole *> *\mbox{\hyperlink{class_rozgrywka_ad743964515940f7f869ce48679faec5b}{wskDeqPol\_}};}
+\DoxyCodeLine{101 }
+\DoxyCodeLine{102     deque<CRysPionek *> *\mbox{\hyperlink{class_rozgrywka_a34d113850be3c687ad3433ee7f5bda53}{wskPionki\_}};}
+\DoxyCodeLine{103 }
+\DoxyCodeLine{104     \textcolor{keywordtype}{bool} *\mbox{\hyperlink{class_rozgrywka_a62cbf39e5f08531ae29cdd117a998f0b}{wskEndGame\_}};}
+\DoxyCodeLine{105 }
+\DoxyCodeLine{106     \textcolor{comment}{// * * * * * * * * * *}}
+\DoxyCodeLine{107     \textcolor{comment}{// -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/}}
+\DoxyCodeLine{108     \textcolor{comment}{// pola tej klasy}}
+\DoxyCodeLine{109 }
+\DoxyCodeLine{110     QGraphicsScene *\mbox{\hyperlink{class_rozgrywka_a132041ab7283a4ec051209553086c37d}{scenePlansza\_}};}
+\DoxyCodeLine{111     QGraphicsScene *\mbox{\hyperlink{class_rozgrywka_a76f6095ad2ae47caa234cdf3aebc9fa8}{scenePanelGracza\_}};}
+\DoxyCodeLine{112 }
+\DoxyCodeLine{113     \mbox{\hyperlink{class_c_rys_panel_gracza}{CRysPanelGracza}} *\mbox{\hyperlink{class_rozgrywka_a79ed189d8fb4f71b6b617bf344780608}{panelGracza\_}};}
+\DoxyCodeLine{114     \mbox{\hyperlink{class_c_rys_info}{CRysInfo}} *\mbox{\hyperlink{class_rozgrywka_a4defa4fd47cc8883a2e04d2ddd5c8902}{info\_}};}
+\DoxyCodeLine{115 }
+\DoxyCodeLine{116     \textcolor{comment}{// timery}}
+\DoxyCodeLine{117     QTimer *\mbox{\hyperlink{class_rozgrywka_a27a266fd2027c7feebc611a56e04f51f}{timerPrime\_}};}
+\DoxyCodeLine{118     QTimer *\mbox{\hyperlink{class_rozgrywka_a106da41b4033983bdadc610db3f34397}{timerInfo\_}};}
+\DoxyCodeLine{119 }
+\DoxyCodeLine{120     \textcolor{comment}{// nadawcy}}
+\DoxyCodeLine{121     \mbox{\hyperlink{class_c_nadawca}{CNadawca}} *\mbox{\hyperlink{class_rozgrywka_abd97854981e8460fa26ecc13d3b1ed12}{wyzwalacz\_}};}
+\DoxyCodeLine{122 }
+\DoxyCodeLine{123     \textcolor{comment}{// kostki}}
+\DoxyCodeLine{124     deque<CRysKostki *> *\mbox{\hyperlink{class_rozgrywka_abb6cbd5673d83fe05395b289b1f43b8e}{kostki\_}};}
+\DoxyCodeLine{125 }
+\DoxyCodeLine{126     \textcolor{comment}{// wymiary pol i planszy}}
+\DoxyCodeLine{127     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_rozgrywka_af1b050754252a587146c2fcbea37837c}{wymiarA\_}};               \textcolor{comment}{// wymiar pola}}
+\DoxyCodeLine{128     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_rozgrywka_a0531fae38bc6efef9c853425690b8882}{wymiarB\_}};               \textcolor{comment}{// wymiar pola}}
+\DoxyCodeLine{129     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_rozgrywka_ae1a06efae923c6c5d889b15989f8f19f}{wymiarPlanszy\_}};}
+\DoxyCodeLine{130 }
+\DoxyCodeLine{131     \textcolor{comment}{// aktualna karta}}
+\DoxyCodeLine{132     \mbox{\hyperlink{struct_s_dn_karty}{SDnKarty}} \mbox{\hyperlink{class_rozgrywka_a4ee41911e5f4a4476ab7feb7ea48ccb9}{aktKarta\_}};}
+\DoxyCodeLine{133 }
+\DoxyCodeLine{134     \textcolor{comment}{// okna poboczne}}
+\DoxyCodeLine{135     \mbox{\hyperlink{class_wlasnosci}{Wlasnosci}} *\mbox{\hyperlink{class_rozgrywka_a8a87f07db40affdab3f63f447889c990}{oknoWlasnosci\_}};}
+\DoxyCodeLine{136 }
+\DoxyCodeLine{137 }
+\DoxyCodeLine{138 \};}
+\DoxyCodeLine{139 }
+\DoxyCodeLine{140 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// ROZGRYWKA\_H}}
+
+\end{DoxyCode}

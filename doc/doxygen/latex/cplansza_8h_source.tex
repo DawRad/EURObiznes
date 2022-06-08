@@ -1,0 +1,156 @@
+\hypertarget{cplansza_8h_source}{}\doxysection{cplansza.\+h}
+\label{cplansza_8h_source}\index{G:/Folder\_Dawida/Prace\_me/Git/DawRad-\/projekty/EURObiznes/EURObiznes/Logika\_h/cplansza.h@{G:/Folder\_Dawida/Prace\_me/Git/DawRad-\/projekty/EURObiznes/EURObiznes/Logika\_h/cplansza.h}}
+\mbox{\hyperlink{cplansza_8h}{Idź do dokumentacji tego pliku.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef CPLANSZA\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define CPLANSZA\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <ctime>}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{ckomputer_8h}{Logika\_h/ckomputer.h}}"{}}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{cczlowiek_8h}{Logika\_h/cczlowiek.h}}"{}}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{cpole_8h}{Logika\_h/cpole.h}}"{}}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{cpolespec_8h}{Logika\_h/cpolespec.h}}"{}}}
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{cpolestnd_8h}{Logika\_h/cpolestnd.h}}"{}}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{cpoleekstra_8h}{Logika\_h/cpoleekstra.h}}"{}}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{cpoledowiezienia_8h}{Logika\_h/cpoledowiezienia.h}}"{}}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{cpolekasa_8h}{Logika\_h/cpolekasa.h}}"{}}}
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{cpoleszansa_8h}{Logika\_h/cpoleszansa.h}}"{}}}
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{ckartakwoty_8h}{Logika\_h/ckartakwoty.h}}"{}}}
+\DoxyCodeLine{17 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{ckartaruchu_8h}{Logika\_h/ckartaruchu.h}}"{}}}
+\DoxyCodeLine{18 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{ckartawiezienia_8h}{Logika\_h/ckartawiezienia.h}}"{}}}
+\DoxyCodeLine{19 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{ckartawolnosc_8h}{Logika\_h/ckartawolnosc.h}}"{}}}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21 }
+\DoxyCodeLine{22 }
+\DoxyCodeLine{23 }
+\DoxyCodeLine{24 }
+\DoxyCodeLine{28 \textcolor{keyword}{class }\mbox{\hyperlink{class_c_plansza}{CPlansza}}}
+\DoxyCodeLine{29 \{   }
+\DoxyCodeLine{30 \textcolor{keyword}{private}:}
+\DoxyCodeLine{32     deque<CKarta*> \mbox{\hyperlink{class_c_plansza_afb2985cbb08c785a1ba7f8c3c9eb38f3}{karty\_}};}
+\DoxyCodeLine{33 }
+\DoxyCodeLine{35     deque<CKarta*> \mbox{\hyperlink{class_c_plansza_a6dc6f3daee3cf85dead50ae38d922ad0}{kartyUzyte\_}};}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{38     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_plansza_a7ae2a7005aca6b43205ccfd6d125af78}{pensjaStart\_}};}
+\DoxyCodeLine{39 }
+\DoxyCodeLine{41     deque<CPole*> \mbox{\hyperlink{class_c_plansza_a4ac4197dfea9bc5a71f7b93e4439245b}{pola\_}};}
+\DoxyCodeLine{42 }
+\DoxyCodeLine{44     deque<string> \mbox{\hyperlink{class_c_plansza_a3178aac03c75951f879319b7b9ed9441}{regiony\_}};}
+\DoxyCodeLine{45 }
+\DoxyCodeLine{46     \textcolor{comment}{// -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/}}
+\DoxyCodeLine{47 \textcolor{keyword}{public}:}
+\DoxyCodeLine{48     \mbox{\hyperlink{class_c_plansza_a1a7e4a25febc52864a6eafa8f2b2369b}{CPlansza}}();}
+\DoxyCodeLine{49     \mbox{\hyperlink{class_c_plansza_a3971b9f7d99e4f109193cb9bfafd72f8}{\string~CPlansza}}();}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{58     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_plansza_af705d367c41fa5f26f24615ca0617f6c}{wczytajDaneZPliku\_pola}}(deque<string> \&daneZPliku);}
+\DoxyCodeLine{59 }
+\DoxyCodeLine{67     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_plansza_a10673bf143904c7fa41aa9199d3ba8d8}{wczytajDaneZPliku\_karty}}(deque<string> \&daneZPliku);}
+\DoxyCodeLine{68 }
+\DoxyCodeLine{72     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_plansza_a73d65ce8a7888fac14e9eece741e7118}{sortujListePol}}();}
+\DoxyCodeLine{73 }
+\DoxyCodeLine{79     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_plansza_ade56af20b7c254c6abfe14411cf38d55}{dodajPole}}(\textcolor{keywordtype}{int} rodz, \mbox{\hyperlink{struct_s_dn_pocz_pola}{SDnPoczPola}} dane);}
+\DoxyCodeLine{80 }
+\DoxyCodeLine{81     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_plansza_aeeb40f30ce66daa5ada2cdc7feec27c0}{ustawPensjeStart}}(\textcolor{keywordtype}{int} pensja);}
+\DoxyCodeLine{82 }
+\DoxyCodeLine{90     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_plansza_a941f6eb35cc3c5210207c7b970d72905}{zamienNaCPoleSzansa}}(\mbox{\hyperlink{struct_s_dn_pocz_pola}{SDnPoczPola}} dane);}
+\DoxyCodeLine{91 }
+\DoxyCodeLine{97     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_plansza_a7866f29cac27a7431e4b0bfef9c3327c}{zamienNaCPoleSpec}}(\mbox{\hyperlink{struct_s_dn_pocz_pola}{SDnPoczPola}} dane);}
+\DoxyCodeLine{98 }
+\DoxyCodeLine{104     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_plansza_aab0ed06aa3ea61e21dc5c894466d1aaa}{zamienNaCPoleStnd}}(\mbox{\hyperlink{struct_s_dn_pocz_pola}{SDnPoczPola}} dane);}
+\DoxyCodeLine{105 }
+\DoxyCodeLine{111     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_plansza_a222a04dd57fd99f9f0d954fdaca4cb76}{zamienNaCPoleEkstra}}(\mbox{\hyperlink{struct_s_dn_pocz_pola}{SDnPoczPola}} dane);}
+\DoxyCodeLine{112 }
+\DoxyCodeLine{118     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_plansza_a9acac5852efbd635fdef978037002236}{zamienNaCPoleKasa}}(\mbox{\hyperlink{struct_s_dn_pocz_pola}{SDnPoczPola}} dane);}
+\DoxyCodeLine{119 }
+\DoxyCodeLine{130     \mbox{\hyperlink{struct_s_wyn_akcji}{SWynAkcji}} \mbox{\hyperlink{class_c_plansza_aa2bacdb0774c17cc0b27b5fc4066a1e7}{identPole}}(\mbox{\hyperlink{class_c_gracz}{CGracz}} *gracz, \textcolor{keywordtype}{int} parPoz);}
+\DoxyCodeLine{131 }
+\DoxyCodeLine{132     deque<SDnPola> \mbox{\hyperlink{class_c_plansza_a02bf6765796ecebcbde04f2a245405d5}{zbierzDnPol}}();}
+\DoxyCodeLine{133     \mbox{\hyperlink{struct_s_dn_pola}{SDnPola}} \mbox{\hyperlink{class_c_plansza_ae93aab33ff197b546f86cacecd9fdec0}{zbierzDnPola}}(\textcolor{keywordtype}{int} poz);}
+\DoxyCodeLine{134     deque<SDnPola> \mbox{\hyperlink{class_c_plansza_a02bf6765796ecebcbde04f2a245405d5}{zbierzDnPol}}(\mbox{\hyperlink{class_c_gracz}{CGracz}} *gracz);}
+\DoxyCodeLine{135     deque<SDnPola> \mbox{\hyperlink{class_c_plansza_ad6f1e46f6abb0d3fe2d734fab67dc2bb}{zbierzDnPolNiezast}}(\mbox{\hyperlink{class_c_gracz}{CGracz}} *gracz);}
+\DoxyCodeLine{136     deque<SDnPola> \mbox{\hyperlink{class_c_plansza_a94f646e1c4c4a15e93d0bc21c486a45d}{zbierzDnPolZast}}(\mbox{\hyperlink{class_c_gracz}{CGracz}} *gracz);}
+\DoxyCodeLine{137     \mbox{\hyperlink{class_c_gracz}{CGracz}}* \mbox{\hyperlink{class_c_plansza_a88abb4facbe8fb1e1f13789bec1b8ec8}{ktoMaPole}}(\textcolor{keywordtype}{int} parPoz);}
+\DoxyCodeLine{138     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_plansza_a268f0bd3ab2c3b47e99adc8ea369d4d5}{podajPensje}}();}
+\DoxyCodeLine{139     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_plansza_af12e391e42ca6000e3aad4327e607ce0}{podajCenePola}}(\textcolor{keywordtype}{int} poz);}
+\DoxyCodeLine{140 }
+\DoxyCodeLine{146     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_plansza_a3d7e47325daafd17fc0facce15806025}{wartoscNieruchomosciGracza}}(\mbox{\hyperlink{class_c_gracz}{CGracz}} *wlasciciel);}
+\DoxyCodeLine{147 }
+\DoxyCodeLine{155     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_plansza_a16093c03d0cf55e002fac6362b4cb9e7}{potencjalZastawuGracza}}(\mbox{\hyperlink{class_c_gracz}{CGracz}} *wlasciciel);}
+\DoxyCodeLine{156 }
+\DoxyCodeLine{157     \mbox{\hyperlink{struct_s_dn_karty}{SDnKarty}} \mbox{\hyperlink{class_c_plansza_a70d7ffe16efc0bff547bff01c67d062b}{losowanieKarty}}();}
+\DoxyCodeLine{158     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_plansza_a1295673b3d4eaa71c33f5996aeeb2ba7}{tasowanieKart}}();}
+\DoxyCodeLine{159     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_plansza_ae43b309548c5cc9a49a5a6366a348e50}{kupowaniePola}}(\mbox{\hyperlink{class_c_gracz}{CGracz}} *kupiec, \textcolor{keywordtype}{int} parPoz);}
+\DoxyCodeLine{160 }
+\DoxyCodeLine{169     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_plansza_ab83f9880bf20d20dfad42b52fea6c213}{daneIntPola}}(\textcolor{keywordtype}{int} parPoz, \textcolor{keywordtype}{int} opt);}
+\DoxyCodeLine{170 }
+\DoxyCodeLine{171     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_plansza_a71e61cdeeaf8eb8e9116686f9cadfbba}{zabuduj}}(\textcolor{keywordtype}{int} poz);}
+\DoxyCodeLine{172     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_plansza_a34a58f273922ba112a31c2d9bc67460c}{zastaw}}(\textcolor{keywordtype}{int} poz);}
+\DoxyCodeLine{173     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_plansza_a1a2d61af7d194014f5125a671f415abb}{wykup}}(\textcolor{keywordtype}{int} poz);}
+\DoxyCodeLine{174 }
+\DoxyCodeLine{175 }
+\DoxyCodeLine{181     \textcolor{keyword}{static} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_plansza_a5ac73aeeeaf14f389993983a1b1e415e}{ustalKolejnaPozWKolejce}}(\textcolor{keywordtype}{int} aktPoz, \textcolor{keywordtype}{int} rozmKolejki);}
+\DoxyCodeLine{182 }
+\DoxyCodeLine{183 }
+\DoxyCodeLine{189     \textcolor{keyword}{static} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_plansza_a12c9111a1984b301079d6e4ec0ffba96}{changePoleRodz}}(\textcolor{keywordtype}{string} rodz);}
+\DoxyCodeLine{190 }
+\DoxyCodeLine{191 }
+\DoxyCodeLine{197     \textcolor{keyword}{static} \textcolor{keywordtype}{string} \mbox{\hyperlink{class_c_plansza_adf30e54f2460c81a3645ae393538ba1b}{poleRodzToStr}}(\textcolor{keywordtype}{int} rodz);}
+\DoxyCodeLine{198 }
+\DoxyCodeLine{209     \textcolor{keyword}{static} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_plansza_ad4cfa94c49d774aea7d5ee86e90825c2}{kartaRodzToInt}}(\textcolor{keywordtype}{string} rodzaj);}
+\DoxyCodeLine{210 }
+\DoxyCodeLine{211 }
+\DoxyCodeLine{212     \textcolor{comment}{// -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/}}
+\DoxyCodeLine{213 \textcolor{keyword}{private}:}
+\DoxyCodeLine{214 }
+\DoxyCodeLine{221     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_plansza_a00be2fc992dc01a694d12ed9e304eb52}{usunKarty}}();}
+\DoxyCodeLine{222 }
+\DoxyCodeLine{228     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_plansza_a5a8e2aff641c0508b284173a77f13b2a}{usunKartyUzyte}}();}
+\DoxyCodeLine{229 }
+\DoxyCodeLine{235     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_plansza_a6b5ae3245a7c43e61ec6138eec3a78a6}{usunPola}}();}
+\DoxyCodeLine{236 }
+\DoxyCodeLine{245     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_plansza_a8bbe2ea4ff60ebf90a97d179c8b24bc8}{utworzCPoleZPliku}}(deque<string> \&daneZPliku, \textcolor{keywordtype}{int} start, \textcolor{keywordtype}{int} end);}
+\DoxyCodeLine{246 }
+\DoxyCodeLine{251     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_plansza_a06a371ff0b30a87a29023f33853db97a}{utworzCPoleSpecZPliku}}(deque<string> \&daneZPliku, \textcolor{keywordtype}{int} start, \textcolor{keywordtype}{int} end);}
+\DoxyCodeLine{252 }
+\DoxyCodeLine{257     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_plansza_a187aec9956237d04fa8d7ed984bc3601}{utworzCPoleStndZPliku}}(deque<string> \&daneZPliku, \textcolor{keywordtype}{int} start, \textcolor{keywordtype}{int} end);}
+\DoxyCodeLine{258 }
+\DoxyCodeLine{263     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_plansza_a35746dd4d71d1304a8d65737e2b0292c}{utworzCPoleEkstraZPliku}}(deque<string> \&daneZPliku, \textcolor{keywordtype}{int} start, \textcolor{keywordtype}{int} end);}
+\DoxyCodeLine{264 }
+\DoxyCodeLine{269     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_plansza_aba7e6ceb4227c9e7dc85470c5a641670}{utworzCPoleKasaZPliku}}(deque<string> \&daneZPliku, \textcolor{keywordtype}{int} start, \textcolor{keywordtype}{int} end);}
+\DoxyCodeLine{270 }
+\DoxyCodeLine{275     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_plansza_a25bb829cbc304c9d825427aeda11a1fe}{utworzCPoleSzansaZPliku}}(deque<string> \&daneZPliku, \textcolor{keywordtype}{int} start, \textcolor{keywordtype}{int} end);}
+\DoxyCodeLine{276 }
+\DoxyCodeLine{281     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_plansza_ad39bb67f73cc8c852a87c480a3895687}{utworzCPoleDoWiezieniaZPliku}}(deque<string> \&daneZPliku, \textcolor{keywordtype}{int} start, \textcolor{keywordtype}{int} end);}
+\DoxyCodeLine{282 }
+\DoxyCodeLine{291     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_plansza_a04d2fbb864fa68e6eef078d2c313451c}{utworzCKartaWolnoscZPliku}}(deque<string> \&daneZPliku, \textcolor{keywordtype}{int} start, \textcolor{keywordtype}{int} end);}
+\DoxyCodeLine{292 }
+\DoxyCodeLine{297     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_plansza_a67739bc79d63e426a45d8880f8d97bae}{utworzCKartaKwotyZPliku}}(deque<string> \&daneZPliku, \textcolor{keywordtype}{int} start, \textcolor{keywordtype}{int} end);}
+\DoxyCodeLine{298 }
+\DoxyCodeLine{303     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_plansza_ad72753a8ac19a3b0143ef22436ba0bab}{utworzCKartaRuchuZPliku}}(deque<string> \&daneZPliku, \textcolor{keywordtype}{int} start, \textcolor{keywordtype}{int} end);}
+\DoxyCodeLine{304 }
+\DoxyCodeLine{309     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_plansza_a533770c4544cb7fe7965c7c372de07db}{utworzCKartaWiezieniaZPliku}}(deque<string> \&daneZPliku, \textcolor{keywordtype}{int} start, \textcolor{keywordtype}{int} end);}
+\DoxyCodeLine{310 }
+\DoxyCodeLine{311 }
+\DoxyCodeLine{316     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_plansza_a5ad39e494fd348954afa29985b0ac099}{changePoleHeader}}(\textcolor{keywordtype}{string} header);    }
+\DoxyCodeLine{317 }
+\DoxyCodeLine{328     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_plansza_a273dfb0a5d4ac6f072df33da3798a608}{kartaHeaderToInt}}(\textcolor{keywordtype}{string} header);}
+\DoxyCodeLine{329 }
+\DoxyCodeLine{330 }
+\DoxyCodeLine{331     \textcolor{comment}{// -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/}}
+\DoxyCodeLine{332 \textcolor{keyword}{public}:}
+\DoxyCodeLine{333     \textcolor{comment}{// <-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/> Poniżej metody do parsowania strumienia danych pobranych z pliku <-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/>}}
+\DoxyCodeLine{334 }
+\DoxyCodeLine{345     \textcolor{keyword}{static} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_plansza_a85ece741539ead436afe8a9e765a31e7}{parseBound}}(deque<string> \&trescPliku, \textcolor{keywordtype}{string} nazwaNag, \textcolor{keywordtype}{int} start);}
+\DoxyCodeLine{346 }
+\DoxyCodeLine{351     \textcolor{keyword}{static} \textcolor{keywordtype}{string} \mbox{\hyperlink{class_c_plansza_a2212efa1ecb0263172f580cf6fc5a90c}{parseHeadCont}}(\textcolor{keywordtype}{string} strumien, \textcolor{keywordtype}{int} start);}
+\DoxyCodeLine{352 }
+\DoxyCodeLine{362     \textcolor{keyword}{static} \mbox{\hyperlink{struct_s_parsed_elem}{SParsedElem}} \mbox{\hyperlink{class_c_plansza_a468d58e945f4d7565626100428d64429}{parseElem}}(\textcolor{keywordtype}{string}\& daneStr);}
+\DoxyCodeLine{363 }
+\DoxyCodeLine{367     \textcolor{keyword}{static} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_plansza_aea1a5f0fed8f64ab857c34af21c3cd71}{znajdzZn}}(\textcolor{keywordtype}{char} parZn, \textcolor{keywordtype}{int} indexStart, \textcolor{keywordtype}{string}\& strumien);}
+\DoxyCodeLine{368 \};}
+\DoxyCodeLine{369 }
+\DoxyCodeLine{370 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// CPLANSZA\_H}}
+
+\end{DoxyCode}

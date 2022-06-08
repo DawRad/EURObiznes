@@ -1,0 +1,39 @@
+\hypertarget{crysrog_8h_source}{}\doxysection{crysrog.\+h}
+\label{crysrog_8h_source}\index{G:/Folder\_Dawida/Prace\_me/Git/DawRad-\/projekty/EURObiznes/EURObiznes/Rysunki\_h/crysrog.h@{G:/Folder\_Dawida/Prace\_me/Git/DawRad-\/projekty/EURObiznes/EURObiznes/Rysunki\_h/crysrog.h}}
+\mbox{\hyperlink{crysrog_8h}{Idź do dokumentacji tego pliku.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef CRYSROG\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define CRYSROG\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <cmath>}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{cryspole_8h}{Rysunki\_h/cryspole.h}}"{}}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9 }
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 }
+\DoxyCodeLine{16 \textcolor{keyword}{class }\mbox{\hyperlink{class_c_rys_rog}{CRysRog}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_c_rys_pole}{CRysPole}}}
+\DoxyCodeLine{17 \{}
+\DoxyCodeLine{18 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{19     QPolygon \mbox{\hyperlink{class_c_rys_rog_aa2bf77f2973cd9aa17fb72b098648c7e}{polygon\_}};}
+\DoxyCodeLine{20     QString \mbox{\hyperlink{class_c_rys_rog_a9a7a12c1b6625998fb8b5f894a48c769}{napis\_1\_}};}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{22 \textcolor{keyword}{public}:}
+\DoxyCodeLine{27     \mbox{\hyperlink{class_c_rys_rog_adf6e25512f6a0c242ca0a8afc7fa25f0}{CRysRog}}(QPoint topLeft, QSizeF size, \textcolor{keywordtype}{int} poz, QString napis, QPolygon polygon, QString napis\_1, qreal rot = 0);}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{33     \mbox{\hyperlink{class_c_rys_rog_adf6e25512f6a0c242ca0a8afc7fa25f0}{CRysRog}}(QPoint topLeft, QSizeF size, \textcolor{keywordtype}{int} poz, QString napis, QString napis\_1, qreal rot = 0);}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{35     \mbox{\hyperlink{class_c_rys_rog_a0b8dbc3c8bd80bc92b5967b80dd5b267}{\string~CRysRog}}();}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{37     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_rys_rog_a1b6603d4c3bb536411666c0450109900}{paint}}(QPainter *painter, \textcolor{keyword}{const} QStyleOptionGraphicsItem *option,}
+\DoxyCodeLine{38                QWidget *widget) \textcolor{keyword}{override};}
+\DoxyCodeLine{39     \textcolor{keyword}{virtual} QPainterPath \mbox{\hyperlink{class_c_rys_rog_a43ed28a51326f267c625650cc33309ee}{shape}}() \textcolor{keyword}{const override};}
+\DoxyCodeLine{40 }
+\DoxyCodeLine{41     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_rys_rog_a0aa1eb1ae3532f3b5c4baf37ab69f0e7}{setSizeWithOtherDimUpdate}}(QSizeF size) \textcolor{keyword}{override};}
+\DoxyCodeLine{42 \};}
+\DoxyCodeLine{43 }
+\DoxyCodeLine{44 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// CRYSROG\_H}}
+
+\end{DoxyCode}

@@ -1,0 +1,9 @@
+<map id="Graficzna hierarchia klas" name="Graficzna hierarchia klas">
+<area shape="rect" id="node1" href="$class_c_pole.html" title="Klasa logiki." alt="" coords="5,81,63,108"/>
+<area shape="rect" id="node2" href="$class_c_pole_do_wiezienia.html" title="Klasa logiki." alt="" coords="111,5,241,32"/>
+<area shape="rect" id="node3" href="$class_c_pole_kasa.html" title="Klasa logiki." alt="" coords="133,56,219,83"/>
+<area shape="rect" id="node4" href="$class_c_pole_spec.html" title="Klasa logiki." alt="" coords="133,107,219,133"/>
+<area shape="rect" id="node7" href="$class_c_pole_szansa.html" title="Klasa logiki." alt="" coords="125,157,227,184"/>
+<area shape="rect" id="node5" href="$class_c_pole_ekstra.html" title="Klasa logiki." alt="" coords="289,81,384,108"/>
+<area shape="rect" id="node6" href="$class_c_pole_stnd.html" title="Klasa logiki." alt="" coords="295,132,379,159"/>
+</map>

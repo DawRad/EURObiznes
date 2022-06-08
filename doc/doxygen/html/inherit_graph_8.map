@@ -1,0 +1,19 @@
+<map id="Graficzna hierarchia klas" name="Graficzna hierarchia klas">
+<area shape="rect" id="node1" title=" " alt="" coords="5,107,115,133"/>
+<area shape="rect" id="node2" href="$class_c_rys.html" title="Klasa graficzna." alt="" coords="163,107,217,133"/>
+<area shape="rect" id="node3" href="$class_c_rys_emiter.html" title="Klasa graficzna." alt="" coords="284,5,376,32"/>
+<area shape="rect" id="node6" href="$class_c_rys_info.html" title="Klasa graficzna." alt="" coords="293,56,367,83"/>
+<area shape="rect" id="node7" href="$class_c_rys_panel_gracza.html" title="Klasa graficzna." alt="" coords="265,107,395,133"/>
+<area shape="rect" id="node8" href="$class_c_rys_pionek.html" title="Klasa graficzna." alt="" coords="283,157,377,184"/>
+<area shape="rect" id="node9" href="$class_c_rys_pole.html" title="Klasa graficzna." alt="" coords="290,208,370,235"/>
+<area shape="rect" id="node4" href="$class_c_rys_przycisk.html" title="Klasa graficzna." alt="" coords="447,5,553,32"/>
+<area shape="rect" id="node5" href="$class_c_rys_przycisk_img.html" title="Klasa graficzna." alt="" coords="609,5,735,32"/>
+<area shape="rect" id="node10" href="$class_c_rys_pole_obraz.html" title="Klasa graficzna." alt="" coords="443,183,557,209"/>
+<area shape="rect" id="node17" href="$class_c_rys_rog.html" title="Klasa graficzna." alt="" coords="461,233,539,260"/>
+<area shape="rect" id="node11" href="$class_c_rys_kostki.html" title="Klasa graficzna." alt="" coords="627,81,717,108"/>
+<area shape="rect" id="node12" href="$class_c_rys_pole_start.html" title="Klasa graficzna." alt="" coords="618,132,726,159"/>
+<area shape="rect" id="node13" href="$class_c_rys_pole_stnd.html" title="Klasa graficzna." alt="" coords="619,183,725,209"/>
+<area shape="rect" id="node15" href="$class_c_rys_pole_szansa.html" title="Klasa graficzna." alt="" coords="610,233,734,260"/>
+<area shape="rect" id="node16" href="$class_c_rys_pole___pplus_w.html" title="Klasa graficzna." alt="" coords="605,284,739,311"/>
+<area shape="rect" id="node14" href="$class_c_rys_pole_spec.html" title="Klasa graficzna." alt="" coords="787,183,897,209"/>
+</map>

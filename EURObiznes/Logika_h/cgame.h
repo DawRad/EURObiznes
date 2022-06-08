@@ -253,7 +253,13 @@ public:
      */
     SWynAkcji graczRzuca();
 
+    /**
+     * @brief Metoda wykorzystywana do kupowania pól
+     *
+     * Pierwszy gracz z listy CGame::gracze_ kupuje pole na pozycji, na której aktualnie się znajduje
+     */
     void graczKupuje();
+
     void graczBuduje(int poz);
     void graczZastawia(int poz);
     void graczWykupuje(int poz);

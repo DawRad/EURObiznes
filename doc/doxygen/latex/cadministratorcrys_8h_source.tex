@@ -1,0 +1,92 @@
+\hypertarget{cadministratorcrys_8h_source}{}\doxysection{cadministratorcrys.\+h}
+\label{cadministratorcrys_8h_source}\index{G:/Folder\_Dawida/Prace\_me/Git/DawRad-\/projekty/EURObiznes/EURObiznes/cadministratorcrys.h@{G:/Folder\_Dawida/Prace\_me/Git/DawRad-\/projekty/EURObiznes/EURObiznes/cadministratorcrys.h}}
+\mbox{\hyperlink{cadministratorcrys_8h}{Idź do dokumentacji tego pliku.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef CADMINISTRATORCRYS\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define CADMINISTRATORCRYS\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <QList>}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{cryspoleszansa_8h}{Rysunki\_h/cryspoleszansa.h}}"{}}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{cryspolespec_8h}{Rysunki\_h/cryspolespec.h}}"{}}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{cryspolestart_8h}{Rysunki\_h/cryspolestart.h}}"{}}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{cryspole__pplusw_8h}{Rysunki\_h/cryspole\_pplusw.h}}"{}}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{crysrog_8h}{Rysunki\_h/crysrog.h}}"{}}}
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{cryspionek_8h}{Rysunki\_h/cryspionek.h}}"{}}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{crysprzyciskimg_8h}{Rysunki\_h/crysprzyciskimg.h}}"{}}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{cryskostki_8h}{Rysunki\_h/cryskostki.h}}"{}}}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{cgame_8h}{Logika\_h/cgame.h}}"{}}}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17 }
+\DoxyCodeLine{18 }
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20 }
+\DoxyCodeLine{24 \textcolor{keyword}{class }\mbox{\hyperlink{class_c_administrator_c_rys}{CAdministratorCRys}}}
+\DoxyCodeLine{25 \{}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{27 \textcolor{keyword}{public}:}
+\DoxyCodeLine{28     \mbox{\hyperlink{class_c_administrator_c_rys_a622cbe25c2b0eb8d42d01c9e74f67d9a}{CAdministratorCRys}}();}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{30 }
+\DoxyCodeLine{31     \textcolor{comment}{// -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/}}
+\DoxyCodeLine{32     \textcolor{comment}{// porządkowanie deques}}
+\DoxyCodeLine{33 }
+\DoxyCodeLine{40     \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_administrator_c_rys_a7fab57f89cd5beb0df884d96bd1bf1ea}{przesunPolePozZeroNaPocz}}(deque<CRysPole *> *pola);}
+\DoxyCodeLine{41 }
+\DoxyCodeLine{42     \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_administrator_c_rys_a70cf439ce29464028980fc84ae15c000}{aktualPensjeNaStart}}(deque<CRysPole *> *pola, \textcolor{keywordtype}{int} kwota, QString waluta);}
+\DoxyCodeLine{43 }
+\DoxyCodeLine{44 }
+\DoxyCodeLine{45     \textcolor{comment}{// * * * * * * * * * *}}
+\DoxyCodeLine{46     \textcolor{comment}{// -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/}}
+\DoxyCodeLine{47     \textcolor{comment}{// chodzenie po deques}}
+\DoxyCodeLine{48 }
+\DoxyCodeLine{49     \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_administrator_c_rys_ac8757cce09890adf6532654c2d0888b3}{dequeIntPrzod}}(deque<int> \&kolejka);}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{51     \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_administrator_c_rys_ace563b352ebbffc6f1e1796385cf9309}{dequeIntTyl}}(deque<int> \&kolejka);}
+\DoxyCodeLine{52 }
+\DoxyCodeLine{53     \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_administrator_c_rys_a742987b96a87c44c24a05df47c9bdaac}{dequeCRysPionekPrzod}}(deque<CRysPionek *> *pionki);}
+\DoxyCodeLine{54 }
+\DoxyCodeLine{55     \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_administrator_c_rys_ae7af4896ee98815cf0b069266bb20e00}{dequeCRysPionekTyl}}(deque<CRysPionek *> *pionki);}
+\DoxyCodeLine{56 }
+\DoxyCodeLine{57     \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_administrator_c_rys_a3bc5fa75c68d585d585a6a83316d3e80}{dequeCRysPolePrzod}}(deque<CRysPole *> *pola);}
+\DoxyCodeLine{58 }
+\DoxyCodeLine{59     \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_administrator_c_rys_a9a974bdcd689a0b40d95097ea3073103}{dequeCRysPoleTyl}}(deque<CRysPole *> *pola);}
+\DoxyCodeLine{60 }
+\DoxyCodeLine{61 }
+\DoxyCodeLine{62     \textcolor{comment}{// * * * * * * * * * *}}
+\DoxyCodeLine{63     \textcolor{comment}{// -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/}}
+\DoxyCodeLine{64     \textcolor{comment}{// czyszczenie deques}}
+\DoxyCodeLine{65     \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_administrator_c_rys_aa51b70f9fa5803b2b9fb1526228363e0}{wyczyscDequeCRysPole}}(deque<CRysPole *> *deqPol);}
+\DoxyCodeLine{66 }
+\DoxyCodeLine{67 }
+\DoxyCodeLine{68     \textcolor{comment}{// * * * * * * * * * *}}
+\DoxyCodeLine{69     \textcolor{comment}{// -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/}}
+\DoxyCodeLine{70     \textcolor{comment}{// tworzenie rysunków pól na podstawie danych z pola gra\_}}
+\DoxyCodeLine{71 }
+\DoxyCodeLine{72     \textcolor{keyword}{static} \mbox{\hyperlink{class_c_rys_pole_stnd}{CRysPoleStnd}} *\mbox{\hyperlink{class_c_administrator_c_rys_a770a0567a32e23e55fb9746213167a54}{utworzRysPolaStndZDnPol}}(\textcolor{keyword}{const} \mbox{\hyperlink{struct_s_dn_pola}{SDnPola}} \&dane);}
+\DoxyCodeLine{73     \textcolor{keyword}{static} \mbox{\hyperlink{class_c_rys_pole_spec}{CRysPoleSpec}} *\mbox{\hyperlink{class_c_administrator_c_rys_a186a324b28857d95062998cbcd2fbb29}{utworzRysPolaSpecZDnPol}}(\textcolor{keyword}{const} \mbox{\hyperlink{struct_s_dn_pola}{SDnPola}} \&dane);}
+\DoxyCodeLine{74     \textcolor{keyword}{static} \mbox{\hyperlink{class_c_rys_pole_szansa}{CRysPoleSzansa}} *\mbox{\hyperlink{class_c_administrator_c_rys_a57144f1c3b4d58e54af14612c5852b40}{utworzRysPolaSzansaZDnPol}}(\textcolor{keyword}{const} \mbox{\hyperlink{struct_s_dn_pola}{SDnPola}} \&dane);}
+\DoxyCodeLine{75     \textcolor{keyword}{static} \mbox{\hyperlink{class_c_rys_pole_szansa}{CRysPoleSzansa}} *\mbox{\hyperlink{class_c_administrator_c_rys_a4fe68ce0289e5a468b261f13dd9030e5}{utworzRysPolaKasaZDnPol}}(\textcolor{keyword}{const} \mbox{\hyperlink{struct_s_dn_pola}{SDnPola}} \&dane);}
+\DoxyCodeLine{76     \textcolor{keyword}{static} \mbox{\hyperlink{class_c_rys_pole_start}{CRysPoleStart}} *\mbox{\hyperlink{class_c_administrator_c_rys_a2b87dd698b207a7ad785b81d02b9f437}{utworzRysPolaStartZDnPol}}(\textcolor{keyword}{const} \mbox{\hyperlink{struct_s_dn_pola}{SDnPola}} \&dane, QString \&waluta);}
+\DoxyCodeLine{77     \textcolor{keyword}{static} \mbox{\hyperlink{class_c_rys_pole___pplus_w}{CRysPole\_PplusW}} *\mbox{\hyperlink{class_c_administrator_c_rys_afb0f387002ae9f595e3b001b94eb858c}{utworzRysPola\_PplusW\_ZDnPol}}(\textcolor{keyword}{const} \mbox{\hyperlink{struct_s_dn_pola}{SDnPola}} \&dane, QString \&napis2);}
+\DoxyCodeLine{78     \textcolor{keyword}{static} \mbox{\hyperlink{class_c_rys_rog}{CRysRog}} *\mbox{\hyperlink{class_c_administrator_c_rys_a1478fa71fd2e4044eb4ccf118733091e}{utworzRysPolaRogZDnPol}}(\textcolor{keyword}{const} \mbox{\hyperlink{struct_s_dn_pola}{SDnPola}} \&dane);}
+\DoxyCodeLine{79     \textcolor{keyword}{static} \mbox{\hyperlink{class_c_rys_pole_obraz}{CRysPoleObraz}} *\mbox{\hyperlink{class_c_administrator_c_rys_a981357fed9f4ba547fc730b035833211}{utworzRysPolaObrazZDnPol}}(\textcolor{keyword}{const} \mbox{\hyperlink{struct_s_dn_pola}{SDnPola}} \&dane);}
+\DoxyCodeLine{80     \textcolor{keyword}{static} \mbox{\hyperlink{class_c_rys_pole_szansa}{CRysPoleSzansa}} *\mbox{\hyperlink{class_c_administrator_c_rys_aaf16117fce654e1238d276f84900cea2}{utworzRysPolaZErroremZDnPol}}(\textcolor{keyword}{const} \mbox{\hyperlink{struct_s_dn_pola}{SDnPola}} \&dane);}
+\DoxyCodeLine{81 }
+\DoxyCodeLine{82     \textcolor{keyword}{static} deque<CRysPole *> \mbox{\hyperlink{class_c_administrator_c_rys_aff53585200f84bce3683edd871fb92c8}{utworzKolejkePol}}(deque<SDnPola> \&danePol);}
+\DoxyCodeLine{83 }
+\DoxyCodeLine{84 }
+\DoxyCodeLine{85     \textcolor{comment}{// * * * * * * * * * *}}
+\DoxyCodeLine{86     \textcolor{comment}{// -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/}}
+\DoxyCodeLine{87     \textcolor{comment}{// zamiana rysunków pól na pola innych klas}}
+\DoxyCodeLine{88     \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_administrator_c_rys_ab84331cf8cd8eca3c0fda5a5fd689931}{zamienNaCRysPolaStnd}}(deque<CRysPole *> *deqPol, \textcolor{keyword}{const} \mbox{\hyperlink{struct_s_dn_pola}{SDnPola}} \&dane, QGraphicsScene *scene);}
+\DoxyCodeLine{89     \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_administrator_c_rys_aded5dfefd5f77d572164cfbfbea4d89e}{zamienNaCRysPolaSpec}}(deque<CRysPole *> *deqPol, \textcolor{keyword}{const} \mbox{\hyperlink{struct_s_dn_pola}{SDnPola}} \&dane, QGraphicsScene *scene);}
+\DoxyCodeLine{90     \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_administrator_c_rys_a6545151bae91d753dea6284956296270}{zamienNaCRysPolaEkstra}}(deque<CRysPole *> *deqPol, \textcolor{keyword}{const} \mbox{\hyperlink{struct_s_dn_pola}{SDnPola}} \&dane, QGraphicsScene *scene);}
+\DoxyCodeLine{91     \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_administrator_c_rys_afa375f69ebc8ea3dcd66181169860cbe}{zamienNaCRysPolaSzansa}}(deque<CRysPole *> *deqPol, \textcolor{keyword}{const} \mbox{\hyperlink{struct_s_dn_pola}{SDnPola}} \&dane, QGraphicsScene *scene);}
+\DoxyCodeLine{92     \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_administrator_c_rys_acccfe2596ec4d993d0546933387cbcb8}{zamienNaCRysPolaKasa}}(deque<CRysPole *> *deqPol, \textcolor{keyword}{const} \mbox{\hyperlink{struct_s_dn_pola}{SDnPola}} \&dane, QGraphicsScene *scene);}
+\DoxyCodeLine{93 \};}
+\DoxyCodeLine{94 }
+\DoxyCodeLine{95 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// CADMINISTRATORCRYS\_H}}
+
+\end{DoxyCode}

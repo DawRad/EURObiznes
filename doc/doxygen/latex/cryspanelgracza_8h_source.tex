@@ -1,0 +1,48 @@
+\hypertarget{cryspanelgracza_8h_source}{}\doxysection{cryspanelgracza.\+h}
+\label{cryspanelgracza_8h_source}\index{G:/Folder\_Dawida/Prace\_me/Git/DawRad-\/projekty/EURObiznes/EURObiznes/Rysunki\_h/cryspanelgracza.h@{G:/Folder\_Dawida/Prace\_me/Git/DawRad-\/projekty/EURObiznes/EURObiznes/Rysunki\_h/cryspanelgracza.h}}
+\mbox{\hyperlink{cryspanelgracza_8h}{Idź do dokumentacji tego pliku.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef CRYSPANELGRACZA\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define CRYSPANELGRACZA\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{crys_8h}{crys.h}}"{}}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{cadministratorcrys_8h}{cadministratorcrys.h}}"{}}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9 }
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11 }
+\DoxyCodeLine{15 \textcolor{keyword}{class }\mbox{\hyperlink{class_c_rys_panel_gracza}{CRysPanelGracza}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_c_rys}{CRys}}}
+\DoxyCodeLine{16 \{}
+\DoxyCodeLine{17 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{18     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_c_rys_panel_gracza_ada32ae6e68b650ad615dd163bb5c2b59}{crtdMark\_}};}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20     \mbox{\hyperlink{class_c_rys_pionek}{CRysPionek}} *\mbox{\hyperlink{class_c_rys_panel_gracza_a0ab76fe659c3d65f9873e7f29a03a909}{pionek\_}};}
+\DoxyCodeLine{21     QString \mbox{\hyperlink{class_c_rys_panel_gracza_a010595222c8f191cd81cb57b828be4ad}{rodzGracza\_}};}
+\DoxyCodeLine{22     QString \mbox{\hyperlink{class_c_rys_panel_gracza_aaf328dd4b31d278c74f39f0fd6279120}{nick\_}};}
+\DoxyCodeLine{23     QString \mbox{\hyperlink{class_c_rys_panel_gracza_a752cc9b49a542c878b02297e52d4a55c}{portfel\_}};}
+\DoxyCodeLine{24     QString \mbox{\hyperlink{class_c_rys_panel_gracza_a4958b8a65eb9b83a3920bd3b9e6c67f4}{lbKartWolnosc\_}};}
+\DoxyCodeLine{25     QString \mbox{\hyperlink{class_c_rys_panel_gracza_a9dd448133a9fd3643242078829fc8b55}{imgPath\_}};}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{27 \textcolor{keyword}{public}:}
+\DoxyCodeLine{28     \mbox{\hyperlink{class_c_rys_panel_gracza_a68dabbb0d28c6274ec3d2f823da5529d}{CRysPanelGracza}}();}
+\DoxyCodeLine{29     \mbox{\hyperlink{class_c_rys_panel_gracza_a68dabbb0d28c6274ec3d2f823da5529d}{CRysPanelGracza}}(QPoint topLeft, QSizeF size, \mbox{\hyperlink{struct_s_dn_pionka}{SDnPionka}} danePionka, \mbox{\hyperlink{struct_s_dn_gracza}{SDnGracza}} daneGr, QString imgPath = \textcolor{stringliteral}{"{}:/Zasoby/grafika/tla/tablica.jpg"{}}, qreal rot = 0);}
+\DoxyCodeLine{30     \mbox{\hyperlink{class_c_rys_panel_gracza_a0a311e55d39391717ae2741662d778cf}{\string~CRysPanelGracza}}();}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{32     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_rys_panel_gracza_a5b6f59e242df34363cfaedd5c00b28b0}{paint}}(QPainter *painter, \textcolor{keyword}{const} QStyleOptionGraphicsItem *option,}
+\DoxyCodeLine{33                QWidget *widget) \textcolor{keyword}{override};}
+\DoxyCodeLine{34     \textcolor{keyword}{virtual} QPainterPath \mbox{\hyperlink{class_c_rys_panel_gracza_a266d9d4cb689eb335d7793726faf7896}{shape}}() \textcolor{keyword}{const override};}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{36     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_rys_panel_gracza_a0c33e14da78965192d7dc54e98e4175b}{aktualizujPanel}}(\mbox{\hyperlink{struct_s_dn_pionka}{SDnPionka}} danePionka, \textcolor{keywordtype}{string} rodzGracza, \textcolor{keywordtype}{string} nick, \textcolor{keywordtype}{int} portfel, \textcolor{keywordtype}{int} lbKart);}
+\DoxyCodeLine{37     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_rys_panel_gracza_a0c33e14da78965192d7dc54e98e4175b}{aktualizujPanel}}(\mbox{\hyperlink{struct_s_dn_pionka}{SDnPionka}} danePionka, \mbox{\hyperlink{struct_s_dn_gracza}{SDnGracza}} daneGr);}
+\DoxyCodeLine{38     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_rys_panel_gracza_a5a639be2153a9028682b5afe357ee607}{aktualNapisPortfel}}(\textcolor{keywordtype}{int} portfel);}
+\DoxyCodeLine{39     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_rys_panel_gracza_aad710ac48afb27d594d4a4515afee34e}{aktualNapislbKartWolnosc}}(\textcolor{keywordtype}{int} lbKart);}
+\DoxyCodeLine{40     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_rys_panel_gracza_a9fa854ff20f7cebb2c109251545b8177}{graczUzylKartyWolnosc}}();}
+\DoxyCodeLine{41 }
+\DoxyCodeLine{42     \textcolor{keyword}{static} QString \mbox{\hyperlink{class_c_rys_panel_gracza_a7d846791cc6257350c6afc383ae34524}{odkodujRodzGracza}}(\textcolor{keywordtype}{string} rodzGracza);}
+\DoxyCodeLine{43 \};}
+\DoxyCodeLine{44 }
+\DoxyCodeLine{45 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// CRYSPANELGRACZA\_H}}
+
+\end{DoxyCode}

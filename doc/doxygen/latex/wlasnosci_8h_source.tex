@@ -1,0 +1,61 @@
+\hypertarget{wlasnosci_8h_source}{}\doxysection{wlasnosci.\+h}
+\label{wlasnosci_8h_source}\index{G:/Folder\_Dawida/Prace\_me/Git/DawRad-\/projekty/EURObiznes/EURObiznes/wlasnosci.h@{G:/Folder\_Dawida/Prace\_me/Git/DawRad-\/projekty/EURObiznes/EURObiznes/wlasnosci.h}}
+\mbox{\hyperlink{wlasnosci_8h}{Idź do dokumentacji tego pliku.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef WLASNOSCI\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define WLASNOSCI\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <QMainWindow>}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{cadministratorcrys_8h}{cadministratorcrys.h}}"{}}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{cgame_8h}{Logika\_h/cgame.h}}"{}}}
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9 }
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 }
+\DoxyCodeLine{13 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespace_ui}{Ui}} \{}
+\DoxyCodeLine{14 \textcolor{keyword}{class }\mbox{\hyperlink{class_wlasnosci}{Wlasnosci}};}
+\DoxyCodeLine{15 \}}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17 }
+\DoxyCodeLine{21 \textcolor{keyword}{class }\mbox{\hyperlink{class_wlasnosci}{Wlasnosci}} : \textcolor{keyword}{public} QMainWindow}
+\DoxyCodeLine{22 \{}
+\DoxyCodeLine{23     Q\_OBJECT}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{25 \textcolor{keyword}{public}:}
+\DoxyCodeLine{26     \textcolor{keyword}{explicit} \mbox{\hyperlink{class_wlasnosci_a210bac7d9e2717c89e638bbf26aabce3}{Wlasnosci}}(\mbox{\hyperlink{class_c_game}{CGame}} *wskGry, QWidget *parent = \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{27     \mbox{\hyperlink{class_wlasnosci_a0bf35ecc5346a9e2dbe61b5087f251bf}{\string~Wlasnosci}}();      }
+\DoxyCodeLine{28 }
+\DoxyCodeLine{29 }
+\DoxyCodeLine{30 \textcolor{keyword}{private} slots:}
+\DoxyCodeLine{31     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_wlasnosci_a8a975fa7ea9b05b8e7216aceae99618a}{on\_pbPoprz\_clicked}}();}
+\DoxyCodeLine{32 }
+\DoxyCodeLine{33     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_wlasnosci_a20955ce1e147ba1c39e4839a5ed21569}{on\_pbNast\_clicked}}();}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{35 \textcolor{keyword}{private}:}
+\DoxyCodeLine{36     Ui::Wlasnosci *\mbox{\hyperlink{class_wlasnosci_a0c24b6340291988ba2f0ab0242d8e71d}{ui}};}
+\DoxyCodeLine{37 }
+\DoxyCodeLine{38     \textcolor{comment}{// -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/}}
+\DoxyCodeLine{39     \textcolor{comment}{// wskaźniki z MainWindow}}
+\DoxyCodeLine{40 }
+\DoxyCodeLine{41     \mbox{\hyperlink{class_c_game}{CGame}} *\mbox{\hyperlink{class_wlasnosci_a32754d86fc816b8c5d571bc9a2eef117}{wskGry\_}};}
+\DoxyCodeLine{42 }
+\DoxyCodeLine{43     \textcolor{comment}{// * * * * * * * * * *}}
+\DoxyCodeLine{44     \textcolor{comment}{// -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/}}
+\DoxyCodeLine{45     \textcolor{comment}{// pola tej klasy}}
+\DoxyCodeLine{46 }
+\DoxyCodeLine{47     deque<SDnPola> \mbox{\hyperlink{class_wlasnosci_a89c38511a47dd99fd85e9589b837db4b}{danePolGracza\_}};}
+\DoxyCodeLine{48 }
+\DoxyCodeLine{49     deque<CRysPole *> \mbox{\hyperlink{class_wlasnosci_a5488960d515878dcaea5448d04ff4f67}{rysunkiPol\_}};}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{51     QGraphicsScene *\mbox{\hyperlink{class_wlasnosci_ad86226b67ebe8ae3219d1867b9774bfb}{scene\_}};}
+\DoxyCodeLine{52 }
+\DoxyCodeLine{53     \textcolor{comment}{// iteratory}}
+\DoxyCodeLine{54     deque<CRysPole *>::iterator \mbox{\hyperlink{class_wlasnosci_aeab7f75e529c1770cb3eac0aca3babf6}{itPol\_}};}
+\DoxyCodeLine{55     deque<SDnPola>::iterator \mbox{\hyperlink{class_wlasnosci_a26b45dcd8063214d5c4722e220afdeb3}{itDanychPol\_}};}
+\DoxyCodeLine{56 \};}
+\DoxyCodeLine{57 }
+\DoxyCodeLine{58 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// WLASNOSCI\_H}}
+
+\end{DoxyCode}

@@ -1,0 +1,37 @@
+\hypertarget{cryspoleobraz_8h_source}{}\doxysection{cryspoleobraz.\+h}
+\label{cryspoleobraz_8h_source}\index{G:/Folder\_Dawida/Prace\_me/Git/DawRad-\/projekty/EURObiznes/EURObiznes/Rysunki\_h/cryspoleobraz.h@{G:/Folder\_Dawida/Prace\_me/Git/DawRad-\/projekty/EURObiznes/EURObiznes/Rysunki\_h/cryspoleobraz.h}}
+\mbox{\hyperlink{cryspoleobraz_8h}{Idź do dokumentacji tego pliku.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef CRYSPOLEOBRAZ\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define CRYSPOLEOBRAZ\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{cryspole_8h}{Rysunki\_h/cryspole.h}}"{}}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9 }
+\DoxyCodeLine{10 }
+\DoxyCodeLine{14 \textcolor{keyword}{class }\mbox{\hyperlink{class_c_rys_pole_obraz}{CRysPoleObraz}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_c_rys_pole}{CRysPole}}}
+\DoxyCodeLine{15 \{}
+\DoxyCodeLine{16 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{17     QString \mbox{\hyperlink{class_c_rys_pole_obraz_abac65e19b2e5509ea74fbfd7a2b97084}{imagePath\_}};}
+\DoxyCodeLine{18     QImage *\mbox{\hyperlink{class_c_rys_pole_obraz_a774d4b27f072d5f65991603c12cfc61a}{image\_}};}
+\DoxyCodeLine{19     \mbox{\hyperlink{class_c_wsp_skalowania_img}{CWspSkalowaniaImg}} \mbox{\hyperlink{class_c_rys_pole_obraz_a74ffd4d110c03398eb6c7ecbcbcb2340}{skalaImg\_}};}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21 \textcolor{keyword}{public}:}
+\DoxyCodeLine{22     \mbox{\hyperlink{class_c_rys_pole_obraz_a4c69c2975c14f109ae1438d1dd0b320e}{CRysPoleObraz}}();}
+\DoxyCodeLine{23     \mbox{\hyperlink{class_c_rys_pole_obraz_a4c69c2975c14f109ae1438d1dd0b320e}{CRysPoleObraz}}(QPoint topLeft, QSizeF size, \textcolor{keywordtype}{int} poz, QString napis, QString path, \mbox{\hyperlink{class_c_wsp_skalowania_img}{CWspSkalowaniaImg}} skalaImg = \mbox{\hyperlink{_consts___qt_8h_a299bd45518d51b024eedf4e1de17ad09}{SKALA\_KOSTKI}}, qreal rot = 0);}
+\DoxyCodeLine{24     \textcolor{keyword}{virtual} \mbox{\hyperlink{class_c_rys_pole_obraz_ab876dc42476b08c9ec6f17d1c364d4f8}{\string~CRysPoleObraz}}();}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{26     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_rys_pole_obraz_a2cb6bbba4e169dc894479a3d842be2c6}{paint}}(QPainter *painter, \textcolor{keyword}{const} QStyleOptionGraphicsItem *option,}
+\DoxyCodeLine{27                QWidget *widget) \textcolor{keyword}{override};}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{29     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_rys_pole_obraz_a402efcd16781f41749a9c53c157db11b}{setSize}}(QSizeF size) \textcolor{keyword}{override};}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{31     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_rys_pole_obraz_a6c98b926cf915f377f89b9084a784470}{drawMyImage}}(QPainter *painter,QRectF rect);}
+\DoxyCodeLine{32 \};}
+\DoxyCodeLine{33 }
+\DoxyCodeLine{34 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// CRYSPOLEOBRAZ\_H}}
+
+\end{DoxyCode}

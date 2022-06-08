@@ -1,0 +1,19 @@
+<map id="CRys" name="CRys">
+<area shape="rect" id="node1" title="Klasa graficzna." alt="" coords="276,80,331,107"/>
+<area shape="rect" id="node3" href="$class_c_rys_emiter.html" title="Klasa graficzna." alt="" coords="23,155,115,181"/>
+<area shape="rect" id="node6" href="$class_c_rys_info.html" title="Klasa graficzna." alt="" coords="139,155,214,181"/>
+<area shape="rect" id="node7" href="$class_c_rys_panel_gracza.html" title="Klasa graficzna." alt="" coords="239,155,368,181"/>
+<area shape="rect" id="node8" href="$class_c_rys_pionek.html" title="Klasa graficzna." alt="" coords="392,155,487,181"/>
+<area shape="rect" id="node9" href="$class_c_rys_pole.html" title="Klasa graficzna." alt="" coords="511,155,591,181"/>
+<area shape="rect" id="node2" title=" " alt="" coords="249,5,358,32"/>
+<area shape="rect" id="node4" href="$class_c_rys_przycisk.html" title="Klasa graficzna." alt="" coords="16,229,121,256"/>
+<area shape="rect" id="node5" href="$class_c_rys_przycisk_img.html" title="Klasa graficzna." alt="" coords="5,304,132,331"/>
+<area shape="rect" id="node10" href="$class_c_rys_pole_obraz.html" title="Klasa graficzna." alt="" coords="447,229,562,256"/>
+<area shape="rect" id="node17" href="$class_c_rys_rog.html" title="Klasa graficzna." alt="" coords="586,229,663,256"/>
+<area shape="rect" id="node11" href="$class_c_rys_kostki.html" title="Klasa graficzna." alt="" coords="203,304,294,331"/>
+<area shape="rect" id="node12" href="$class_c_rys_pole_start.html" title="Klasa graficzna." alt="" coords="319,304,427,331"/>
+<area shape="rect" id="node13" href="$class_c_rys_pole_stnd.html" title="Klasa graficzna." alt="" coords="451,304,558,331"/>
+<area shape="rect" id="node15" href="$class_c_rys_pole_szansa.html" title="Klasa graficzna." alt="" coords="583,304,707,331"/>
+<area shape="rect" id="node16" href="$class_c_rys_pole___pplus_w.html" title="Klasa graficzna." alt="" coords="731,304,865,331"/>
+<area shape="rect" id="node14" href="$class_c_rys_pole_spec.html" title="Klasa graficzna." alt="" coords="449,379,560,405"/>
+</map>

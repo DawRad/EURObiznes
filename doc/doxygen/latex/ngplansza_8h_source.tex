@@ -1,0 +1,101 @@
+\hypertarget{ngplansza_8h_source}{}\doxysection{ngplansza.\+h}
+\label{ngplansza_8h_source}\index{G:/Folder\_Dawida/Prace\_me/Git/DawRad-\/projekty/EURObiznes/EURObiznes/ngplansza.h@{G:/Folder\_Dawida/Prace\_me/Git/DawRad-\/projekty/EURObiznes/EURObiznes/ngplansza.h}}
+\mbox{\hyperlink{ngplansza_8h}{Idź do dokumentacji tego pliku.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef NGPLANSZA\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define NGPLANSZA\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <QMainWindow>}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{cadministratorcrys_8h}{cadministratorcrys.h}}"{}}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9 }
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespace_ui}{Ui}} \{}
+\DoxyCodeLine{13 \textcolor{keyword}{class }\mbox{\hyperlink{class_n_g_plansza}{NGPlansza}};}
+\DoxyCodeLine{14 \}}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16 }
+\DoxyCodeLine{20 \textcolor{keyword}{class }\mbox{\hyperlink{class_n_g_plansza}{NGPlansza}} : \textcolor{keyword}{public} QMainWindow}
+\DoxyCodeLine{21 \{}
+\DoxyCodeLine{22     Q\_OBJECT}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{24 \textcolor{keyword}{public}:}
+\DoxyCodeLine{25     \textcolor{keyword}{explicit} \mbox{\hyperlink{class_n_g_plansza_a637060e12ee3af994e6ade835f68c280}{NGPlansza}}(\mbox{\hyperlink{class_c_game}{CGame}} *wskGry, deque<CRysPole *> *pola, QWidget *parent = \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{26     \mbox{\hyperlink{class_n_g_plansza_a6ef1f5057c89ff8ecfee76f4f62f7c4c}{\string~NGPlansza}}();}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{28     \textcolor{comment}{// -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/}}
+\DoxyCodeLine{29 \textcolor{keyword}{private}:}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{31     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_n_g_plansza_a4bc0062896948464dad2fd540fd70f41}{odczytajKolor}}(\textcolor{keyword}{const} QString \&kolor);}
+\DoxyCodeLine{32 }
+\DoxyCodeLine{37     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_n_g_plansza_ab6078379eeb0640889e937c31678f467}{dostosujDoCBRodzaj}}(\textcolor{keyword}{const} QString \&arg1);}
+\DoxyCodeLine{38 }
+\DoxyCodeLine{39     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_n_g_plansza_a796096d3ecf339020c3a35fef999682e}{dostosujKolor}}(\textcolor{keyword}{const} QString \&arg1);}
+\DoxyCodeLine{40 }
+\DoxyCodeLine{45     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_n_g_plansza_a23786d156ca8b8969359aa142f9f6653}{setInputObjectsEnabled}}();}
+\DoxyCodeLine{46 }
+\DoxyCodeLine{47     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_n_g_plansza_a0e89bd92b2aeb55d3d554e41919f96a2}{setInputObjectsDisabled}}();}
+\DoxyCodeLine{48 }
+\DoxyCodeLine{49     \textcolor{comment}{// metody do tworzenie odpowiednich rodzajów pól}}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{51     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_n_g_plansza_a08d27eea5a59d72be29b27e84ec8b57f}{utworzCPoleSzansa}}(\mbox{\hyperlink{struct_s_dn_pocz_pola}{SDnPoczPola}} \&dane);}
+\DoxyCodeLine{52 }
+\DoxyCodeLine{53     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_n_g_plansza_a0a0ce3bafc37536a00822fca2d2d60ed}{utworzCPoleKasa}}(\mbox{\hyperlink{struct_s_dn_pocz_pola}{SDnPoczPola}} \&dane);}
+\DoxyCodeLine{54 }
+\DoxyCodeLine{55     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_n_g_plansza_a54b8e1ca3ae46443f59836c6175437ad}{utworzCPoleStnd}}(\mbox{\hyperlink{struct_s_dn_pocz_pola}{SDnPoczPola}} \&dane);}
+\DoxyCodeLine{56 }
+\DoxyCodeLine{57     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_n_g_plansza_a6770cf8d65299a8cd9af9840dd9a66d1}{utworzCPoleSpec}}(\mbox{\hyperlink{struct_s_dn_pocz_pola}{SDnPoczPola}} \&dane);}
+\DoxyCodeLine{58 }
+\DoxyCodeLine{59     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_n_g_plansza_a75ab78c50c58ba27e598d966eed44787}{utworzCPoleEkstra}}(\mbox{\hyperlink{struct_s_dn_pocz_pola}{SDnPoczPola}} \&dane);}
+\DoxyCodeLine{60 }
+\DoxyCodeLine{61     \textcolor{comment}{// -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/}}
+\DoxyCodeLine{62     \textcolor{comment}{// metody do destruktora}}
+\DoxyCodeLine{63 }
+\DoxyCodeLine{68     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_n_g_plansza_a2929fed94c5bbaaa7076d673fdd9517d}{removeItemsFromScene}}();}
+\DoxyCodeLine{69 }
+\DoxyCodeLine{70 }
+\DoxyCodeLine{71     \textcolor{comment}{// -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/}}
+\DoxyCodeLine{72 signals:}
+\DoxyCodeLine{73     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_n_g_plansza_aa6a20b6919914aa3703a3f9bc75c92e3}{dalej}}();}
+\DoxyCodeLine{74 }
+\DoxyCodeLine{75 }
+\DoxyCodeLine{76     \textcolor{comment}{// -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/}}
+\DoxyCodeLine{77 \textcolor{keyword}{private} slots:    }
+\DoxyCodeLine{78 }
+\DoxyCodeLine{79     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_n_g_plansza_a65051476f6e3e10fdeb7eaa21fa8c31f}{on\_cbRodzaj\_currentTextChanged}}(\textcolor{keyword}{const} QString \&arg1);    }
+\DoxyCodeLine{80 }
+\DoxyCodeLine{81     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_n_g_plansza_a6ac5d0b7e3aa9fe48cd3f8d3c3d33a48}{on\_pbDodPole\_clicked}}();}
+\DoxyCodeLine{82 }
+\DoxyCodeLine{83     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_n_g_plansza_a5d9902485046266493632d384149f39f}{on\_pbWstecz\_clicked}}();}
+\DoxyCodeLine{84 }
+\DoxyCodeLine{85     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_n_g_plansza_a54f2a1681e3a66b690775eaf86288488}{on\_pbDalej\_clicked}}();}
+\DoxyCodeLine{86 }
+\DoxyCodeLine{87     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_n_g_plansza_a7d7c8fb4d492c84f6c185c401d30b24b}{on\_pbGraj\_clicked}}();}
+\DoxyCodeLine{88 }
+\DoxyCodeLine{89     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_n_g_plansza_a0a9710f31beae536a84a13514bce0e5a}{on\_cbKolor\_currentTextChanged}}(\textcolor{keyword}{const} QString \&arg1);}
+\DoxyCodeLine{90 }
+\DoxyCodeLine{91 \textcolor{keyword}{private}:}
+\DoxyCodeLine{92     Ui::NGPlansza *\mbox{\hyperlink{class_n_g_plansza_aa2414b735794fb3eb0f68cb608fecd8a}{ui}};}
+\DoxyCodeLine{93 }
+\DoxyCodeLine{94     \textcolor{comment}{// -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/}}
+\DoxyCodeLine{95     \textcolor{comment}{// wskaźniki pól MainWindow}}
+\DoxyCodeLine{96 }
+\DoxyCodeLine{97     \mbox{\hyperlink{class_c_game}{CGame}} *\mbox{\hyperlink{class_n_g_plansza_a42cc7489a4ebda78d1ff83ac35b1803c}{wskGry\_}};}
+\DoxyCodeLine{98 }
+\DoxyCodeLine{99     deque<CRysPole *> *\mbox{\hyperlink{class_n_g_plansza_a81e6836cbd215b821a8ca1f6e9aa3c14}{wskDeqPol\_}};}
+\DoxyCodeLine{100 }
+\DoxyCodeLine{101     \textcolor{comment}{// * * * * * * * * * *}}
+\DoxyCodeLine{102     \textcolor{comment}{// -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/}}
+\DoxyCodeLine{103     \textcolor{comment}{// pola tylko tej klasy}}
+\DoxyCodeLine{104 }
+\DoxyCodeLine{105     QGraphicsScene *\mbox{\hyperlink{class_n_g_plansza_a4d9408bb40313c493c7223f106e51642}{scene\_}};}
+\DoxyCodeLine{106     QGraphicsScene *\mbox{\hyperlink{class_n_g_plansza_ab1d7e97b21ddc923ec0e720101148075}{sceneKolor\_}};}
+\DoxyCodeLine{107     \textcolor{comment}{//QBrush brush;}}
+\DoxyCodeLine{108 \};}
+\DoxyCodeLine{109 }
+\DoxyCodeLine{110 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// NGPLANSZA\_H}}
+
+\end{DoxyCode}

@@ -1,0 +1,37 @@
+\hypertarget{crysemiter_8h_source}{}\doxysection{crysemiter.\+h}
+\label{crysemiter_8h_source}\index{G:/Folder\_Dawida/Prace\_me/Git/DawRad-\/projekty/EURObiznes/EURObiznes/Rysunki\_h/crysemiter.h@{G:/Folder\_Dawida/Prace\_me/Git/DawRad-\/projekty/EURObiznes/EURObiznes/Rysunki\_h/crysemiter.h}}
+\mbox{\hyperlink{crysemiter_8h}{Idź do dokumentacji tego pliku.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef CRYSEMITER\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define CRYSEMITER\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{crys_8h}{Rysunki\_h/crys.h}}"{}}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{cnadawca_8h}{Rysunki\_h/cnadawca.h}}"{}}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9 }
+\DoxyCodeLine{10 }
+\DoxyCodeLine{14 \textcolor{keyword}{class }\mbox{\hyperlink{class_c_rys_emiter}{CRysEmiter}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_c_rys}{CRys}}}
+\DoxyCodeLine{15 \{}
+\DoxyCodeLine{16 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{17     \mbox{\hyperlink{class_c_nadawca}{CNadawca}} *\mbox{\hyperlink{class_c_rys_emiter_acfbf932b7f0dfddcd0ffb13125a6bf14}{nadawca\_}};}
+\DoxyCodeLine{18 }
+\DoxyCodeLine{19 \textcolor{keyword}{public}:}
+\DoxyCodeLine{20     \mbox{\hyperlink{class_c_rys_emiter_a729536fc24a1a741fad5b6e4fe81119d}{CRysEmiter}}();}
+\DoxyCodeLine{21     \mbox{\hyperlink{class_c_rys_emiter_a729536fc24a1a741fad5b6e4fe81119d}{CRysEmiter}}(QPoint topLeft, QSizeF size, \textcolor{keywordtype}{string} imieNad = \textcolor{stringliteral}{"{}brak"{}}, qreal rot = 0);}
+\DoxyCodeLine{22     \textcolor{keyword}{virtual} \mbox{\hyperlink{class_c_rys_emiter_a7a4e6e7bca8ddd1ad136f05396e05a52}{\string~CRysEmiter}}();}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{24     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_rys_emiter_a21f03d8a5fcfd0c1a301984b9d8841f9}{paint}}(QPainter *painter, \textcolor{keyword}{const} QStyleOptionGraphicsItem *option,}
+\DoxyCodeLine{25                QWidget *widget) \textcolor{keyword}{override} = 0;}
+\DoxyCodeLine{26     \textcolor{keyword}{virtual} QPainterPath \mbox{\hyperlink{class_c_rys_emiter_a651954dc1294974217a02d4eb98b2818}{shape}}() \textcolor{keyword}{const override} = 0;}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{28     QObject *\mbox{\hyperlink{class_c_rys_emiter_a2cf0b65ccc7e2ae1697444ed63a40893}{podajNadawce}}();}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{30 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{31     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_rys_emiter_a5a3f17cb6e0549f67513c1c5480f05e0}{mousePressEvent}}(QGraphicsSceneMouseEvent *event) \textcolor{keyword}{override} = 0;}
+\DoxyCodeLine{32 \};}
+\DoxyCodeLine{33 }
+\DoxyCodeLine{34 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// CRYSEMITER\_H}}
+
+\end{DoxyCode}

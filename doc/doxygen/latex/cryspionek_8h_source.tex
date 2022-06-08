@@ -1,0 +1,95 @@
+\hypertarget{cryspionek_8h_source}{}\doxysection{cryspionek.\+h}
+\label{cryspionek_8h_source}\index{G:/Folder\_Dawida/Prace\_me/Git/DawRad-\/projekty/EURObiznes/EURObiznes/Rysunki\_h/cryspionek.h@{G:/Folder\_Dawida/Prace\_me/Git/DawRad-\/projekty/EURObiznes/EURObiznes/Rysunki\_h/cryspionek.h}}
+\mbox{\hyperlink{cryspionek_8h}{Idź do dokumentacji tego pliku.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef CRYSPIONEK\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define CRYSPIONEK\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{crys_8h}{Rysunki\_h/crys.h}}"{}}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{cnadawca_8h}{Rysunki\_h/cnadawca.h}}"{}}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9 }
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11 }
+\DoxyCodeLine{15 \textcolor{keyword}{class }\mbox{\hyperlink{class_c_rys_pionek}{CRysPionek}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_c_rys}{CRys}}}
+\DoxyCodeLine{16 \{}
+\DoxyCodeLine{17 \textcolor{keyword}{protected}:        }
+\DoxyCodeLine{18     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_rys_pionek_ab3f94be82de05a78c41bc68f6a29eb7c}{shape\_}};}
+\DoxyCodeLine{19     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_rys_pionek_a16a925cca2ee93cffd25d7a7af878900}{innerShape\_}};}
+\DoxyCodeLine{20     QColor \mbox{\hyperlink{class_c_rys_pionek_a0b4a2ce2de1232bab7af9c20238830fd}{kolor\_}};}
+\DoxyCodeLine{21     QColor \mbox{\hyperlink{class_c_rys_pionek_a4edcaaae4459def49ee7118d35fe79e6}{innerKolor\_}};}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{23     QTimer *\mbox{\hyperlink{class_c_rys_pionek_a8a6ab9d589d3deddaf9dc9a47ae361ec}{sceneTimer\_}};}
+\DoxyCodeLine{24     \mbox{\hyperlink{class_c_nadawca}{CNadawca}} *\mbox{\hyperlink{class_c_rys_pionek_acb0584be860fc3316743535c4ae7d6cb}{wskWyzwalacza\_}};               \textcolor{comment}{// wskaźnik wyzwalacza z okna z planszą}}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{27     QPointF \mbox{\hyperlink{class_c_rys_pionek_af0b056c1a27867f63a74ab4a620bf1d2}{startPoz\_}};}
+\DoxyCodeLine{28     QPointF \mbox{\hyperlink{class_c_rys_pionek_ab02f121e2462422159ddf4eb5a89a016}{nastPoz\_}};}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{30     \textcolor{comment}{// parametry ruchu}}
+\DoxyCodeLine{31     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_rys_pionek_a047d5107d99548aa43dbecbc3756b184}{aktPozPola\_}};            \textcolor{comment}{// reprezentuje nr pozycji pola na planszy, na którym aktualnie znajduje się pionek}}
+\DoxyCodeLine{32     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_rys_pionek_aec7cf50fbafabf7a58518d76b153a8ce}{finPozPola\_}};            \textcolor{comment}{// reprezentuje nr pozycji pola na planszy, na które pionek ma się ostatecznie udać}}
+\DoxyCodeLine{33 }
+\DoxyCodeLine{34     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_rys_pionek_a2cf4feb46f2132fe157043bff71e94bc}{krok\_}};}
+\DoxyCodeLine{35     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_rys_pionek_aa65acda7a61ce37296d742add1802fe4}{krokiDoZrob\_}};}
+\DoxyCodeLine{36     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_rys_pionek_a8b0fd89f156417fd29af31dd925cf9e3}{dx\_}};}
+\DoxyCodeLine{37 }
+\DoxyCodeLine{39     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_c_rys_pionek_a977fff319fd8be646132c3aadcd08e58}{moveToken\_}};}
+\DoxyCodeLine{40 }
+\DoxyCodeLine{42     \textcolor{keyword}{static} \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_rys_pionek_a459b310d38e98291826c44c9be57582a}{parA\_}};}
+\DoxyCodeLine{43 }
+\DoxyCodeLine{44 \textcolor{keyword}{public}:}
+\DoxyCodeLine{45     \mbox{\hyperlink{class_c_rys_pionek_a5cb3015e738dd418cd4dc4b258d7faa1}{CRysPionek}}();}
+\DoxyCodeLine{46     \mbox{\hyperlink{class_c_rys_pionek_a5cb3015e738dd418cd4dc4b258d7faa1}{CRysPionek}}(QPoint topLeft, QSizeF size, \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_rys_pionek_a42200ba2b9d0032fe4892a1f3d44c65c}{shape}}, \textcolor{keywordtype}{int} innerShape, \textcolor{keywordtype}{int} kolor, qreal rot = 0);}
+\DoxyCodeLine{47 }
+\DoxyCodeLine{52     \mbox{\hyperlink{class_c_rys_pionek_a5cb3015e738dd418cd4dc4b258d7faa1}{CRysPionek}}(\mbox{\hyperlink{struct_s_dn_pionka}{SDnPionka}} dane);}
+\DoxyCodeLine{53 }
+\DoxyCodeLine{54     \mbox{\hyperlink{class_c_rys_pionek_a00b05bf294aaba32607604968a24f46b}{\string~CRysPionek}}();}
+\DoxyCodeLine{55 }
+\DoxyCodeLine{56     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_rys_pionek_a2b4834bc1334f83d8cee826d916c9173}{paint}}(QPainter *painter, \textcolor{keyword}{const} QStyleOptionGraphicsItem *option,}
+\DoxyCodeLine{57                QWidget *widget) \textcolor{keyword}{override};}
+\DoxyCodeLine{58     \textcolor{keyword}{virtual} QPainterPath \mbox{\hyperlink{class_c_rys_pionek_a42200ba2b9d0032fe4892a1f3d44c65c}{shape}}() \textcolor{keyword}{const override};}
+\DoxyCodeLine{59 }
+\DoxyCodeLine{60     \mbox{\hyperlink{struct_s_dn_pionka}{SDnPionka}} \mbox{\hyperlink{class_c_rys_pionek_a5dd343973aa437b2706f2714936d9dfb}{podajSwojeSkladniki}}();}
+\DoxyCodeLine{61 }
+\DoxyCodeLine{62     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_rys_pionek_af7824be3cb5e1dc373896cc01b0039ea}{setShape}}(\textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_rys_pionek_a42200ba2b9d0032fe4892a1f3d44c65c}{shape}});}
+\DoxyCodeLine{63     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_rys_pionek_aef6ca8c1a6848d14011f4b9867687c41}{setInnerShape}}(\textcolor{keywordtype}{int} innerShape);}
+\DoxyCodeLine{64 }
+\DoxyCodeLine{65     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_rys_pionek_a1f41e7c7569f2b0c138b579ab3abb004}{setKolor}}(\textcolor{keywordtype}{int} kolor);}
+\DoxyCodeLine{66     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_rys_pionek_a06f41a484c79708c15f0fcb9586bcdc8}{setTimer}}(QTimer *timer);}
+\DoxyCodeLine{67     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_rys_pionek_a1cb93ad4f123aaa5feb5a205cb078607}{setWskWyzw}}(\mbox{\hyperlink{class_c_nadawca}{CNadawca}} *wskWyzw);}
+\DoxyCodeLine{68 }
+\DoxyCodeLine{69     \textcolor{comment}{// punkt pCelu ma być w układzie sceny}}
+\DoxyCodeLine{70     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_rys_pionek_a538f9806c32f6d8fb2bfaa1a293b1a9b}{ustawParamRuchu}}(QPointF start, QPointF pCelu);}
+\DoxyCodeLine{71     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_rys_pionek_a538f9806c32f6d8fb2bfaa1a293b1a9b}{ustawParamRuchu}}(\textcolor{keywordtype}{int} kroki, QPointF start, QPointF pCelu);}
+\DoxyCodeLine{72     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_rys_pionek_a538f9806c32f6d8fb2bfaa1a293b1a9b}{ustawParamRuchu}}(\textcolor{keywordtype}{int} kroki, QPointF start, QPointF pCelu, \textcolor{keywordtype}{int} finPozPola);}
+\DoxyCodeLine{73 }
+\DoxyCodeLine{79     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_rys_pionek_aa507290b941aa5537ff5a62fd5d417bb}{zmienAktPoz}}(\textcolor{keywordtype}{int} aktPoz);}
+\DoxyCodeLine{80 }
+\DoxyCodeLine{81     \textcolor{keyword}{static} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_rys_pionek_a6c457fb872ececa495e68727ed2cc6ac}{innKolFromKol}}(\textcolor{keywordtype}{int} kolor);}
+\DoxyCodeLine{82 }
+\DoxyCodeLine{83 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{84     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_rys_pionek_a6738a30c56c37309cb436f1d7431fbeb}{advance}}(\textcolor{keywordtype}{int} step) \textcolor{keyword}{override};}
+\DoxyCodeLine{85 }
+\DoxyCodeLine{86     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_rys_pionek_a556244cbf7813c435a75f721b84033a9}{drawShape}}(QPainter *painter);}
+\DoxyCodeLine{87     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_rys_pionek_ac20ac50869631e6e2b9b5fee9ccc52cd}{drawInnerShape}}(QPainter *painter);}
+\DoxyCodeLine{88 }
+\DoxyCodeLine{89     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_rys_pionek_a56538fd81f31f5fa168d7a9545c89948}{drawInnerShapeBow}}(QPainter *painter);}
+\DoxyCodeLine{90     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_rys_pionek_a0a78c02d5e20725c70309f8f5ffc2fe2}{drawInnerShapeThreeSquares}}(QPainter *painter);}
+\DoxyCodeLine{91     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_rys_pionek_af525fd27efdfd1bc51d02fdf97484974}{drawInnerShapeFourCircles}}(QPainter *painter);}
+\DoxyCodeLine{92     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_rys_pionek_af085913355a6bd86b6004e00abc790a3}{drawInnerShapeSquare8}}(QPainter *painter);}
+\DoxyCodeLine{93     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_rys_pionek_a01d3a3f8a766b21928b8e79060dad24b}{drawInnerShapeSemicircles}}(QPainter *painter);}
+\DoxyCodeLine{94     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_rys_pionek_af1dc32183286a4979f7041409d91cb78}{drawInnerShapeSmallerGreater}}(QPainter *painter);}
+\DoxyCodeLine{95 }
+\DoxyCodeLine{96 }
+\DoxyCodeLine{97     \textcolor{comment}{// poruszanie na planszy}}
+\DoxyCodeLine{98     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_rys_pionek_a41a3fe91dee00936fc058a6f5895cc7e}{poziomoWLewo}}();}
+\DoxyCodeLine{99     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_rys_pionek_ac48d79bf69eae4e17f811be89aa02cc1}{poziomoWPrawo}}();}
+\DoxyCodeLine{100     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_rys_pionek_aa1bb53f859572f59ff28b92a0541aaa0}{pionowoWGore}}();}
+\DoxyCodeLine{101     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_rys_pionek_a942662a4716f9c2449965614ec393b67}{pionowoWDol}}();}
+\DoxyCodeLine{102 \};}
+\DoxyCodeLine{103 }
+\DoxyCodeLine{104 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// CRYSPIONEK\_H}}
+
+\end{DoxyCode}

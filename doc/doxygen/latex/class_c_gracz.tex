@@ -1,0 +1,485 @@
+\hypertarget{class_c_gracz}{}\doxysection{Dokumentacja klasy CGracz}
+\label{class_c_gracz}\index{CGracz@{CGracz}}
+
+
+Klasa logiki.  
+
+
+
+
+{\ttfamily \#include $<$cgracz.\+h$>$}
+
+
+
+Diagram dziedziczenia dla CGracz
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{class_c_gracz__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Diagram współpracy dla CGracz\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=293pt]{class_c_gracz__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_gracz_a893ad55ebed86c9e2def6d14c7c033e9}{CGracz}} ()
+\item 
+\mbox{\hyperlink{class_c_gracz_ae1a7d979a1ee85dd540972b64ed8fb95}{CGracz}} (\mbox{\hyperlink{struct_s_dn_gracza}{SDn\+Gracza}} par\+Dane)
+\item 
+virtual \mbox{\hyperlink{class_c_gracz_a1f77c35bd07474ec11ed5ece562c2372}{$\sim$\+CGracz}} ()
+\item 
+virtual string \mbox{\hyperlink{class_c_gracz_a2de8ef4bda0bcfa3c3ce18fa499b5ccc}{przedstaw\+Sie}} ()=0
+\begin{DoxyCompactList}\small\item\em Funkcja służy do zidentyfikowania klasy obiektu. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{struct_s_wyn_akcji}{SWyn\+Akcji}} \mbox{\hyperlink{class_c_gracz_acfc59ebd08ead4a00f052467d995af43}{rzuc\+Koscmi}} ()=0
+\begin{DoxyCompactList}\small\item\em Funkcja zwraca wartość rzutu podwójnymi kośćmi przez gracza. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{class_c_gracz_a0e937c2c0dae00e4df94f93476050b43}{decyduj}} (int stan, int kwota, int lb\+Pol)=0
+\begin{DoxyCompactList}\small\item\em Funkcja zwracająca decyzję gracza dotycząca pola, na którym stanął. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_gracz_a13603f358dc1fc7e53d72c9db611206c}{ruch}} (int poz)
+\begin{DoxyCompactList}\small\item\em Zmienia wartość pola nast\+Poz\+\_\+ w przypadku, gdy ruch gracza jest inicjowany w sposób inny niż rzut kostką \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_c_gracz_a2c93c5977257940f598eb8eb9e4eb691}{dodaj\+Pole}} (\mbox{\hyperlink{struct_s_wyn_akcji}{SWyn\+Akcji}} opt)
+\item 
+void \mbox{\hyperlink{class_c_gracz_aa57b508cdab82b76c8b2a4d7ff2c24c5}{dodaj\+Karte\+Wolnosc}} ()
+\item 
+\mbox{\hyperlink{struct_s_dn_gracza}{SDn\+Gracza}} \mbox{\hyperlink{class_c_gracz_a05cdf1d9ab050cc2513873cda6b282bd}{podaj\+Dane}} ()
+\item 
+int \mbox{\hyperlink{class_c_gracz_a431b5a40156651fa0a2a90468d8cace5}{podaj\+Id}} ()
+\item 
+int \mbox{\hyperlink{class_c_gracz_a11c0f6da4ed457ca0e7346281339d684}{podaj\+Lb\+Pol}} (int rodz)
+\begin{DoxyCompactList}\small\item\em Metoda podająca liczbę pól gracza danego rodzaju. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_c_gracz_aced9352eb47743443ddca89e3d8f196e}{podaj\+Lb\+Pol\+Kol}} (int kolor)
+\item 
+int \mbox{\hyperlink{class_c_gracz_afb4de474127731353b1633873827e731}{podaj\+Lb\+Kart\+Wolnosc}} ()
+\item 
+int \mbox{\hyperlink{class_c_gracz_ad671077d2e0dfbdcd2c867bec3512842}{podaj\+Stan\+Konta}} ()
+\begin{DoxyCompactList}\small\item\em Metoda podająca, ile pieniędzy ma gracz. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_c_gracz_ab82e26de1d5bab0837598086e78de5c9}{podaj\+Akt\+Poz}} ()
+\item 
+int \mbox{\hyperlink{class_c_gracz_ae125440728b3f46c5102584d6f9766cd}{podaj\+Nast\+Poz}} ()
+\item 
+int \mbox{\hyperlink{class_c_gracz_ac90992b67fb386a14a13f1efe6306107}{podaj\+Sume\+Oczek\+Kostki}} ()
+\item 
+\mbox{\hyperlink{struct_s_wyn_akcji}{SWyn\+Akcji}} \mbox{\hyperlink{class_c_gracz_a30f4ec168186c836c6c31c6a44bd6b9e}{podaj\+Kostki}} ()
+\item 
+\mbox{\hyperlink{struct_s_wyn_akcji}{SWyn\+Akcji}} \mbox{\hyperlink{class_c_gracz_a804e3af9f4e98f14055270f0de96d74e}{podaj\+Poz}} ()
+\begin{DoxyCompactList}\small\item\em Zwraca zarówno aktualną, jak i następną pozycję. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_c_gracz_ae2e49364d6b09c38e1e2f8d3e605fdc3}{podaj\+Nick}} ()
+\item 
+void \mbox{\hyperlink{class_c_gracz_a967c2ad96168ac9da2ff61549e3d33bf}{ustaw\+Portfel}} (int kwota\+Pocz)
+\item 
+void \mbox{\hyperlink{class_c_gracz_aac0240e890b1fae8aec44e3305fe29b8}{aktual\+Portfel}} (int kwota)
+\item 
+void \mbox{\hyperlink{class_c_gracz_a32feffe58dd50c3ee4bfd88518f4b5f7}{kup\+Pole}} (int rodz)
+\item 
+void \mbox{\hyperlink{class_c_gracz_aedba05be6ccfe69aff3960ca893b7c1d}{aktual\+Pozycje}} ()
+\begin{DoxyCompactList}\small\item\em Przypisuje polu akt\+Poz\+\_\+ wartość pola nast\+Poz\+\_\+. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_gracz_a1e10986179191cfc4e49fc33798014a6}{uzyj\+Wolnosc}} ()
+\item 
+void \mbox{\hyperlink{class_c_gracz_ace017b8328e59d4e91ca58f24030a1ae}{idz\+Do\+Wiezienia}} ()
+\item 
+void \mbox{\hyperlink{class_c_gracz_a8a24ce00dbe7e786643c2983aef9f8b6}{wyjdz\+ZWiezienia}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Atrybuty chronione}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_c_gracz_afbc4e13caff6803e9b52fd0306f702e4}{id\+\_\+}}
+\begin{DoxyCompactList}\small\item\em numer id gracza = numer w kolejce \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_c_gracz_a23d569abc5d7920b5055e0c62a07b029}{nick\+\_\+}}
+\begin{DoxyCompactList}\small\item\em nick gracza \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_c_gracz_a757406b45f6b2ee151726a3134117577}{portfel\+\_\+}}
+\begin{DoxyCompactList}\small\item\em zasoby gracza \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_c_gracz_a32f5d9e47991f366dd595af4ee62160d}{akt\+Poz\+\_\+}}
+\begin{DoxyCompactList}\small\item\em pozycja na planszy, na której gracz aktualnie się znajduje \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_c_gracz_ae9ec33de61bbeae0139df8ac28114b35}{nast\+Poz\+\_\+}}
+\begin{DoxyCompactList}\small\item\em pozycja na planszy, na którą gracz ma przejść po rzucie kośćmi \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_c_gracz_a2978fc1fd7100d4bf7eaf31b42886830}{lb\+Pol\+Spec\+\_\+}}
+\begin{DoxyCompactList}\small\item\em liczba pól \mbox{\hyperlink{class_c_pole_spec}{CPole\+Spec}} posiadanych przez gracza \end{DoxyCompactList}\item 
+deque$<$ int $>$ \mbox{\hyperlink{class_c_gracz_a407adad8aa1ef58e3f3c8f5d978ca0d0}{lb\+Pol\+Kol\+\_\+}}
+\begin{DoxyCompactList}\small\item\em liczba pól \mbox{\hyperlink{class_c_pole_stnd}{CPole\+Stnd}}, które posiada gracz, wg koloru \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_c_gracz_a46c277e6f146f918721f9aceed3b072b}{lb\+Pol\+Ekstra\+\_\+}}
+\begin{DoxyCompactList}\small\item\em liczba pól \mbox{\hyperlink{class_c_pole_ekstra}{CPole\+Ekstra}}, które posiada gracz \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_c_gracz_a7352c835af615c29fd1706307b1079ae}{lb\+Kart\+Wolnosc\+\_\+}}
+\begin{DoxyCompactList}\small\item\em liczba kart \char`\"{}wolność\char`\"{} posiadanych przez gracza \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_s_wyn_akcji}{SWyn\+Akcji}} \mbox{\hyperlink{class_c_gracz_a80efa26956f8ff86469139797cfd2c21}{kostka\+\_\+}}
+\begin{DoxyCompactList}\small\item\em liczby oczek na pierwszej i drugiej kostce wyrzucone przez gracza \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Opis szczegółowy}
+Klasa logiki. 
+
+\doxysubsection{Dokumentacja konstruktora i destruktora}
+\mbox{\Hypertarget{class_c_gracz_a893ad55ebed86c9e2def6d14c7c033e9}\label{class_c_gracz_a893ad55ebed86c9e2def6d14c7c033e9}} 
+\index{CGracz@{CGracz}!CGracz@{CGracz}}
+\index{CGracz@{CGracz}!CGracz@{CGracz}}
+\doxysubsubsection{\texorpdfstring{CGracz()}{CGracz()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily CGracz\+::\+CGracz (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_gracz_ae1a7d979a1ee85dd540972b64ed8fb95}\label{class_c_gracz_ae1a7d979a1ee85dd540972b64ed8fb95}} 
+\index{CGracz@{CGracz}!CGracz@{CGracz}}
+\index{CGracz@{CGracz}!CGracz@{CGracz}}
+\doxysubsubsection{\texorpdfstring{CGracz()}{CGracz()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily CGracz\+::\+CGracz (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_s_dn_gracza}{SDn\+Gracza}}}]{par\+Dane }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_gracz_a1f77c35bd07474ec11ed5ece562c2372}\label{class_c_gracz_a1f77c35bd07474ec11ed5ece562c2372}} 
+\index{CGracz@{CGracz}!````~CGracz@{$\sim$CGracz}}
+\index{````~CGracz@{$\sim$CGracz}!CGracz@{CGracz}}
+\doxysubsubsection{\texorpdfstring{$\sim$CGracz()}{~CGracz()}}
+{\footnotesize\ttfamily CGracz\+::$\sim$\+CGracz (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Dokumentacja funkcji składowych}
+\mbox{\Hypertarget{class_c_gracz_aac0240e890b1fae8aec44e3305fe29b8}\label{class_c_gracz_aac0240e890b1fae8aec44e3305fe29b8}} 
+\index{CGracz@{CGracz}!aktualPortfel@{aktualPortfel}}
+\index{aktualPortfel@{aktualPortfel}!CGracz@{CGracz}}
+\doxysubsubsection{\texorpdfstring{aktualPortfel()}{aktualPortfel()}}
+{\footnotesize\ttfamily void CGracz\+::aktual\+Portfel (\begin{DoxyParamCaption}\item[{int}]{kwota }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_gracz_aedba05be6ccfe69aff3960ca893b7c1d}\label{class_c_gracz_aedba05be6ccfe69aff3960ca893b7c1d}} 
+\index{CGracz@{CGracz}!aktualPozycje@{aktualPozycje}}
+\index{aktualPozycje@{aktualPozycje}!CGracz@{CGracz}}
+\doxysubsubsection{\texorpdfstring{aktualPozycje()}{aktualPozycje()}}
+{\footnotesize\ttfamily void CGracz\+::aktual\+Pozycje (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Przypisuje polu akt\+Poz\+\_\+ wartość pola nast\+Poz\+\_\+. 
+
+Wywoływana po skończeniu przez gracza tury. \mbox{\Hypertarget{class_c_gracz_a0e937c2c0dae00e4df94f93476050b43}\label{class_c_gracz_a0e937c2c0dae00e4df94f93476050b43}} 
+\index{CGracz@{CGracz}!decyduj@{decyduj}}
+\index{decyduj@{decyduj}!CGracz@{CGracz}}
+\doxysubsubsection{\texorpdfstring{decyduj()}{decyduj()}}
+{\footnotesize\ttfamily virtual int CGracz\+::decyduj (\begin{DoxyParamCaption}\item[{int}]{stan,  }\item[{int}]{kwota,  }\item[{int}]{lb\+Pol }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Funkcja zwracająca decyzję gracza dotycząca pola, na którym stanął. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em stan} & -\/ stan pola, na którym stanął gracz\+: \begin{DoxyItemize}
+\item 0 -\/ wolne \item 1 -\/ zajęte \item 2 -\/ zastawione \end{DoxyItemize}
+\\
+\hline
+{\em kwota} & -\/ jest to, w zależności od stanu pola, koszt jego kupna, budowy nieruchomości albo wykupienia z zastawu. \\
+\hline
+{\em lb\+Pol} & -\/ parametr podawany w przypadku pól standardowych -\/ mówi o liczbie posiadanych przez gracza pól koloru, jaki odpowiada polu, na którym gracz aktualnie się znajduje \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+Zwraca zgodę na wykonanie akcji (1) albo jej brak (0). 
+\end{DoxyReturn}
+
+
+Implementowany w \mbox{\hyperlink{class_c_czlowiek_a11252abbf72dd88b709a1045e26ee2c1}{CCzlowiek}} i \mbox{\hyperlink{class_c_komputer_aaea60f58155c04fdbd60f391db92986c}{CKomputer}}.
+
+\mbox{\Hypertarget{class_c_gracz_aa57b508cdab82b76c8b2a4d7ff2c24c5}\label{class_c_gracz_aa57b508cdab82b76c8b2a4d7ff2c24c5}} 
+\index{CGracz@{CGracz}!dodajKarteWolnosc@{dodajKarteWolnosc}}
+\index{dodajKarteWolnosc@{dodajKarteWolnosc}!CGracz@{CGracz}}
+\doxysubsubsection{\texorpdfstring{dodajKarteWolnosc()}{dodajKarteWolnosc()}}
+{\footnotesize\ttfamily void CGracz\+::dodaj\+Karte\+Wolnosc (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_gracz_a2c93c5977257940f598eb8eb9e4eb691}\label{class_c_gracz_a2c93c5977257940f598eb8eb9e4eb691}} 
+\index{CGracz@{CGracz}!dodajPole@{dodajPole}}
+\index{dodajPole@{dodajPole}!CGracz@{CGracz}}
+\doxysubsubsection{\texorpdfstring{dodajPole()}{dodajPole()}}
+{\footnotesize\ttfamily int CGracz\+::dodaj\+Pole (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_s_wyn_akcji}{SWyn\+Akcji}}}]{opt }\end{DoxyParamCaption})}
+
+zwiększa o jeden wartość atrybutu \mbox{\hyperlink{class_c_gracz}{CGracz}} wskazującego liczbę posiadanych przez gracza pól danego rodzaju 
+\begin{DoxyParams}{Parametry}
+{\em opt} & wskazuje, jaki rodzaj pola ma zostać dodany\+: \begin{DoxyItemize}
+\item opt.\+y1 == 0 ---\texorpdfstring{$>$}{>} zwiększa wartość \mbox{\hyperlink{class_c_gracz_a2978fc1fd7100d4bf7eaf31b42886830}{CGracz\+::lb\+Pol\+Spec\+\_\+}} \item opt.\+y1 == 1 ---\texorpdfstring{$>$}{>} zwiększa wartość \mbox{\hyperlink{class_c_gracz_a407adad8aa1ef58e3f3c8f5d978ca0d0}{CGracz\+::lb\+Pol\+Kol\+\_\+}} (opt.\+y2 wskazuje, który kolor) \item opt.\+y1 == 2 ---\texorpdfstring{$>$}{>} zwiększa wartość \mbox{\hyperlink{class_c_gracz_a46c277e6f146f918721f9aceed3b072b}{CGracz\+::lb\+Pol\+Ekstra\+\_\+}} \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_gracz_ace017b8328e59d4e91ca58f24030a1ae}\label{class_c_gracz_ace017b8328e59d4e91ca58f24030a1ae}} 
+\index{CGracz@{CGracz}!idzDoWiezienia@{idzDoWiezienia}}
+\index{idzDoWiezienia@{idzDoWiezienia}!CGracz@{CGracz}}
+\doxysubsubsection{\texorpdfstring{idzDoWiezienia()}{idzDoWiezienia()}}
+{\footnotesize\ttfamily void CGracz\+::idz\+Do\+Wiezienia (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_gracz_a32feffe58dd50c3ee4bfd88518f4b5f7}\label{class_c_gracz_a32feffe58dd50c3ee4bfd88518f4b5f7}} 
+\index{CGracz@{CGracz}!kupPole@{kupPole}}
+\index{kupPole@{kupPole}!CGracz@{CGracz}}
+\doxysubsubsection{\texorpdfstring{kupPole()}{kupPole()}}
+{\footnotesize\ttfamily void CGracz\+::kup\+Pole (\begin{DoxyParamCaption}\item[{int}]{rodz }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_gracz_ab82e26de1d5bab0837598086e78de5c9}\label{class_c_gracz_ab82e26de1d5bab0837598086e78de5c9}} 
+\index{CGracz@{CGracz}!podajAktPoz@{podajAktPoz}}
+\index{podajAktPoz@{podajAktPoz}!CGracz@{CGracz}}
+\doxysubsubsection{\texorpdfstring{podajAktPoz()}{podajAktPoz()}}
+{\footnotesize\ttfamily int CGracz\+::podaj\+Akt\+Poz (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_gracz_a05cdf1d9ab050cc2513873cda6b282bd}\label{class_c_gracz_a05cdf1d9ab050cc2513873cda6b282bd}} 
+\index{CGracz@{CGracz}!podajDane@{podajDane}}
+\index{podajDane@{podajDane}!CGracz@{CGracz}}
+\doxysubsubsection{\texorpdfstring{podajDane()}{podajDane()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_s_dn_gracza}{SDn\+Gracza}} CGracz\+::podaj\+Dane (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_gracz_a431b5a40156651fa0a2a90468d8cace5}\label{class_c_gracz_a431b5a40156651fa0a2a90468d8cace5}} 
+\index{CGracz@{CGracz}!podajId@{podajId}}
+\index{podajId@{podajId}!CGracz@{CGracz}}
+\doxysubsubsection{\texorpdfstring{podajId()}{podajId()}}
+{\footnotesize\ttfamily int CGracz\+::podaj\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_gracz_a30f4ec168186c836c6c31c6a44bd6b9e}\label{class_c_gracz_a30f4ec168186c836c6c31c6a44bd6b9e}} 
+\index{CGracz@{CGracz}!podajKostki@{podajKostki}}
+\index{podajKostki@{podajKostki}!CGracz@{CGracz}}
+\doxysubsubsection{\texorpdfstring{podajKostki()}{podajKostki()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_s_wyn_akcji}{SWyn\+Akcji}} CGracz\+::podaj\+Kostki (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_gracz_afb4de474127731353b1633873827e731}\label{class_c_gracz_afb4de474127731353b1633873827e731}} 
+\index{CGracz@{CGracz}!podajLbKartWolnosc@{podajLbKartWolnosc}}
+\index{podajLbKartWolnosc@{podajLbKartWolnosc}!CGracz@{CGracz}}
+\doxysubsubsection{\texorpdfstring{podajLbKartWolnosc()}{podajLbKartWolnosc()}}
+{\footnotesize\ttfamily int CGracz\+::podaj\+Lb\+Kart\+Wolnosc (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_gracz_a11c0f6da4ed457ca0e7346281339d684}\label{class_c_gracz_a11c0f6da4ed457ca0e7346281339d684}} 
+\index{CGracz@{CGracz}!podajLbPol@{podajLbPol}}
+\index{podajLbPol@{podajLbPol}!CGracz@{CGracz}}
+\doxysubsubsection{\texorpdfstring{podajLbPol()}{podajLbPol()}}
+{\footnotesize\ttfamily int CGracz\+::podaj\+Lb\+Pol (\begin{DoxyParamCaption}\item[{int}]{rodz }\end{DoxyParamCaption})}
+
+
+
+Metoda podająca liczbę pól gracza danego rodzaju. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em rodz} & == \begin{DoxyItemize}
+\item 1 ---\texorpdfstring{$>$}{>} podaje \mbox{\hyperlink{class_c_gracz_a2978fc1fd7100d4bf7eaf31b42886830}{CGracz\+::lb\+Pol\+Spec\+\_\+}} \item 2 ---\texorpdfstring{$>$}{>} podaje \mbox{\hyperlink{class_c_gracz_a46c277e6f146f918721f9aceed3b072b}{CGracz\+::lb\+Pol\+Ekstra\+\_\+}} \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+liczbę pól podanego rodzaju 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_gracz_aced9352eb47743443ddca89e3d8f196e}\label{class_c_gracz_aced9352eb47743443ddca89e3d8f196e}} 
+\index{CGracz@{CGracz}!podajLbPolKol@{podajLbPolKol}}
+\index{podajLbPolKol@{podajLbPolKol}!CGracz@{CGracz}}
+\doxysubsubsection{\texorpdfstring{podajLbPolKol()}{podajLbPolKol()}}
+{\footnotesize\ttfamily int CGracz\+::podaj\+Lb\+Pol\+Kol (\begin{DoxyParamCaption}\item[{int}]{kolor }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_gracz_ae125440728b3f46c5102584d6f9766cd}\label{class_c_gracz_ae125440728b3f46c5102584d6f9766cd}} 
+\index{CGracz@{CGracz}!podajNastPoz@{podajNastPoz}}
+\index{podajNastPoz@{podajNastPoz}!CGracz@{CGracz}}
+\doxysubsubsection{\texorpdfstring{podajNastPoz()}{podajNastPoz()}}
+{\footnotesize\ttfamily int CGracz\+::podaj\+Nast\+Poz (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_gracz_ae2e49364d6b09c38e1e2f8d3e605fdc3}\label{class_c_gracz_ae2e49364d6b09c38e1e2f8d3e605fdc3}} 
+\index{CGracz@{CGracz}!podajNick@{podajNick}}
+\index{podajNick@{podajNick}!CGracz@{CGracz}}
+\doxysubsubsection{\texorpdfstring{podajNick()}{podajNick()}}
+{\footnotesize\ttfamily string CGracz\+::podaj\+Nick (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_gracz_a804e3af9f4e98f14055270f0de96d74e}\label{class_c_gracz_a804e3af9f4e98f14055270f0de96d74e}} 
+\index{CGracz@{CGracz}!podajPoz@{podajPoz}}
+\index{podajPoz@{podajPoz}!CGracz@{CGracz}}
+\doxysubsubsection{\texorpdfstring{podajPoz()}{podajPoz()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_s_wyn_akcji}{SWyn\+Akcji}} CGracz\+::podaj\+Poz (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Zwraca zarówno aktualną, jak i następną pozycję. 
+
+\mbox{\Hypertarget{class_c_gracz_ad671077d2e0dfbdcd2c867bec3512842}\label{class_c_gracz_ad671077d2e0dfbdcd2c867bec3512842}} 
+\index{CGracz@{CGracz}!podajStanKonta@{podajStanKonta}}
+\index{podajStanKonta@{podajStanKonta}!CGracz@{CGracz}}
+\doxysubsubsection{\texorpdfstring{podajStanKonta()}{podajStanKonta()}}
+{\footnotesize\ttfamily int CGracz\+::podaj\+Stan\+Konta (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Metoda podająca, ile pieniędzy ma gracz. 
+
+\begin{DoxyReturn}{Zwraca}
+wartość pola \mbox{\hyperlink{class_c_gracz_a757406b45f6b2ee151726a3134117577}{CGracz\+::portfel\+\_\+}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_gracz_ac90992b67fb386a14a13f1efe6306107}\label{class_c_gracz_ac90992b67fb386a14a13f1efe6306107}} 
+\index{CGracz@{CGracz}!podajSumeOczekKostki@{podajSumeOczekKostki}}
+\index{podajSumeOczekKostki@{podajSumeOczekKostki}!CGracz@{CGracz}}
+\doxysubsubsection{\texorpdfstring{podajSumeOczekKostki()}{podajSumeOczekKostki()}}
+{\footnotesize\ttfamily int CGracz\+::podaj\+Sume\+Oczek\+Kostki (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_gracz_a2de8ef4bda0bcfa3c3ce18fa499b5ccc}\label{class_c_gracz_a2de8ef4bda0bcfa3c3ce18fa499b5ccc}} 
+\index{CGracz@{CGracz}!przedstawSie@{przedstawSie}}
+\index{przedstawSie@{przedstawSie}!CGracz@{CGracz}}
+\doxysubsubsection{\texorpdfstring{przedstawSie()}{przedstawSie()}}
+{\footnotesize\ttfamily virtual string CGracz\+::przedstaw\+Sie (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Funkcja służy do zidentyfikowania klasy obiektu. 
+
+
+
+Implementowany w \mbox{\hyperlink{class_c_czlowiek_aca5a29de0197fd84ea76adeb71d7b0a9}{CCzlowiek}} i \mbox{\hyperlink{class_c_komputer_a6a20b4619f3c1af5216ed3796173c9cb}{CKomputer}}.
+
+\mbox{\Hypertarget{class_c_gracz_a13603f358dc1fc7e53d72c9db611206c}\label{class_c_gracz_a13603f358dc1fc7e53d72c9db611206c}} 
+\index{CGracz@{CGracz}!ruch@{ruch}}
+\index{ruch@{ruch}!CGracz@{CGracz}}
+\doxysubsubsection{\texorpdfstring{ruch()}{ruch()}}
+{\footnotesize\ttfamily void CGracz\+::ruch (\begin{DoxyParamCaption}\item[{int}]{poz }\end{DoxyParamCaption})}
+
+
+
+Zmienia wartość pola nast\+Poz\+\_\+ w przypadku, gdy ruch gracza jest inicjowany w sposób inny niż rzut kostką 
+
+
+\begin{DoxyParams}{Parametry}
+{\em poz} & Wskazuje liczbę pól, o jaką gracz ma się przemieścić (może być ujemny -\/ ruch w tył -\/ albo dodatni -\/ ruch do przodu). \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_gracz_acfc59ebd08ead4a00f052467d995af43}\label{class_c_gracz_acfc59ebd08ead4a00f052467d995af43}} 
+\index{CGracz@{CGracz}!rzucKoscmi@{rzucKoscmi}}
+\index{rzucKoscmi@{rzucKoscmi}!CGracz@{CGracz}}
+\doxysubsubsection{\texorpdfstring{rzucKoscmi()}{rzucKoscmi()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{struct_s_wyn_akcji}{SWyn\+Akcji}} CGracz\+::rzuc\+Koscmi (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Funkcja zwraca wartość rzutu podwójnymi kośćmi przez gracza. 
+
+\begin{DoxyReturn}{Zwraca}
+Zwraca wartość dla obu kości. 
+\end{DoxyReturn}
+
+
+Implementowany w \mbox{\hyperlink{class_c_czlowiek_ad8087cad112e2a121c2f514744b2d00e}{CCzlowiek}} i \mbox{\hyperlink{class_c_komputer_a435c1958a912525c7c7bba5c108e6945}{CKomputer}}.
+
+\mbox{\Hypertarget{class_c_gracz_a967c2ad96168ac9da2ff61549e3d33bf}\label{class_c_gracz_a967c2ad96168ac9da2ff61549e3d33bf}} 
+\index{CGracz@{CGracz}!ustawPortfel@{ustawPortfel}}
+\index{ustawPortfel@{ustawPortfel}!CGracz@{CGracz}}
+\doxysubsubsection{\texorpdfstring{ustawPortfel()}{ustawPortfel()}}
+{\footnotesize\ttfamily void CGracz\+::ustaw\+Portfel (\begin{DoxyParamCaption}\item[{int}]{kwota\+Pocz }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_gracz_a1e10986179191cfc4e49fc33798014a6}\label{class_c_gracz_a1e10986179191cfc4e49fc33798014a6}} 
+\index{CGracz@{CGracz}!uzyjWolnosc@{uzyjWolnosc}}
+\index{uzyjWolnosc@{uzyjWolnosc}!CGracz@{CGracz}}
+\doxysubsubsection{\texorpdfstring{uzyjWolnosc()}{uzyjWolnosc()}}
+{\footnotesize\ttfamily void CGracz\+::uzyj\+Wolnosc (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_gracz_a8a24ce00dbe7e786643c2983aef9f8b6}\label{class_c_gracz_a8a24ce00dbe7e786643c2983aef9f8b6}} 
+\index{CGracz@{CGracz}!wyjdzZWiezienia@{wyjdzZWiezienia}}
+\index{wyjdzZWiezienia@{wyjdzZWiezienia}!CGracz@{CGracz}}
+\doxysubsubsection{\texorpdfstring{wyjdzZWiezienia()}{wyjdzZWiezienia()}}
+{\footnotesize\ttfamily void CGracz\+::wyjdz\+ZWiezienia (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Dokumentacja atrybutów składowych}
+\mbox{\Hypertarget{class_c_gracz_a32f5d9e47991f366dd595af4ee62160d}\label{class_c_gracz_a32f5d9e47991f366dd595af4ee62160d}} 
+\index{CGracz@{CGracz}!aktPoz\_@{aktPoz\_}}
+\index{aktPoz\_@{aktPoz\_}!CGracz@{CGracz}}
+\doxysubsubsection{\texorpdfstring{aktPoz\_}{aktPoz\_}}
+{\footnotesize\ttfamily int CGracz\+::akt\+Poz\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+pozycja na planszy, na której gracz aktualnie się znajduje 
+
+\mbox{\Hypertarget{class_c_gracz_afbc4e13caff6803e9b52fd0306f702e4}\label{class_c_gracz_afbc4e13caff6803e9b52fd0306f702e4}} 
+\index{CGracz@{CGracz}!id\_@{id\_}}
+\index{id\_@{id\_}!CGracz@{CGracz}}
+\doxysubsubsection{\texorpdfstring{id\_}{id\_}}
+{\footnotesize\ttfamily int CGracz\+::id\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+numer id gracza = numer w kolejce 
+
+\mbox{\Hypertarget{class_c_gracz_a80efa26956f8ff86469139797cfd2c21}\label{class_c_gracz_a80efa26956f8ff86469139797cfd2c21}} 
+\index{CGracz@{CGracz}!kostka\_@{kostka\_}}
+\index{kostka\_@{kostka\_}!CGracz@{CGracz}}
+\doxysubsubsection{\texorpdfstring{kostka\_}{kostka\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_s_wyn_akcji}{SWyn\+Akcji}} CGracz\+::kostka\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+liczby oczek na pierwszej i drugiej kostce wyrzucone przez gracza 
+
+\mbox{\Hypertarget{class_c_gracz_a7352c835af615c29fd1706307b1079ae}\label{class_c_gracz_a7352c835af615c29fd1706307b1079ae}} 
+\index{CGracz@{CGracz}!lbKartWolnosc\_@{lbKartWolnosc\_}}
+\index{lbKartWolnosc\_@{lbKartWolnosc\_}!CGracz@{CGracz}}
+\doxysubsubsection{\texorpdfstring{lbKartWolnosc\_}{lbKartWolnosc\_}}
+{\footnotesize\ttfamily int CGracz\+::lb\+Kart\+Wolnosc\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+liczba kart \char`\"{}wolność\char`\"{} posiadanych przez gracza 
+
+\mbox{\Hypertarget{class_c_gracz_a46c277e6f146f918721f9aceed3b072b}\label{class_c_gracz_a46c277e6f146f918721f9aceed3b072b}} 
+\index{CGracz@{CGracz}!lbPolEkstra\_@{lbPolEkstra\_}}
+\index{lbPolEkstra\_@{lbPolEkstra\_}!CGracz@{CGracz}}
+\doxysubsubsection{\texorpdfstring{lbPolEkstra\_}{lbPolEkstra\_}}
+{\footnotesize\ttfamily int CGracz\+::lb\+Pol\+Ekstra\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+liczba pól \mbox{\hyperlink{class_c_pole_ekstra}{CPole\+Ekstra}}, które posiada gracz 
+
+\mbox{\Hypertarget{class_c_gracz_a407adad8aa1ef58e3f3c8f5d978ca0d0}\label{class_c_gracz_a407adad8aa1ef58e3f3c8f5d978ca0d0}} 
+\index{CGracz@{CGracz}!lbPolKol\_@{lbPolKol\_}}
+\index{lbPolKol\_@{lbPolKol\_}!CGracz@{CGracz}}
+\doxysubsubsection{\texorpdfstring{lbPolKol\_}{lbPolKol\_}}
+{\footnotesize\ttfamily deque$<$int$>$ CGracz\+::lb\+Pol\+Kol\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+liczba pól \mbox{\hyperlink{class_c_pole_stnd}{CPole\+Stnd}}, które posiada gracz, wg koloru 
+
+\mbox{\Hypertarget{class_c_gracz_a2978fc1fd7100d4bf7eaf31b42886830}\label{class_c_gracz_a2978fc1fd7100d4bf7eaf31b42886830}} 
+\index{CGracz@{CGracz}!lbPolSpec\_@{lbPolSpec\_}}
+\index{lbPolSpec\_@{lbPolSpec\_}!CGracz@{CGracz}}
+\doxysubsubsection{\texorpdfstring{lbPolSpec\_}{lbPolSpec\_}}
+{\footnotesize\ttfamily int CGracz\+::lb\+Pol\+Spec\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+liczba pól \mbox{\hyperlink{class_c_pole_spec}{CPole\+Spec}} posiadanych przez gracza 
+
+\mbox{\Hypertarget{class_c_gracz_ae9ec33de61bbeae0139df8ac28114b35}\label{class_c_gracz_ae9ec33de61bbeae0139df8ac28114b35}} 
+\index{CGracz@{CGracz}!nastPoz\_@{nastPoz\_}}
+\index{nastPoz\_@{nastPoz\_}!CGracz@{CGracz}}
+\doxysubsubsection{\texorpdfstring{nastPoz\_}{nastPoz\_}}
+{\footnotesize\ttfamily int CGracz\+::nast\+Poz\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+pozycja na planszy, na którą gracz ma przejść po rzucie kośćmi 
+
+\mbox{\Hypertarget{class_c_gracz_a23d569abc5d7920b5055e0c62a07b029}\label{class_c_gracz_a23d569abc5d7920b5055e0c62a07b029}} 
+\index{CGracz@{CGracz}!nick\_@{nick\_}}
+\index{nick\_@{nick\_}!CGracz@{CGracz}}
+\doxysubsubsection{\texorpdfstring{nick\_}{nick\_}}
+{\footnotesize\ttfamily string CGracz\+::nick\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+nick gracza 
+
+\mbox{\Hypertarget{class_c_gracz_a757406b45f6b2ee151726a3134117577}\label{class_c_gracz_a757406b45f6b2ee151726a3134117577}} 
+\index{CGracz@{CGracz}!portfel\_@{portfel\_}}
+\index{portfel\_@{portfel\_}!CGracz@{CGracz}}
+\doxysubsubsection{\texorpdfstring{portfel\_}{portfel\_}}
+{\footnotesize\ttfamily int CGracz\+::portfel\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+zasoby gracza 
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+G\+:/\+Folder\+\_\+\+Dawida/\+Prace\+\_\+me/\+Git/\+Daw\+Rad-\/projekty/\+EURObiznes/\+EURObiznes/\+Logika\+\_\+h/\mbox{\hyperlink{cgracz_8h}{cgracz.\+h}}\item 
+G\+:/\+Folder\+\_\+\+Dawida/\+Prace\+\_\+me/\+Git/\+Daw\+Rad-\/projekty/\+EURObiznes/\+EURObiznes/\+Logika\+\_\+src/\mbox{\hyperlink{cgracz_8cpp}{cgracz.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,295 @@
+\hypertarget{class_n_g_gracze}{}\doxysection{Dokumentacja klasy NGGracze}
+\label{class_n_g_gracze}\index{NGGracze@{NGGracze}}
+
+
+Klasa graficzna -\/ okno graczy.  
+
+
+
+
+{\ttfamily \#include $<$nggracze.\+h$>$}
+
+
+
+Diagram dziedziczenia dla NGGracze\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=160pt]{class_n_g_gracze__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Diagram współpracy dla NGGracze\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_n_g_gracze__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Sygnały}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_n_g_gracze_a2069a783a9d920c671a2b2cb2d7360f2}{wstecz}} ()
+\item 
+void \mbox{\hyperlink{class_n_g_gracze_a6ea6dd98562c67e7b452a15df8727ff2}{dalej}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_n_g_gracze_a1a1c29dbb516e79cb65169f0ab118b39}{NGGracze}} (\mbox{\hyperlink{class_c_game}{CGame}} $\ast$gra, deque$<$ \mbox{\hyperlink{class_c_rys_pionek}{CRys\+Pionek}} $\ast$ $>$ $\ast$pionki, QWidget $\ast$parent=nullptr)
+\item 
+\mbox{\hyperlink{class_n_g_gracze_ace9eff2cde88f74d289a222133c70815}{$\sim$\+NGGracze}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Sloty prywatne}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_n_g_gracze_ae2dc6e2db86c095c2d06653d65e43b79}{on\+\_\+pb\+Okno\+Wstecz\+\_\+clicked}} ()
+\item 
+void \mbox{\hyperlink{class_n_g_gracze_a6abcb9fac9f905cc2d08fc99a7ed64cf}{on\+\_\+pb\+Dod\+Gr\+\_\+clicked}} ()
+\item 
+void \mbox{\hyperlink{class_n_g_gracze_aa695aefa2d6659d32904c544d665d1b8}{on\+\_\+pb\+Dalej\+\_\+clicked}} ()
+\item 
+void \mbox{\hyperlink{class_n_g_gracze_aab5c1d4f4cb0a7989e893e4493afd4fb}{on\+\_\+pb\+Wstecz\+\_\+clicked}} ()
+\item 
+void \mbox{\hyperlink{class_n_g_gracze_a54100ef98ed1f3a838e2b8b31e67a36d}{on\+\_\+pb\+Dalej\+\_\+2\+\_\+clicked}} ()
+\item 
+void \mbox{\hyperlink{class_n_g_gracze_abba3ffd1a7e50f3533eb84a97f1a93b4}{on\+\_\+pb\+Wstecz\+\_\+2\+\_\+clicked}} ()
+\item 
+void \mbox{\hyperlink{class_n_g_gracze_afea91022a1c3fe092d51491723a126c0}{on\+\_\+pb\+Dalej\+\_\+3\+\_\+clicked}} ()
+\item 
+void \mbox{\hyperlink{class_n_g_gracze_ac9aec1613ebf23635e8cb47bd670a26b}{on\+\_\+pb\+Wstecz\+\_\+3\+\_\+clicked}} ()
+\item 
+void \mbox{\hyperlink{class_n_g_gracze_acdb32bdddd91be146b323532b54de5f0}{on\+\_\+pb\+Dalej\+\_\+4\+\_\+clicked}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Metody prywatne}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_n_g_gracze_a3c42d0e6441773adf158b1e48b1df3c2}{removing\+Items\+From\+Scene}} ()
+\begin{DoxyCompactList}\small\item\em Metoda \char`\"{}odczepia\char`\"{} rysunki pionków od sceny tego okna. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_n_g_gracze_a42c51aceddbf65f111963d073e52fd38}{zmiana\+Rozmiaru\+Pionkow\+Na\+Ostat}} ()
+\begin{DoxyCompactList}\small\item\em Metoda zmienia pola top\+Left\+\_\+ i size\+\_\+ rysunków pionków na wartości \char`\"{}do planszy\char`\"{}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_n_g_gracze_a7c849d1335c0f002bc0744d3fbd95969}{deque\+Int\+Przod}} (deque$<$ int $>$ \&kolejka)
+\item 
+void \mbox{\hyperlink{class_n_g_gracze_af19362683115770c03d77ea553d29529}{deque\+Int\+Tyl}} (deque$<$ int $>$ \&kolejka)
+\item 
+void \mbox{\hyperlink{class_n_g_gracze_a9dd54ad98e50d045625cedf3a9dab206}{deque\+CRys\+Pionek\+Przod}} (deque$<$ \mbox{\hyperlink{class_c_rys_pionek}{CRys\+Pionek}} $\ast$ $>$ \&pionki)
+\item 
+void \mbox{\hyperlink{class_n_g_gracze_aa42e3d88cc8404820732fb1ad00a0301}{deque\+CRys\+Pionek\+Tyl}} (deque$<$ \mbox{\hyperlink{class_c_rys_pionek}{CRys\+Pionek}} $\ast$ $>$ \&pionki)
+\end{DoxyCompactItemize}
+\doxysubsection*{Atrybuty prywatne}
+\begin{DoxyCompactItemize}
+\item 
+Ui\+::\+NGGracze $\ast$ \mbox{\hyperlink{class_n_g_gracze_aa91adab5c8247ae70f3e8e7ac729adbc}{ui}}
+\item 
+\mbox{\hyperlink{class_c_game}{CGame}} $\ast$ \mbox{\hyperlink{class_n_g_gracze_a41160978edc927855b43caec16b7fe68}{wsk\+Gry\+\_\+}}
+\item 
+deque$<$ \mbox{\hyperlink{class_c_rys_pionek}{CRys\+Pionek}} $\ast$ $>$ $\ast$ \mbox{\hyperlink{class_n_g_gracze_a2275fc246e8c69ac730976b03b887f0f}{pionki\+\_\+}}
+\item 
+\mbox{\hyperlink{class_c_rys_pionek}{CRys\+Pionek}} $\ast$ \mbox{\hyperlink{class_n_g_gracze_a333f71205a625fa18e9d1b36413dd953}{wsk\+Akt\+Pionu\+\_\+}}
+\item 
+QGraphics\+Scene $\ast$ \mbox{\hyperlink{class_n_g_gracze_a4601b241bb2991e847c28caf59d00a9c}{scene\+\_\+}}
+\item 
+deque$<$ int $>$ \mbox{\hyperlink{class_n_g_gracze_a2bc0a92986274580e46568953dbe0e55}{ksztalty\+\_\+}}
+\item 
+deque$<$ int $>$ \mbox{\hyperlink{class_n_g_gracze_a8fb9b1f0311088ba3c1cd59653f3160a}{symbole\+\_\+}}
+\item 
+deque$<$ int $>$ \mbox{\hyperlink{class_n_g_gracze_aa6039a9b423203d62e6b10cd52ec4556}{kolory\+Pionow\+\_\+}}
+\item 
+deque$<$ int $>$ \mbox{\hyperlink{class_n_g_gracze_af6aa21ce06eeeb489c0b5655d05931c2}{kolory\+Uzyte\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Opis szczegółowy}
+Klasa graficzna -\/ okno graczy. 
+
+\doxysubsection{Dokumentacja konstruktora i destruktora}
+\mbox{\Hypertarget{class_n_g_gracze_a1a1c29dbb516e79cb65169f0ab118b39}\label{class_n_g_gracze_a1a1c29dbb516e79cb65169f0ab118b39}} 
+\index{NGGracze@{NGGracze}!NGGracze@{NGGracze}}
+\index{NGGracze@{NGGracze}!NGGracze@{NGGracze}}
+\doxysubsubsection{\texorpdfstring{NGGracze()}{NGGracze()}}
+{\footnotesize\ttfamily NGGracze\+::\+NGGracze (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_game}{CGame}} $\ast$}]{gra,  }\item[{deque$<$ \mbox{\hyperlink{class_c_rys_pionek}{CRys\+Pionek}} $\ast$ $>$ $\ast$}]{pionki,  }\item[{QWidget $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+\mbox{\Hypertarget{class_n_g_gracze_ace9eff2cde88f74d289a222133c70815}\label{class_n_g_gracze_ace9eff2cde88f74d289a222133c70815}} 
+\index{NGGracze@{NGGracze}!````~NGGracze@{$\sim$NGGracze}}
+\index{````~NGGracze@{$\sim$NGGracze}!NGGracze@{NGGracze}}
+\doxysubsubsection{\texorpdfstring{$\sim$NGGracze()}{~NGGracze()}}
+{\footnotesize\ttfamily NGGracze\+::$\sim$\+NGGracze (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Dokumentacja funkcji składowych}
+\mbox{\Hypertarget{class_n_g_gracze_a6ea6dd98562c67e7b452a15df8727ff2}\label{class_n_g_gracze_a6ea6dd98562c67e7b452a15df8727ff2}} 
+\index{NGGracze@{NGGracze}!dalej@{dalej}}
+\index{dalej@{dalej}!NGGracze@{NGGracze}}
+\doxysubsubsection{\texorpdfstring{dalej}{dalej}}
+{\footnotesize\ttfamily void NGGracze\+::dalej (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+\mbox{\Hypertarget{class_n_g_gracze_a9dd54ad98e50d045625cedf3a9dab206}\label{class_n_g_gracze_a9dd54ad98e50d045625cedf3a9dab206}} 
+\index{NGGracze@{NGGracze}!dequeCRysPionekPrzod@{dequeCRysPionekPrzod}}
+\index{dequeCRysPionekPrzod@{dequeCRysPionekPrzod}!NGGracze@{NGGracze}}
+\doxysubsubsection{\texorpdfstring{dequeCRysPionekPrzod()}{dequeCRysPionekPrzod()}}
+{\footnotesize\ttfamily void NGGracze\+::deque\+CRys\+Pionek\+Przod (\begin{DoxyParamCaption}\item[{deque$<$ \mbox{\hyperlink{class_c_rys_pionek}{CRys\+Pionek}} $\ast$ $>$ \&}]{pionki }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_n_g_gracze_aa42e3d88cc8404820732fb1ad00a0301}\label{class_n_g_gracze_aa42e3d88cc8404820732fb1ad00a0301}} 
+\index{NGGracze@{NGGracze}!dequeCRysPionekTyl@{dequeCRysPionekTyl}}
+\index{dequeCRysPionekTyl@{dequeCRysPionekTyl}!NGGracze@{NGGracze}}
+\doxysubsubsection{\texorpdfstring{dequeCRysPionekTyl()}{dequeCRysPionekTyl()}}
+{\footnotesize\ttfamily void NGGracze\+::deque\+CRys\+Pionek\+Tyl (\begin{DoxyParamCaption}\item[{deque$<$ \mbox{\hyperlink{class_c_rys_pionek}{CRys\+Pionek}} $\ast$ $>$ \&}]{pionki }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_n_g_gracze_a7c849d1335c0f002bc0744d3fbd95969}\label{class_n_g_gracze_a7c849d1335c0f002bc0744d3fbd95969}} 
+\index{NGGracze@{NGGracze}!dequeIntPrzod@{dequeIntPrzod}}
+\index{dequeIntPrzod@{dequeIntPrzod}!NGGracze@{NGGracze}}
+\doxysubsubsection{\texorpdfstring{dequeIntPrzod()}{dequeIntPrzod()}}
+{\footnotesize\ttfamily void NGGracze\+::deque\+Int\+Przod (\begin{DoxyParamCaption}\item[{deque$<$ int $>$ \&}]{kolejka }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_n_g_gracze_af19362683115770c03d77ea553d29529}\label{class_n_g_gracze_af19362683115770c03d77ea553d29529}} 
+\index{NGGracze@{NGGracze}!dequeIntTyl@{dequeIntTyl}}
+\index{dequeIntTyl@{dequeIntTyl}!NGGracze@{NGGracze}}
+\doxysubsubsection{\texorpdfstring{dequeIntTyl()}{dequeIntTyl()}}
+{\footnotesize\ttfamily void NGGracze\+::deque\+Int\+Tyl (\begin{DoxyParamCaption}\item[{deque$<$ int $>$ \&}]{kolejka }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_n_g_gracze_a54100ef98ed1f3a838e2b8b31e67a36d}\label{class_n_g_gracze_a54100ef98ed1f3a838e2b8b31e67a36d}} 
+\index{NGGracze@{NGGracze}!on\_pbDalej\_2\_clicked@{on\_pbDalej\_2\_clicked}}
+\index{on\_pbDalej\_2\_clicked@{on\_pbDalej\_2\_clicked}!NGGracze@{NGGracze}}
+\doxysubsubsection{\texorpdfstring{on\_pbDalej\_2\_clicked}{on\_pbDalej\_2\_clicked}}
+{\footnotesize\ttfamily void NGGracze\+::on\+\_\+pb\+Dalej\+\_\+2\+\_\+clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+\mbox{\Hypertarget{class_n_g_gracze_afea91022a1c3fe092d51491723a126c0}\label{class_n_g_gracze_afea91022a1c3fe092d51491723a126c0}} 
+\index{NGGracze@{NGGracze}!on\_pbDalej\_3\_clicked@{on\_pbDalej\_3\_clicked}}
+\index{on\_pbDalej\_3\_clicked@{on\_pbDalej\_3\_clicked}!NGGracze@{NGGracze}}
+\doxysubsubsection{\texorpdfstring{on\_pbDalej\_3\_clicked}{on\_pbDalej\_3\_clicked}}
+{\footnotesize\ttfamily void NGGracze\+::on\+\_\+pb\+Dalej\+\_\+3\+\_\+clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+\mbox{\Hypertarget{class_n_g_gracze_acdb32bdddd91be146b323532b54de5f0}\label{class_n_g_gracze_acdb32bdddd91be146b323532b54de5f0}} 
+\index{NGGracze@{NGGracze}!on\_pbDalej\_4\_clicked@{on\_pbDalej\_4\_clicked}}
+\index{on\_pbDalej\_4\_clicked@{on\_pbDalej\_4\_clicked}!NGGracze@{NGGracze}}
+\doxysubsubsection{\texorpdfstring{on\_pbDalej\_4\_clicked}{on\_pbDalej\_4\_clicked}}
+{\footnotesize\ttfamily void NGGracze\+::on\+\_\+pb\+Dalej\+\_\+4\+\_\+clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+\mbox{\Hypertarget{class_n_g_gracze_aa695aefa2d6659d32904c544d665d1b8}\label{class_n_g_gracze_aa695aefa2d6659d32904c544d665d1b8}} 
+\index{NGGracze@{NGGracze}!on\_pbDalej\_clicked@{on\_pbDalej\_clicked}}
+\index{on\_pbDalej\_clicked@{on\_pbDalej\_clicked}!NGGracze@{NGGracze}}
+\doxysubsubsection{\texorpdfstring{on\_pbDalej\_clicked}{on\_pbDalej\_clicked}}
+{\footnotesize\ttfamily void NGGracze\+::on\+\_\+pb\+Dalej\+\_\+clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+\mbox{\Hypertarget{class_n_g_gracze_a6abcb9fac9f905cc2d08fc99a7ed64cf}\label{class_n_g_gracze_a6abcb9fac9f905cc2d08fc99a7ed64cf}} 
+\index{NGGracze@{NGGracze}!on\_pbDodGr\_clicked@{on\_pbDodGr\_clicked}}
+\index{on\_pbDodGr\_clicked@{on\_pbDodGr\_clicked}!NGGracze@{NGGracze}}
+\doxysubsubsection{\texorpdfstring{on\_pbDodGr\_clicked}{on\_pbDodGr\_clicked}}
+{\footnotesize\ttfamily void NGGracze\+::on\+\_\+pb\+Dod\+Gr\+\_\+clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+\mbox{\Hypertarget{class_n_g_gracze_ae2dc6e2db86c095c2d06653d65e43b79}\label{class_n_g_gracze_ae2dc6e2db86c095c2d06653d65e43b79}} 
+\index{NGGracze@{NGGracze}!on\_pbOknoWstecz\_clicked@{on\_pbOknoWstecz\_clicked}}
+\index{on\_pbOknoWstecz\_clicked@{on\_pbOknoWstecz\_clicked}!NGGracze@{NGGracze}}
+\doxysubsubsection{\texorpdfstring{on\_pbOknoWstecz\_clicked}{on\_pbOknoWstecz\_clicked}}
+{\footnotesize\ttfamily void NGGracze\+::on\+\_\+pb\+Okno\+Wstecz\+\_\+clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+\mbox{\Hypertarget{class_n_g_gracze_abba3ffd1a7e50f3533eb84a97f1a93b4}\label{class_n_g_gracze_abba3ffd1a7e50f3533eb84a97f1a93b4}} 
+\index{NGGracze@{NGGracze}!on\_pbWstecz\_2\_clicked@{on\_pbWstecz\_2\_clicked}}
+\index{on\_pbWstecz\_2\_clicked@{on\_pbWstecz\_2\_clicked}!NGGracze@{NGGracze}}
+\doxysubsubsection{\texorpdfstring{on\_pbWstecz\_2\_clicked}{on\_pbWstecz\_2\_clicked}}
+{\footnotesize\ttfamily void NGGracze\+::on\+\_\+pb\+Wstecz\+\_\+2\+\_\+clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+\mbox{\Hypertarget{class_n_g_gracze_ac9aec1613ebf23635e8cb47bd670a26b}\label{class_n_g_gracze_ac9aec1613ebf23635e8cb47bd670a26b}} 
+\index{NGGracze@{NGGracze}!on\_pbWstecz\_3\_clicked@{on\_pbWstecz\_3\_clicked}}
+\index{on\_pbWstecz\_3\_clicked@{on\_pbWstecz\_3\_clicked}!NGGracze@{NGGracze}}
+\doxysubsubsection{\texorpdfstring{on\_pbWstecz\_3\_clicked}{on\_pbWstecz\_3\_clicked}}
+{\footnotesize\ttfamily void NGGracze\+::on\+\_\+pb\+Wstecz\+\_\+3\+\_\+clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+\mbox{\Hypertarget{class_n_g_gracze_aab5c1d4f4cb0a7989e893e4493afd4fb}\label{class_n_g_gracze_aab5c1d4f4cb0a7989e893e4493afd4fb}} 
+\index{NGGracze@{NGGracze}!on\_pbWstecz\_clicked@{on\_pbWstecz\_clicked}}
+\index{on\_pbWstecz\_clicked@{on\_pbWstecz\_clicked}!NGGracze@{NGGracze}}
+\doxysubsubsection{\texorpdfstring{on\_pbWstecz\_clicked}{on\_pbWstecz\_clicked}}
+{\footnotesize\ttfamily void NGGracze\+::on\+\_\+pb\+Wstecz\+\_\+clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+\mbox{\Hypertarget{class_n_g_gracze_a3c42d0e6441773adf158b1e48b1df3c2}\label{class_n_g_gracze_a3c42d0e6441773adf158b1e48b1df3c2}} 
+\index{NGGracze@{NGGracze}!removingItemsFromScene@{removingItemsFromScene}}
+\index{removingItemsFromScene@{removingItemsFromScene}!NGGracze@{NGGracze}}
+\doxysubsubsection{\texorpdfstring{removingItemsFromScene()}{removingItemsFromScene()}}
+{\footnotesize\ttfamily void NGGracze\+::removing\+Items\+From\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Metoda \char`\"{}odczepia\char`\"{} rysunki pionków od sceny tego okna. 
+
+\mbox{\Hypertarget{class_n_g_gracze_a2069a783a9d920c671a2b2cb2d7360f2}\label{class_n_g_gracze_a2069a783a9d920c671a2b2cb2d7360f2}} 
+\index{NGGracze@{NGGracze}!wstecz@{wstecz}}
+\index{wstecz@{wstecz}!NGGracze@{NGGracze}}
+\doxysubsubsection{\texorpdfstring{wstecz}{wstecz}}
+{\footnotesize\ttfamily void NGGracze\+::wstecz (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+\mbox{\Hypertarget{class_n_g_gracze_a42c51aceddbf65f111963d073e52fd38}\label{class_n_g_gracze_a42c51aceddbf65f111963d073e52fd38}} 
+\index{NGGracze@{NGGracze}!zmianaRozmiaruPionkowNaOstat@{zmianaRozmiaruPionkowNaOstat}}
+\index{zmianaRozmiaruPionkowNaOstat@{zmianaRozmiaruPionkowNaOstat}!NGGracze@{NGGracze}}
+\doxysubsubsection{\texorpdfstring{zmianaRozmiaruPionkowNaOstat()}{zmianaRozmiaruPionkowNaOstat()}}
+{\footnotesize\ttfamily void NGGracze\+::zmiana\+Rozmiaru\+Pionkow\+Na\+Ostat (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Metoda zmienia pola top\+Left\+\_\+ i size\+\_\+ rysunków pionków na wartości \char`\"{}do planszy\char`\"{}. 
+
+
+
+\doxysubsection{Dokumentacja atrybutów składowych}
+\mbox{\Hypertarget{class_n_g_gracze_aa6039a9b423203d62e6b10cd52ec4556}\label{class_n_g_gracze_aa6039a9b423203d62e6b10cd52ec4556}} 
+\index{NGGracze@{NGGracze}!koloryPionow\_@{koloryPionow\_}}
+\index{koloryPionow\_@{koloryPionow\_}!NGGracze@{NGGracze}}
+\doxysubsubsection{\texorpdfstring{koloryPionow\_}{koloryPionow\_}}
+{\footnotesize\ttfamily deque$<$int$>$ NGGracze\+::kolory\+Pionow\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_n_g_gracze_af6aa21ce06eeeb489c0b5655d05931c2}\label{class_n_g_gracze_af6aa21ce06eeeb489c0b5655d05931c2}} 
+\index{NGGracze@{NGGracze}!koloryUzyte\_@{koloryUzyte\_}}
+\index{koloryUzyte\_@{koloryUzyte\_}!NGGracze@{NGGracze}}
+\doxysubsubsection{\texorpdfstring{koloryUzyte\_}{koloryUzyte\_}}
+{\footnotesize\ttfamily deque$<$int$>$ NGGracze\+::kolory\+Uzyte\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_n_g_gracze_a2bc0a92986274580e46568953dbe0e55}\label{class_n_g_gracze_a2bc0a92986274580e46568953dbe0e55}} 
+\index{NGGracze@{NGGracze}!ksztalty\_@{ksztalty\_}}
+\index{ksztalty\_@{ksztalty\_}!NGGracze@{NGGracze}}
+\doxysubsubsection{\texorpdfstring{ksztalty\_}{ksztalty\_}}
+{\footnotesize\ttfamily deque$<$int$>$ NGGracze\+::ksztalty\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_n_g_gracze_a2275fc246e8c69ac730976b03b887f0f}\label{class_n_g_gracze_a2275fc246e8c69ac730976b03b887f0f}} 
+\index{NGGracze@{NGGracze}!pionki\_@{pionki\_}}
+\index{pionki\_@{pionki\_}!NGGracze@{NGGracze}}
+\doxysubsubsection{\texorpdfstring{pionki\_}{pionki\_}}
+{\footnotesize\ttfamily deque$<$\mbox{\hyperlink{class_c_rys_pionek}{CRys\+Pionek}} $\ast$$>$$\ast$ NGGracze\+::pionki\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_n_g_gracze_a4601b241bb2991e847c28caf59d00a9c}\label{class_n_g_gracze_a4601b241bb2991e847c28caf59d00a9c}} 
+\index{NGGracze@{NGGracze}!scene\_@{scene\_}}
+\index{scene\_@{scene\_}!NGGracze@{NGGracze}}
+\doxysubsubsection{\texorpdfstring{scene\_}{scene\_}}
+{\footnotesize\ttfamily QGraphics\+Scene$\ast$ NGGracze\+::scene\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_n_g_gracze_a8fb9b1f0311088ba3c1cd59653f3160a}\label{class_n_g_gracze_a8fb9b1f0311088ba3c1cd59653f3160a}} 
+\index{NGGracze@{NGGracze}!symbole\_@{symbole\_}}
+\index{symbole\_@{symbole\_}!NGGracze@{NGGracze}}
+\doxysubsubsection{\texorpdfstring{symbole\_}{symbole\_}}
+{\footnotesize\ttfamily deque$<$int$>$ NGGracze\+::symbole\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_n_g_gracze_aa91adab5c8247ae70f3e8e7ac729adbc}\label{class_n_g_gracze_aa91adab5c8247ae70f3e8e7ac729adbc}} 
+\index{NGGracze@{NGGracze}!ui@{ui}}
+\index{ui@{ui}!NGGracze@{NGGracze}}
+\doxysubsubsection{\texorpdfstring{ui}{ui}}
+{\footnotesize\ttfamily Ui\+::\+NGGracze$\ast$ NGGracze\+::ui\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_n_g_gracze_a333f71205a625fa18e9d1b36413dd953}\label{class_n_g_gracze_a333f71205a625fa18e9d1b36413dd953}} 
+\index{NGGracze@{NGGracze}!wskAktPionu\_@{wskAktPionu\_}}
+\index{wskAktPionu\_@{wskAktPionu\_}!NGGracze@{NGGracze}}
+\doxysubsubsection{\texorpdfstring{wskAktPionu\_}{wskAktPionu\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_rys_pionek}{CRys\+Pionek}}$\ast$ NGGracze\+::wsk\+Akt\+Pionu\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_n_g_gracze_a41160978edc927855b43caec16b7fe68}\label{class_n_g_gracze_a41160978edc927855b43caec16b7fe68}} 
+\index{NGGracze@{NGGracze}!wskGry\_@{wskGry\_}}
+\index{wskGry\_@{wskGry\_}!NGGracze@{NGGracze}}
+\doxysubsubsection{\texorpdfstring{wskGry\_}{wskGry\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_game}{CGame}}$\ast$ NGGracze\+::wsk\+Gry\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+G\+:/\+Folder\+\_\+\+Dawida/\+Prace\+\_\+me/\+Git/\+Daw\+Rad-\/projekty/\+EURObiznes/\+EURObiznes/\mbox{\hyperlink{nggracze_8h}{nggracze.\+h}}\item 
+G\+:/\+Folder\+\_\+\+Dawida/\+Prace\+\_\+me/\+Git/\+Daw\+Rad-\/projekty/\+EURObiznes/\+EURObiznes/\mbox{\hyperlink{nggracze_8cpp}{nggracze.\+cpp}}\end{DoxyCompactItemize}

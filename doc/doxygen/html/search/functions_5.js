@@ -1,0 +1,17 @@
+var searchData=
+[
+  ['graczbuduje_0',['graczBuduje',['../class_c_game.html#a84c1b45c94a79405eaff0daa8ca2679d',1,'CGame']]],
+  ['graczdecyduje_1',['graczDecyduje',['../class_c_game.html#a0a00ad1edce403beee4d8d0f8788b4d0',1,'CGame']]],
+  ['graczkupuje_2',['graczKupuje',['../class_c_game.html#a2335f1b5a7dc6f7e2f901b6e6170069a',1,'CGame']]],
+  ['graczlosujekarte_3',['graczLosujeKarte',['../class_c_game.html#a6ee78730f269bccd87f948a67336054a',1,'CGame']]],
+  ['graczplaciczynsz_4',['graczPlaciCzynsz',['../class_c_game.html#a1ce7cc14580bf19fd651062d2884e364',1,'CGame']]],
+  ['graczpobierapensje_5',['graczPobieraPensje',['../class_c_game.html#a0b5f258f33616ffe9b325b1881f49b0f',1,'CGame']]],
+  ['graczrzuca_6',['graczRzuca',['../class_c_game.html#ab6d4d8b6211e64255729390012d2ff43',1,'CGame']]],
+  ['graczstajenapolu_7',['graczStajeNaPolu',['../class_c_game.html#aa944341900f27c8c9d7c33a429a76adf',1,'CGame::graczStajeNaPolu()'],['../class_c_game.html#a9f47731b02d361c38fbad5d9c31adaf4',1,'CGame::graczStajeNaPolu(int poz)']]],
+  ['graczuzylkartywolnosc_8',['graczUzylKartyWolnosc',['../class_c_rys_panel_gracza.html#a9fa854ff20f7cebb2c109251545b8177',1,'CRysPanelGracza']]],
+  ['graczuzywakartywolnosc_9',['graczUzywaKartyWolnosc',['../class_c_game.html#a0f987e532b43002f2f080088e4911003',1,'CGame']]],
+  ['graczwykupuje_10',['graczWykupuje',['../class_c_game.html#ad4dfde0e6f15a9aa43f3263d552ff74e',1,'CGame']]],
+  ['graczzarabia_11',['graczZarabia',['../class_c_game.html#ac3e5158976912ce2fb7b317736b9aeec',1,'CGame']]],
+  ['graczzastawia_12',['graczZastawia',['../class_c_game.html#a80f87fccbad2d2f12ff26b8215ee84c5',1,'CGame']]],
+  ['graczzmieniapole_13',['graczZmieniaPole',['../class_c_game.html#a15e5b151bbecbcc2f2ec90449125122d',1,'CGame']]]
+];

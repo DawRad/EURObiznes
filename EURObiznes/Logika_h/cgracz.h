@@ -105,14 +105,24 @@ public:
     int podajId();
 
     /**
-     * jeśli param rodz == 1  ---> podaje CGracz::lbPolSpec_
-     * <br>param rodz == 2 ---> podaje CGracz::lbPolEkstra_
+     * @brief Metoda podająca liczbę pól gracza danego rodzaju
+     *
+     * @param rodz ==
+     * \li 1  ---> podaje CGracz::lbPolSpec_
+     * \li 2 ---> podaje CGracz::lbPolEkstra_
+     * @return liczbę pól podanego rodzaju
      */
     int podajLbPol(int rodz);
 
     int podajLbPolKol(int kolor);
     int podajLbKartWolnosc();
+
+    /**
+     * @brief Metoda podająca, ile pieniędzy ma gracz.
+     * @return wartość pola CGracz::portfel_
+     */
     int podajStanKonta();
+
     int podajAktPoz();
     int podajNastPoz();
 

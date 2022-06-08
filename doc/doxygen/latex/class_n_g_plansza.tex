@@ -1,0 +1,275 @@
+\hypertarget{class_n_g_plansza}{}\doxysection{Dokumentacja klasy NGPlansza}
+\label{class_n_g_plansza}\index{NGPlansza@{NGPlansza}}
+
+
+Klasa graficzna -\/ okno planszy.  
+
+
+
+
+{\ttfamily \#include $<$ngplansza.\+h$>$}
+
+
+
+Diagram dziedziczenia dla NGPlansza\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=160pt]{class_n_g_plansza__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Diagram współpracy dla NGPlansza\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_n_g_plansza__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Sygnały}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_n_g_plansza_aa6a20b6919914aa3703a3f9bc75c92e3}{dalej}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_n_g_plansza_a637060e12ee3af994e6ade835f68c280}{NGPlansza}} (\mbox{\hyperlink{class_c_game}{CGame}} $\ast$wsk\+Gry, deque$<$ \mbox{\hyperlink{class_c_rys_pole}{CRys\+Pole}} $\ast$ $>$ $\ast$pola, QWidget $\ast$parent=nullptr)
+\item 
+\mbox{\hyperlink{class_n_g_plansza_a6ef1f5057c89ff8ecfee76f4f62f7c4c}{$\sim$\+NGPlansza}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Sloty prywatne}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_n_g_plansza_a65051476f6e3e10fdeb7eaa21fa8c31f}{on\+\_\+cb\+Rodzaj\+\_\+current\+Text\+Changed}} (const QString \&arg1)
+\item 
+void \mbox{\hyperlink{class_n_g_plansza_a6ac5d0b7e3aa9fe48cd3f8d3c3d33a48}{on\+\_\+pb\+Dod\+Pole\+\_\+clicked}} ()
+\item 
+void \mbox{\hyperlink{class_n_g_plansza_a5d9902485046266493632d384149f39f}{on\+\_\+pb\+Wstecz\+\_\+clicked}} ()
+\item 
+void \mbox{\hyperlink{class_n_g_plansza_a54f2a1681e3a66b690775eaf86288488}{on\+\_\+pb\+Dalej\+\_\+clicked}} ()
+\item 
+void \mbox{\hyperlink{class_n_g_plansza_a7d7c8fb4d492c84f6c185c401d30b24b}{on\+\_\+pb\+Graj\+\_\+clicked}} ()
+\item 
+void \mbox{\hyperlink{class_n_g_plansza_a0a9710f31beae536a84a13514bce0e5a}{on\+\_\+cb\+Kolor\+\_\+current\+Text\+Changed}} (const QString \&arg1)
+\end{DoxyCompactItemize}
+\doxysubsection*{Metody prywatne}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_n_g_plansza_a4bc0062896948464dad2fd540fd70f41}{odczytaj\+Kolor}} (const QString \&kolor)
+\item 
+void \mbox{\hyperlink{class_n_g_plansza_ab6078379eeb0640889e937c31678f467}{dostosuj\+Do\+CBRodzaj}} (const QString \&arg1)
+\begin{DoxyCompactList}\small\item\em Dostosowuje elementy okna planszy do wartości w cb\+Rodzaj. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_n_g_plansza_a796096d3ecf339020c3a35fef999682e}{dostosuj\+Kolor}} (const QString \&arg1)
+\item 
+void \mbox{\hyperlink{class_n_g_plansza_a23786d156ca8b8969359aa142f9f6653}{set\+Input\+Objects\+Enabled}} ()
+\begin{DoxyCompactList}\small\item\em Włącza wszystkie pola służące do wprowadzania danych. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_n_g_plansza_a0e89bd92b2aeb55d3d554e41919f96a2}{set\+Input\+Objects\+Disabled}} ()
+\item 
+void \mbox{\hyperlink{class_n_g_plansza_a08d27eea5a59d72be29b27e84ec8b57f}{utworz\+CPole\+Szansa}} (\mbox{\hyperlink{struct_s_dn_pocz_pola}{SDn\+Pocz\+Pola}} \&dane)
+\item 
+void \mbox{\hyperlink{class_n_g_plansza_a0a0ce3bafc37536a00822fca2d2d60ed}{utworz\+CPole\+Kasa}} (\mbox{\hyperlink{struct_s_dn_pocz_pola}{SDn\+Pocz\+Pola}} \&dane)
+\item 
+void \mbox{\hyperlink{class_n_g_plansza_a54b8e1ca3ae46443f59836c6175437ad}{utworz\+CPole\+Stnd}} (\mbox{\hyperlink{struct_s_dn_pocz_pola}{SDn\+Pocz\+Pola}} \&dane)
+\item 
+void \mbox{\hyperlink{class_n_g_plansza_a6770cf8d65299a8cd9af9840dd9a66d1}{utworz\+CPole\+Spec}} (\mbox{\hyperlink{struct_s_dn_pocz_pola}{SDn\+Pocz\+Pola}} \&dane)
+\item 
+void \mbox{\hyperlink{class_n_g_plansza_a75ab78c50c58ba27e598d966eed44787}{utworz\+CPole\+Ekstra}} (\mbox{\hyperlink{struct_s_dn_pocz_pola}{SDn\+Pocz\+Pola}} \&dane)
+\item 
+void \mbox{\hyperlink{class_n_g_plansza_a2929fed94c5bbaaa7076d673fdd9517d}{remove\+Items\+From\+Scene}} ()
+\begin{DoxyCompactList}\small\item\em \char`\"{}\+Odczepia\char`\"{} elementy ze sceny \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Atrybuty prywatne}
+\begin{DoxyCompactItemize}
+\item 
+Ui\+::\+NGPlansza $\ast$ \mbox{\hyperlink{class_n_g_plansza_aa2414b735794fb3eb0f68cb608fecd8a}{ui}}
+\item 
+\mbox{\hyperlink{class_c_game}{CGame}} $\ast$ \mbox{\hyperlink{class_n_g_plansza_a42cc7489a4ebda78d1ff83ac35b1803c}{wsk\+Gry\+\_\+}}
+\item 
+deque$<$ \mbox{\hyperlink{class_c_rys_pole}{CRys\+Pole}} $\ast$ $>$ $\ast$ \mbox{\hyperlink{class_n_g_plansza_a81e6836cbd215b821a8ca1f6e9aa3c14}{wsk\+Deq\+Pol\+\_\+}}
+\item 
+QGraphics\+Scene $\ast$ \mbox{\hyperlink{class_n_g_plansza_a4d9408bb40313c493c7223f106e51642}{scene\+\_\+}}
+\item 
+QGraphics\+Scene $\ast$ \mbox{\hyperlink{class_n_g_plansza_ab1d7e97b21ddc923ec0e720101148075}{scene\+Kolor\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Opis szczegółowy}
+Klasa graficzna -\/ okno planszy. 
+
+\doxysubsection{Dokumentacja konstruktora i destruktora}
+\mbox{\Hypertarget{class_n_g_plansza_a637060e12ee3af994e6ade835f68c280}\label{class_n_g_plansza_a637060e12ee3af994e6ade835f68c280}} 
+\index{NGPlansza@{NGPlansza}!NGPlansza@{NGPlansza}}
+\index{NGPlansza@{NGPlansza}!NGPlansza@{NGPlansza}}
+\doxysubsubsection{\texorpdfstring{NGPlansza()}{NGPlansza()}}
+{\footnotesize\ttfamily NGPlansza\+::\+NGPlansza (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_game}{CGame}} $\ast$}]{wsk\+Gry,  }\item[{deque$<$ \mbox{\hyperlink{class_c_rys_pole}{CRys\+Pole}} $\ast$ $>$ $\ast$}]{pola,  }\item[{QWidget $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+\mbox{\Hypertarget{class_n_g_plansza_a6ef1f5057c89ff8ecfee76f4f62f7c4c}\label{class_n_g_plansza_a6ef1f5057c89ff8ecfee76f4f62f7c4c}} 
+\index{NGPlansza@{NGPlansza}!````~NGPlansza@{$\sim$NGPlansza}}
+\index{````~NGPlansza@{$\sim$NGPlansza}!NGPlansza@{NGPlansza}}
+\doxysubsubsection{\texorpdfstring{$\sim$NGPlansza()}{~NGPlansza()}}
+{\footnotesize\ttfamily NGPlansza\+::$\sim$\+NGPlansza (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Dokumentacja funkcji składowych}
+\mbox{\Hypertarget{class_n_g_plansza_aa6a20b6919914aa3703a3f9bc75c92e3}\label{class_n_g_plansza_aa6a20b6919914aa3703a3f9bc75c92e3}} 
+\index{NGPlansza@{NGPlansza}!dalej@{dalej}}
+\index{dalej@{dalej}!NGPlansza@{NGPlansza}}
+\doxysubsubsection{\texorpdfstring{dalej}{dalej}}
+{\footnotesize\ttfamily void NGPlansza\+::dalej (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+\mbox{\Hypertarget{class_n_g_plansza_ab6078379eeb0640889e937c31678f467}\label{class_n_g_plansza_ab6078379eeb0640889e937c31678f467}} 
+\index{NGPlansza@{NGPlansza}!dostosujDoCBRodzaj@{dostosujDoCBRodzaj}}
+\index{dostosujDoCBRodzaj@{dostosujDoCBRodzaj}!NGPlansza@{NGPlansza}}
+\doxysubsubsection{\texorpdfstring{dostosujDoCBRodzaj()}{dostosujDoCBRodzaj()}}
+{\footnotesize\ttfamily void NGPlansza\+::dostosuj\+Do\+CBRodzaj (\begin{DoxyParamCaption}\item[{const QString \&}]{arg1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Dostosowuje elementy okna planszy do wartości w cb\+Rodzaj. 
+
+\mbox{\Hypertarget{class_n_g_plansza_a796096d3ecf339020c3a35fef999682e}\label{class_n_g_plansza_a796096d3ecf339020c3a35fef999682e}} 
+\index{NGPlansza@{NGPlansza}!dostosujKolor@{dostosujKolor}}
+\index{dostosujKolor@{dostosujKolor}!NGPlansza@{NGPlansza}}
+\doxysubsubsection{\texorpdfstring{dostosujKolor()}{dostosujKolor()}}
+{\footnotesize\ttfamily void NGPlansza\+::dostosuj\+Kolor (\begin{DoxyParamCaption}\item[{const QString \&}]{arg1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_n_g_plansza_a4bc0062896948464dad2fd540fd70f41}\label{class_n_g_plansza_a4bc0062896948464dad2fd540fd70f41}} 
+\index{NGPlansza@{NGPlansza}!odczytajKolor@{odczytajKolor}}
+\index{odczytajKolor@{odczytajKolor}!NGPlansza@{NGPlansza}}
+\doxysubsubsection{\texorpdfstring{odczytajKolor()}{odczytajKolor()}}
+{\footnotesize\ttfamily int NGPlansza\+::odczytaj\+Kolor (\begin{DoxyParamCaption}\item[{const QString \&}]{kolor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_n_g_plansza_a0a9710f31beae536a84a13514bce0e5a}\label{class_n_g_plansza_a0a9710f31beae536a84a13514bce0e5a}} 
+\index{NGPlansza@{NGPlansza}!on\_cbKolor\_currentTextChanged@{on\_cbKolor\_currentTextChanged}}
+\index{on\_cbKolor\_currentTextChanged@{on\_cbKolor\_currentTextChanged}!NGPlansza@{NGPlansza}}
+\doxysubsubsection{\texorpdfstring{on\_cbKolor\_currentTextChanged}{on\_cbKolor\_currentTextChanged}}
+{\footnotesize\ttfamily void NGPlansza\+::on\+\_\+cb\+Kolor\+\_\+current\+Text\+Changed (\begin{DoxyParamCaption}\item[{const QString \&}]{arg1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+\mbox{\Hypertarget{class_n_g_plansza_a65051476f6e3e10fdeb7eaa21fa8c31f}\label{class_n_g_plansza_a65051476f6e3e10fdeb7eaa21fa8c31f}} 
+\index{NGPlansza@{NGPlansza}!on\_cbRodzaj\_currentTextChanged@{on\_cbRodzaj\_currentTextChanged}}
+\index{on\_cbRodzaj\_currentTextChanged@{on\_cbRodzaj\_currentTextChanged}!NGPlansza@{NGPlansza}}
+\doxysubsubsection{\texorpdfstring{on\_cbRodzaj\_currentTextChanged}{on\_cbRodzaj\_currentTextChanged}}
+{\footnotesize\ttfamily void NGPlansza\+::on\+\_\+cb\+Rodzaj\+\_\+current\+Text\+Changed (\begin{DoxyParamCaption}\item[{const QString \&}]{arg1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+\mbox{\Hypertarget{class_n_g_plansza_a54f2a1681e3a66b690775eaf86288488}\label{class_n_g_plansza_a54f2a1681e3a66b690775eaf86288488}} 
+\index{NGPlansza@{NGPlansza}!on\_pbDalej\_clicked@{on\_pbDalej\_clicked}}
+\index{on\_pbDalej\_clicked@{on\_pbDalej\_clicked}!NGPlansza@{NGPlansza}}
+\doxysubsubsection{\texorpdfstring{on\_pbDalej\_clicked}{on\_pbDalej\_clicked}}
+{\footnotesize\ttfamily void NGPlansza\+::on\+\_\+pb\+Dalej\+\_\+clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+\mbox{\Hypertarget{class_n_g_plansza_a6ac5d0b7e3aa9fe48cd3f8d3c3d33a48}\label{class_n_g_plansza_a6ac5d0b7e3aa9fe48cd3f8d3c3d33a48}} 
+\index{NGPlansza@{NGPlansza}!on\_pbDodPole\_clicked@{on\_pbDodPole\_clicked}}
+\index{on\_pbDodPole\_clicked@{on\_pbDodPole\_clicked}!NGPlansza@{NGPlansza}}
+\doxysubsubsection{\texorpdfstring{on\_pbDodPole\_clicked}{on\_pbDodPole\_clicked}}
+{\footnotesize\ttfamily void NGPlansza\+::on\+\_\+pb\+Dod\+Pole\+\_\+clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+\mbox{\Hypertarget{class_n_g_plansza_a7d7c8fb4d492c84f6c185c401d30b24b}\label{class_n_g_plansza_a7d7c8fb4d492c84f6c185c401d30b24b}} 
+\index{NGPlansza@{NGPlansza}!on\_pbGraj\_clicked@{on\_pbGraj\_clicked}}
+\index{on\_pbGraj\_clicked@{on\_pbGraj\_clicked}!NGPlansza@{NGPlansza}}
+\doxysubsubsection{\texorpdfstring{on\_pbGraj\_clicked}{on\_pbGraj\_clicked}}
+{\footnotesize\ttfamily void NGPlansza\+::on\+\_\+pb\+Graj\+\_\+clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+\mbox{\Hypertarget{class_n_g_plansza_a5d9902485046266493632d384149f39f}\label{class_n_g_plansza_a5d9902485046266493632d384149f39f}} 
+\index{NGPlansza@{NGPlansza}!on\_pbWstecz\_clicked@{on\_pbWstecz\_clicked}}
+\index{on\_pbWstecz\_clicked@{on\_pbWstecz\_clicked}!NGPlansza@{NGPlansza}}
+\doxysubsubsection{\texorpdfstring{on\_pbWstecz\_clicked}{on\_pbWstecz\_clicked}}
+{\footnotesize\ttfamily void NGPlansza\+::on\+\_\+pb\+Wstecz\+\_\+clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+\mbox{\Hypertarget{class_n_g_plansza_a2929fed94c5bbaaa7076d673fdd9517d}\label{class_n_g_plansza_a2929fed94c5bbaaa7076d673fdd9517d}} 
+\index{NGPlansza@{NGPlansza}!removeItemsFromScene@{removeItemsFromScene}}
+\index{removeItemsFromScene@{removeItemsFromScene}!NGPlansza@{NGPlansza}}
+\doxysubsubsection{\texorpdfstring{removeItemsFromScene()}{removeItemsFromScene()}}
+{\footnotesize\ttfamily void NGPlansza\+::remove\+Items\+From\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\char`\"{}\+Odczepia\char`\"{} elementy ze sceny 
+
+\mbox{\Hypertarget{class_n_g_plansza_a0e89bd92b2aeb55d3d554e41919f96a2}\label{class_n_g_plansza_a0e89bd92b2aeb55d3d554e41919f96a2}} 
+\index{NGPlansza@{NGPlansza}!setInputObjectsDisabled@{setInputObjectsDisabled}}
+\index{setInputObjectsDisabled@{setInputObjectsDisabled}!NGPlansza@{NGPlansza}}
+\doxysubsubsection{\texorpdfstring{setInputObjectsDisabled()}{setInputObjectsDisabled()}}
+{\footnotesize\ttfamily void NGPlansza\+::set\+Input\+Objects\+Disabled (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_n_g_plansza_a23786d156ca8b8969359aa142f9f6653}\label{class_n_g_plansza_a23786d156ca8b8969359aa142f9f6653}} 
+\index{NGPlansza@{NGPlansza}!setInputObjectsEnabled@{setInputObjectsEnabled}}
+\index{setInputObjectsEnabled@{setInputObjectsEnabled}!NGPlansza@{NGPlansza}}
+\doxysubsubsection{\texorpdfstring{setInputObjectsEnabled()}{setInputObjectsEnabled()}}
+{\footnotesize\ttfamily void NGPlansza\+::set\+Input\+Objects\+Enabled (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Włącza wszystkie pola służące do wprowadzania danych. 
+
+\mbox{\Hypertarget{class_n_g_plansza_a75ab78c50c58ba27e598d966eed44787}\label{class_n_g_plansza_a75ab78c50c58ba27e598d966eed44787}} 
+\index{NGPlansza@{NGPlansza}!utworzCPoleEkstra@{utworzCPoleEkstra}}
+\index{utworzCPoleEkstra@{utworzCPoleEkstra}!NGPlansza@{NGPlansza}}
+\doxysubsubsection{\texorpdfstring{utworzCPoleEkstra()}{utworzCPoleEkstra()}}
+{\footnotesize\ttfamily void NGPlansza\+::utworz\+CPole\+Ekstra (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_s_dn_pocz_pola}{SDn\+Pocz\+Pola}} \&}]{dane }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_n_g_plansza_a0a0ce3bafc37536a00822fca2d2d60ed}\label{class_n_g_plansza_a0a0ce3bafc37536a00822fca2d2d60ed}} 
+\index{NGPlansza@{NGPlansza}!utworzCPoleKasa@{utworzCPoleKasa}}
+\index{utworzCPoleKasa@{utworzCPoleKasa}!NGPlansza@{NGPlansza}}
+\doxysubsubsection{\texorpdfstring{utworzCPoleKasa()}{utworzCPoleKasa()}}
+{\footnotesize\ttfamily void NGPlansza\+::utworz\+CPole\+Kasa (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_s_dn_pocz_pola}{SDn\+Pocz\+Pola}} \&}]{dane }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_n_g_plansza_a6770cf8d65299a8cd9af9840dd9a66d1}\label{class_n_g_plansza_a6770cf8d65299a8cd9af9840dd9a66d1}} 
+\index{NGPlansza@{NGPlansza}!utworzCPoleSpec@{utworzCPoleSpec}}
+\index{utworzCPoleSpec@{utworzCPoleSpec}!NGPlansza@{NGPlansza}}
+\doxysubsubsection{\texorpdfstring{utworzCPoleSpec()}{utworzCPoleSpec()}}
+{\footnotesize\ttfamily void NGPlansza\+::utworz\+CPole\+Spec (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_s_dn_pocz_pola}{SDn\+Pocz\+Pola}} \&}]{dane }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_n_g_plansza_a54b8e1ca3ae46443f59836c6175437ad}\label{class_n_g_plansza_a54b8e1ca3ae46443f59836c6175437ad}} 
+\index{NGPlansza@{NGPlansza}!utworzCPoleStnd@{utworzCPoleStnd}}
+\index{utworzCPoleStnd@{utworzCPoleStnd}!NGPlansza@{NGPlansza}}
+\doxysubsubsection{\texorpdfstring{utworzCPoleStnd()}{utworzCPoleStnd()}}
+{\footnotesize\ttfamily void NGPlansza\+::utworz\+CPole\+Stnd (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_s_dn_pocz_pola}{SDn\+Pocz\+Pola}} \&}]{dane }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_n_g_plansza_a08d27eea5a59d72be29b27e84ec8b57f}\label{class_n_g_plansza_a08d27eea5a59d72be29b27e84ec8b57f}} 
+\index{NGPlansza@{NGPlansza}!utworzCPoleSzansa@{utworzCPoleSzansa}}
+\index{utworzCPoleSzansa@{utworzCPoleSzansa}!NGPlansza@{NGPlansza}}
+\doxysubsubsection{\texorpdfstring{utworzCPoleSzansa()}{utworzCPoleSzansa()}}
+{\footnotesize\ttfamily void NGPlansza\+::utworz\+CPole\+Szansa (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_s_dn_pocz_pola}{SDn\+Pocz\+Pola}} \&}]{dane }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\doxysubsection{Dokumentacja atrybutów składowych}
+\mbox{\Hypertarget{class_n_g_plansza_a4d9408bb40313c493c7223f106e51642}\label{class_n_g_plansza_a4d9408bb40313c493c7223f106e51642}} 
+\index{NGPlansza@{NGPlansza}!scene\_@{scene\_}}
+\index{scene\_@{scene\_}!NGPlansza@{NGPlansza}}
+\doxysubsubsection{\texorpdfstring{scene\_}{scene\_}}
+{\footnotesize\ttfamily QGraphics\+Scene$\ast$ NGPlansza\+::scene\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_n_g_plansza_ab1d7e97b21ddc923ec0e720101148075}\label{class_n_g_plansza_ab1d7e97b21ddc923ec0e720101148075}} 
+\index{NGPlansza@{NGPlansza}!sceneKolor\_@{sceneKolor\_}}
+\index{sceneKolor\_@{sceneKolor\_}!NGPlansza@{NGPlansza}}
+\doxysubsubsection{\texorpdfstring{sceneKolor\_}{sceneKolor\_}}
+{\footnotesize\ttfamily QGraphics\+Scene$\ast$ NGPlansza\+::scene\+Kolor\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_n_g_plansza_aa2414b735794fb3eb0f68cb608fecd8a}\label{class_n_g_plansza_aa2414b735794fb3eb0f68cb608fecd8a}} 
+\index{NGPlansza@{NGPlansza}!ui@{ui}}
+\index{ui@{ui}!NGPlansza@{NGPlansza}}
+\doxysubsubsection{\texorpdfstring{ui}{ui}}
+{\footnotesize\ttfamily Ui\+::\+NGPlansza$\ast$ NGPlansza\+::ui\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_n_g_plansza_a81e6836cbd215b821a8ca1f6e9aa3c14}\label{class_n_g_plansza_a81e6836cbd215b821a8ca1f6e9aa3c14}} 
+\index{NGPlansza@{NGPlansza}!wskDeqPol\_@{wskDeqPol\_}}
+\index{wskDeqPol\_@{wskDeqPol\_}!NGPlansza@{NGPlansza}}
+\doxysubsubsection{\texorpdfstring{wskDeqPol\_}{wskDeqPol\_}}
+{\footnotesize\ttfamily deque$<$\mbox{\hyperlink{class_c_rys_pole}{CRys\+Pole}} $\ast$$>$$\ast$ NGPlansza\+::wsk\+Deq\+Pol\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_n_g_plansza_a42cc7489a4ebda78d1ff83ac35b1803c}\label{class_n_g_plansza_a42cc7489a4ebda78d1ff83ac35b1803c}} 
+\index{NGPlansza@{NGPlansza}!wskGry\_@{wskGry\_}}
+\index{wskGry\_@{wskGry\_}!NGPlansza@{NGPlansza}}
+\doxysubsubsection{\texorpdfstring{wskGry\_}{wskGry\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_game}{CGame}}$\ast$ NGPlansza\+::wsk\+Gry\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+G\+:/\+Folder\+\_\+\+Dawida/\+Prace\+\_\+me/\+Git/\+Daw\+Rad-\/projekty/\+EURObiznes/\+EURObiznes/\mbox{\hyperlink{ngplansza_8h}{ngplansza.\+h}}\item 
+G\+:/\+Folder\+\_\+\+Dawida/\+Prace\+\_\+me/\+Git/\+Daw\+Rad-\/projekty/\+EURObiznes/\+EURObiznes/\mbox{\hyperlink{ngplansza_8cpp}{ngplansza.\+cpp}}\end{DoxyCompactItemize}

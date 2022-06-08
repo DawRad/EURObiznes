@@ -1,0 +1,64 @@
+\hypertarget{crys_8h_source}{}\doxysection{crys.\+h}
+\label{crys_8h_source}\index{G:/Folder\_Dawida/Prace\_me/Git/DawRad-\/projekty/EURObiznes/EURObiznes/Rysunki\_h/crys.h@{G:/Folder\_Dawida/Prace\_me/Git/DawRad-\/projekty/EURObiznes/EURObiznes/Rysunki\_h/crys.h}}
+\mbox{\hyperlink{crys_8h}{Idź do dokumentacji tego pliku.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef CRYS\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define CRYS\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{comment}{//\#include <iostream>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <cmath>}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include <QtMath>}}
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_consts_8h}{Consts.h}}"{}}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_structs___qt_8h}{Rysunki\_h/Structs\_Qt.h}}"{}}}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 \textcolor{keyword}{using} std::string;}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17 }
+\DoxyCodeLine{18 }
+\DoxyCodeLine{22 \textcolor{keyword}{class }\mbox{\hyperlink{class_c_rys}{CRys}} : \textcolor{keyword}{public} QGraphicsItem}
+\DoxyCodeLine{23 \{}
+\DoxyCodeLine{24 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{25     QPoint \mbox{\hyperlink{class_c_rys_af7e489a830bb38ade4e63ddcfcfb7fac}{topLeft\_}};}
+\DoxyCodeLine{26     QSizeF \mbox{\hyperlink{class_c_rys_a178cd95b20cfd02825cedc7ec3901313}{size\_}};}
+\DoxyCodeLine{27     qreal \mbox{\hyperlink{class_c_rys_a17707c5388c80e97f49525f926b2b8cc}{rotation\_}};}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{29 \textcolor{keyword}{public}:}
+\DoxyCodeLine{30     \mbox{\hyperlink{class_c_rys_af47e4f02dbe9611ae96d12a8b222ce68}{CRys}}();}
+\DoxyCodeLine{31     \mbox{\hyperlink{class_c_rys_af47e4f02dbe9611ae96d12a8b222ce68}{CRys}}(QPoint topLeft, QSizeF size, qreal rotS = 0);}
+\DoxyCodeLine{32     \textcolor{keyword}{virtual} \mbox{\hyperlink{class_c_rys_aeb4b6e392eac6a5a4db1ad5f9021d01e}{\string~CRys}}();}
+\DoxyCodeLine{33 }
+\DoxyCodeLine{34     QRectF \mbox{\hyperlink{class_c_rys_af9249a6212dbb82a77a4591657476a01}{boundingRect}}() \textcolor{keyword}{const override};    }
+\DoxyCodeLine{35     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_rys_a02df2df7544fcf5f006c3a0550de4e23}{paint}}(QPainter *painter, \textcolor{keyword}{const} QStyleOptionGraphicsItem *option,}
+\DoxyCodeLine{36                QWidget *widget) \textcolor{keyword}{override} = 0;}
+\DoxyCodeLine{37     \textcolor{keyword}{virtual} QPainterPath \mbox{\hyperlink{class_c_rys_aad0239059383e806a88da10df030b7fd}{shape}}() \textcolor{keyword}{const override} = 0;}
+\DoxyCodeLine{38 }
+\DoxyCodeLine{39     \textcolor{comment}{// * * * * * * * * * * * * * * *}}
+\DoxyCodeLine{40     \textcolor{comment}{// metody do ustawiania atrybutów}}
+\DoxyCodeLine{41     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_rys_a31134d838a8abf35d0a35e0f6f175b04}{setTopLeft}}(QPoint topLeft);}
+\DoxyCodeLine{42 }
+\DoxyCodeLine{43     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_rys_a6172323e4b48ae762c211feadce680e7}{setSize}}(QSizeF size);}
+\DoxyCodeLine{44 }
+\DoxyCodeLine{49     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_rys_ab63faf49241c19f64eb3919e000c4eff}{setSizeWithOtherDimUpdate}}(QSizeF size);}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{51     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_rys_a250940c8385e1c231e419955316c7221}{setRotation}}(qreal rot);}
+\DoxyCodeLine{52 }
+\DoxyCodeLine{53 }
+\DoxyCodeLine{54 }
+\DoxyCodeLine{59     \textcolor{keyword}{static} QPoint \mbox{\hyperlink{class_c_rys_a2355cc14a790dd2ee9a03ffc7d07185e}{mapToRot}}(QPoint point, qreal rot);}
+\DoxyCodeLine{60 }
+\DoxyCodeLine{61     \textcolor{keyword}{static} QPointF \mbox{\hyperlink{class_c_rys_a2355cc14a790dd2ee9a03ffc7d07185e}{mapToRot}}(QPointF pointF, qreal rot);}
+\DoxyCodeLine{62 }
+\DoxyCodeLine{63     \textcolor{keyword}{static} QRectF \mbox{\hyperlink{class_c_rys_a2355cc14a790dd2ee9a03ffc7d07185e}{mapToRot}}(QRectF rect, qreal rot);}
+\DoxyCodeLine{64 }
+\DoxyCodeLine{68     \textcolor{keyword}{static} QColor \mbox{\hyperlink{class_c_rys_ab3ccca5f9c9f22ccc7471926e25bb84d}{colorIntToQCol}}(\textcolor{keywordtype}{int} color);}
+\DoxyCodeLine{69 }
+\DoxyCodeLine{70 \};}
+\DoxyCodeLine{71 }
+\DoxyCodeLine{72 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// CRYS\_H}}
+
+\end{DoxyCode}

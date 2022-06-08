@@ -1,0 +1,7 @@
+<map id="Graficzna hierarchia klas" name="Graficzna hierarchia klas">
+<area shape="rect" id="node1" href="$class_c_karta.html" title="Klasa logiki." alt="" coords="5,81,68,108"/>
+<area shape="rect" id="node2" href="$class_c_karta_kwoty.html" title="Klasa logiki." alt="" coords="126,5,225,32"/>
+<area shape="rect" id="node3" href="$class_c_karta_ruchu.html" title="Klasa logiki." alt="" coords="126,56,225,83"/>
+<area shape="rect" id="node4" href="$class_c_karta_wiezienia.html" title="Klasa logiki." alt="" coords="116,107,235,133"/>
+<area shape="rect" id="node5" href="$class_c_karta_wolnosc.html" title="Klasa logiki." alt="" coords="119,157,232,184"/>
+</map>

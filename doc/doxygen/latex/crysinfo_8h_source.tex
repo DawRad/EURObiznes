@@ -1,0 +1,36 @@
+\hypertarget{crysinfo_8h_source}{}\doxysection{crysinfo.\+h}
+\label{crysinfo_8h_source}\index{G:/Folder\_Dawida/Prace\_me/Git/DawRad-\/projekty/EURObiznes/EURObiznes/Rysunki\_h/crysinfo.h@{G:/Folder\_Dawida/Prace\_me/Git/DawRad-\/projekty/EURObiznes/EURObiznes/Rysunki\_h/crysinfo.h}}
+\mbox{\hyperlink{crysinfo_8h}{Idź do dokumentacji tego pliku.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef CRYSINFO\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define CRYSINFO\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{crys_8h}{Rysunki\_h/crys.h}}"{}}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{cadministratorcrys_8h}{cadministratorcrys.h}}"{}}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9 }
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 }
+\DoxyCodeLine{16 \textcolor{keyword}{class }\mbox{\hyperlink{class_c_rys_info}{CRysInfo}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_c_rys}{CRys}}}
+\DoxyCodeLine{17 \{}
+\DoxyCodeLine{18 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{19     QString \mbox{\hyperlink{class_c_rys_info_a95e6786ce4613be75e545edbb928941d}{imgPath\_}};}
+\DoxyCodeLine{20     QString \mbox{\hyperlink{class_c_rys_info_ab12ef963e6d32bed885f0f9d2f51cbad}{text\_}};}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{22 \textcolor{keyword}{public}:}
+\DoxyCodeLine{23     \mbox{\hyperlink{class_c_rys_info_a67dc07b86d531bf809d81ea2699ff090}{CRysInfo}}(QPoint topLeft = \mbox{\hyperlink{_consts___qt_8h_a6f73403eea513d55a19a9d3de654d32e}{TOPLEFT\_POLE\_INFO}}, QSizeF size = \mbox{\hyperlink{_consts___qt_8h_aa1aa112dbd259d4ef274d355b7442c2a}{WYM\_POLA\_INFO}}, QString imgPath = \textcolor{stringliteral}{"{}:/Zasoby/grafika/tla/pergamin.png"{}}, qreal rot = 0);}
+\DoxyCodeLine{24     \mbox{\hyperlink{class_c_rys_info_aa71b080409a6e77e72074ea7ce45f40a}{\string~CRysInfo}}();}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{26     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_rys_info_aec09720bda1a1e169dde766163754939}{paint}}(QPainter *painter, \textcolor{keyword}{const} QStyleOptionGraphicsItem *option,}
+\DoxyCodeLine{27                QWidget *widget) \textcolor{keyword}{override};}
+\DoxyCodeLine{28     \textcolor{keyword}{virtual} QPainterPath \mbox{\hyperlink{class_c_rys_info_aae3eb2cffb80435eb9e07da0e2e9f4ce}{shape}}() \textcolor{keyword}{const override};}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{30     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_rys_info_a41b3dc6157af9697a19f663381fa57c7}{ustawText}}(\textcolor{keywordtype}{string} tresc);}
+\DoxyCodeLine{31 \};}
+\DoxyCodeLine{32 }
+\DoxyCodeLine{33 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// CRYSINFO\_H}}
+
+\end{DoxyCode}

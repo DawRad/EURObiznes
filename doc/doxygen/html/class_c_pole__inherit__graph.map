@@ -1,0 +1,9 @@
+<map id="CPole" name="CPole">
+<area shape="rect" id="node1" title="Klasa logiki." alt="" coords="230,5,287,32"/>
+<area shape="rect" id="node2" href="$class_c_pole_do_wiezienia.html" title="Klasa logiki." alt="" coords="5,80,136,107"/>
+<area shape="rect" id="node3" href="$class_c_pole_kasa.html" title="Klasa logiki." alt="" coords="161,80,247,107"/>
+<area shape="rect" id="node4" href="$class_c_pole_spec.html" title="Klasa logiki." alt="" coords="271,80,358,107"/>
+<area shape="rect" id="node7" href="$class_c_pole_szansa.html" title="Klasa logiki." alt="" coords="383,80,484,107"/>
+<area shape="rect" id="node5" href="$class_c_pole_ekstra.html" title="Klasa logiki." alt="" coords="210,155,305,181"/>
+<area shape="rect" id="node6" href="$class_c_pole_stnd.html" title="Klasa logiki." alt="" coords="329,155,413,181"/>
+</map>

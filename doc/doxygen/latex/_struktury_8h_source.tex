@@ -1,0 +1,90 @@
+\hypertarget{_struktury_8h_source}{}\doxysection{Struktury.\+h}
+\label{_struktury_8h_source}\index{G:/Folder\_Dawida/Prace\_me/Git/DawRad-\/projekty/EURObiznes/EURObiznes/Logika\_h/Struktury.h@{G:/Folder\_Dawida/Prace\_me/Git/DawRad-\/projekty/EURObiznes/EURObiznes/Logika\_h/Struktury.h}}
+\mbox{\hyperlink{_struktury_8h}{Idź do dokumentacji tego pliku.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef STRUKTURY\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define STRUKTURY\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <deque>}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 \textcolor{keyword}{using} std::deque;}
+\DoxyCodeLine{8 \textcolor{keyword}{using} std::string;}
+\DoxyCodeLine{9 }
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 }
+\DoxyCodeLine{13 }
+\DoxyCodeLine{19 \textcolor{keyword}{struct }\mbox{\hyperlink{struct_s_head_and_data}{SHeadAndData}}}
+\DoxyCodeLine{20 \{}
+\DoxyCodeLine{21     \textcolor{keywordtype}{string} \mbox{\hyperlink{struct_s_head_and_data_a51cbf139eddeabc301c485126b3c9ad2}{header}};}
+\DoxyCodeLine{22     \textcolor{keywordtype}{string} \mbox{\hyperlink{struct_s_head_and_data_a87a993bf7eec80bce5d6d914a9e0415b}{data}};}
+\DoxyCodeLine{23 \};}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{25 }
+\DoxyCodeLine{26 }
+\DoxyCodeLine{27 }
+\DoxyCodeLine{28 }
+\DoxyCodeLine{32 \textcolor{keyword}{struct }\mbox{\hyperlink{struct_s_dn_gracza}{SDnGracza}}}
+\DoxyCodeLine{33 \{}
+\DoxyCodeLine{34     \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_s_dn_gracza_a264c27c7ecc7dc8d614f992373c9e48f}{id}};}
+\DoxyCodeLine{35     \textcolor{keywordtype}{string} \mbox{\hyperlink{struct_s_dn_gracza_ab5032cf090a2f461386311a22280ae99}{rodz}};}
+\DoxyCodeLine{36     \textcolor{keywordtype}{string} \mbox{\hyperlink{struct_s_dn_gracza_ac262cd90f8f4f8f069222ee011e0b80b}{nick}};}
+\DoxyCodeLine{37     \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_s_dn_gracza_a450f832665eda92e968a8f242b258e2c}{portfel}};}
+\DoxyCodeLine{38     \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_s_dn_gracza_a50f6ea02680ad3719c0e2ef339977182}{lbKolorow}};                      \textcolor{comment}{// pole wskazuje, ile jest kolorów (regionów) pól klasy CPoleStnd}}
+\DoxyCodeLine{39     \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_s_dn_gracza_a31b092fcf5b717cd16480964bfbe7c9f}{lbKartWolnosc}};}
+\DoxyCodeLine{40     \textcolor{comment}{// -\/-\/-\/-\/-\/> to be continued...}}
+\DoxyCodeLine{41 \};}
+\DoxyCodeLine{42 }
+\DoxyCodeLine{43 }
+\DoxyCodeLine{44 }
+\DoxyCodeLine{45 }
+\DoxyCodeLine{46 }
+\DoxyCodeLine{50 \textcolor{keyword}{struct }\mbox{\hyperlink{struct_s_dn_karty}{SDnKarty}}}
+\DoxyCodeLine{51 \{}
+\DoxyCodeLine{52     \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_s_dn_karty_a51fbdef1085a00fd3609e9a6a56f698d}{rodzaj}};}
+\DoxyCodeLine{53     \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_s_dn_karty_a1ff7293cc9477615a8cf265ac04f4ce5}{nr}};}
+\DoxyCodeLine{54     \textcolor{keywordtype}{string} \mbox{\hyperlink{struct_s_dn_karty_a105dc3730d70693e083b81c1d252b740}{tresc}};}
+\DoxyCodeLine{55     \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_s_dn_karty_a7e0af3404da8e865eca8051c835eaba2}{wartosc}};}
+\DoxyCodeLine{56 \};}
+\DoxyCodeLine{57 }
+\DoxyCodeLine{58 }
+\DoxyCodeLine{59 }
+\DoxyCodeLine{60 }
+\DoxyCodeLine{61 }
+\DoxyCodeLine{65 \textcolor{keyword}{struct }\mbox{\hyperlink{struct_s_dn_pocz_pola}{SDnPoczPola}}}
+\DoxyCodeLine{66 \{}
+\DoxyCodeLine{67     \textcolor{keywordtype}{string} \mbox{\hyperlink{struct_s_dn_pocz_pola_ada4c0214af45598042444f6fb5098558}{nazwa}};}
+\DoxyCodeLine{68     \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_s_dn_pocz_pola_abf1cfb9e57d4a47e0ef9d73f475b607a}{poz}};}
+\DoxyCodeLine{69     \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_s_dn_pocz_pola_ab263ebad13e7269285bf982b326f3e51}{kwota}};}
+\DoxyCodeLine{70     \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_s_dn_pocz_pola_ae41ccec7aa962a8bf615661cc9156904}{czynsz}};}
+\DoxyCodeLine{71 }
+\DoxyCodeLine{72     \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_s_dn_pocz_pola_af713d8d7ee36010707b10e0fc6463101}{hipoteka}};}
+\DoxyCodeLine{73 }
+\DoxyCodeLine{74     \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_s_dn_pocz_pola_ac0cd547b6d953554ad507443203d1abb}{cenaAp}};}
+\DoxyCodeLine{75     \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_s_dn_pocz_pola_a5ecdcdfc69668ae7d759a684e2a27f10}{cenaHot}};}
+\DoxyCodeLine{76     \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_s_dn_pocz_pola_ab049ae23cf13d2eeb3cd222b6d033f41}{kolor}};}
+\DoxyCodeLine{77 \};}
+\DoxyCodeLine{78 }
+\DoxyCodeLine{84 \textcolor{keyword}{struct }\mbox{\hyperlink{struct_s_dn_pola}{SDnPola}}}
+\DoxyCodeLine{85 \{}
+\DoxyCodeLine{86     \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_s_dn_pola_a1dbf75410c5245a305a11841d5c74484}{rodz}};}
+\DoxyCodeLine{87     \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_s_dn_pola_ad0f0b77415612289c8b05afc3c8234c0}{poz}};}
+\DoxyCodeLine{88     deque<SHeadAndData> \mbox{\hyperlink{struct_s_dn_pola_a0187166acf5aeeb362aabd7b0d0268f9}{atrybuty}};}
+\DoxyCodeLine{89 \};}
+\DoxyCodeLine{90 }
+\DoxyCodeLine{101 \textcolor{keyword}{struct }\mbox{\hyperlink{struct_s_wyn_akcji}{SWynAkcji}}}
+\DoxyCodeLine{102 \{}
+\DoxyCodeLine{103     \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_s_wyn_akcji_af4f719af14df7f07431de76741de165d}{y1}};}
+\DoxyCodeLine{104     \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_s_wyn_akcji_a63a87925129557da5bae70bd284aa99c}{y2}};}
+\DoxyCodeLine{105 \};}
+\DoxyCodeLine{106 }
+\DoxyCodeLine{111 \textcolor{keyword}{struct }\mbox{\hyperlink{struct_s_parsed_elem}{SParsedElem}}}
+\DoxyCodeLine{112 \{}
+\DoxyCodeLine{113     \textcolor{keywordtype}{string} \mbox{\hyperlink{struct_s_parsed_elem_a529ab67b032902479d41d2bec6966e4c}{header}};}
+\DoxyCodeLine{114     \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_s_parsed_elem_ab17fd50cf9a50e93e97c845b08e6eca5}{pocz}};   }
+\DoxyCodeLine{115 \};}
+\DoxyCodeLine{116 }
+\DoxyCodeLine{117 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// STRUKTURY\_H}}
+
+\end{DoxyCode}

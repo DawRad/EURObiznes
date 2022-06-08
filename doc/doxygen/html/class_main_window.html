@@ -1,0 +1,791 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.3"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>EURObiznes: Dokumentacja klasy MainWindow</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">EURObiznes
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.9.3 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'Szukaj','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Metody publiczne</a> &#124;
+<a href="#pri-slots">Sloty prywatne</a> &#124;
+<a href="#pri-methods">Metody prywatne</a> &#124;
+<a href="#pri-attribs">Atrybuty prywatne</a> &#124;
+<a href="class_main_window-members.html">Lista wszystkich składowych</a>  </div>
+  <div class="headertitle"><div class="title">Dokumentacja klasy MainWindow</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Klasa graficzna - okno główne.  
+ <a href="class_main_window.html#details">Więcej...</a></p>
+
+<p><code>#include &lt;<a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>&gt;</code></p>
+<div class="dynheader">
+Diagram dziedziczenia dla MainWindow</div>
+<div class="dyncontent">
+<div class="center"><img src="class_main_window__inherit__graph.png" border="0" usemap="#a_main_window_inherit__map" alt="Inheritance graph"/></div>
+<map name="a_main_window_inherit__map" id="a_main_window_inherit__map">
+<area shape="rect" title="Klasa graficzna &#45; okno główne." alt="" coords="11,80,107,107"/>
+<area shape="rect" title=" " alt="" coords="5,5,112,32"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">legenda</a>]</span></center></div>
+<div class="dynheader">
+Diagram współpracy dla MainWindow:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_main_window__coll__graph.png" border="0" usemap="#a_main_window_coll__map" alt="Collaboration graph"/></div>
+<map name="a_main_window_coll__map" id="a_main_window_coll__map">
+<area shape="rect" title="Klasa graficzna &#45; okno główne." alt="" coords="1423,372,1519,399"/>
+<area shape="rect" title=" " alt="" coords="579,733,685,760"/>
+<area shape="rect" href="class_n_g_gracze.html" title="Klasa graficzna &#45; okno graczy." alt="" coords="901,853,983,880"/>
+<area shape="rect" href="class_n_g_plansza.html" title="Klasa graficzna &#45; okno planszy." alt="" coords="898,271,986,297"/>
+<area shape="rect" href="class_rozgrywka.html" title="Klasa graficzna &#45; okno rozgrywki." alt="" coords="1179,560,1266,587"/>
+<area shape="rect" href="class_wlasnosci.html" title="Klasa graficzna &#45; okno własności." alt="" coords="901,436,983,463"/>
+<area shape="rect" href="class_n_g_ogolne.html" title="Klasa graficzna &#45; okno ustawień ogólnych." alt="" coords="901,89,983,116"/>
+<area shape="rect" title=" " alt="" coords="598,5,666,32"/>
+<area shape="rect" href="class_c_game.html" title="Klasa logiki." alt="" coords="599,289,665,316"/>
+<area shape="rect" title=" " alt="" coords="259,265,393,292"/>
+<area shape="rect" href="class_c_plansza.html" title="Klasa logiki." alt="" coords="287,316,365,343"/>
+<area shape="rect" title=" " alt="" coords="5,376,136,403"/>
+<area shape="rect" title=" " alt="" coords="8,265,133,292"/>
+<area shape="rect" title=" " alt="" coords="14,316,127,343"/>
+<area shape="rect" title=" " alt="" coords="551,1092,713,1119"/>
+<area shape="rect" href="class_c_rys_pionek.html" title="Klasa graficzna." alt="" coords="585,912,679,939"/>
+<area shape="rect" href="class_c_rys_panel_gracza.html" title="Klasa graficzna." alt="" coords="877,952,1007,979"/>
+<area shape="rect" href="class_c_rys.html" title="Klasa graficzna." alt="" coords="299,912,353,939"/>
+<area shape="rect" href="class_c_rys_info.html" title="Klasa graficzna." alt="" coords="751,683,825,709"/>
+<area shape="rect" title=" " alt="" coords="16,912,125,939"/>
+<area shape="rect" href="class_c_nadawca.html" title="Klasa graficzna." alt="" coords="284,584,368,611"/>
+<area shape="rect" title=" " alt="" coords="35,604,106,631"/>
+<area shape="rect" title=" " alt="" coords="43,535,98,561"/>
+<area shape="rect" href="struct_s_dn_karty.html" title="Struktura przechowująca dane karty." alt="" coords="433,515,511,541"/>
+<area shape="rect" title=" " alt="" coords="585,861,679,888"/>
+<area shape="rect" title=" " alt="" coords="558,119,706,145"/>
+<area shape="rect" title=" " alt="" coords="863,724,1021,751"/>
+<area shape="rect" title=" " alt="" coords="566,436,698,463"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">legenda</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Metody publiczne</h2></td></tr>
+<tr class="memitem:a996c5a2b6f77944776856f08ec30858d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#a996c5a2b6f77944776856f08ec30858d">MainWindow</a> (QWidget *parent=nullptr)</td></tr>
+<tr class="separator:a996c5a2b6f77944776856f08ec30858d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae98d00a93bc118200eeef9f9bba1dba7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#ae98d00a93bc118200eeef9f9bba1dba7">~MainWindow</a> ()</td></tr>
+<tr class="separator:ae98d00a93bc118200eeef9f9bba1dba7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b6a7f39d9e39ce7310228b7c91e1d14"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#a0b6a7f39d9e39ce7310228b7c91e1d14">utworzRysPol</a> (deque&lt; <a class="el" href="struct_s_dn_pola.html">SDnPola</a> &gt; *danePol)</td></tr>
+<tr class="memdesc:a0b6a7f39d9e39ce7310228b7c91e1d14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tworzy rysunki pól na podstawie kolejki danych pobranych z pola gra_.  <a href="class_main_window.html#a0b6a7f39d9e39ce7310228b7c91e1d14">Więcej...</a><br /></td></tr>
+<tr class="separator:a0b6a7f39d9e39ce7310228b7c91e1d14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-slots" name="pri-slots"></a>
+Sloty prywatne</h2></td></tr>
+<tr class="memitem:a290e05b4f1e371dc31289500383e660e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#a290e05b4f1e371dc31289500383e660e">on_pbNowaGra_clicked</a> ()</td></tr>
+<tr class="separator:a290e05b4f1e371dc31289500383e660e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a397e8903fb4f660d6b3359de3b2b8a5f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#a397e8903fb4f660d6b3359de3b2b8a5f">pokazSie</a> ()</td></tr>
+<tr class="separator:a397e8903fb4f660d6b3359de3b2b8a5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d8095cbc91e97e88fa781ce57f5bc7c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#a1d8095cbc91e97e88fa781ce57f5bc7c">oknoOgolneDalej</a> (int kwota)</td></tr>
+<tr class="separator:a1d8095cbc91e97e88fa781ce57f5bc7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae74dfdb3d54588cf9f344819a55dac19"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#ae74dfdb3d54588cf9f344819a55dac19">oknoGraczyWstecz</a> ()</td></tr>
+<tr class="separator:ae74dfdb3d54588cf9f344819a55dac19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabd411c2dde2a41607c10cc3b66f4331"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#aabd411c2dde2a41607c10cc3b66f4331">oknoGraczyDalej</a> ()</td></tr>
+<tr class="separator:aabd411c2dde2a41607c10cc3b66f4331"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1672749edf8e189904b432758c1bba8f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#a1672749edf8e189904b432758c1bba8f">oknoPlanszyGraj</a> ()</td></tr>
+<tr class="separator:a1672749edf8e189904b432758c1bba8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Metody prywatne</h2></td></tr>
+<tr class="memitem:ac77aa3236f1618b2c2b31c2fc037a0a6"><td class="memItemLeft" align="right" valign="top">deque&lt; string &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#ac77aa3236f1618b2c2b31c2fc037a0a6">pobierzDanePolZPliku</a> (QString nazPli)</td></tr>
+<tr class="separator:ac77aa3236f1618b2c2b31c2fc037a0a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd4102eb3303d77a875151bdfacd8c8d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#abd4102eb3303d77a875151bdfacd8c8d">czyszczenieDeques</a> ()</td></tr>
+<tr class="separator:abd4102eb3303d77a875151bdfacd8c8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Atrybuty prywatne</h2></td></tr>
+<tr class="memitem:a35466a70ed47252a0191168126a352a5"><td class="memItemLeft" align="right" valign="top">Ui::MainWindow *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#a35466a70ed47252a0191168126a352a5">ui</a></td></tr>
+<tr class="separator:a35466a70ed47252a0191168126a352a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a456a303910451c11bceff6ba6a083e8e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_n_g_ogolne.html">NGOgolne</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#a456a303910451c11bceff6ba6a083e8e">nowaGraOgolne_</a></td></tr>
+<tr class="separator:a456a303910451c11bceff6ba6a083e8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30e08e0d280740ec646ce4976ac435f6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_n_g_gracze.html">NGGracze</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#a30e08e0d280740ec646ce4976ac435f6">oknoGraczy_</a></td></tr>
+<tr class="separator:a30e08e0d280740ec646ce4976ac435f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c274458f704310dad16018884ae1cbf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_n_g_plansza.html">NGPlansza</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#a6c274458f704310dad16018884ae1cbf">oknoPlanszy_</a></td></tr>
+<tr class="separator:a6c274458f704310dad16018884ae1cbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58882ee61177283b839f0e0383d17d59"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_rozgrywka.html">Rozgrywka</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#a58882ee61177283b839f0e0383d17d59">oknoRozgrywki_</a></td></tr>
+<tr class="separator:a58882ee61177283b839f0e0383d17d59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cea39100fcc505ee1eaa515b5ab812d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_game.html">CGame</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#a3cea39100fcc505ee1eaa515b5ab812d">gra_</a></td></tr>
+<tr class="separator:a3cea39100fcc505ee1eaa515b5ab812d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c49f456d06576552a0ac512e973c70a"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#a5c49f456d06576552a0ac512e973c70a">waluta_</a></td></tr>
+<tr class="separator:a5c49f456d06576552a0ac512e973c70a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e1f8583b42f5f9e5764f9437f86df7b"><td class="memItemLeft" align="right" valign="top">QTimer *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#a8e1f8583b42f5f9e5764f9437f86df7b">zegarmistrzSwiatla_</a></td></tr>
+<tr class="separator:a8e1f8583b42f5f9e5764f9437f86df7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a65196ed028ca816439e29e444a11d3"><td class="memItemLeft" align="right" valign="top">deque&lt; <a class="el" href="class_c_rys_pionek.html">CRysPionek</a> * &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#a4a65196ed028ca816439e29e444a11d3">pionki_</a></td></tr>
+<tr class="separator:a4a65196ed028ca816439e29e444a11d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7acf3386e2fe06df47190ff7f6cf1d29"><td class="memItemLeft" align="right" valign="top">deque&lt; <a class="el" href="class_c_rys_pole.html">CRysPole</a> * &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#a7acf3386e2fe06df47190ff7f6cf1d29">pola_</a></td></tr>
+<tr class="separator:a7acf3386e2fe06df47190ff7f6cf1d29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6035856cf2aea7321b89621100b46fc0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#a6035856cf2aea7321b89621100b46fc0">oknoOgolneCrtd_</a></td></tr>
+<tr class="separator:a6035856cf2aea7321b89621100b46fc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a2818a72df60c50da11c8c757d19e27"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#a7a2818a72df60c50da11c8c757d19e27">oknoGraczCrtd_</a></td></tr>
+<tr class="separator:a7a2818a72df60c50da11c8c757d19e27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45ea15c48178744f3087c5523dc51140"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#a45ea15c48178744f3087c5523dc51140">oknoPlanszyCrtd_</a></td></tr>
+<tr class="separator:a45ea15c48178744f3087c5523dc51140"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20163c660618393c75d47de9253e8a6f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#a20163c660618393c75d47de9253e8a6f">oknoRozgrywkiCrtd_</a></td></tr>
+<tr class="separator:a20163c660618393c75d47de9253e8a6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49ca24b5ae1e26523eee4d8125ce4d75"><td class="memItemLeft" align="right" valign="top">bool *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#a49ca24b5ae1e26523eee4d8125ce4d75">endGame_</a></td></tr>
+<tr class="separator:a49ca24b5ae1e26523eee4d8125ce4d75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Opis szczegółowy</h2>
+<div class="textblock"><p >Klasa graficzna - okno główne. </p>
+</div><h2 class="groupheader">Dokumentacja konstruktora i destruktora</h2>
+<a id="a996c5a2b6f77944776856f08ec30858d" name="a996c5a2b6f77944776856f08ec30858d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a996c5a2b6f77944776856f08ec30858d">&#9670;&nbsp;</a></span>MainWindow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MainWindow::MainWindow </td>
+          <td>(</td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>nullptr</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae98d00a93bc118200eeef9f9bba1dba7" name="ae98d00a93bc118200eeef9f9bba1dba7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae98d00a93bc118200eeef9f9bba1dba7">&#9670;&nbsp;</a></span>~MainWindow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MainWindow::~MainWindow </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentacja funkcji składowych</h2>
+<a id="abd4102eb3303d77a875151bdfacd8c8d" name="abd4102eb3303d77a875151bdfacd8c8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd4102eb3303d77a875151bdfacd8c8d">&#9670;&nbsp;</a></span>czyszczenieDeques()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindow::czyszczenieDeques </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aabd411c2dde2a41607c10cc3b66f4331" name="aabd411c2dde2a41607c10cc3b66f4331"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aabd411c2dde2a41607c10cc3b66f4331">&#9670;&nbsp;</a></span>oknoGraczyDalej</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindow::oknoGraczyDalej </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae74dfdb3d54588cf9f344819a55dac19" name="ae74dfdb3d54588cf9f344819a55dac19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae74dfdb3d54588cf9f344819a55dac19">&#9670;&nbsp;</a></span>oknoGraczyWstecz</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindow::oknoGraczyWstecz </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1d8095cbc91e97e88fa781ce57f5bc7c" name="a1d8095cbc91e97e88fa781ce57f5bc7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d8095cbc91e97e88fa781ce57f5bc7c">&#9670;&nbsp;</a></span>oknoOgolneDalej</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindow::oknoOgolneDalej </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>kwota</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1672749edf8e189904b432758c1bba8f" name="a1672749edf8e189904b432758c1bba8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1672749edf8e189904b432758c1bba8f">&#9670;&nbsp;</a></span>oknoPlanszyGraj</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindow::oknoPlanszyGraj </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a290e05b4f1e371dc31289500383e660e" name="a290e05b4f1e371dc31289500383e660e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a290e05b4f1e371dc31289500383e660e">&#9670;&nbsp;</a></span>on_pbNowaGra_clicked</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindow::on_pbNowaGra_clicked </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac77aa3236f1618b2c2b31c2fc037a0a6" name="ac77aa3236f1618b2c2b31c2fc037a0a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac77aa3236f1618b2c2b31c2fc037a0a6">&#9670;&nbsp;</a></span>pobierzDanePolZPliku()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">deque&lt; string &gt; * MainWindow::pobierzDanePolZPliku </td>
+          <td>(</td>
+          <td class="paramtype">QString&#160;</td>
+          <td class="paramname"><em>nazPli</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a397e8903fb4f660d6b3359de3b2b8a5f" name="a397e8903fb4f660d6b3359de3b2b8a5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a397e8903fb4f660d6b3359de3b2b8a5f">&#9670;&nbsp;</a></span>pokazSie</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindow::pokazSie </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0b6a7f39d9e39ce7310228b7c91e1d14" name="a0b6a7f39d9e39ce7310228b7c91e1d14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b6a7f39d9e39ce7310228b7c91e1d14">&#9670;&nbsp;</a></span>utworzRysPol()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindow::utworzRysPol </td>
+          <td>(</td>
+          <td class="paramtype">deque&lt; <a class="el" href="struct_s_dn_pola.html">SDnPola</a> &gt; *&#160;</td>
+          <td class="paramname"><em>danePol</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Tworzy rysunki pól na podstawie kolejki danych pobranych z pola gra_. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentacja atrybutów składowych</h2>
+<a id="a49ca24b5ae1e26523eee4d8125ce4d75" name="a49ca24b5ae1e26523eee4d8125ce4d75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49ca24b5ae1e26523eee4d8125ce4d75">&#9670;&nbsp;</a></span>endGame_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool* MainWindow::endGame_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3cea39100fcc505ee1eaa515b5ab812d" name="a3cea39100fcc505ee1eaa515b5ab812d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3cea39100fcc505ee1eaa515b5ab812d">&#9670;&nbsp;</a></span>gra_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_game.html">CGame</a>* MainWindow::gra_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a456a303910451c11bceff6ba6a083e8e" name="a456a303910451c11bceff6ba6a083e8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a456a303910451c11bceff6ba6a083e8e">&#9670;&nbsp;</a></span>nowaGraOgolne_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_n_g_ogolne.html">NGOgolne</a>* MainWindow::nowaGraOgolne_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7a2818a72df60c50da11c8c757d19e27" name="a7a2818a72df60c50da11c8c757d19e27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a2818a72df60c50da11c8c757d19e27">&#9670;&nbsp;</a></span>oknoGraczCrtd_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MainWindow::oknoGraczCrtd_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a30e08e0d280740ec646ce4976ac435f6" name="a30e08e0d280740ec646ce4976ac435f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30e08e0d280740ec646ce4976ac435f6">&#9670;&nbsp;</a></span>oknoGraczy_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_n_g_gracze.html">NGGracze</a>* MainWindow::oknoGraczy_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6035856cf2aea7321b89621100b46fc0" name="a6035856cf2aea7321b89621100b46fc0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6035856cf2aea7321b89621100b46fc0">&#9670;&nbsp;</a></span>oknoOgolneCrtd_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MainWindow::oknoOgolneCrtd_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6c274458f704310dad16018884ae1cbf" name="a6c274458f704310dad16018884ae1cbf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c274458f704310dad16018884ae1cbf">&#9670;&nbsp;</a></span>oknoPlanszy_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_n_g_plansza.html">NGPlansza</a>* MainWindow::oknoPlanszy_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a45ea15c48178744f3087c5523dc51140" name="a45ea15c48178744f3087c5523dc51140"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45ea15c48178744f3087c5523dc51140">&#9670;&nbsp;</a></span>oknoPlanszyCrtd_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MainWindow::oknoPlanszyCrtd_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a58882ee61177283b839f0e0383d17d59" name="a58882ee61177283b839f0e0383d17d59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58882ee61177283b839f0e0383d17d59">&#9670;&nbsp;</a></span>oknoRozgrywki_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_rozgrywka.html">Rozgrywka</a>* MainWindow::oknoRozgrywki_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a20163c660618393c75d47de9253e8a6f" name="a20163c660618393c75d47de9253e8a6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20163c660618393c75d47de9253e8a6f">&#9670;&nbsp;</a></span>oknoRozgrywkiCrtd_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MainWindow::oknoRozgrywkiCrtd_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4a65196ed028ca816439e29e444a11d3" name="a4a65196ed028ca816439e29e444a11d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a65196ed028ca816439e29e444a11d3">&#9670;&nbsp;</a></span>pionki_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">deque&lt;<a class="el" href="class_c_rys_pionek.html">CRysPionek</a> *&gt;* MainWindow::pionki_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7acf3386e2fe06df47190ff7f6cf1d29" name="a7acf3386e2fe06df47190ff7f6cf1d29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7acf3386e2fe06df47190ff7f6cf1d29">&#9670;&nbsp;</a></span>pola_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">deque&lt;<a class="el" href="class_c_rys_pole.html">CRysPole</a> *&gt;* MainWindow::pola_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a35466a70ed47252a0191168126a352a5" name="a35466a70ed47252a0191168126a352a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35466a70ed47252a0191168126a352a5">&#9670;&nbsp;</a></span>ui</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Ui::MainWindow* MainWindow::ui</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5c49f456d06576552a0ac512e973c70a" name="a5c49f456d06576552a0ac512e973c70a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c49f456d06576552a0ac512e973c70a">&#9670;&nbsp;</a></span>waluta_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString MainWindow::waluta_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8e1f8583b42f5f9e5764f9437f86df7b" name="a8e1f8583b42f5f9e5764f9437f86df7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e1f8583b42f5f9e5764f9437f86df7b">&#9670;&nbsp;</a></span>zegarmistrzSwiatla_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QTimer* MainWindow::zegarmistrzSwiatla_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>Dokumentacja dla tej klasy została wygenerowana z plików:<ul>
+<li>G:/Folder_Dawida/Prace_me/Git/DawRad-projekty/EURObiznes/EURObiznes/<a class="el" href="mainwindow_8h_source.html">mainwindow.h</a></li>
+<li>G:/Folder_Dawida/Prace_me/Git/DawRad-projekty/EURObiznes/EURObiznes/<a class="el" href="mainwindow_8cpp.html">mainwindow.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3
+</small></address>
+</body>
+</html>

@@ -1,0 +1,130 @@
+\hypertarget{cgame_8h_source}{}\doxysection{cgame.\+h}
+\label{cgame_8h_source}\index{G:/Folder\_Dawida/Prace\_me/Git/DawRad-\/projekty/EURObiznes/EURObiznes/Logika\_h/cgame.h@{G:/Folder\_Dawida/Prace\_me/Git/DawRad-\/projekty/EURObiznes/EURObiznes/Logika\_h/cgame.h}}
+\mbox{\hyperlink{cgame_8h}{Idź do dokumentacji tego pliku.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef CGAME\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define CGAME\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <fstream>}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{cgracz_8h}{Logika\_h/cgracz.h}}"{}}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{cplansza_8h}{Logika\_h/cplansza.h}}"{}}}
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9 \textcolor{keyword}{using} std::ifstream;}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 }
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14 }
+\DoxyCodeLine{31 \textcolor{keyword}{class }\mbox{\hyperlink{class_c_game}{CGame}}}
+\DoxyCodeLine{32 \{}
+\DoxyCodeLine{33 \textcolor{keyword}{private}:}
+\DoxyCodeLine{35     \textcolor{keywordtype}{int} *\mbox{\hyperlink{class_c_game_a5cb3ad3b9351bc39c09cbaa590aedcd8}{kwotaPocz\_}};}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{38     \textcolor{keywordtype}{int} *\mbox{\hyperlink{class_c_game_aa7f1fb6e09cbc50ca5aad83ce360be59}{lbGraczy\_}};}
+\DoxyCodeLine{39 }
+\DoxyCodeLine{41     deque <CGracz*> \mbox{\hyperlink{class_c_game_abcf0ef76da9ea193f034a803a4d6b847}{gracze\_}};    }
+\DoxyCodeLine{42 }
+\DoxyCodeLine{44     \mbox{\hyperlink{class_c_plansza}{CPlansza}} *\mbox{\hyperlink{class_c_game_a6e57db266bafa5e54fd465a5ef013f1d}{plansza\_}};}
+\DoxyCodeLine{45 }
+\DoxyCodeLine{47     deque<CGracz*> \mbox{\hyperlink{class_c_game_a4a9bda4a50211a016659e24a2fb53944}{przegrani\_}};}
+\DoxyCodeLine{48 }
+\DoxyCodeLine{49     \textcolor{comment}{// -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/}}
+\DoxyCodeLine{50 \textcolor{keyword}{public}:}
+\DoxyCodeLine{51     \mbox{\hyperlink{class_c_game_aa0b28c798a6198998d018047e96f188e}{CGame}}();}
+\DoxyCodeLine{52     \mbox{\hyperlink{class_c_game_a4db10c09035dc16b32d6c1ef4cca2143}{\string~CGame}}();}
+\DoxyCodeLine{53 }
+\DoxyCodeLine{60     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_game_a38228fb3b10079766f1d5a533528bc31}{utworzGre}}(\textcolor{keywordtype}{int} lbGraczy, \textcolor{keywordtype}{int} kwotaPocz, \textcolor{keywordtype}{int} pensja);}
+\DoxyCodeLine{61 }
+\DoxyCodeLine{67     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_game_a38228fb3b10079766f1d5a533528bc31}{utworzGre}}(\textcolor{keywordtype}{int} kwotaPocz, \textcolor{keywordtype}{int} pensja);}
+\DoxyCodeLine{68 }
+\DoxyCodeLine{69     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_game_a3469da271e1c8c6e3600682aab561f49}{wczytajPolaZPliku}}(\textcolor{keywordtype}{string} nazPli);}
+\DoxyCodeLine{70 }
+\DoxyCodeLine{78     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_game_a3469da271e1c8c6e3600682aab561f49}{wczytajPolaZPliku}}(deque<string> \&daneZPliku);}
+\DoxyCodeLine{79 }
+\DoxyCodeLine{87     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_game_a0afef1139fd2e4b84471cb46321b9761}{wczytajKartyZPliku}}(deque<string> \&daneZPliku);}
+\DoxyCodeLine{88 }
+\DoxyCodeLine{94     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_game_a53418824373b71f6fd0989d97b3ae574}{utworzCz}}(\mbox{\hyperlink{struct_s_dn_gracza}{SDnGracza}} dane);}
+\DoxyCodeLine{95 }
+\DoxyCodeLine{100     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_game_ad94b944f75198ed086ee18689985440f}{utworzKomp}}(\mbox{\hyperlink{struct_s_dn_gracza}{SDnGracza}} dane);}
+\DoxyCodeLine{101 }
+\DoxyCodeLine{106     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_game_ab37ac0feebf0894058f4fb4479827f37}{aktualDnPocz}}(\textcolor{keywordtype}{int} kwotaPocz, \textcolor{keywordtype}{int} pensja);}
+\DoxyCodeLine{107 }
+\DoxyCodeLine{111     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_game_adb96371709d348d0195be07e5056e308}{utworzKolejke}}();}
+\DoxyCodeLine{112 }
+\DoxyCodeLine{117     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_c_game_af59696350022bfe49ee1dafad4138402}{wypelnienieKolejkiGraczy}}();}
+\DoxyCodeLine{118 }
+\DoxyCodeLine{133     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_game_a6098f3eaeb3715f1219637b739c451a0}{nowePole}}(\textcolor{keywordtype}{int} rodz, \mbox{\hyperlink{struct_s_dn_pocz_pola}{SDnPoczPola}} dane);}
+\DoxyCodeLine{134 }
+\DoxyCodeLine{140     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_game_abf51ead5ecb1bacd973a56c20b92b595}{nastepny}}();}
+\DoxyCodeLine{141 }
+\DoxyCodeLine{151     \textcolor{keywordtype}{string} \mbox{\hyperlink{class_c_game_aa4cd55046e53c47a1cad85f33db0df71}{identGracza}}();}
+\DoxyCodeLine{152 }
+\DoxyCodeLine{161     \textcolor{keywordtype}{string} \mbox{\hyperlink{class_c_game_aa4cd55046e53c47a1cad85f33db0df71}{identGracza}}(\textcolor{keywordtype}{int} parId);}
+\DoxyCodeLine{162 }
+\DoxyCodeLine{168     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_c_game_a998efefb1240bd9be7f997e247628e9d}{czyOstatniGrajacy}}();}
+\DoxyCodeLine{169 }
+\DoxyCodeLine{175     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_c_game_a5f68665f45551be71441bc4d7fd0c3dd}{czyPierwszyZKolejki}}();}
+\DoxyCodeLine{176 }
+\DoxyCodeLine{181     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_c_game_a29dc964260aa8a8efdbb15bb568557c6}{czyUwieziony}}();}
+\DoxyCodeLine{182 }
+\DoxyCodeLine{187     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_c_game_acac8904eef895966eee4b746adff509c}{czyGraczMaKartyWolnosc}}();}
+\DoxyCodeLine{188 }
+\DoxyCodeLine{195     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_c_game_a3e34c8cd8e8667f1a81c7e1f1c3efdea}{czyGraczaStacNaZakupPola}}();}
+\DoxyCodeLine{196 }
+\DoxyCodeLine{203     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_c_game_a1f79066173b017e7b7ff5ba8b11db432}{czyGraczaStacNaCzynsz}}();}
+\DoxyCodeLine{204 }
+\DoxyCodeLine{211     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_c_game_a38742f1c27a9568cd0a3079c989ee3a9}{czyGraczaStacNaZaplate}}(\textcolor{keywordtype}{int} kwota);}
+\DoxyCodeLine{212 }
+\DoxyCodeLine{221     \mbox{\hyperlink{struct_s_wyn_akcji}{SWynAkcji}} \mbox{\hyperlink{class_c_game_aa944341900f27c8c9d7c33a429a76adf}{graczStajeNaPolu}}();}
+\DoxyCodeLine{222 }
+\DoxyCodeLine{233     \mbox{\hyperlink{struct_s_wyn_akcji}{SWynAkcji}} \mbox{\hyperlink{class_c_game_aa944341900f27c8c9d7c33a429a76adf}{graczStajeNaPolu}}(\textcolor{keywordtype}{int} poz);}
+\DoxyCodeLine{234 }
+\DoxyCodeLine{243     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_game_a15e5b151bbecbcc2f2ec90449125122d}{graczZmieniaPole}}(\textcolor{keywordtype}{int} lbKrokow);}
+\DoxyCodeLine{244 }
+\DoxyCodeLine{245     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_game_a0a00ad1edce403beee4d8d0f8788b4d0}{graczDecyduje}}(\mbox{\hyperlink{struct_s_wyn_akcji}{SWynAkcji}} wynik, \textcolor{keywordtype}{int} poz, \textcolor{keywordtype}{int} kolor);}
+\DoxyCodeLine{246 }
+\DoxyCodeLine{254     \mbox{\hyperlink{struct_s_wyn_akcji}{SWynAkcji}} \mbox{\hyperlink{class_c_game_ab6d4d8b6211e64255729390012d2ff43}{graczRzuca}}();}
+\DoxyCodeLine{255 }
+\DoxyCodeLine{261     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_game_a2335f1b5a7dc6f7e2f901b6e6170069a}{graczKupuje}}();}
+\DoxyCodeLine{262 }
+\DoxyCodeLine{263     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_game_a84c1b45c94a79405eaff0daa8ca2679d}{graczBuduje}}(\textcolor{keywordtype}{int} poz);}
+\DoxyCodeLine{264     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_game_a80f87fccbad2d2f12ff26b8215ee84c5}{graczZastawia}}(\textcolor{keywordtype}{int} poz);}
+\DoxyCodeLine{265     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_game_ad4dfde0e6f15a9aa43f3263d552ff74e}{graczWykupuje}}(\textcolor{keywordtype}{int} poz);}
+\DoxyCodeLine{266     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_game_a1ce7cc14580bf19fd651062d2884e364}{graczPlaciCzynsz}}();}
+\DoxyCodeLine{267     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_game_ac3e5158976912ce2fb7b317736b9aeec}{graczZarabia}}(\textcolor{keywordtype}{int} kwota);}
+\DoxyCodeLine{268     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_game_a0b5f258f33616ffe9b325b1881f49b0f}{graczPobieraPensje}}();}
+\DoxyCodeLine{269     \mbox{\hyperlink{struct_s_dn_karty}{SDnKarty}} \mbox{\hyperlink{class_c_game_a6ee78730f269bccd87f948a67336054a}{graczLosujeKarte}}();}
+\DoxyCodeLine{270     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_game_a0f987e532b43002f2f080088e4911003}{graczUzywaKartyWolnosc}}();}
+\DoxyCodeLine{271     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_game_a3188f5004fd127f8ed6cbcbf3a39a76d}{aresztuj}}();}
+\DoxyCodeLine{272     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_game_aceaac78b632f6aa618ff53f8a1536a28}{uwolnij}}();}
+\DoxyCodeLine{273 }
+\DoxyCodeLine{278     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_c_game_a2e30c10176fe5f26c804d352d5e1b35a}{sprawdzPortfel}}();}
+\DoxyCodeLine{279 }
+\DoxyCodeLine{284     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_c_game_a2e30c10176fe5f26c804d352d5e1b35a}{sprawdzPortfel}}(\textcolor{keywordtype}{int} kwota);}
+\DoxyCodeLine{285 }
+\DoxyCodeLine{286     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_game_aad21d16721309771afd9a7e586133221}{podajKwotePocz}}();}
+\DoxyCodeLine{287 }
+\DoxyCodeLine{292     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_game_ac14b68f507e72a22a0211436680955c0}{podAktLbGraczy}}();}
+\DoxyCodeLine{293 }
+\DoxyCodeLine{294     \textcolor{keywordtype}{string} \mbox{\hyperlink{class_c_game_a03e3991e7d9a90b19249aa9b9d3cac80}{podajWlascicielaPola}}(\textcolor{keywordtype}{int} poz);}
+\DoxyCodeLine{295     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_game_a4659da057c265162a42fe95d3bc3874e}{podajKontoGr}}();}
+\DoxyCodeLine{296     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_game_a0b36b7c355695836d26fe522e23ecf32}{podajLbKartWolnosc}}();}
+\DoxyCodeLine{297 }
+\DoxyCodeLine{303     \mbox{\hyperlink{struct_s_wyn_akcji}{SWynAkcji}} \mbox{\hyperlink{class_c_game_a41ab93657b4f7b97221066a79589c075}{podajPozGracza}}();}
+\DoxyCodeLine{304 }
+\DoxyCodeLine{305     \mbox{\hyperlink{struct_s_dn_gracza}{SDnGracza}} \mbox{\hyperlink{class_c_game_aaaa61e199e1eac55a3a77a18de9a7a03}{podajDaneGracza}}();}
+\DoxyCodeLine{306     deque<SDnPola> \mbox{\hyperlink{class_c_game_adcff55db0275f2c160bacd9065be2bcf}{podajDanePol}}();}
+\DoxyCodeLine{307     deque<SDnPola> \mbox{\hyperlink{class_c_game_a5985fcd23dc4069aea79d206c04e7df7}{podajDanePolGracza}}();}
+\DoxyCodeLine{308     \mbox{\hyperlink{struct_s_dn_pola}{SDnPola}} \mbox{\hyperlink{class_c_game_a9b2715864ceef92511912711e3b7175b}{podajDanePola}}(\textcolor{keywordtype}{int} poz);}
+\DoxyCodeLine{309 }
+\DoxyCodeLine{310     \textcolor{comment}{// -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/ -\/}}
+\DoxyCodeLine{311 \textcolor{keyword}{private}:}
+\DoxyCodeLine{312 }
+\DoxyCodeLine{319     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_game_a7d0efc37a09588c25fc71bb2246fc29a}{usunGraczy}}();}
+\DoxyCodeLine{320     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_game_a2881770af4e56b7ea5d914345b4e229a}{usunPrzegranych}}();}
+\DoxyCodeLine{321 \};}
+\DoxyCodeLine{322 }
+\DoxyCodeLine{323 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// CGAME\_H}}
+
+\end{DoxyCode}

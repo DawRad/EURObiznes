@@ -1,0 +1,824 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.3"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>EURObiznes: Dokumentacja klasy NGPlansza</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">EURObiznes
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.9.3 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'Szukaj','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#signals">Sygnały</a> &#124;
+<a href="#pub-methods">Metody publiczne</a> &#124;
+<a href="#pri-slots">Sloty prywatne</a> &#124;
+<a href="#pri-methods">Metody prywatne</a> &#124;
+<a href="#pri-attribs">Atrybuty prywatne</a> &#124;
+<a href="class_n_g_plansza-members.html">Lista wszystkich składowych</a>  </div>
+  <div class="headertitle"><div class="title">Dokumentacja klasy NGPlansza</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Klasa graficzna - okno planszy.  
+ <a href="class_n_g_plansza.html#details">Więcej...</a></p>
+
+<p><code>#include &lt;<a class="el" href="ngplansza_8h_source.html">ngplansza.h</a>&gt;</code></p>
+<div class="dynheader">
+Diagram dziedziczenia dla NGPlansza</div>
+<div class="dyncontent">
+<div class="center"><img src="class_n_g_plansza__inherit__graph.png" border="0" usemap="#a_n_g_plansza_inherit__map" alt="Inheritance graph"/></div>
+<map name="a_n_g_plansza_inherit__map" id="a_n_g_plansza_inherit__map">
+<area shape="rect" title="Klasa graficzna &#45; okno planszy." alt="" coords="15,80,103,107"/>
+<area shape="rect" title=" " alt="" coords="5,5,112,32"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">legenda</a>]</span></center></div>
+<div class="dynheader">
+Diagram współpracy dla NGPlansza:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_n_g_plansza__coll__graph.png" border="0" usemap="#a_n_g_plansza_coll__map" alt="Collaboration graph"/></div>
+<map name="a_n_g_plansza_coll__map" id="a_n_g_plansza_coll__map">
+<area shape="rect" title="Klasa graficzna &#45; okno planszy." alt="" coords="125,303,213,329"/>
+<area shape="rect" title=" " alt="" coords="5,213,112,240"/>
+<area shape="rect" href="class_c_game.html" title="Klasa logiki." alt="" coords="136,213,203,240"/>
+<area shape="rect" title=" " alt="" coords="46,109,181,136"/>
+<area shape="rect" href="class_c_plansza.html" title="Klasa logiki." alt="" coords="205,109,283,136"/>
+<area shape="rect" title=" " alt="" coords="27,5,157,32"/>
+<area shape="rect" title=" " alt="" coords="181,5,307,32"/>
+<area shape="rect" title=" " alt="" coords="331,5,445,32"/>
+<area shape="rect" title=" " alt="" coords="227,213,375,240"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">legenda</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="signals" name="signals"></a>
+Sygnały</h2></td></tr>
+<tr class="memitem:aa6a20b6919914aa3703a3f9bc75c92e3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_g_plansza.html#aa6a20b6919914aa3703a3f9bc75c92e3">dalej</a> ()</td></tr>
+<tr class="separator:aa6a20b6919914aa3703a3f9bc75c92e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Metody publiczne</h2></td></tr>
+<tr class="memitem:a637060e12ee3af994e6ade835f68c280"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_g_plansza.html#a637060e12ee3af994e6ade835f68c280">NGPlansza</a> (<a class="el" href="class_c_game.html">CGame</a> *wskGry, deque&lt; <a class="el" href="class_c_rys_pole.html">CRysPole</a> * &gt; *pola, QWidget *parent=nullptr)</td></tr>
+<tr class="separator:a637060e12ee3af994e6ade835f68c280"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ef1f5057c89ff8ecfee76f4f62f7c4c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_g_plansza.html#a6ef1f5057c89ff8ecfee76f4f62f7c4c">~NGPlansza</a> ()</td></tr>
+<tr class="separator:a6ef1f5057c89ff8ecfee76f4f62f7c4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-slots" name="pri-slots"></a>
+Sloty prywatne</h2></td></tr>
+<tr class="memitem:a65051476f6e3e10fdeb7eaa21fa8c31f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_g_plansza.html#a65051476f6e3e10fdeb7eaa21fa8c31f">on_cbRodzaj_currentTextChanged</a> (const QString &amp;arg1)</td></tr>
+<tr class="separator:a65051476f6e3e10fdeb7eaa21fa8c31f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ac5d0b7e3aa9fe48cd3f8d3c3d33a48"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_g_plansza.html#a6ac5d0b7e3aa9fe48cd3f8d3c3d33a48">on_pbDodPole_clicked</a> ()</td></tr>
+<tr class="separator:a6ac5d0b7e3aa9fe48cd3f8d3c3d33a48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d9902485046266493632d384149f39f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_g_plansza.html#a5d9902485046266493632d384149f39f">on_pbWstecz_clicked</a> ()</td></tr>
+<tr class="separator:a5d9902485046266493632d384149f39f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54f2a1681e3a66b690775eaf86288488"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_g_plansza.html#a54f2a1681e3a66b690775eaf86288488">on_pbDalej_clicked</a> ()</td></tr>
+<tr class="separator:a54f2a1681e3a66b690775eaf86288488"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d7c8fb4d492c84f6c185c401d30b24b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_g_plansza.html#a7d7c8fb4d492c84f6c185c401d30b24b">on_pbGraj_clicked</a> ()</td></tr>
+<tr class="separator:a7d7c8fb4d492c84f6c185c401d30b24b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a9710f31beae536a84a13514bce0e5a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_g_plansza.html#a0a9710f31beae536a84a13514bce0e5a">on_cbKolor_currentTextChanged</a> (const QString &amp;arg1)</td></tr>
+<tr class="separator:a0a9710f31beae536a84a13514bce0e5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Metody prywatne</h2></td></tr>
+<tr class="memitem:a4bc0062896948464dad2fd540fd70f41"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_g_plansza.html#a4bc0062896948464dad2fd540fd70f41">odczytajKolor</a> (const QString &amp;kolor)</td></tr>
+<tr class="separator:a4bc0062896948464dad2fd540fd70f41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6078379eeb0640889e937c31678f467"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_g_plansza.html#ab6078379eeb0640889e937c31678f467">dostosujDoCBRodzaj</a> (const QString &amp;arg1)</td></tr>
+<tr class="memdesc:ab6078379eeb0640889e937c31678f467"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dostosowuje elementy okna planszy do wartości w cbRodzaj.  <a href="class_n_g_plansza.html#ab6078379eeb0640889e937c31678f467">Więcej...</a><br /></td></tr>
+<tr class="separator:ab6078379eeb0640889e937c31678f467"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a796096d3ecf339020c3a35fef999682e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_g_plansza.html#a796096d3ecf339020c3a35fef999682e">dostosujKolor</a> (const QString &amp;arg1)</td></tr>
+<tr class="separator:a796096d3ecf339020c3a35fef999682e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23786d156ca8b8969359aa142f9f6653"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_g_plansza.html#a23786d156ca8b8969359aa142f9f6653">setInputObjectsEnabled</a> ()</td></tr>
+<tr class="memdesc:a23786d156ca8b8969359aa142f9f6653"><td class="mdescLeft">&#160;</td><td class="mdescRight">Włącza wszystkie pola służące do wprowadzania danych.  <a href="class_n_g_plansza.html#a23786d156ca8b8969359aa142f9f6653">Więcej...</a><br /></td></tr>
+<tr class="separator:a23786d156ca8b8969359aa142f9f6653"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e89bd92b2aeb55d3d554e41919f96a2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_g_plansza.html#a0e89bd92b2aeb55d3d554e41919f96a2">setInputObjectsDisabled</a> ()</td></tr>
+<tr class="separator:a0e89bd92b2aeb55d3d554e41919f96a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08d27eea5a59d72be29b27e84ec8b57f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_g_plansza.html#a08d27eea5a59d72be29b27e84ec8b57f">utworzCPoleSzansa</a> (<a class="el" href="struct_s_dn_pocz_pola.html">SDnPoczPola</a> &amp;dane)</td></tr>
+<tr class="separator:a08d27eea5a59d72be29b27e84ec8b57f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a0ce3bafc37536a00822fca2d2d60ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_g_plansza.html#a0a0ce3bafc37536a00822fca2d2d60ed">utworzCPoleKasa</a> (<a class="el" href="struct_s_dn_pocz_pola.html">SDnPoczPola</a> &amp;dane)</td></tr>
+<tr class="separator:a0a0ce3bafc37536a00822fca2d2d60ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54b8e1ca3ae46443f59836c6175437ad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_g_plansza.html#a54b8e1ca3ae46443f59836c6175437ad">utworzCPoleStnd</a> (<a class="el" href="struct_s_dn_pocz_pola.html">SDnPoczPola</a> &amp;dane)</td></tr>
+<tr class="separator:a54b8e1ca3ae46443f59836c6175437ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6770cf8d65299a8cd9af9840dd9a66d1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_g_plansza.html#a6770cf8d65299a8cd9af9840dd9a66d1">utworzCPoleSpec</a> (<a class="el" href="struct_s_dn_pocz_pola.html">SDnPoczPola</a> &amp;dane)</td></tr>
+<tr class="separator:a6770cf8d65299a8cd9af9840dd9a66d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75ab78c50c58ba27e598d966eed44787"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_g_plansza.html#a75ab78c50c58ba27e598d966eed44787">utworzCPoleEkstra</a> (<a class="el" href="struct_s_dn_pocz_pola.html">SDnPoczPola</a> &amp;dane)</td></tr>
+<tr class="separator:a75ab78c50c58ba27e598d966eed44787"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2929fed94c5bbaaa7076d673fdd9517d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_g_plansza.html#a2929fed94c5bbaaa7076d673fdd9517d">removeItemsFromScene</a> ()</td></tr>
+<tr class="memdesc:a2929fed94c5bbaaa7076d673fdd9517d"><td class="mdescLeft">&#160;</td><td class="mdescRight">"Odczepia" elementy ze sceny  <a href="class_n_g_plansza.html#a2929fed94c5bbaaa7076d673fdd9517d">Więcej...</a><br /></td></tr>
+<tr class="separator:a2929fed94c5bbaaa7076d673fdd9517d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Atrybuty prywatne</h2></td></tr>
+<tr class="memitem:aa2414b735794fb3eb0f68cb608fecd8a"><td class="memItemLeft" align="right" valign="top">Ui::NGPlansza *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_g_plansza.html#aa2414b735794fb3eb0f68cb608fecd8a">ui</a></td></tr>
+<tr class="separator:aa2414b735794fb3eb0f68cb608fecd8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42cc7489a4ebda78d1ff83ac35b1803c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_game.html">CGame</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_g_plansza.html#a42cc7489a4ebda78d1ff83ac35b1803c">wskGry_</a></td></tr>
+<tr class="separator:a42cc7489a4ebda78d1ff83ac35b1803c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81e6836cbd215b821a8ca1f6e9aa3c14"><td class="memItemLeft" align="right" valign="top">deque&lt; <a class="el" href="class_c_rys_pole.html">CRysPole</a> * &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_g_plansza.html#a81e6836cbd215b821a8ca1f6e9aa3c14">wskDeqPol_</a></td></tr>
+<tr class="separator:a81e6836cbd215b821a8ca1f6e9aa3c14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d9408bb40313c493c7223f106e51642"><td class="memItemLeft" align="right" valign="top">QGraphicsScene *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_g_plansza.html#a4d9408bb40313c493c7223f106e51642">scene_</a></td></tr>
+<tr class="separator:a4d9408bb40313c493c7223f106e51642"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1d7e97b21ddc923ec0e720101148075"><td class="memItemLeft" align="right" valign="top">QGraphicsScene *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_g_plansza.html#ab1d7e97b21ddc923ec0e720101148075">sceneKolor_</a></td></tr>
+<tr class="separator:ab1d7e97b21ddc923ec0e720101148075"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Opis szczegółowy</h2>
+<div class="textblock"><p >Klasa graficzna - okno planszy. </p>
+</div><h2 class="groupheader">Dokumentacja konstruktora i destruktora</h2>
+<a id="a637060e12ee3af994e6ade835f68c280" name="a637060e12ee3af994e6ade835f68c280"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a637060e12ee3af994e6ade835f68c280">&#9670;&nbsp;</a></span>NGPlansza()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">NGPlansza::NGPlansza </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_game.html">CGame</a> *&#160;</td>
+          <td class="paramname"><em>wskGry</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">deque&lt; <a class="el" href="class_c_rys_pole.html">CRysPole</a> * &gt; *&#160;</td>
+          <td class="paramname"><em>pola</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6ef1f5057c89ff8ecfee76f4f62f7c4c" name="a6ef1f5057c89ff8ecfee76f4f62f7c4c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ef1f5057c89ff8ecfee76f4f62f7c4c">&#9670;&nbsp;</a></span>~NGPlansza()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">NGPlansza::~NGPlansza </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentacja funkcji składowych</h2>
+<a id="aa6a20b6919914aa3703a3f9bc75c92e3" name="aa6a20b6919914aa3703a3f9bc75c92e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6a20b6919914aa3703a3f9bc75c92e3">&#9670;&nbsp;</a></span>dalej</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NGPlansza::dalej </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab6078379eeb0640889e937c31678f467" name="ab6078379eeb0640889e937c31678f467"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6078379eeb0640889e937c31678f467">&#9670;&nbsp;</a></span>dostosujDoCBRodzaj()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NGPlansza::dostosujDoCBRodzaj </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>arg1</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Dostosowuje elementy okna planszy do wartości w cbRodzaj. </p>
+
+</div>
+</div>
+<a id="a796096d3ecf339020c3a35fef999682e" name="a796096d3ecf339020c3a35fef999682e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a796096d3ecf339020c3a35fef999682e">&#9670;&nbsp;</a></span>dostosujKolor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NGPlansza::dostosujKolor </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>arg1</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4bc0062896948464dad2fd540fd70f41" name="a4bc0062896948464dad2fd540fd70f41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4bc0062896948464dad2fd540fd70f41">&#9670;&nbsp;</a></span>odczytajKolor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int NGPlansza::odczytajKolor </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>kolor</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0a9710f31beae536a84a13514bce0e5a" name="a0a9710f31beae536a84a13514bce0e5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a9710f31beae536a84a13514bce0e5a">&#9670;&nbsp;</a></span>on_cbKolor_currentTextChanged</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NGPlansza::on_cbKolor_currentTextChanged </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>arg1</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a65051476f6e3e10fdeb7eaa21fa8c31f" name="a65051476f6e3e10fdeb7eaa21fa8c31f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65051476f6e3e10fdeb7eaa21fa8c31f">&#9670;&nbsp;</a></span>on_cbRodzaj_currentTextChanged</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NGPlansza::on_cbRodzaj_currentTextChanged </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>arg1</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a54f2a1681e3a66b690775eaf86288488" name="a54f2a1681e3a66b690775eaf86288488"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54f2a1681e3a66b690775eaf86288488">&#9670;&nbsp;</a></span>on_pbDalej_clicked</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NGPlansza::on_pbDalej_clicked </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6ac5d0b7e3aa9fe48cd3f8d3c3d33a48" name="a6ac5d0b7e3aa9fe48cd3f8d3c3d33a48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ac5d0b7e3aa9fe48cd3f8d3c3d33a48">&#9670;&nbsp;</a></span>on_pbDodPole_clicked</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NGPlansza::on_pbDodPole_clicked </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7d7c8fb4d492c84f6c185c401d30b24b" name="a7d7c8fb4d492c84f6c185c401d30b24b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d7c8fb4d492c84f6c185c401d30b24b">&#9670;&nbsp;</a></span>on_pbGraj_clicked</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NGPlansza::on_pbGraj_clicked </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5d9902485046266493632d384149f39f" name="a5d9902485046266493632d384149f39f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d9902485046266493632d384149f39f">&#9670;&nbsp;</a></span>on_pbWstecz_clicked</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NGPlansza::on_pbWstecz_clicked </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2929fed94c5bbaaa7076d673fdd9517d" name="a2929fed94c5bbaaa7076d673fdd9517d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2929fed94c5bbaaa7076d673fdd9517d">&#9670;&nbsp;</a></span>removeItemsFromScene()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NGPlansza::removeItemsFromScene </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>"Odczepia" elementy ze sceny </p>
+
+</div>
+</div>
+<a id="a0e89bd92b2aeb55d3d554e41919f96a2" name="a0e89bd92b2aeb55d3d554e41919f96a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e89bd92b2aeb55d3d554e41919f96a2">&#9670;&nbsp;</a></span>setInputObjectsDisabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NGPlansza::setInputObjectsDisabled </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a23786d156ca8b8969359aa142f9f6653" name="a23786d156ca8b8969359aa142f9f6653"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23786d156ca8b8969359aa142f9f6653">&#9670;&nbsp;</a></span>setInputObjectsEnabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NGPlansza::setInputObjectsEnabled </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Włącza wszystkie pola służące do wprowadzania danych. </p>
+
+</div>
+</div>
+<a id="a75ab78c50c58ba27e598d966eed44787" name="a75ab78c50c58ba27e598d966eed44787"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75ab78c50c58ba27e598d966eed44787">&#9670;&nbsp;</a></span>utworzCPoleEkstra()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NGPlansza::utworzCPoleEkstra </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_s_dn_pocz_pola.html">SDnPoczPola</a> &amp;&#160;</td>
+          <td class="paramname"><em>dane</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0a0ce3bafc37536a00822fca2d2d60ed" name="a0a0ce3bafc37536a00822fca2d2d60ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a0ce3bafc37536a00822fca2d2d60ed">&#9670;&nbsp;</a></span>utworzCPoleKasa()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NGPlansza::utworzCPoleKasa </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_s_dn_pocz_pola.html">SDnPoczPola</a> &amp;&#160;</td>
+          <td class="paramname"><em>dane</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6770cf8d65299a8cd9af9840dd9a66d1" name="a6770cf8d65299a8cd9af9840dd9a66d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6770cf8d65299a8cd9af9840dd9a66d1">&#9670;&nbsp;</a></span>utworzCPoleSpec()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NGPlansza::utworzCPoleSpec </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_s_dn_pocz_pola.html">SDnPoczPola</a> &amp;&#160;</td>
+          <td class="paramname"><em>dane</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a54b8e1ca3ae46443f59836c6175437ad" name="a54b8e1ca3ae46443f59836c6175437ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54b8e1ca3ae46443f59836c6175437ad">&#9670;&nbsp;</a></span>utworzCPoleStnd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NGPlansza::utworzCPoleStnd </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_s_dn_pocz_pola.html">SDnPoczPola</a> &amp;&#160;</td>
+          <td class="paramname"><em>dane</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a08d27eea5a59d72be29b27e84ec8b57f" name="a08d27eea5a59d72be29b27e84ec8b57f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08d27eea5a59d72be29b27e84ec8b57f">&#9670;&nbsp;</a></span>utworzCPoleSzansa()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NGPlansza::utworzCPoleSzansa </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_s_dn_pocz_pola.html">SDnPoczPola</a> &amp;&#160;</td>
+          <td class="paramname"><em>dane</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentacja atrybutów składowych</h2>
+<a id="a4d9408bb40313c493c7223f106e51642" name="a4d9408bb40313c493c7223f106e51642"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d9408bb40313c493c7223f106e51642">&#9670;&nbsp;</a></span>scene_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QGraphicsScene* NGPlansza::scene_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab1d7e97b21ddc923ec0e720101148075" name="ab1d7e97b21ddc923ec0e720101148075"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1d7e97b21ddc923ec0e720101148075">&#9670;&nbsp;</a></span>sceneKolor_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QGraphicsScene* NGPlansza::sceneKolor_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa2414b735794fb3eb0f68cb608fecd8a" name="aa2414b735794fb3eb0f68cb608fecd8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2414b735794fb3eb0f68cb608fecd8a">&#9670;&nbsp;</a></span>ui</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Ui::NGPlansza* NGPlansza::ui</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a81e6836cbd215b821a8ca1f6e9aa3c14" name="a81e6836cbd215b821a8ca1f6e9aa3c14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81e6836cbd215b821a8ca1f6e9aa3c14">&#9670;&nbsp;</a></span>wskDeqPol_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">deque&lt;<a class="el" href="class_c_rys_pole.html">CRysPole</a> *&gt;* NGPlansza::wskDeqPol_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a42cc7489a4ebda78d1ff83ac35b1803c" name="a42cc7489a4ebda78d1ff83ac35b1803c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42cc7489a4ebda78d1ff83ac35b1803c">&#9670;&nbsp;</a></span>wskGry_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_game.html">CGame</a>* NGPlansza::wskGry_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>Dokumentacja dla tej klasy została wygenerowana z plików:<ul>
+<li>G:/Folder_Dawida/Prace_me/Git/DawRad-projekty/EURObiznes/EURObiznes/<a class="el" href="ngplansza_8h_source.html">ngplansza.h</a></li>
+<li>G:/Folder_Dawida/Prace_me/Git/DawRad-projekty/EURObiznes/EURObiznes/<a class="el" href="ngplansza_8cpp.html">ngplansza.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3
+</small></address>
+</body>
+</html>

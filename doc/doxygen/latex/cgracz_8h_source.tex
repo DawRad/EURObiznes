@@ -1,0 +1,98 @@
+\hypertarget{cgracz_8h_source}{}\doxysection{cgracz.\+h}
+\label{cgracz_8h_source}\index{G:/Folder\_Dawida/Prace\_me/Git/DawRad-\/projekty/EURObiznes/EURObiznes/Logika\_h/cgracz.h@{G:/Folder\_Dawida/Prace\_me/Git/DawRad-\/projekty/EURObiznes/EURObiznes/Logika\_h/cgracz.h}}
+\mbox{\hyperlink{cgracz_8h}{Idź do dokumentacji tego pliku.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef CGRACZ\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define CGRACZ\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <ctime>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_stale_8h}{Logika\_h/Stale.h}}"{}}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_consts_8h}{Consts.h}}"{}}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_struktury_8h}{Logika\_h/Struktury.h}}"{}}}
+\DoxyCodeLine{9 }
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 }
+\DoxyCodeLine{16 \textcolor{keyword}{class }\mbox{\hyperlink{class_c_gracz}{CGracz}}}
+\DoxyCodeLine{17 \{}
+\DoxyCodeLine{18 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{20     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_gracz_afbc4e13caff6803e9b52fd0306f702e4}{id\_}};}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{23     \textcolor{keywordtype}{string} \mbox{\hyperlink{class_c_gracz_a23d569abc5d7920b5055e0c62a07b029}{nick\_}};}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{26     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_gracz_a757406b45f6b2ee151726a3134117577}{portfel\_}};}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{29     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_gracz_a32f5d9e47991f366dd595af4ee62160d}{aktPoz\_}};}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{32     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_gracz_ae9ec33de61bbeae0139df8ac28114b35}{nastPoz\_}};}
+\DoxyCodeLine{33 }
+\DoxyCodeLine{35     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_gracz_a2978fc1fd7100d4bf7eaf31b42886830}{lbPolSpec\_}};}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{38     deque<int> \mbox{\hyperlink{class_c_gracz_a407adad8aa1ef58e3f3c8f5d978ca0d0}{lbPolKol\_}};               \textcolor{comment}{// numer elementu to nr koloru}}
+\DoxyCodeLine{39 }
+\DoxyCodeLine{41     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_gracz_a46c277e6f146f918721f9aceed3b072b}{lbPolEkstra\_}};}
+\DoxyCodeLine{42 }
+\DoxyCodeLine{44     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_gracz_a7352c835af615c29fd1706307b1079ae}{lbKartWolnosc\_}};}
+\DoxyCodeLine{45 }
+\DoxyCodeLine{47     \mbox{\hyperlink{struct_s_wyn_akcji}{SWynAkcji}} \mbox{\hyperlink{class_c_gracz_a80efa26956f8ff86469139797cfd2c21}{kostka\_}};}
+\DoxyCodeLine{48 }
+\DoxyCodeLine{49 \textcolor{keyword}{public}:}
+\DoxyCodeLine{50     \mbox{\hyperlink{class_c_gracz_a893ad55ebed86c9e2def6d14c7c033e9}{CGracz}}();}
+\DoxyCodeLine{51     \mbox{\hyperlink{class_c_gracz_a893ad55ebed86c9e2def6d14c7c033e9}{CGracz}}(\mbox{\hyperlink{struct_s_dn_gracza}{SDnGracza}} parDane);}
+\DoxyCodeLine{52     \textcolor{keyword}{virtual} \mbox{\hyperlink{class_c_gracz_a1f77c35bd07474ec11ed5ece562c2372}{\string~CGracz}}();}
+\DoxyCodeLine{53 }
+\DoxyCodeLine{54     \textcolor{comment}{// <-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/> deklaracje funkcji wirtualnych <-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/>}}
+\DoxyCodeLine{55 }
+\DoxyCodeLine{60     \textcolor{keyword}{virtual} \textcolor{keywordtype}{string} \mbox{\hyperlink{class_c_gracz_a2de8ef4bda0bcfa3c3ce18fa499b5ccc}{przedstawSie}}() = 0;}
+\DoxyCodeLine{61 }
+\DoxyCodeLine{67     \textcolor{keyword}{virtual} \mbox{\hyperlink{struct_s_wyn_akcji}{SWynAkcji}} \mbox{\hyperlink{class_c_gracz_acfc59ebd08ead4a00f052467d995af43}{rzucKoscmi}}() = 0;}
+\DoxyCodeLine{68 }
+\DoxyCodeLine{80     \textcolor{keyword}{virtual} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_gracz_a0e937c2c0dae00e4df94f93476050b43}{decyduj}}(\textcolor{keywordtype}{int} stan, \textcolor{keywordtype}{int} kwota, \textcolor{keywordtype}{int} lbPol) = 0;}
+\DoxyCodeLine{81 }
+\DoxyCodeLine{82     \textcolor{comment}{// <-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/> <-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/> <-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/>}}
+\DoxyCodeLine{83 }
+\DoxyCodeLine{89     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_gracz_a13603f358dc1fc7e53d72c9db611206c}{ruch}}(\textcolor{keywordtype}{int} poz);        }
+\DoxyCodeLine{90 }
+\DoxyCodeLine{98     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_gracz_a2c93c5977257940f598eb8eb9e4eb691}{dodajPole}}(\mbox{\hyperlink{struct_s_wyn_akcji}{SWynAkcji}} opt);}
+\DoxyCodeLine{99 }
+\DoxyCodeLine{100     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_gracz_aa57b508cdab82b76c8b2a4d7ff2c24c5}{dodajKarteWolnosc}}();}
+\DoxyCodeLine{101 }
+\DoxyCodeLine{102     \textcolor{comment}{// funkcja służy do podania danych gracza}}
+\DoxyCodeLine{103     \mbox{\hyperlink{struct_s_dn_gracza}{SDnGracza}} \mbox{\hyperlink{class_c_gracz_a05cdf1d9ab050cc2513873cda6b282bd}{podajDane}}();}
+\DoxyCodeLine{104 }
+\DoxyCodeLine{105     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_gracz_a431b5a40156651fa0a2a90468d8cace5}{podajId}}();}
+\DoxyCodeLine{106 }
+\DoxyCodeLine{115     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_gracz_a11c0f6da4ed457ca0e7346281339d684}{podajLbPol}}(\textcolor{keywordtype}{int} rodz);}
+\DoxyCodeLine{116 }
+\DoxyCodeLine{117     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_gracz_aced9352eb47743443ddca89e3d8f196e}{podajLbPolKol}}(\textcolor{keywordtype}{int} kolor);}
+\DoxyCodeLine{118     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_gracz_afb4de474127731353b1633873827e731}{podajLbKartWolnosc}}();}
+\DoxyCodeLine{119 }
+\DoxyCodeLine{124     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_gracz_ad671077d2e0dfbdcd2c867bec3512842}{podajStanKonta}}();}
+\DoxyCodeLine{125 }
+\DoxyCodeLine{126     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_gracz_ab82e26de1d5bab0837598086e78de5c9}{podajAktPoz}}();}
+\DoxyCodeLine{127     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_gracz_ae125440728b3f46c5102584d6f9766cd}{podajNastPoz}}();}
+\DoxyCodeLine{128 }
+\DoxyCodeLine{129     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_gracz_ac90992b67fb386a14a13f1efe6306107}{podajSumeOczekKostki}}();}
+\DoxyCodeLine{130     \mbox{\hyperlink{struct_s_wyn_akcji}{SWynAkcji}} \mbox{\hyperlink{class_c_gracz_a30f4ec168186c836c6c31c6a44bd6b9e}{podajKostki}}();}
+\DoxyCodeLine{131 }
+\DoxyCodeLine{136     \mbox{\hyperlink{struct_s_wyn_akcji}{SWynAkcji}} \mbox{\hyperlink{class_c_gracz_a804e3af9f4e98f14055270f0de96d74e}{podajPoz}}();}
+\DoxyCodeLine{137 }
+\DoxyCodeLine{138     \textcolor{keywordtype}{string} \mbox{\hyperlink{class_c_gracz_ae2e49364d6b09c38e1e2f8d3e605fdc3}{podajNick}}();}
+\DoxyCodeLine{139 }
+\DoxyCodeLine{140     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_gracz_a967c2ad96168ac9da2ff61549e3d33bf}{ustawPortfel}}(\textcolor{keywordtype}{int} kwotaPocz);}
+\DoxyCodeLine{141 }
+\DoxyCodeLine{142     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_gracz_aac0240e890b1fae8aec44e3305fe29b8}{aktualPortfel}}(\textcolor{keywordtype}{int} kwota);}
+\DoxyCodeLine{143 }
+\DoxyCodeLine{144     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_gracz_a32feffe58dd50c3ee4bfd88518f4b5f7}{kupPole}}(\textcolor{keywordtype}{int} rodz);}
+\DoxyCodeLine{145 }
+\DoxyCodeLine{151     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_gracz_aedba05be6ccfe69aff3960ca893b7c1d}{aktualPozycje}}();}
+\DoxyCodeLine{152 }
+\DoxyCodeLine{153     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_gracz_a1e10986179191cfc4e49fc33798014a6}{uzyjWolnosc}}();}
+\DoxyCodeLine{154     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_gracz_ace017b8328e59d4e91ca58f24030a1ae}{idzDoWiezienia}}();}
+\DoxyCodeLine{155     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_gracz_a8a24ce00dbe7e786643c2983aef9f8b6}{wyjdzZWiezienia}}();}
+\DoxyCodeLine{156 \};}
+\DoxyCodeLine{157 }
+\DoxyCodeLine{158 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// CGRACZ\_H}}
+
+\end{DoxyCode}

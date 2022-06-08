@@ -1,0 +1,135 @@
+\hypertarget{class_c_czlowiek}{}\doxysection{Dokumentacja klasy CCzlowiek}
+\label{class_c_czlowiek}\index{CCzlowiek@{CCzlowiek}}
+
+
+Klasa logiki.  
+
+
+
+
+{\ttfamily \#include $<$cczlowiek.\+h$>$}
+
+
+
+Diagram dziedziczenia dla CCzlowiek
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=142pt]{class_c_czlowiek__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Diagram współpracy dla CCzlowiek\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=293pt]{class_c_czlowiek__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_czlowiek_ac0e992dfbfd7fce2a69ce0bd4b176472}{CCzlowiek}} (\mbox{\hyperlink{struct_s_dn_gracza}{SDn\+Gracza}} \+\_\+dane)
+\begin{DoxyCompactList}\small\item\em Konstruktor klasy \mbox{\hyperlink{class_c_czlowiek}{CCzlowiek}}. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_c_czlowiek_a1f0a2ddaf95be7895dc1c5b66261742d}{$\sim$\+CCzlowiek}} ()
+\item 
+string \mbox{\hyperlink{class_c_czlowiek_aca5a29de0197fd84ea76adeb71d7b0a9}{przedstaw\+Sie}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja służy do zidentyfikowania klasy obiektu. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_s_wyn_akcji}{SWyn\+Akcji}} \mbox{\hyperlink{class_c_czlowiek_ad8087cad112e2a121c2f514744b2d00e}{rzuc\+Koscmi}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja zwraca wartość rzutu podwójnymi kośćmi przez gracza. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_c_czlowiek_a11252abbf72dd88b709a1045e26ee2c1}{decyduj}} (int stan, int kwota, int lb\+Pol)
+\begin{DoxyCompactList}\small\item\em Funkcja zwracająca decyzję gracza dotycząca pola, na którym stanął. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Dodatkowe Dziedziczone Składowe}
+
+
+\doxysubsection{Opis szczegółowy}
+Klasa logiki. 
+
+\doxysubsection{Dokumentacja konstruktora i destruktora}
+\mbox{\Hypertarget{class_c_czlowiek_ac0e992dfbfd7fce2a69ce0bd4b176472}\label{class_c_czlowiek_ac0e992dfbfd7fce2a69ce0bd4b176472}} 
+\index{CCzlowiek@{CCzlowiek}!CCzlowiek@{CCzlowiek}}
+\index{CCzlowiek@{CCzlowiek}!CCzlowiek@{CCzlowiek}}
+\doxysubsubsection{\texorpdfstring{CCzlowiek()}{CCzlowiek()}}
+{\footnotesize\ttfamily CCzlowiek\+::\+CCzlowiek (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_s_dn_gracza}{SDn\+Gracza}}}]{\+\_\+dane }\end{DoxyParamCaption})}
+
+
+
+Konstruktor klasy \mbox{\hyperlink{class_c_czlowiek}{CCzlowiek}}. 
+
+Wcześniej musi być też znana liczba regionów pól klasy \mbox{\hyperlink{class_c_pole_stnd}{CPole\+Stnd}} (informacja zawarta w \mbox{\hyperlink{struct_s_dn_gracza}{SDn\+Gracza}}). \mbox{\Hypertarget{class_c_czlowiek_a1f0a2ddaf95be7895dc1c5b66261742d}\label{class_c_czlowiek_a1f0a2ddaf95be7895dc1c5b66261742d}} 
+\index{CCzlowiek@{CCzlowiek}!````~CCzlowiek@{$\sim$CCzlowiek}}
+\index{````~CCzlowiek@{$\sim$CCzlowiek}!CCzlowiek@{CCzlowiek}}
+\doxysubsubsection{\texorpdfstring{$\sim$CCzlowiek()}{~CCzlowiek()}}
+{\footnotesize\ttfamily CCzlowiek\+::$\sim$\+CCzlowiek (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Dokumentacja funkcji składowych}
+\mbox{\Hypertarget{class_c_czlowiek_a11252abbf72dd88b709a1045e26ee2c1}\label{class_c_czlowiek_a11252abbf72dd88b709a1045e26ee2c1}} 
+\index{CCzlowiek@{CCzlowiek}!decyduj@{decyduj}}
+\index{decyduj@{decyduj}!CCzlowiek@{CCzlowiek}}
+\doxysubsubsection{\texorpdfstring{decyduj()}{decyduj()}}
+{\footnotesize\ttfamily int CCzlowiek\+::decyduj (\begin{DoxyParamCaption}\item[{int}]{stan,  }\item[{int}]{kwota,  }\item[{int}]{lb\+Pol }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Funkcja zwracająca decyzję gracza dotycząca pola, na którym stanął. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em stan} & -\/ stan pola, na którym stanął gracz\+: \begin{DoxyItemize}
+\item 0 -\/ wolne \item 1 -\/ zajęte \item 2 -\/ zastawione \end{DoxyItemize}
+\\
+\hline
+{\em kwota} & -\/ jest to, w zależności od stanu pola, koszt jego kupna, budowy nieruchomości albo wykupienia z zastawu. \\
+\hline
+{\em lb\+Pol} & -\/ parametr podawany w przypadku pól standardowych -\/ mówi o liczbie posiadanych przez gracza pól koloru, jaki odpowiada polu, na którym gracz aktualnie się znajduje \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+Zwraca zgodę na wykonanie akcji (1) albo jej brak (0). 
+\end{DoxyReturn}
+
+
+Implementuje \mbox{\hyperlink{class_c_gracz_a0e937c2c0dae00e4df94f93476050b43}{CGracz}}.
+
+\mbox{\Hypertarget{class_c_czlowiek_aca5a29de0197fd84ea76adeb71d7b0a9}\label{class_c_czlowiek_aca5a29de0197fd84ea76adeb71d7b0a9}} 
+\index{CCzlowiek@{CCzlowiek}!przedstawSie@{przedstawSie}}
+\index{przedstawSie@{przedstawSie}!CCzlowiek@{CCzlowiek}}
+\doxysubsubsection{\texorpdfstring{przedstawSie()}{przedstawSie()}}
+{\footnotesize\ttfamily string CCzlowiek\+::przedstaw\+Sie (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Funkcja służy do zidentyfikowania klasy obiektu. 
+
+
+
+Implementuje \mbox{\hyperlink{class_c_gracz_a2de8ef4bda0bcfa3c3ce18fa499b5ccc}{CGracz}}.
+
+\mbox{\Hypertarget{class_c_czlowiek_ad8087cad112e2a121c2f514744b2d00e}\label{class_c_czlowiek_ad8087cad112e2a121c2f514744b2d00e}} 
+\index{CCzlowiek@{CCzlowiek}!rzucKoscmi@{rzucKoscmi}}
+\index{rzucKoscmi@{rzucKoscmi}!CCzlowiek@{CCzlowiek}}
+\doxysubsubsection{\texorpdfstring{rzucKoscmi()}{rzucKoscmi()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_s_wyn_akcji}{SWyn\+Akcji}} CCzlowiek\+::rzuc\+Koscmi (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Funkcja zwraca wartość rzutu podwójnymi kośćmi przez gracza. 
+
+\begin{DoxyReturn}{Zwraca}
+Zwraca wartość dla obu kości. 
+\end{DoxyReturn}
+
+
+Implementuje \mbox{\hyperlink{class_c_gracz_acfc59ebd08ead4a00f052467d995af43}{CGracz}}.
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+G\+:/\+Folder\+\_\+\+Dawida/\+Prace\+\_\+me/\+Git/\+Daw\+Rad-\/projekty/\+EURObiznes/\+EURObiznes/\+Logika\+\_\+h/\mbox{\hyperlink{cczlowiek_8h}{cczlowiek.\+h}}\item 
+G\+:/\+Folder\+\_\+\+Dawida/\+Prace\+\_\+me/\+Git/\+Daw\+Rad-\/projekty/\+EURObiznes/\+EURObiznes/\+Logika\+\_\+src/\mbox{\hyperlink{cczlowiek_8cpp}{cczlowiek.\+cpp}}\end{DoxyCompactItemize}

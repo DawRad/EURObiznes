@@ -1,0 +1,835 @@
+\hypertarget{class_c_plansza}{}\doxysection{Dokumentacja klasy CPlansza}
+\label{class_c_plansza}\index{CPlansza@{CPlansza}}
+
+
+Klasa logiki.  
+
+
+
+
+{\ttfamily \#include $<$cplansza.\+h$>$}
+
+
+
+Diagram współpracy dla CPlansza\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_plansza__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_plansza_a1a7e4a25febc52864a6eafa8f2b2369b}{CPlansza}} ()
+\item 
+\mbox{\hyperlink{class_c_plansza_a3971b9f7d99e4f109193cb9bfafd72f8}{$\sim$\+CPlansza}} ()
+\item 
+void \mbox{\hyperlink{class_c_plansza_af705d367c41fa5f26f24615ca0617f6c}{wczytaj\+Dane\+ZPliku\+\_\+pola}} (deque$<$ string $>$ \&dane\+ZPliku)
+\begin{DoxyCompactList}\small\item\em Tworzy pola planszy według danych pobranych z pliku. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_plansza_a10673bf143904c7fa41aa9199d3ba8d8}{wczytaj\+Dane\+ZPliku\+\_\+karty}} (deque$<$ string $>$ \&dane\+ZPliku)
+\begin{DoxyCompactList}\small\item\em Tworzy karty planszy według danych pobranych z pliku. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_plansza_a73d65ce8a7888fac14e9eece741e7118}{sortuj\+Liste\+Pol}} ()
+\begin{DoxyCompactList}\small\item\em Sortuje listę pola\+\_\+ rosnąco, wg pola \mbox{\hyperlink{class_c_pole_aa08ed96e35cf641d19205a7bc9b9338e}{CPole\+::pozycja\+\_\+}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_plansza_ade56af20b7c254c6abfe14411cf38d55}{dodaj\+Pole}} (int rodz, \mbox{\hyperlink{struct_s_dn_pocz_pola}{SDn\+Pocz\+Pola}} dane)
+\begin{DoxyCompactList}\small\item\em Zamienia pole na danej pozycji nowym obiektem. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_plansza_aeeb40f30ce66daa5ada2cdc7feec27c0}{ustaw\+Pensje\+Start}} (int pensja)
+\item 
+void \mbox{\hyperlink{class_c_plansza_a941f6eb35cc3c5210207c7b970d72905}{zamien\+Na\+CPole\+Szansa}} (\mbox{\hyperlink{struct_s_dn_pocz_pola}{SDn\+Pocz\+Pola}} dane)
+\begin{DoxyCompactList}\small\item\em Podmienia pole o danej pozycji polem z danymi przekazanymi jako parametr. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_plansza_a7866f29cac27a7431e4b0bfef9c3327c}{zamien\+Na\+CPole\+Spec}} (\mbox{\hyperlink{struct_s_dn_pocz_pola}{SDn\+Pocz\+Pola}} dane)
+\begin{DoxyCompactList}\small\item\em Podmienia pole o danej pozycji polem z danymi przekazanymi jako parametr. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_plansza_aab0ed06aa3ea61e21dc5c894466d1aaa}{zamien\+Na\+CPole\+Stnd}} (\mbox{\hyperlink{struct_s_dn_pocz_pola}{SDn\+Pocz\+Pola}} dane)
+\begin{DoxyCompactList}\small\item\em Podmienia pole o danej pozycji polem z danymi przekazanymi jako parametr. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_plansza_a222a04dd57fd99f9f0d954fdaca4cb76}{zamien\+Na\+CPole\+Ekstra}} (\mbox{\hyperlink{struct_s_dn_pocz_pola}{SDn\+Pocz\+Pola}} dane)
+\begin{DoxyCompactList}\small\item\em Podmienia pole o danej pozycji polem z danymi przekazanymi jako parametr. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_plansza_a9acac5852efbd635fdef978037002236}{zamien\+Na\+CPole\+Kasa}} (\mbox{\hyperlink{struct_s_dn_pocz_pola}{SDn\+Pocz\+Pola}} dane)
+\begin{DoxyCompactList}\small\item\em Podmienia pole o danej pozycji polem z danymi przekazanymi jako parametr. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_s_wyn_akcji}{SWyn\+Akcji}} \mbox{\hyperlink{class_c_plansza_aa2bacdb0774c17cc0b27b5fc4066a1e7}{ident\+Pole}} (\mbox{\hyperlink{class_c_gracz}{CGracz}} $\ast$gracz, int par\+Poz)
+\item 
+deque$<$ \mbox{\hyperlink{struct_s_dn_pola}{SDn\+Pola}} $>$ \mbox{\hyperlink{class_c_plansza_a02bf6765796ecebcbde04f2a245405d5}{zbierz\+Dn\+Pol}} ()
+\item 
+\mbox{\hyperlink{struct_s_dn_pola}{SDn\+Pola}} \mbox{\hyperlink{class_c_plansza_ae93aab33ff197b546f86cacecd9fdec0}{zbierz\+Dn\+Pola}} (int poz)
+\item 
+deque$<$ \mbox{\hyperlink{struct_s_dn_pola}{SDn\+Pola}} $>$ \mbox{\hyperlink{class_c_plansza_a7ad312c3fe5f317e3c9bd4c60a419168}{zbierz\+Dn\+Pol}} (\mbox{\hyperlink{class_c_gracz}{CGracz}} $\ast$gracz)
+\item 
+deque$<$ \mbox{\hyperlink{struct_s_dn_pola}{SDn\+Pola}} $>$ \mbox{\hyperlink{class_c_plansza_ad6f1e46f6abb0d3fe2d734fab67dc2bb}{zbierz\+Dn\+Pol\+Niezast}} (\mbox{\hyperlink{class_c_gracz}{CGracz}} $\ast$gracz)
+\item 
+deque$<$ \mbox{\hyperlink{struct_s_dn_pola}{SDn\+Pola}} $>$ \mbox{\hyperlink{class_c_plansza_a94f646e1c4c4a15e93d0bc21c486a45d}{zbierz\+Dn\+Pol\+Zast}} (\mbox{\hyperlink{class_c_gracz}{CGracz}} $\ast$gracz)
+\item 
+\mbox{\hyperlink{class_c_gracz}{CGracz}} $\ast$ \mbox{\hyperlink{class_c_plansza_a88abb4facbe8fb1e1f13789bec1b8ec8}{kto\+Ma\+Pole}} (int par\+Poz)
+\item 
+int \mbox{\hyperlink{class_c_plansza_a268f0bd3ab2c3b47e99adc8ea369d4d5}{podaj\+Pensje}} ()
+\item 
+int \mbox{\hyperlink{class_c_plansza_af12e391e42ca6000e3aad4327e607ce0}{podaj\+Cene\+Pola}} (int poz)
+\item 
+int \mbox{\hyperlink{class_c_plansza_a3d7e47325daafd17fc0facce15806025}{wartosc\+Nieruchomosci\+Gracza}} (\mbox{\hyperlink{class_c_gracz}{CGracz}} $\ast$wlasciciel)
+\begin{DoxyCompactList}\small\item\em Funkcja zwraca zsumowaną wartość cen kupna nieruchomości podanego gracza. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_c_plansza_a16093c03d0cf55e002fac6362b4cb9e7}{potencjal\+Zastawu\+Gracza}} (\mbox{\hyperlink{class_c_gracz}{CGracz}} $\ast$wlasciciel)
+\begin{DoxyCompactList}\small\item\em Funkcja zwraca zsumowaną wartość zastawów nieruchomości podanego gracza. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_s_dn_karty}{SDn\+Karty}} \mbox{\hyperlink{class_c_plansza_a70d7ffe16efc0bff547bff01c67d062b}{losowanie\+Karty}} ()
+\item 
+void \mbox{\hyperlink{class_c_plansza_a1295673b3d4eaa71c33f5996aeeb2ba7}{tasowanie\+Kart}} ()
+\item 
+void \mbox{\hyperlink{class_c_plansza_ae43b309548c5cc9a49a5a6366a348e50}{kupowanie\+Pola}} (\mbox{\hyperlink{class_c_gracz}{CGracz}} $\ast$kupiec, int par\+Poz)
+\item 
+int \mbox{\hyperlink{class_c_plansza_ab83f9880bf20d20dfad42b52fea6c213}{dane\+Int\+Pola}} (int par\+Poz, int opt)
+\begin{DoxyCompactList}\small\item\em Podaje dane typu int konkretnego obieku klasy \mbox{\hyperlink{class_c_pole}{CPole}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_plansza_a71e61cdeeaf8eb8e9116686f9cadfbba}{zabuduj}} (int poz)
+\item 
+int \mbox{\hyperlink{class_c_plansza_a34a58f273922ba112a31c2d9bc67460c}{zastaw}} (int poz)
+\item 
+void \mbox{\hyperlink{class_c_plansza_a1a2d61af7d194014f5125a671f415abb}{wykup}} (int poz)
+\end{DoxyCompactItemize}
+\doxysubsection*{Statyczne metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{class_c_plansza_a5ac73aeeeaf14f389993983a1b1e415e}{ustal\+Kolejna\+Poz\+WKolejce}} (int akt\+Poz, int rozm\+Kolejki)
+\begin{DoxyCompactList}\small\item\em Na podstawie wartości aktualnej pozycji w kolejce i rozmiaru analizowanej kolejki wyznacza wartość kolejnej pozycji. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{class_c_plansza_a12c9111a1984b301079d6e4ec0ffba96}{change\+Pole\+Rodz}} (string rodz)
+\begin{DoxyCompactList}\small\item\em Funkcja zamienia rodzaj pola typu {\itshape string} na odpowiadającą mu wartość {\itshape int}. \end{DoxyCompactList}\item 
+static string \mbox{\hyperlink{class_c_plansza_adf30e54f2460c81a3645ae393538ba1b}{pole\+Rodz\+To\+Str}} (int rodz)
+\begin{DoxyCompactList}\small\item\em Funkcja zamienia rodzaj pola typu int na odpowiadającą mu wartość {\itshape string}. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{class_c_plansza_ad4cfa94c49d774aea7d5ee86e90825c2}{karta\+Rodz\+To\+Int}} (string rodzaj)
+\begin{DoxyCompactList}\small\item\em Analogicznie do change\+Pole\+Rodz({\itshape string}) zamienia argument na odpowiadającą mu wartość {\itshape int}. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{class_c_plansza_a85ece741539ead436afe8a9e765a31e7}{parse\+Bound}} (deque$<$ string $>$ \&tresc\+Pliku, string nazwa\+Nag, int start)
+\begin{DoxyCompactList}\small\item\em Funkcja poszukuje indeksu początkowego i końcowego elementu typu string należącego do danego nagłówka. \end{DoxyCompactList}\item 
+static string \mbox{\hyperlink{class_c_plansza_a2212efa1ecb0263172f580cf6fc5a90c}{parse\+Head\+Cont}} (string strumien, int start)
+\begin{DoxyCompactList}\small\item\em Zwraca właściwą zawartość nagłówka. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{struct_s_parsed_elem}{SParsed\+Elem}} \mbox{\hyperlink{class_c_plansza_a468d58e945f4d7565626100428d64429}{parse\+Elem}} (string \&dane\+Str)
+\item 
+static int \mbox{\hyperlink{class_c_plansza_aea1a5f0fed8f64ab857c34af21c3cd71}{znajdz\+Zn}} (char par\+Zn, int index\+Start, string \&strumien)
+\end{DoxyCompactItemize}
+\doxysubsection*{Metody prywatne}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_c_plansza_a00be2fc992dc01a694d12ed9e304eb52}{usun\+Karty}} ()
+\begin{DoxyCompactList}\small\item\em Służy do zwolnienia pamięci przypisanej dynamicznie dla każdego elementu listy \mbox{\hyperlink{class_c_plansza_afb2985cbb08c785a1ba7f8c3c9eb38f3}{CPlansza\+::karty\+\_\+}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_plansza_a5a8e2aff641c0508b284173a77f13b2a}{usun\+Karty\+Uzyte}} ()
+\begin{DoxyCompactList}\small\item\em Służy do zwolnienia pamięci przypisanej dynamicznie dla każdego elementu listy \mbox{\hyperlink{class_c_plansza_a6dc6f3daee3cf85dead50ae38d922ad0}{CPlansza\+::karty\+Uzyte\+\_\+}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_plansza_a6b5ae3245a7c43e61ec6138eec3a78a6}{usun\+Pola}} ()
+\begin{DoxyCompactList}\small\item\em Służy do zwolnienia pamięci przypisanej dynamicznie dla każdego elementu listy \mbox{\hyperlink{class_c_plansza_a4ac4197dfea9bc5a71f7b93e4439245b}{CPlansza\+::pola\+\_\+}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_plansza_a8bbe2ea4ff60ebf90a97d179c8b24bc8}{utworz\+CPole\+ZPliku}} (deque$<$ string $>$ \&dane\+ZPliku, int start, int end)
+\begin{DoxyCompactList}\small\item\em Tworzy \mbox{\hyperlink{class_c_pole}{CPole}} na podstawie danych pobranych z pliku. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_plansza_a06a371ff0b30a87a29023f33853db97a}{utworz\+CPole\+Spec\+ZPliku}} (deque$<$ string $>$ \&dane\+ZPliku, int start, int end)
+\begin{DoxyCompactList}\small\item\em Tworzy \mbox{\hyperlink{class_c_pole_spec}{CPole\+Spec}} na podstawie danych pobranych z pliku. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_plansza_a187aec9956237d04fa8d7ed984bc3601}{utworz\+CPole\+Stnd\+ZPliku}} (deque$<$ string $>$ \&dane\+ZPliku, int start, int end)
+\begin{DoxyCompactList}\small\item\em Tworzy \mbox{\hyperlink{class_c_pole_stnd}{CPole\+Stnd}} na podstawie danych pobranych z pliku. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_plansza_a35746dd4d71d1304a8d65737e2b0292c}{utworz\+CPole\+Ekstra\+ZPliku}} (deque$<$ string $>$ \&dane\+ZPliku, int start, int end)
+\begin{DoxyCompactList}\small\item\em Tworzy \mbox{\hyperlink{class_c_pole_ekstra}{CPole\+Ekstra}} na podstawie danych pobranych z pliku. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_plansza_aba7e6ceb4227c9e7dc85470c5a641670}{utworz\+CPole\+Kasa\+ZPliku}} (deque$<$ string $>$ \&dane\+ZPliku, int start, int end)
+\begin{DoxyCompactList}\small\item\em Tworzy \mbox{\hyperlink{class_c_pole_kasa}{CPole\+Kasa}} na podstawie danych pobranych z pliku. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_plansza_a25bb829cbc304c9d825427aeda11a1fe}{utworz\+CPole\+Szansa\+ZPliku}} (deque$<$ string $>$ \&dane\+ZPliku, int start, int end)
+\begin{DoxyCompactList}\small\item\em Tworzy \mbox{\hyperlink{class_c_pole_szansa}{CPole\+Szansa}} na podstawie danych pobranych z pliku. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_plansza_ad39bb67f73cc8c852a87c480a3895687}{utworz\+CPole\+Do\+Wiezienia\+ZPliku}} (deque$<$ string $>$ \&dane\+ZPliku, int start, int end)
+\begin{DoxyCompactList}\small\item\em Tworzy \mbox{\hyperlink{class_c_pole_do_wiezienia}{CPole\+Do\+Wiezienia}} na podstawie danych pobranych z pliku. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_plansza_a04d2fbb864fa68e6eef078d2c313451c}{utworz\+CKarta\+Wolnosc\+ZPliku}} (deque$<$ string $>$ \&dane\+ZPliku, int start, int end)
+\begin{DoxyCompactList}\small\item\em Tworzy \mbox{\hyperlink{class_c_karta_wolnosc}{CKarta\+Wolnosc}} na podstawie danych pobranych z pliku. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_plansza_a67739bc79d63e426a45d8880f8d97bae}{utworz\+CKarta\+Kwoty\+ZPliku}} (deque$<$ string $>$ \&dane\+ZPliku, int start, int end)
+\begin{DoxyCompactList}\small\item\em Tworzy \mbox{\hyperlink{class_c_karta_kwoty}{CKarta\+Kwoty}} na podstawie danych pobranych z pliku. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_plansza_ad72753a8ac19a3b0143ef22436ba0bab}{utworz\+CKarta\+Ruchu\+ZPliku}} (deque$<$ string $>$ \&dane\+ZPliku, int start, int end)
+\begin{DoxyCompactList}\small\item\em Tworzy \mbox{\hyperlink{class_c_karta_ruchu}{CKarta\+Ruchu}} na podstawie danych pobranych z pliku. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_plansza_a533770c4544cb7fe7965c7c372de07db}{utworz\+CKarta\+Wiezienia\+ZPliku}} (deque$<$ string $>$ \&dane\+ZPliku, int start, int end)
+\begin{DoxyCompactList}\small\item\em Tworzy \mbox{\hyperlink{class_c_karta_wiezienia}{CKarta\+Wiezienia}} na podstawie danych pobranych z pliku. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_c_plansza_a5ad39e494fd348954afa29985b0ac099}{change\+Pole\+Header}} (string header)
+\begin{DoxyCompactList}\small\item\em Metoda zamienia {\itshape string} na odpowiadającą mu wartość {\itshape int}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_c_plansza_a273dfb0a5d4ac6f072df33da3798a608}{karta\+Header\+To\+Int}} (string header)
+\begin{DoxyCompactList}\small\item\em Analogicznie do change\+Pole\+Header({\itshape string}) zamienia argument na odpowiadającą mu wartość {\itshape int}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Atrybuty prywatne}
+\begin{DoxyCompactItemize}
+\item 
+deque$<$ \mbox{\hyperlink{class_c_karta}{CKarta}} $\ast$ $>$ \mbox{\hyperlink{class_c_plansza_afb2985cbb08c785a1ba7f8c3c9eb38f3}{karty\+\_\+}}
+\begin{DoxyCompactList}\small\item\em dwukierunkowa lista kart \end{DoxyCompactList}\item 
+deque$<$ \mbox{\hyperlink{class_c_karta}{CKarta}} $\ast$ $>$ \mbox{\hyperlink{class_c_plansza_a6dc6f3daee3cf85dead50ae38d922ad0}{karty\+Uzyte\+\_\+}}
+\begin{DoxyCompactList}\small\item\em dwukierunkowa lista dla kart już wylosowanych \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_c_plansza_a7ae2a7005aca6b43205ccfd6d125af78}{pensja\+Start\+\_\+}}
+\begin{DoxyCompactList}\small\item\em wartość pensji pola \char`\"{}\+START\char`\"{} \end{DoxyCompactList}\item 
+deque$<$ \mbox{\hyperlink{class_c_pole}{CPole}} $\ast$ $>$ \mbox{\hyperlink{class_c_plansza_a4ac4197dfea9bc5a71f7b93e4439245b}{pola\+\_\+}}
+\begin{DoxyCompactList}\small\item\em dwukierunkowa lista pól \end{DoxyCompactList}\item 
+deque$<$ string $>$ \mbox{\hyperlink{class_c_plansza_a3178aac03c75951f879319b7b9ed9441}{regiony\+\_\+}}
+\begin{DoxyCompactList}\small\item\em dwukierunkowa lista nazw regionów \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Opis szczegółowy}
+Klasa logiki. 
+
+\doxysubsection{Dokumentacja konstruktora i destruktora}
+\mbox{\Hypertarget{class_c_plansza_a1a7e4a25febc52864a6eafa8f2b2369b}\label{class_c_plansza_a1a7e4a25febc52864a6eafa8f2b2369b}} 
+\index{CPlansza@{CPlansza}!CPlansza@{CPlansza}}
+\index{CPlansza@{CPlansza}!CPlansza@{CPlansza}}
+\doxysubsubsection{\texorpdfstring{CPlansza()}{CPlansza()}}
+{\footnotesize\ttfamily CPlansza\+::\+CPlansza (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_plansza_a3971b9f7d99e4f109193cb9bfafd72f8}\label{class_c_plansza_a3971b9f7d99e4f109193cb9bfafd72f8}} 
+\index{CPlansza@{CPlansza}!````~CPlansza@{$\sim$CPlansza}}
+\index{````~CPlansza@{$\sim$CPlansza}!CPlansza@{CPlansza}}
+\doxysubsubsection{\texorpdfstring{$\sim$CPlansza()}{~CPlansza()}}
+{\footnotesize\ttfamily CPlansza\+::$\sim$\+CPlansza (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Dokumentacja funkcji składowych}
+\mbox{\Hypertarget{class_c_plansza_a5ad39e494fd348954afa29985b0ac099}\label{class_c_plansza_a5ad39e494fd348954afa29985b0ac099}} 
+\index{CPlansza@{CPlansza}!changePoleHeader@{changePoleHeader}}
+\index{changePoleHeader@{changePoleHeader}!CPlansza@{CPlansza}}
+\doxysubsubsection{\texorpdfstring{changePoleHeader()}{changePoleHeader()}}
+{\footnotesize\ttfamily int CPlansza\+::change\+Pole\+Header (\begin{DoxyParamCaption}\item[{string}]{header }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Metoda zamienia {\itshape string} na odpowiadającą mu wartość {\itshape int}. 
+
+\mbox{\Hypertarget{class_c_plansza_a12c9111a1984b301079d6e4ec0ffba96}\label{class_c_plansza_a12c9111a1984b301079d6e4ec0ffba96}} 
+\index{CPlansza@{CPlansza}!changePoleRodz@{changePoleRodz}}
+\index{changePoleRodz@{changePoleRodz}!CPlansza@{CPlansza}}
+\doxysubsubsection{\texorpdfstring{changePoleRodz()}{changePoleRodz()}}
+{\footnotesize\ttfamily int CPlansza\+::change\+Pole\+Rodz (\begin{DoxyParamCaption}\item[{string}]{rodz }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Funkcja zamienia rodzaj pola typu {\itshape string} na odpowiadającą mu wartość {\itshape int}. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em rodz} & -\/ napis określający rodzaj pola \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_plansza_ab83f9880bf20d20dfad42b52fea6c213}\label{class_c_plansza_ab83f9880bf20d20dfad42b52fea6c213}} 
+\index{CPlansza@{CPlansza}!daneIntPola@{daneIntPola}}
+\index{daneIntPola@{daneIntPola}!CPlansza@{CPlansza}}
+\doxysubsubsection{\texorpdfstring{daneIntPola()}{daneIntPola()}}
+{\footnotesize\ttfamily int CPlansza\+::dane\+Int\+Pola (\begin{DoxyParamCaption}\item[{int}]{par\+Poz,  }\item[{int}]{opt }\end{DoxyParamCaption})}
+
+
+
+Podaje dane typu int konkretnego obieku klasy \mbox{\hyperlink{class_c_pole}{CPole}}. 
+
+W zależności od tego, jaki numer pozycji pola został podany jako parametr metody zwraca określony (również w parametrach metody) atrybut klasy \mbox{\hyperlink{class_c_pole}{CPole}} lub pochodnej. 
+\begin{DoxyParams}{Parametry}
+{\em par\+Poz} & -\/ numer pozycji pola \\
+\hline
+{\em opt} & -\/ mówi o tym, który atrybut ma zostać zwrócony \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_plansza_ade56af20b7c254c6abfe14411cf38d55}\label{class_c_plansza_ade56af20b7c254c6abfe14411cf38d55}} 
+\index{CPlansza@{CPlansza}!dodajPole@{dodajPole}}
+\index{dodajPole@{dodajPole}!CPlansza@{CPlansza}}
+\doxysubsubsection{\texorpdfstring{dodajPole()}{dodajPole()}}
+{\footnotesize\ttfamily void CPlansza\+::dodaj\+Pole (\begin{DoxyParamCaption}\item[{int}]{rodz,  }\item[{\mbox{\hyperlink{struct_s_dn_pocz_pola}{SDn\+Pocz\+Pola}}}]{dane }\end{DoxyParamCaption})}
+
+
+
+Zamienia pole na danej pozycji nowym obiektem. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em rodz} & -\/ klasa pola \\
+\hline
+{\em dane} & -\/ dane nowego pola \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_plansza_aa2bacdb0774c17cc0b27b5fc4066a1e7}\label{class_c_plansza_aa2bacdb0774c17cc0b27b5fc4066a1e7}} 
+\index{CPlansza@{CPlansza}!identPole@{identPole}}
+\index{identPole@{identPole}!CPlansza@{CPlansza}}
+\doxysubsubsection{\texorpdfstring{identPole()}{identPole()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_s_wyn_akcji}{SWyn\+Akcji}} CPlansza\+::ident\+Pole (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_gracz}{CGracz}} $\ast$}]{gracz,  }\item[{int}]{par\+Poz }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Zwraca}
+Pole \mbox{\hyperlink{struct_s_wyn_akcji_af4f719af14df7f07431de76741de165d}{SWyn\+Akcji.\+y1}} zwracanego wyniku wskazuje na klasę obiektu pola\+: \begin{DoxyItemize}
+\item = 0 -\/-\/---\texorpdfstring{$>$}{>} klasa \mbox{\hyperlink{class_c_pole_spec}{CPole\+Spec}} \item = 1 -\/-\/---\texorpdfstring{$>$}{>} klasa \mbox{\hyperlink{class_c_pole_stnd}{CPole\+Stnd}} \item = 2 -\/-\/---\texorpdfstring{$>$}{>} klasa \mbox{\hyperlink{class_c_pole_ekstra}{CPole\+Ekstra}} \item = 3 -\/-\/---\texorpdfstring{$>$}{>} klasa \mbox{\hyperlink{class_c_pole_do_wiezienia}{CPole\+Do\+Wiezienia}} \item = 4 -\/-\/---\texorpdfstring{$>$}{>} klasa \mbox{\hyperlink{class_c_pole_kasa}{CPole\+Kasa}} \item = 5 -\/-\/---\texorpdfstring{$>$}{>} klasa \mbox{\hyperlink{class_c_pole_szansa}{CPole\+Szansa}} \item = 6 -\/-\/---\texorpdfstring{$>$}{>} klasa \mbox{\hyperlink{class_c_pole}{CPole}} \end{DoxyItemize}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_plansza_a273dfb0a5d4ac6f072df33da3798a608}\label{class_c_plansza_a273dfb0a5d4ac6f072df33da3798a608}} 
+\index{CPlansza@{CPlansza}!kartaHeaderToInt@{kartaHeaderToInt}}
+\index{kartaHeaderToInt@{kartaHeaderToInt}!CPlansza@{CPlansza}}
+\doxysubsubsection{\texorpdfstring{kartaHeaderToInt()}{kartaHeaderToInt()}}
+{\footnotesize\ttfamily int CPlansza\+::karta\+Header\+To\+Int (\begin{DoxyParamCaption}\item[{string}]{header }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Analogicznie do change\+Pole\+Header({\itshape string}) zamienia argument na odpowiadającą mu wartość {\itshape int}. 
+
+\begin{DoxyReturn}{Zwraca}
+Wartości wynikowe dla różnych wartości argumentu\+: \begin{DoxyItemize}
+\item \char`\"{}\+CKarta\+Kwoty\char`\"{} ---\texorpdfstring{$>$}{>} 0 \item \char`\"{}\+CKarta\+Ruchu\char`\"{} ---\texorpdfstring{$>$}{>} 1 \item \char`\"{}\+CKarta\+Wolnosc\char`\"{} ---\texorpdfstring{$>$}{>} 2 \item \char`\"{}\+CKarta\+Wiezienia\char`\"{} ---\texorpdfstring{$>$}{>} 3 \end{DoxyItemize}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_plansza_ad4cfa94c49d774aea7d5ee86e90825c2}\label{class_c_plansza_ad4cfa94c49d774aea7d5ee86e90825c2}} 
+\index{CPlansza@{CPlansza}!kartaRodzToInt@{kartaRodzToInt}}
+\index{kartaRodzToInt@{kartaRodzToInt}!CPlansza@{CPlansza}}
+\doxysubsubsection{\texorpdfstring{kartaRodzToInt()}{kartaRodzToInt()}}
+{\footnotesize\ttfamily int CPlansza\+::karta\+Rodz\+To\+Int (\begin{DoxyParamCaption}\item[{string}]{rodzaj }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Analogicznie do change\+Pole\+Rodz({\itshape string}) zamienia argument na odpowiadającą mu wartość {\itshape int}. 
+
+\begin{DoxyReturn}{Zwraca}
+Wartości wynikowe dla różnych wartości argumentu\+: \begin{DoxyItemize}
+\item \char`\"{}\+CKarta\+Kwoty\char`\"{} ---\texorpdfstring{$>$}{>} 0 \item \char`\"{}\+CKarta\+Ruchu\char`\"{} ---\texorpdfstring{$>$}{>} 1 \item \char`\"{}\+CKarta\+Wiezienia\char`\"{} ---\texorpdfstring{$>$}{>} 2 \item \char`\"{}\+CKarta\+Wolnosc\char`\"{} ---\texorpdfstring{$>$}{>} 3 \end{DoxyItemize}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_plansza_a88abb4facbe8fb1e1f13789bec1b8ec8}\label{class_c_plansza_a88abb4facbe8fb1e1f13789bec1b8ec8}} 
+\index{CPlansza@{CPlansza}!ktoMaPole@{ktoMaPole}}
+\index{ktoMaPole@{ktoMaPole}!CPlansza@{CPlansza}}
+\doxysubsubsection{\texorpdfstring{ktoMaPole()}{ktoMaPole()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_gracz}{CGracz}} $\ast$ CPlansza\+::kto\+Ma\+Pole (\begin{DoxyParamCaption}\item[{int}]{par\+Poz }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_plansza_ae43b309548c5cc9a49a5a6366a348e50}\label{class_c_plansza_ae43b309548c5cc9a49a5a6366a348e50}} 
+\index{CPlansza@{CPlansza}!kupowaniePola@{kupowaniePola}}
+\index{kupowaniePola@{kupowaniePola}!CPlansza@{CPlansza}}
+\doxysubsubsection{\texorpdfstring{kupowaniePola()}{kupowaniePola()}}
+{\footnotesize\ttfamily void CPlansza\+::kupowanie\+Pola (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_gracz}{CGracz}} $\ast$}]{kupiec,  }\item[{int}]{par\+Poz }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_plansza_a70d7ffe16efc0bff547bff01c67d062b}\label{class_c_plansza_a70d7ffe16efc0bff547bff01c67d062b}} 
+\index{CPlansza@{CPlansza}!losowanieKarty@{losowanieKarty}}
+\index{losowanieKarty@{losowanieKarty}!CPlansza@{CPlansza}}
+\doxysubsubsection{\texorpdfstring{losowanieKarty()}{losowanieKarty()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_s_dn_karty}{SDn\+Karty}} CPlansza\+::losowanie\+Karty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_plansza_a85ece741539ead436afe8a9e765a31e7}\label{class_c_plansza_a85ece741539ead436afe8a9e765a31e7}} 
+\index{CPlansza@{CPlansza}!parseBound@{parseBound}}
+\index{parseBound@{parseBound}!CPlansza@{CPlansza}}
+\doxysubsubsection{\texorpdfstring{parseBound()}{parseBound()}}
+{\footnotesize\ttfamily int CPlansza\+::parse\+Bound (\begin{DoxyParamCaption}\item[{deque$<$ string $>$ \&}]{tresc\+Pliku,  }\item[{string}]{nazwa\+Nag,  }\item[{int}]{start }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Funkcja poszukuje indeksu początkowego i końcowego elementu typu string należącego do danego nagłówka. 
+
+Przeszukuje kontener deque$<$string$>$ zawierający linijki danych i określa, który element jest elementem zawierającym zakończenie danego nagłówka (\char`\"{}/...\char`\"{}). 
+\begin{DoxyParams}{Parametry}
+{\em tresc\+Pliku} & Podwójna lista składająca się z elementów typu string. \\
+\hline
+{\em nazwa\+Nag} & Zawiera informację o nazwie poszukiwanego nagłówka (nie jego końca -\/ \texorpdfstring{$<$}{<}/...\texorpdfstring{$>$}{>}). \\
+\hline
+{\em start} & Indeks elementu listy, od którego funkcja zaczyna analizę (powinien być to indeks początku nagłówka). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+Zwraca numer elementu, który jest zakończeniem nagłówka. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_plansza_a468d58e945f4d7565626100428d64429}\label{class_c_plansza_a468d58e945f4d7565626100428d64429}} 
+\index{CPlansza@{CPlansza}!parseElem@{parseElem}}
+\index{parseElem@{parseElem}!CPlansza@{CPlansza}}
+\doxysubsubsection{\texorpdfstring{parseElem()}{parseElem()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_s_parsed_elem}{SParsed\+Elem}} CPlansza\+::parse\+Elem (\begin{DoxyParamCaption}\item[{string \&}]{dane\+Str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+/brief Wyszukuje w strumieniu nagłówek i indeksy początku i końca jego zawartości.
+
+Funkcja najpierw wyszukuje najbliższy nagłówek ($<$nagłówek$>$), a potem wyznacza indeks początkowy jego zawartości. 
+\begin{DoxyParams}{Parametry}
+{\em dane\+Str} & Strumień danych (np. pobrany z pliku). \\
+\hline
+{\em dane\+Str\+Index} & Indeks znaku w strumieniu, od którego funkcja ma zacząć poszukiwać nagłówka. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+Wartość zwracana to struktura zawierająca nazwę znalezionego nagłówka i numer pierwszego indeksu zawartości (pierwszego znaku po \textquotesingle{}\texorpdfstring{$>$}{>}\textquotesingle{} początku nagłówka) oraz końca zawartości (ostatniego znaku przed \textquotesingle{}\texorpdfstring{$<$}{<}\textquotesingle{} końca nagłówka). 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_plansza_a2212efa1ecb0263172f580cf6fc5a90c}\label{class_c_plansza_a2212efa1ecb0263172f580cf6fc5a90c}} 
+\index{CPlansza@{CPlansza}!parseHeadCont@{parseHeadCont}}
+\index{parseHeadCont@{parseHeadCont}!CPlansza@{CPlansza}}
+\doxysubsubsection{\texorpdfstring{parseHeadCont()}{parseHeadCont()}}
+{\footnotesize\ttfamily string CPlansza\+::parse\+Head\+Cont (\begin{DoxyParamCaption}\item[{string}]{strumien,  }\item[{int}]{start }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Zwraca właściwą zawartość nagłówka. 
+
+\mbox{\Hypertarget{class_c_plansza_af12e391e42ca6000e3aad4327e607ce0}\label{class_c_plansza_af12e391e42ca6000e3aad4327e607ce0}} 
+\index{CPlansza@{CPlansza}!podajCenePola@{podajCenePola}}
+\index{podajCenePola@{podajCenePola}!CPlansza@{CPlansza}}
+\doxysubsubsection{\texorpdfstring{podajCenePola()}{podajCenePola()}}
+{\footnotesize\ttfamily int CPlansza\+::podaj\+Cene\+Pola (\begin{DoxyParamCaption}\item[{int}]{poz }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_plansza_a268f0bd3ab2c3b47e99adc8ea369d4d5}\label{class_c_plansza_a268f0bd3ab2c3b47e99adc8ea369d4d5}} 
+\index{CPlansza@{CPlansza}!podajPensje@{podajPensje}}
+\index{podajPensje@{podajPensje}!CPlansza@{CPlansza}}
+\doxysubsubsection{\texorpdfstring{podajPensje()}{podajPensje()}}
+{\footnotesize\ttfamily int CPlansza\+::podaj\+Pensje (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_plansza_adf30e54f2460c81a3645ae393538ba1b}\label{class_c_plansza_adf30e54f2460c81a3645ae393538ba1b}} 
+\index{CPlansza@{CPlansza}!poleRodzToStr@{poleRodzToStr}}
+\index{poleRodzToStr@{poleRodzToStr}!CPlansza@{CPlansza}}
+\doxysubsubsection{\texorpdfstring{poleRodzToStr()}{poleRodzToStr()}}
+{\footnotesize\ttfamily string CPlansza\+::pole\+Rodz\+To\+Str (\begin{DoxyParamCaption}\item[{int}]{rodz }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Funkcja zamienia rodzaj pola typu int na odpowiadającą mu wartość {\itshape string}. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em rodz} & -\/ liczba całkowita określająca rodzaj pola \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_plansza_a16093c03d0cf55e002fac6362b4cb9e7}\label{class_c_plansza_a16093c03d0cf55e002fac6362b4cb9e7}} 
+\index{CPlansza@{CPlansza}!potencjalZastawuGracza@{potencjalZastawuGracza}}
+\index{potencjalZastawuGracza@{potencjalZastawuGracza}!CPlansza@{CPlansza}}
+\doxysubsubsection{\texorpdfstring{potencjalZastawuGracza()}{potencjalZastawuGracza()}}
+{\footnotesize\ttfamily int CPlansza\+::potencjal\+Zastawu\+Gracza (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_gracz}{CGracz}} $\ast$}]{wlasciciel }\end{DoxyParamCaption})}
+
+
+
+Funkcja zwraca zsumowaną wartość zastawów nieruchomości podanego gracza. 
+
+Dla danego gracza przeszukuje listę pól i sumuje wysokości ich zastawów, ale bierze pod uwagę tylko niezastawione nieruchomości. 
+\begin{DoxyParams}{Parametry}
+{\em wlasciciel} & -\/ wskaźnik do obiektu klasy \mbox{\hyperlink{class_c_gracz}{CGracz}}, którego pól wyszukuje funkcja \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_plansza_a73d65ce8a7888fac14e9eece741e7118}\label{class_c_plansza_a73d65ce8a7888fac14e9eece741e7118}} 
+\index{CPlansza@{CPlansza}!sortujListePol@{sortujListePol}}
+\index{sortujListePol@{sortujListePol}!CPlansza@{CPlansza}}
+\doxysubsubsection{\texorpdfstring{sortujListePol()}{sortujListePol()}}
+{\footnotesize\ttfamily void CPlansza\+::sortuj\+Liste\+Pol (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Sortuje listę pola\+\_\+ rosnąco, wg pola \mbox{\hyperlink{class_c_pole_aa08ed96e35cf641d19205a7bc9b9338e}{CPole\+::pozycja\+\_\+}}. 
+
+\mbox{\Hypertarget{class_c_plansza_a1295673b3d4eaa71c33f5996aeeb2ba7}\label{class_c_plansza_a1295673b3d4eaa71c33f5996aeeb2ba7}} 
+\index{CPlansza@{CPlansza}!tasowanieKart@{tasowanieKart}}
+\index{tasowanieKart@{tasowanieKart}!CPlansza@{CPlansza}}
+\doxysubsubsection{\texorpdfstring{tasowanieKart()}{tasowanieKart()}}
+{\footnotesize\ttfamily void CPlansza\+::tasowanie\+Kart (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_plansza_a5ac73aeeeaf14f389993983a1b1e415e}\label{class_c_plansza_a5ac73aeeeaf14f389993983a1b1e415e}} 
+\index{CPlansza@{CPlansza}!ustalKolejnaPozWKolejce@{ustalKolejnaPozWKolejce}}
+\index{ustalKolejnaPozWKolejce@{ustalKolejnaPozWKolejce}!CPlansza@{CPlansza}}
+\doxysubsubsection{\texorpdfstring{ustalKolejnaPozWKolejce()}{ustalKolejnaPozWKolejce()}}
+{\footnotesize\ttfamily int CPlansza\+::ustal\+Kolejna\+Poz\+WKolejce (\begin{DoxyParamCaption}\item[{int}]{akt\+Poz,  }\item[{int}]{rozm\+Kolejki }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Na podstawie wartości aktualnej pozycji w kolejce i rozmiaru analizowanej kolejki wyznacza wartość kolejnej pozycji. 
+
+\mbox{\Hypertarget{class_c_plansza_aeeb40f30ce66daa5ada2cdc7feec27c0}\label{class_c_plansza_aeeb40f30ce66daa5ada2cdc7feec27c0}} 
+\index{CPlansza@{CPlansza}!ustawPensjeStart@{ustawPensjeStart}}
+\index{ustawPensjeStart@{ustawPensjeStart}!CPlansza@{CPlansza}}
+\doxysubsubsection{\texorpdfstring{ustawPensjeStart()}{ustawPensjeStart()}}
+{\footnotesize\ttfamily void CPlansza\+::ustaw\+Pensje\+Start (\begin{DoxyParamCaption}\item[{int}]{pensja }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_plansza_a00be2fc992dc01a694d12ed9e304eb52}\label{class_c_plansza_a00be2fc992dc01a694d12ed9e304eb52}} 
+\index{CPlansza@{CPlansza}!usunKarty@{usunKarty}}
+\index{usunKarty@{usunKarty}!CPlansza@{CPlansza}}
+\doxysubsubsection{\texorpdfstring{usunKarty()}{usunKarty()}}
+{\footnotesize\ttfamily void CPlansza\+::usun\+Karty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Służy do zwolnienia pamięci przypisanej dynamicznie dla każdego elementu listy \mbox{\hyperlink{class_c_plansza_afb2985cbb08c785a1ba7f8c3c9eb38f3}{CPlansza\+::karty\+\_\+}}. 
+
+Wywoływana w destruktorze -\/ $\sim$\+Plansza(). Dopiero po ich wywołaniu kontenery zostają oczyszczone. \mbox{\Hypertarget{class_c_plansza_a5a8e2aff641c0508b284173a77f13b2a}\label{class_c_plansza_a5a8e2aff641c0508b284173a77f13b2a}} 
+\index{CPlansza@{CPlansza}!usunKartyUzyte@{usunKartyUzyte}}
+\index{usunKartyUzyte@{usunKartyUzyte}!CPlansza@{CPlansza}}
+\doxysubsubsection{\texorpdfstring{usunKartyUzyte()}{usunKartyUzyte()}}
+{\footnotesize\ttfamily void CPlansza\+::usun\+Karty\+Uzyte (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Służy do zwolnienia pamięci przypisanej dynamicznie dla każdego elementu listy \mbox{\hyperlink{class_c_plansza_a6dc6f3daee3cf85dead50ae38d922ad0}{CPlansza\+::karty\+Uzyte\+\_\+}}. 
+
+\begin{DoxySeeAlso}{Zobacz również}
+\mbox{\hyperlink{class_c_plansza_a00be2fc992dc01a694d12ed9e304eb52}{usun\+Karty()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_c_plansza_a6b5ae3245a7c43e61ec6138eec3a78a6}\label{class_c_plansza_a6b5ae3245a7c43e61ec6138eec3a78a6}} 
+\index{CPlansza@{CPlansza}!usunPola@{usunPola}}
+\index{usunPola@{usunPola}!CPlansza@{CPlansza}}
+\doxysubsubsection{\texorpdfstring{usunPola()}{usunPola()}}
+{\footnotesize\ttfamily void CPlansza\+::usun\+Pola (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Służy do zwolnienia pamięci przypisanej dynamicznie dla każdego elementu listy \mbox{\hyperlink{class_c_plansza_a4ac4197dfea9bc5a71f7b93e4439245b}{CPlansza\+::pola\+\_\+}}. 
+
+\begin{DoxySeeAlso}{Zobacz również}
+\mbox{\hyperlink{class_c_plansza_a00be2fc992dc01a694d12ed9e304eb52}{usun\+Karty()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_c_plansza_a67739bc79d63e426a45d8880f8d97bae}\label{class_c_plansza_a67739bc79d63e426a45d8880f8d97bae}} 
+\index{CPlansza@{CPlansza}!utworzCKartaKwotyZPliku@{utworzCKartaKwotyZPliku}}
+\index{utworzCKartaKwotyZPliku@{utworzCKartaKwotyZPliku}!CPlansza@{CPlansza}}
+\doxysubsubsection{\texorpdfstring{utworzCKartaKwotyZPliku()}{utworzCKartaKwotyZPliku()}}
+{\footnotesize\ttfamily void CPlansza\+::utworz\+CKarta\+Kwoty\+ZPliku (\begin{DoxyParamCaption}\item[{deque$<$ string $>$ \&}]{dane\+ZPliku,  }\item[{int}]{start,  }\item[{int}]{end }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Tworzy \mbox{\hyperlink{class_c_karta_kwoty}{CKarta\+Kwoty}} na podstawie danych pobranych z pliku. 
+
+\begin{DoxySeeAlso}{Zobacz również}
+\mbox{\hyperlink{class_c_plansza_a04d2fbb864fa68e6eef078d2c313451c}{utworz\+CKarta\+Wolnosc\+ZPliku(deque$<$string$>$ \&dane\+ZPliku, int start, int end)}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_c_plansza_ad72753a8ac19a3b0143ef22436ba0bab}\label{class_c_plansza_ad72753a8ac19a3b0143ef22436ba0bab}} 
+\index{CPlansza@{CPlansza}!utworzCKartaRuchuZPliku@{utworzCKartaRuchuZPliku}}
+\index{utworzCKartaRuchuZPliku@{utworzCKartaRuchuZPliku}!CPlansza@{CPlansza}}
+\doxysubsubsection{\texorpdfstring{utworzCKartaRuchuZPliku()}{utworzCKartaRuchuZPliku()}}
+{\footnotesize\ttfamily void CPlansza\+::utworz\+CKarta\+Ruchu\+ZPliku (\begin{DoxyParamCaption}\item[{deque$<$ string $>$ \&}]{dane\+ZPliku,  }\item[{int}]{start,  }\item[{int}]{end }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Tworzy \mbox{\hyperlink{class_c_karta_ruchu}{CKarta\+Ruchu}} na podstawie danych pobranych z pliku. 
+
+\begin{DoxySeeAlso}{Zobacz również}
+\mbox{\hyperlink{class_c_plansza_a04d2fbb864fa68e6eef078d2c313451c}{utworz\+CKarta\+Wolnosc\+ZPliku(deque$<$string$>$ \&dane\+ZPliku, int start, int end)}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_c_plansza_a533770c4544cb7fe7965c7c372de07db}\label{class_c_plansza_a533770c4544cb7fe7965c7c372de07db}} 
+\index{CPlansza@{CPlansza}!utworzCKartaWiezieniaZPliku@{utworzCKartaWiezieniaZPliku}}
+\index{utworzCKartaWiezieniaZPliku@{utworzCKartaWiezieniaZPliku}!CPlansza@{CPlansza}}
+\doxysubsubsection{\texorpdfstring{utworzCKartaWiezieniaZPliku()}{utworzCKartaWiezieniaZPliku()}}
+{\footnotesize\ttfamily void CPlansza\+::utworz\+CKarta\+Wiezienia\+ZPliku (\begin{DoxyParamCaption}\item[{deque$<$ string $>$ \&}]{dane\+ZPliku,  }\item[{int}]{start,  }\item[{int}]{end }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Tworzy \mbox{\hyperlink{class_c_karta_wiezienia}{CKarta\+Wiezienia}} na podstawie danych pobranych z pliku. 
+
+\begin{DoxySeeAlso}{Zobacz również}
+\mbox{\hyperlink{class_c_plansza_a04d2fbb864fa68e6eef078d2c313451c}{utworz\+CKarta\+Wolnosc\+ZPliku(deque$<$string$>$ \&dane\+ZPliku, int start, int end)}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_c_plansza_a04d2fbb864fa68e6eef078d2c313451c}\label{class_c_plansza_a04d2fbb864fa68e6eef078d2c313451c}} 
+\index{CPlansza@{CPlansza}!utworzCKartaWolnoscZPliku@{utworzCKartaWolnoscZPliku}}
+\index{utworzCKartaWolnoscZPliku@{utworzCKartaWolnoscZPliku}!CPlansza@{CPlansza}}
+\doxysubsubsection{\texorpdfstring{utworzCKartaWolnoscZPliku()}{utworzCKartaWolnoscZPliku()}}
+{\footnotesize\ttfamily void CPlansza\+::utworz\+CKarta\+Wolnosc\+ZPliku (\begin{DoxyParamCaption}\item[{deque$<$ string $>$ \&}]{dane\+ZPliku,  }\item[{int}]{start,  }\item[{int}]{end }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Tworzy \mbox{\hyperlink{class_c_karta_wolnosc}{CKarta\+Wolnosc}} na podstawie danych pobranych z pliku. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em dane\+ZPliku} & -\/ dane pobrane z pliku \\
+\hline
+{\em start} & -\/ indeks elementu listy, od którego metoda ma zacząć pobierać dane \\
+\hline
+{\em end} & -\/ indeks ostatniego elementu listy, który ma być pobrany w metodzie \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{Zobacz również}
+\mbox{\hyperlink{class_c_plansza_a10673bf143904c7fa41aa9199d3ba8d8}{wczytaj\+Dane\+ZPliku\+\_\+karty(deque$<$string$>$ \&dane\+ZPliku)}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_c_plansza_ad39bb67f73cc8c852a87c480a3895687}\label{class_c_plansza_ad39bb67f73cc8c852a87c480a3895687}} 
+\index{CPlansza@{CPlansza}!utworzCPoleDoWiezieniaZPliku@{utworzCPoleDoWiezieniaZPliku}}
+\index{utworzCPoleDoWiezieniaZPliku@{utworzCPoleDoWiezieniaZPliku}!CPlansza@{CPlansza}}
+\doxysubsubsection{\texorpdfstring{utworzCPoleDoWiezieniaZPliku()}{utworzCPoleDoWiezieniaZPliku()}}
+{\footnotesize\ttfamily void CPlansza\+::utworz\+CPole\+Do\+Wiezienia\+ZPliku (\begin{DoxyParamCaption}\item[{deque$<$ string $>$ \&}]{dane\+ZPliku,  }\item[{int}]{start,  }\item[{int}]{end }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Tworzy \mbox{\hyperlink{class_c_pole_do_wiezienia}{CPole\+Do\+Wiezienia}} na podstawie danych pobranych z pliku. 
+
+\begin{DoxySeeAlso}{Zobacz również}
+\mbox{\hyperlink{class_c_plansza_a8bbe2ea4ff60ebf90a97d179c8b24bc8}{utworz\+CPole\+ZPliku(deque$<$string$>$ \&dane\+ZPliku, int start, int end)}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_c_plansza_a35746dd4d71d1304a8d65737e2b0292c}\label{class_c_plansza_a35746dd4d71d1304a8d65737e2b0292c}} 
+\index{CPlansza@{CPlansza}!utworzCPoleEkstraZPliku@{utworzCPoleEkstraZPliku}}
+\index{utworzCPoleEkstraZPliku@{utworzCPoleEkstraZPliku}!CPlansza@{CPlansza}}
+\doxysubsubsection{\texorpdfstring{utworzCPoleEkstraZPliku()}{utworzCPoleEkstraZPliku()}}
+{\footnotesize\ttfamily void CPlansza\+::utworz\+CPole\+Ekstra\+ZPliku (\begin{DoxyParamCaption}\item[{deque$<$ string $>$ \&}]{dane\+ZPliku,  }\item[{int}]{start,  }\item[{int}]{end }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Tworzy \mbox{\hyperlink{class_c_pole_ekstra}{CPole\+Ekstra}} na podstawie danych pobranych z pliku. 
+
+\begin{DoxySeeAlso}{Zobacz również}
+\mbox{\hyperlink{class_c_plansza_a8bbe2ea4ff60ebf90a97d179c8b24bc8}{utworz\+CPole\+ZPliku(deque$<$string$>$ \&dane\+ZPliku, int start, int end)}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_c_plansza_aba7e6ceb4227c9e7dc85470c5a641670}\label{class_c_plansza_aba7e6ceb4227c9e7dc85470c5a641670}} 
+\index{CPlansza@{CPlansza}!utworzCPoleKasaZPliku@{utworzCPoleKasaZPliku}}
+\index{utworzCPoleKasaZPliku@{utworzCPoleKasaZPliku}!CPlansza@{CPlansza}}
+\doxysubsubsection{\texorpdfstring{utworzCPoleKasaZPliku()}{utworzCPoleKasaZPliku()}}
+{\footnotesize\ttfamily void CPlansza\+::utworz\+CPole\+Kasa\+ZPliku (\begin{DoxyParamCaption}\item[{deque$<$ string $>$ \&}]{dane\+ZPliku,  }\item[{int}]{start,  }\item[{int}]{end }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Tworzy \mbox{\hyperlink{class_c_pole_kasa}{CPole\+Kasa}} na podstawie danych pobranych z pliku. 
+
+\begin{DoxySeeAlso}{Zobacz również}
+\mbox{\hyperlink{class_c_plansza_a8bbe2ea4ff60ebf90a97d179c8b24bc8}{utworz\+CPole\+ZPliku(deque$<$string$>$ \&dane\+ZPliku, int start, int end)}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_c_plansza_a06a371ff0b30a87a29023f33853db97a}\label{class_c_plansza_a06a371ff0b30a87a29023f33853db97a}} 
+\index{CPlansza@{CPlansza}!utworzCPoleSpecZPliku@{utworzCPoleSpecZPliku}}
+\index{utworzCPoleSpecZPliku@{utworzCPoleSpecZPliku}!CPlansza@{CPlansza}}
+\doxysubsubsection{\texorpdfstring{utworzCPoleSpecZPliku()}{utworzCPoleSpecZPliku()}}
+{\footnotesize\ttfamily void CPlansza\+::utworz\+CPole\+Spec\+ZPliku (\begin{DoxyParamCaption}\item[{deque$<$ string $>$ \&}]{dane\+ZPliku,  }\item[{int}]{start,  }\item[{int}]{end }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Tworzy \mbox{\hyperlink{class_c_pole_spec}{CPole\+Spec}} na podstawie danych pobranych z pliku. 
+
+\begin{DoxySeeAlso}{Zobacz również}
+\mbox{\hyperlink{class_c_plansza_a8bbe2ea4ff60ebf90a97d179c8b24bc8}{utworz\+CPole\+ZPliku(deque$<$string$>$ \&dane\+ZPliku, int start, int end)}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_c_plansza_a187aec9956237d04fa8d7ed984bc3601}\label{class_c_plansza_a187aec9956237d04fa8d7ed984bc3601}} 
+\index{CPlansza@{CPlansza}!utworzCPoleStndZPliku@{utworzCPoleStndZPliku}}
+\index{utworzCPoleStndZPliku@{utworzCPoleStndZPliku}!CPlansza@{CPlansza}}
+\doxysubsubsection{\texorpdfstring{utworzCPoleStndZPliku()}{utworzCPoleStndZPliku()}}
+{\footnotesize\ttfamily void CPlansza\+::utworz\+CPole\+Stnd\+ZPliku (\begin{DoxyParamCaption}\item[{deque$<$ string $>$ \&}]{dane\+ZPliku,  }\item[{int}]{start,  }\item[{int}]{end }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Tworzy \mbox{\hyperlink{class_c_pole_stnd}{CPole\+Stnd}} na podstawie danych pobranych z pliku. 
+
+\begin{DoxySeeAlso}{Zobacz również}
+\mbox{\hyperlink{class_c_plansza_a8bbe2ea4ff60ebf90a97d179c8b24bc8}{utworz\+CPole\+ZPliku(deque$<$string$>$ \&dane\+ZPliku, int start, int end)}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_c_plansza_a25bb829cbc304c9d825427aeda11a1fe}\label{class_c_plansza_a25bb829cbc304c9d825427aeda11a1fe}} 
+\index{CPlansza@{CPlansza}!utworzCPoleSzansaZPliku@{utworzCPoleSzansaZPliku}}
+\index{utworzCPoleSzansaZPliku@{utworzCPoleSzansaZPliku}!CPlansza@{CPlansza}}
+\doxysubsubsection{\texorpdfstring{utworzCPoleSzansaZPliku()}{utworzCPoleSzansaZPliku()}}
+{\footnotesize\ttfamily void CPlansza\+::utworz\+CPole\+Szansa\+ZPliku (\begin{DoxyParamCaption}\item[{deque$<$ string $>$ \&}]{dane\+ZPliku,  }\item[{int}]{start,  }\item[{int}]{end }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Tworzy \mbox{\hyperlink{class_c_pole_szansa}{CPole\+Szansa}} na podstawie danych pobranych z pliku. 
+
+\begin{DoxySeeAlso}{Zobacz również}
+\mbox{\hyperlink{class_c_plansza_a8bbe2ea4ff60ebf90a97d179c8b24bc8}{utworz\+CPole\+ZPliku(deque$<$string$>$ \&dane\+ZPliku, int start, int end)}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_c_plansza_a8bbe2ea4ff60ebf90a97d179c8b24bc8}\label{class_c_plansza_a8bbe2ea4ff60ebf90a97d179c8b24bc8}} 
+\index{CPlansza@{CPlansza}!utworzCPoleZPliku@{utworzCPoleZPliku}}
+\index{utworzCPoleZPliku@{utworzCPoleZPliku}!CPlansza@{CPlansza}}
+\doxysubsubsection{\texorpdfstring{utworzCPoleZPliku()}{utworzCPoleZPliku()}}
+{\footnotesize\ttfamily void CPlansza\+::utworz\+CPole\+ZPliku (\begin{DoxyParamCaption}\item[{deque$<$ string $>$ \&}]{dane\+ZPliku,  }\item[{int}]{start,  }\item[{int}]{end }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Tworzy \mbox{\hyperlink{class_c_pole}{CPole}} na podstawie danych pobranych z pliku. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em dane\+ZPliku} & -\/ dane pobrane z pliku \\
+\hline
+{\em start} & -\/ indeks elementu listy, od którego metoda ma zacząć pobierać dane \\
+\hline
+{\em end} & -\/ indeks ostatniego elementu listy, który ma być pobrany w metodzie \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{Zobacz również}
+\mbox{\hyperlink{class_c_plansza_af705d367c41fa5f26f24615ca0617f6c}{wczytaj\+Dane\+ZPliku\+\_\+pola(deque$<$string$>$ \&dane\+ZPliku)}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_c_plansza_a3d7e47325daafd17fc0facce15806025}\label{class_c_plansza_a3d7e47325daafd17fc0facce15806025}} 
+\index{CPlansza@{CPlansza}!wartoscNieruchomosciGracza@{wartoscNieruchomosciGracza}}
+\index{wartoscNieruchomosciGracza@{wartoscNieruchomosciGracza}!CPlansza@{CPlansza}}
+\doxysubsubsection{\texorpdfstring{wartoscNieruchomosciGracza()}{wartoscNieruchomosciGracza()}}
+{\footnotesize\ttfamily int CPlansza\+::wartosc\+Nieruchomosci\+Gracza (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_gracz}{CGracz}} $\ast$}]{wlasciciel }\end{DoxyParamCaption})}
+
+
+
+Funkcja zwraca zsumowaną wartość cen kupna nieruchomości podanego gracza. 
+
+Bierze pod uwagę tylko nieruchomości NIEZASTAWIONE. ~\newline
+ \mbox{\Hypertarget{class_c_plansza_a10673bf143904c7fa41aa9199d3ba8d8}\label{class_c_plansza_a10673bf143904c7fa41aa9199d3ba8d8}} 
+\index{CPlansza@{CPlansza}!wczytajDaneZPliku\_karty@{wczytajDaneZPliku\_karty}}
+\index{wczytajDaneZPliku\_karty@{wczytajDaneZPliku\_karty}!CPlansza@{CPlansza}}
+\doxysubsubsection{\texorpdfstring{wczytajDaneZPliku\_karty()}{wczytajDaneZPliku\_karty()}}
+{\footnotesize\ttfamily void CPlansza\+::wczytaj\+Dane\+ZPliku\+\_\+karty (\begin{DoxyParamCaption}\item[{deque$<$ string $>$ \&}]{dane\+ZPliku }\end{DoxyParamCaption})}
+
+
+
+Tworzy karty planszy według danych pobranych z pliku. 
+
+Dane są w postaci łańcuchów {\itshape string}. Każdy element listy {\itshape dane\+ZPliku} to z założenia 1 linijka tekstu z pliku. 
+\begin{DoxyParams}{Parametry}
+{\em dane\+ZPliku} & -\/ dwukierunkowa lista łańcuchów {\itshape string} pobranych z pliku \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_plansza_af705d367c41fa5f26f24615ca0617f6c}\label{class_c_plansza_af705d367c41fa5f26f24615ca0617f6c}} 
+\index{CPlansza@{CPlansza}!wczytajDaneZPliku\_pola@{wczytajDaneZPliku\_pola}}
+\index{wczytajDaneZPliku\_pola@{wczytajDaneZPliku\_pola}!CPlansza@{CPlansza}}
+\doxysubsubsection{\texorpdfstring{wczytajDaneZPliku\_pola()}{wczytajDaneZPliku\_pola()}}
+{\footnotesize\ttfamily void CPlansza\+::wczytaj\+Dane\+ZPliku\+\_\+pola (\begin{DoxyParamCaption}\item[{deque$<$ string $>$ \&}]{dane\+ZPliku }\end{DoxyParamCaption})}
+
+
+
+Tworzy pola planszy według danych pobranych z pliku. 
+
+Dane są w postaci łańcuchów {\itshape string}. Każdy element listy {\itshape dane\+ZPliku} to z założenia 1 linijka tekstu z pliku. 
+\begin{DoxyParams}{Parametry}
+{\em dane\+ZPliku} & -\/ dwukierunkowa lista łańcuchów {\itshape string} pobranych z pliku \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_plansza_a1a2d61af7d194014f5125a671f415abb}\label{class_c_plansza_a1a2d61af7d194014f5125a671f415abb}} 
+\index{CPlansza@{CPlansza}!wykup@{wykup}}
+\index{wykup@{wykup}!CPlansza@{CPlansza}}
+\doxysubsubsection{\texorpdfstring{wykup()}{wykup()}}
+{\footnotesize\ttfamily void CPlansza\+::wykup (\begin{DoxyParamCaption}\item[{int}]{poz }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_plansza_a71e61cdeeaf8eb8e9116686f9cadfbba}\label{class_c_plansza_a71e61cdeeaf8eb8e9116686f9cadfbba}} 
+\index{CPlansza@{CPlansza}!zabuduj@{zabuduj}}
+\index{zabuduj@{zabuduj}!CPlansza@{CPlansza}}
+\doxysubsubsection{\texorpdfstring{zabuduj()}{zabuduj()}}
+{\footnotesize\ttfamily void CPlansza\+::zabuduj (\begin{DoxyParamCaption}\item[{int}]{poz }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_plansza_a222a04dd57fd99f9f0d954fdaca4cb76}\label{class_c_plansza_a222a04dd57fd99f9f0d954fdaca4cb76}} 
+\index{CPlansza@{CPlansza}!zamienNaCPoleEkstra@{zamienNaCPoleEkstra}}
+\index{zamienNaCPoleEkstra@{zamienNaCPoleEkstra}!CPlansza@{CPlansza}}
+\doxysubsubsection{\texorpdfstring{zamienNaCPoleEkstra()}{zamienNaCPoleEkstra()}}
+{\footnotesize\ttfamily void CPlansza\+::zamien\+Na\+CPole\+Ekstra (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_s_dn_pocz_pola}{SDn\+Pocz\+Pola}}}]{dane }\end{DoxyParamCaption})}
+
+
+
+Podmienia pole o danej pozycji polem z danymi przekazanymi jako parametr. 
+
+\begin{DoxySeeAlso}{Zobacz również}
+\mbox{\hyperlink{class_c_plansza_a941f6eb35cc3c5210207c7b970d72905}{zamien\+Na\+CPole\+Szansa}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_c_plansza_a9acac5852efbd635fdef978037002236}\label{class_c_plansza_a9acac5852efbd635fdef978037002236}} 
+\index{CPlansza@{CPlansza}!zamienNaCPoleKasa@{zamienNaCPoleKasa}}
+\index{zamienNaCPoleKasa@{zamienNaCPoleKasa}!CPlansza@{CPlansza}}
+\doxysubsubsection{\texorpdfstring{zamienNaCPoleKasa()}{zamienNaCPoleKasa()}}
+{\footnotesize\ttfamily void CPlansza\+::zamien\+Na\+CPole\+Kasa (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_s_dn_pocz_pola}{SDn\+Pocz\+Pola}}}]{dane }\end{DoxyParamCaption})}
+
+
+
+Podmienia pole o danej pozycji polem z danymi przekazanymi jako parametr. 
+
+\begin{DoxySeeAlso}{Zobacz również}
+\mbox{\hyperlink{class_c_plansza_a941f6eb35cc3c5210207c7b970d72905}{zamien\+Na\+CPole\+Szansa}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_c_plansza_a7866f29cac27a7431e4b0bfef9c3327c}\label{class_c_plansza_a7866f29cac27a7431e4b0bfef9c3327c}} 
+\index{CPlansza@{CPlansza}!zamienNaCPoleSpec@{zamienNaCPoleSpec}}
+\index{zamienNaCPoleSpec@{zamienNaCPoleSpec}!CPlansza@{CPlansza}}
+\doxysubsubsection{\texorpdfstring{zamienNaCPoleSpec()}{zamienNaCPoleSpec()}}
+{\footnotesize\ttfamily void CPlansza\+::zamien\+Na\+CPole\+Spec (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_s_dn_pocz_pola}{SDn\+Pocz\+Pola}}}]{dane }\end{DoxyParamCaption})}
+
+
+
+Podmienia pole o danej pozycji polem z danymi przekazanymi jako parametr. 
+
+\begin{DoxySeeAlso}{Zobacz również}
+\mbox{\hyperlink{class_c_plansza_a941f6eb35cc3c5210207c7b970d72905}{zamien\+Na\+CPole\+Szansa}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_c_plansza_aab0ed06aa3ea61e21dc5c894466d1aaa}\label{class_c_plansza_aab0ed06aa3ea61e21dc5c894466d1aaa}} 
+\index{CPlansza@{CPlansza}!zamienNaCPoleStnd@{zamienNaCPoleStnd}}
+\index{zamienNaCPoleStnd@{zamienNaCPoleStnd}!CPlansza@{CPlansza}}
+\doxysubsubsection{\texorpdfstring{zamienNaCPoleStnd()}{zamienNaCPoleStnd()}}
+{\footnotesize\ttfamily void CPlansza\+::zamien\+Na\+CPole\+Stnd (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_s_dn_pocz_pola}{SDn\+Pocz\+Pola}}}]{dane }\end{DoxyParamCaption})}
+
+
+
+Podmienia pole o danej pozycji polem z danymi przekazanymi jako parametr. 
+
+\begin{DoxySeeAlso}{Zobacz również}
+\mbox{\hyperlink{class_c_plansza_a941f6eb35cc3c5210207c7b970d72905}{zamien\+Na\+CPole\+Szansa}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_c_plansza_a941f6eb35cc3c5210207c7b970d72905}\label{class_c_plansza_a941f6eb35cc3c5210207c7b970d72905}} 
+\index{CPlansza@{CPlansza}!zamienNaCPoleSzansa@{zamienNaCPoleSzansa}}
+\index{zamienNaCPoleSzansa@{zamienNaCPoleSzansa}!CPlansza@{CPlansza}}
+\doxysubsubsection{\texorpdfstring{zamienNaCPoleSzansa()}{zamienNaCPoleSzansa()}}
+{\footnotesize\ttfamily void CPlansza\+::zamien\+Na\+CPole\+Szansa (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_s_dn_pocz_pola}{SDn\+Pocz\+Pola}}}]{dane }\end{DoxyParamCaption})}
+
+
+
+Podmienia pole o danej pozycji polem z danymi przekazanymi jako parametr. 
+
+Tworzy nowe pole, podmienia nim pole będące pierwotnie na podanej pozycji i usuwa pole pierwotne. 
+\begin{DoxyParams}{Parametry}
+{\em dane} & -\/ dane pola \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_plansza_a34a58f273922ba112a31c2d9bc67460c}\label{class_c_plansza_a34a58f273922ba112a31c2d9bc67460c}} 
+\index{CPlansza@{CPlansza}!zastaw@{zastaw}}
+\index{zastaw@{zastaw}!CPlansza@{CPlansza}}
+\doxysubsubsection{\texorpdfstring{zastaw()}{zastaw()}}
+{\footnotesize\ttfamily int CPlansza\+::zastaw (\begin{DoxyParamCaption}\item[{int}]{poz }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_plansza_a02bf6765796ecebcbde04f2a245405d5}\label{class_c_plansza_a02bf6765796ecebcbde04f2a245405d5}} 
+\index{CPlansza@{CPlansza}!zbierzDnPol@{zbierzDnPol}}
+\index{zbierzDnPol@{zbierzDnPol}!CPlansza@{CPlansza}}
+\doxysubsubsection{\texorpdfstring{zbierzDnPol()}{zbierzDnPol()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily deque$<$ \mbox{\hyperlink{struct_s_dn_pola}{SDn\+Pola}} $>$ CPlansza\+::zbierz\+Dn\+Pol (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_plansza_a7ad312c3fe5f317e3c9bd4c60a419168}\label{class_c_plansza_a7ad312c3fe5f317e3c9bd4c60a419168}} 
+\index{CPlansza@{CPlansza}!zbierzDnPol@{zbierzDnPol}}
+\index{zbierzDnPol@{zbierzDnPol}!CPlansza@{CPlansza}}
+\doxysubsubsection{\texorpdfstring{zbierzDnPol()}{zbierzDnPol()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily deque$<$ \mbox{\hyperlink{struct_s_dn_pola}{SDn\+Pola}} $>$ CPlansza\+::zbierz\+Dn\+Pol (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_gracz}{CGracz}} $\ast$}]{gracz }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_plansza_ae93aab33ff197b546f86cacecd9fdec0}\label{class_c_plansza_ae93aab33ff197b546f86cacecd9fdec0}} 
+\index{CPlansza@{CPlansza}!zbierzDnPola@{zbierzDnPola}}
+\index{zbierzDnPola@{zbierzDnPola}!CPlansza@{CPlansza}}
+\doxysubsubsection{\texorpdfstring{zbierzDnPola()}{zbierzDnPola()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_s_dn_pola}{SDn\+Pola}} CPlansza\+::zbierz\+Dn\+Pola (\begin{DoxyParamCaption}\item[{int}]{poz }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_plansza_ad6f1e46f6abb0d3fe2d734fab67dc2bb}\label{class_c_plansza_ad6f1e46f6abb0d3fe2d734fab67dc2bb}} 
+\index{CPlansza@{CPlansza}!zbierzDnPolNiezast@{zbierzDnPolNiezast}}
+\index{zbierzDnPolNiezast@{zbierzDnPolNiezast}!CPlansza@{CPlansza}}
+\doxysubsubsection{\texorpdfstring{zbierzDnPolNiezast()}{zbierzDnPolNiezast()}}
+{\footnotesize\ttfamily deque$<$ \mbox{\hyperlink{struct_s_dn_pola}{SDn\+Pola}} $>$ CPlansza\+::zbierz\+Dn\+Pol\+Niezast (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_gracz}{CGracz}} $\ast$}]{gracz }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_plansza_a94f646e1c4c4a15e93d0bc21c486a45d}\label{class_c_plansza_a94f646e1c4c4a15e93d0bc21c486a45d}} 
+\index{CPlansza@{CPlansza}!zbierzDnPolZast@{zbierzDnPolZast}}
+\index{zbierzDnPolZast@{zbierzDnPolZast}!CPlansza@{CPlansza}}
+\doxysubsubsection{\texorpdfstring{zbierzDnPolZast()}{zbierzDnPolZast()}}
+{\footnotesize\ttfamily deque$<$ \mbox{\hyperlink{struct_s_dn_pola}{SDn\+Pola}} $>$ CPlansza\+::zbierz\+Dn\+Pol\+Zast (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_gracz}{CGracz}} $\ast$}]{gracz }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_plansza_aea1a5f0fed8f64ab857c34af21c3cd71}\label{class_c_plansza_aea1a5f0fed8f64ab857c34af21c3cd71}} 
+\index{CPlansza@{CPlansza}!znajdzZn@{znajdzZn}}
+\index{znajdzZn@{znajdzZn}!CPlansza@{CPlansza}}
+\doxysubsubsection{\texorpdfstring{znajdzZn()}{znajdzZn()}}
+{\footnotesize\ttfamily int CPlansza\+::znajdz\+Zn (\begin{DoxyParamCaption}\item[{char}]{par\+Zn,  }\item[{int}]{index\+Start,  }\item[{string \&}]{strumien }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyReturn}{Zwraca}
+Zwraca indeks szukanego znaku w strumieniu 
+\end{DoxyReturn}
+
+
+\doxysubsection{Dokumentacja atrybutów składowych}
+\mbox{\Hypertarget{class_c_plansza_afb2985cbb08c785a1ba7f8c3c9eb38f3}\label{class_c_plansza_afb2985cbb08c785a1ba7f8c3c9eb38f3}} 
+\index{CPlansza@{CPlansza}!karty\_@{karty\_}}
+\index{karty\_@{karty\_}!CPlansza@{CPlansza}}
+\doxysubsubsection{\texorpdfstring{karty\_}{karty\_}}
+{\footnotesize\ttfamily deque$<$\mbox{\hyperlink{class_c_karta}{CKarta}}$\ast$$>$ CPlansza\+::karty\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+dwukierunkowa lista kart 
+
+\mbox{\Hypertarget{class_c_plansza_a6dc6f3daee3cf85dead50ae38d922ad0}\label{class_c_plansza_a6dc6f3daee3cf85dead50ae38d922ad0}} 
+\index{CPlansza@{CPlansza}!kartyUzyte\_@{kartyUzyte\_}}
+\index{kartyUzyte\_@{kartyUzyte\_}!CPlansza@{CPlansza}}
+\doxysubsubsection{\texorpdfstring{kartyUzyte\_}{kartyUzyte\_}}
+{\footnotesize\ttfamily deque$<$\mbox{\hyperlink{class_c_karta}{CKarta}}$\ast$$>$ CPlansza\+::karty\+Uzyte\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+dwukierunkowa lista dla kart już wylosowanych 
+
+\mbox{\Hypertarget{class_c_plansza_a7ae2a7005aca6b43205ccfd6d125af78}\label{class_c_plansza_a7ae2a7005aca6b43205ccfd6d125af78}} 
+\index{CPlansza@{CPlansza}!pensjaStart\_@{pensjaStart\_}}
+\index{pensjaStart\_@{pensjaStart\_}!CPlansza@{CPlansza}}
+\doxysubsubsection{\texorpdfstring{pensjaStart\_}{pensjaStart\_}}
+{\footnotesize\ttfamily int CPlansza\+::pensja\+Start\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+wartość pensji pola \char`\"{}\+START\char`\"{} 
+
+\mbox{\Hypertarget{class_c_plansza_a4ac4197dfea9bc5a71f7b93e4439245b}\label{class_c_plansza_a4ac4197dfea9bc5a71f7b93e4439245b}} 
+\index{CPlansza@{CPlansza}!pola\_@{pola\_}}
+\index{pola\_@{pola\_}!CPlansza@{CPlansza}}
+\doxysubsubsection{\texorpdfstring{pola\_}{pola\_}}
+{\footnotesize\ttfamily deque$<$\mbox{\hyperlink{class_c_pole}{CPole}}$\ast$$>$ CPlansza\+::pola\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+dwukierunkowa lista pól 
+
+\mbox{\Hypertarget{class_c_plansza_a3178aac03c75951f879319b7b9ed9441}\label{class_c_plansza_a3178aac03c75951f879319b7b9ed9441}} 
+\index{CPlansza@{CPlansza}!regiony\_@{regiony\_}}
+\index{regiony\_@{regiony\_}!CPlansza@{CPlansza}}
+\doxysubsubsection{\texorpdfstring{regiony\_}{regiony\_}}
+{\footnotesize\ttfamily deque$<$string$>$ CPlansza\+::regiony\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+dwukierunkowa lista nazw regionów 
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+G\+:/\+Folder\+\_\+\+Dawida/\+Prace\+\_\+me/\+Git/\+Daw\+Rad-\/projekty/\+EURObiznes/\+EURObiznes/\+Logika\+\_\+h/\mbox{\hyperlink{cplansza_8h}{cplansza.\+h}}\item 
+G\+:/\+Folder\+\_\+\+Dawida/\+Prace\+\_\+me/\+Git/\+Daw\+Rad-\/projekty/\+EURObiznes/\+EURObiznes/\+Logika\+\_\+src/\mbox{\hyperlink{cplansza_8cpp}{cplansza.\+cpp}}\end{DoxyCompactItemize}
