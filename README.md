@@ -11,7 +11,7 @@ potrzebnych danych. Logika odpowiada za wirtualny przebieg rozgrywki, a grafika 
 
 ## Część logiczna
 Zawiera w sobie implementację wszystkich klas, metod, struktur danych potrzebnych do przeprowadzenia wirtualnej rozgrywki. 
-Główne klasy wchodzące w skład gry:
+Główne klasy wchodzące w skład logiki:
 <ul>
   <li>gra</li>
   <li>plansza</li>
