@@ -23,7 +23,7 @@ public:
      * W tym przypadku pozwala ona określić, że obiekt jest polem na którym nie można budować nieruchomości,
      * a czynsz zależy od krotności wyrzuconych oczek.
      * @param *gracz - wskaźnik do obiektu klasy gracz, który stanął na polu
-     * @return Zwraca wartość SWynAkcji.y1 = 2 mówiącą, że to klasa CPoleEkstra i SWynAkcji.y2 wskazującą, jaki rodzaj akcji może zostać podjęty.
+     * @return wartość SWynAkcji.y1 = 2 mówiącą, że to klasa CPoleEkstra i SWynAkcji.y2 wskazującą, jaki rodzaj akcji może zostać podjęty.
      */
     SWynAkcji akcja(CGracz *gracz);
 

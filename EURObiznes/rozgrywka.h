@@ -29,14 +29,43 @@ class Rozgrywka : public QMainWindow
      // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 public:
     explicit Rozgrywka(CGame *wskGry, deque<CRysPole *> *wskDeqPol, deque<CRysPionek *> *wskPionkow, bool *wskEndGame, QWidget *parent = nullptr);
+
+    /**
+     * @brief Destruktor klasy Rozgrywka.
+     *
+     * Usuwa atrybuty dynamiczne utworzone w tej klasie oraz wywołuje podmetody
+     * czyszczące listy std::deque z elementów będących wskaźnikami
+     * (Rozgrywka::czyszczenieDeques()).
+     */
     ~Rozgrywka();
 
+    /**
+     * @brief Wywołuje podmetody ustawiające wymiary i pozycje rysunków pól
+     *
+     * Podmetody: Rozgrywka::ustawPozPol(int size) i Rozgrywka::ustawWymiaryPol(int size)
+     */
     void przygotujPolaDoRysowania();
 
 
     // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 private:
+
+    /**
+     * @brief Ustawia pozycje pól na planszy.
+     *
+     * Pozycje są ustawiane jako środek każdego z pól.
+     * Środki są ułożone zgodnie z obwodem planszy.
+     * @param size - rozmiar listy rysunków
+     */
     void ustawPozPol(int size);
+
+    /**
+     * @brief Ustawia wymiary rysunków pól.
+     *
+     * Wymiary są określane w zależności od rodzaju pola i jego położenia na planszy
+     * (pola w rogach mają inne kształty).
+     * @param size - rozmiar listy rysunków
+     */
     void ustawWymiaryPol(int size);
 
     // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -49,6 +78,12 @@ private:
 
     // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
     // metody do destruktora
+
+    /**
+     * @brief Czyści listę kości.
+     *
+     * Usuwa wszystkie elementy listy Rozgrywka::kostki_, będące wskaźnikami.
+     */
     void czyszczenieDeques();
 
 
@@ -59,6 +94,10 @@ signals:
 
     // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 private slots:
+
+    /**
+     * @brief Slot wywoływany po kliknięciu przycisku "NastRunda".
+     */
     void on_pbNastRunda_clicked();
 
     // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
